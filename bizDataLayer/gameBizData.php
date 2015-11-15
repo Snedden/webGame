@@ -117,7 +117,7 @@ function changeTurnData($gameId){
 function changeBoardData($gameId,$pieceId,$boardI,$boardJ,$playerId,$isAttack){
 	//update the board
 	global $mysqli;
-	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=1, player".$playerId."_boardJ=? WHERE game_id=?";
+	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=".$isAttack.", player".$playerId."_boardJ=? WHERE game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			$stmt->bind_param("siii",$pieceId,$boardI,$boardJ,$gameId);

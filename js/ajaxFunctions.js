@@ -119,13 +119,14 @@ function getMoveAjax(whatMethod,val){
 function callbackGetMove(jsonObj){
 	//console.log('getMove callback');
 	//tests to see what I'm getting back!
-	console.log(jsonObj[0]['player'+Math.abs(PlayerId-1)+'_pieceID']);
+	//console.log(jsonObj[0]['player'+Math.abs(PlayerId-1)+'_pieceID']);
     //alert(jsonObj[0]['player'+Math.abs(playerId-1)+'_boardI']);
-    console.log(jsonObj[0]['player'+Math.abs(PlayerId-1)+'_boardJ']);
+    //console.log(jsonObj[0]['player'+Math.abs(PlayerId-1)+'_boardJ']);
     var lastPieceMovedTo=hexArray[jsonObj[0]['player'+Math.abs(PlayerId-1)+'_boardI']];
     var lastMovedPiece=unitArray[jsonObj[0]['player'+Math.abs(PlayerId-1)+'_pieceID']];
-   // console.log('',lastMovedPiece,'lastMove',lastPieceMovedTo);
-    hexMeshObj.moveSelected(lastPieceMovedTo,lastMovedPiece,false);
+    var attacking=jsonObj[0]['player'+Math.abs(PlayerId-1)+'_attacking']===1?true:false; //if isAttacking is 1 in db then attacking is true
+   console.log('attacking:',attacking);
+    hexMeshObj.moveSelected(lastPieceMovedTo,lastMovedPiece,false,attacking);
     //change the text output on the side for whose turn it is
 	//var hold='playerId '+playerId+ ' turn '+turn;
 	//document.getElementById('output2').firstChild.data=hold;
