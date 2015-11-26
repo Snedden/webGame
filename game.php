@@ -6,7 +6,7 @@
 	 Heroes
 	</title>
 
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 		
 	</head>
 	<body >
@@ -19,7 +19,7 @@
           	<h1 id="playerNameHeading"><?php echo $_GET['player']?></h1>
           	<p id="infoPara"></p>
 		</div>
-		<svg id="color-fill" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1500" height="550" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg id="color-fill" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="450" xmlns:xlink="http://www.w3.org/1999/xlink">
 	  
 			
 		</svg>
@@ -55,19 +55,23 @@
 	
 	
 	</body>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src='js/globals.js'></script>
-	<script src="js/ajaxFunctions.js" type="text/javascript"></script>
-	<script src='js/main.js'></script>
-    <script src='js/hexMesh.js'></script>	
-	<script src='js/hexagon.js'></script>
-	<script src='js/unit.js'></script>
+
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src='js/globals.js'></script>
+        <script src="js/ajaxFunctions.js" type="text/javascript"></script>
+        <script src='js/main.js'></script>
+        <script src='js/hexMesh.js'></script>   
+        <script src='js/hexagon.js'></script>
+        <script src='js/unit.js'></script>   
 	<script type="text/javascript">
 			var gameId=<?php echo $_GET['gameId'] ?>;
 			var player="<?php echo $_GET['player']?>";
 			//alert(playerId);
 			initGameAjax('start', 38);
 	</script>
+	
 
 
 	 

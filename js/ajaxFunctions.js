@@ -1,10 +1,10 @@
 ////ajax util/////
 //d is data sent, looks like {name:value,name2:val2}
 ////////////////
-function ajaxCall(GetPost,d,callback){
-//console.log('ajax call');	
+function ajaxCall(getPost,d,callback){
+//console.log(getPost,d,callback);	
 	$.ajax({
- 		type: GetPost,
+ 		type: getPost,
  		async: true,
   		cache:false,
   		url: "mid.php",
@@ -12,13 +12,15 @@ function ajaxCall(GetPost,d,callback){
   		dataType: "json",
   		success: callback,
   		error: function (xhr, ajaxOptions, thrownError) {
-        	//console.log(xhr.status);
+        	console.log(xhr.status);
         	//
         	//console.error('ajax call error',d,thrownError);
         	//console.log( xhr.responseText);
       }
 	});
 }
+
+
 ////initGameAjax/////
 //d is data sent, looks like {name:value,name2:val2}
 //this is my starter call
@@ -27,7 +29,7 @@ function ajaxCall(GetPost,d,callback){
 ////////////////
 function initGameAjax(whatMethod,val){
 	//data is gameId
-	//console.log('initAjax');
+	console.log('initAjax');
 	ajaxCall("POST",{method:whatMethod,a:"game",data:val},callbackInit);
 }
 ////callbackInit/////
@@ -35,6 +37,7 @@ function initGameAjax(whatMethod,val){
 ////////////////
 function callbackInit(jsonObj){
 	//compare the session name to the player name to find out my playerId;
+	console.log('call back init');
 	turn = jsonObj[0].whoseTurn;
 	if(player == jsonObj[0].player1_name){
 		player2 = jsonObj[0].player0_name;
@@ -57,6 +60,9 @@ function callbackInit(jsonObj){
 	//start building the game (board and piece)
     
 }
+
+
+
 ////changeServerTurnAjax/////
 //change the turn on the server
 //no callback
@@ -93,7 +99,7 @@ function checkTurnAjax(whatMethod,val){
 function callbackcheckTurn(jsonObj){
 console.log('DBTurn:'+jsonObj[0].whoseTurn,'PlayerId:'+PlayerId); 	
 	if(jsonObj[0].whoseTurn == PlayerId){
-		
+		//turn = jsonObj[0].whoseTurn;   //changing local turn var
 		//switch turns
 		//Fturn=jsonObj[0].whoseTurn;
 		//get the data from the last guys move
@@ -125,7 +131,7 @@ function callbackGetMove(jsonObj){
     var lastPieceMovedTo=hexArray[jsonObj[0]['player'+Math.abs(PlayerId-1)+'_boardI']];
     var lastMovedPiece=unitArray[jsonObj[0]['player'+Math.abs(PlayerId-1)+'_pieceID']];
     var attacking=jsonObj[0]['player'+Math.abs(PlayerId-1)+'_attacking']===1?true:false; //if isAttacking is 1 in db then attacking is true
-   console.log('attacking:',attacking);
+     console.log('attacking:',attacking);
     hexMeshObj.moveSelected(lastPieceMovedTo,lastMovedPiece,false,attacking);
     //change the text output on the side for whose turn it is
 	//var hold='playerId '+playerId+ ' turn '+turn;

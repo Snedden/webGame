@@ -23,6 +23,7 @@ if(mysqli_connect_errno()){
 	
 */
 function startData($gameId){
+	//$logger->info('startData in gameBizData.php called with parameter'.$gameId);
 	global $mysqli;
 	//return $gameId.'sdf';
 	//simple test for THIS 'game' - resets the last move and such to empty
@@ -115,8 +116,12 @@ function changeTurnData($gameId){
 	changeBoardData 38~dragon|1|0~32~32~0
 */
 function changeBoardData($gameId,$pieceId,$boardI,$boardJ,$playerId,$isAttack){
+
 	//update the board
 	global $mysqli;
+	global $logger;
+
+	$logger->info('inside game SVC changeBoardData');
 	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=".$isAttack.", player".$playerId."_boardJ=? WHERE game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
@@ -124,6 +129,7 @@ function changeBoardData($gameId,$pieceId,$boardI,$boardJ,$playerId,$isAttack){
 			$stmt->execute();
 			$stmt->close();
 		}else{
+			$logger->info('error while inserting change board data');
         	throw new Exception("An error occurred while changeBoard");
         }
 	}catch (Exception $e) {

@@ -14,6 +14,7 @@ function Unit(unitType,hex,playerId,typeCount){
 	var hpTextEle;//HP text html ele associated with the unit 
 	var unitEle;
 	var attack; 
+	var turnEnded;
 
 	this.unitType=unitType;
 	this.typeCount=typeCount;
@@ -27,6 +28,7 @@ function Unit(unitType,hex,playerId,typeCount){
 	
 	this.isMoving=false;
 	this.selected=false;
+	this.turnEnded=false;
 
 	this.unselectAll=unselectAll;
 	
@@ -51,7 +53,7 @@ function Unit(unitType,hex,playerId,typeCount){
 	}
 	
 	//Move the n
-	this.moveToAttackUnit=function attackUnit(unit){
+	this.moveToAttackUnit=function moveToAttackUnit(unit){
 		if(turn===PlayerId){	
 			// attackedUnit is  this,attacking unit is 'unit';
 			var neighNum=this.hexagon.num-1;  //this.hexagon.num-1 is neighbour
@@ -61,6 +63,7 @@ function Unit(unitType,hex,playerId,typeCount){
 				if(hexArray[neighNum].num!=unit.hexagon.num){
 					if(!hexArray[neighNum].isOccupied){
 						hexMeshObj.moveSelected(hexArray[neighNum],unit,true,true);    //move to neighbour first before physically attacking	
+						this.attackUnit(unit);
 					}
 					else{
 						console.warn('Cannot attack unit surrounded');
@@ -68,7 +71,8 @@ function Unit(unitType,hex,playerId,typeCount){
 					  
 				}
 				else{
-					this.attackUnit(); //attack if standing next to the victim
+					console.log('unit before call',unit);
+					this.attackUnit(unit); //attack if standing next to the victim
 				}
 			}
 		else{
@@ -78,7 +82,10 @@ function Unit(unitType,hex,playerId,typeCount){
 
 	this.attackUnit=function attackUnit(unit){
 		// attackedUnit is  this,attacking unit is 'unit';
-     	console.warn('unit under attack!!!')
+     	
+     	this.currentHp=this.currentHp-unit.attack;
+     	this.hpTextEle.innerHTML=this.currentHp;
+     	console.warn('unit under attack!!!',this);
 
 	}
 	
@@ -89,8 +96,10 @@ function Unit(unitType,hex,playerId,typeCount){
 
 		var unit=document.createElementNS(svgns,'circle');
 		this.unitEle=unit;
-		this.unitEle.setAttributeNS(null,'cx',this.hexagon.cx);
-		this.unitEle.setAttributeNS(null,'cy',this.hexagon.cy);
+		this.unitEle.setAttributeNS(null,'cx',this.hexagon.originX); //everything is placec at origin then translated
+		this.unitEle.setAttributeNS(null,'cy',this.hexagon.originY);
+        var transformAttr = ' translate(' +this.hexagon.cx + ',' + this.hexagon.cy+ ')';
+		this.unitEle.setAttributeNS(null,'transform',transformAttr);
 		this.unitEle.setAttributeNS(null,'r',this.hexagon.side*0.6);
 		//console.log('Player id ',unit.playerId);
 		if(this.playerId===0){

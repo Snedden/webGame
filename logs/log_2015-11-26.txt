@@ -1,0 +1,31 @@
+[2015-11-26 6:03:04.927324] [info] inside user.php
+[2015-11-26 6:03:04.933959] [debug] insider registerUser() function
+[2015-11-26 6:03:04.934392] [debug] Received the following registration information: 
+[2015-11-26 6:03:04.934649] [debug] 	firstName = snedden
+[2015-11-26 6:03:04.934978] [debug] 	lastName = gonsalves
+[2015-11-26 6:03:04.935211] [debug] 	email = asdad@rit.edu
+[2015-11-26 6:03:04.935424] [debug] 	userName = Snedden27
+[2015-11-26 6:03:04.935632] [debug] 	password1 = asasasa
+[2015-11-26 6:03:04.935867] [debug] 	password2 = asasasa
+[2015-11-26 6:03:04.936078] [debug] The data has been validated -- about to insert into DB
+[2015-11-26 6:03:05.234847] [debug] Hashed password: '$2y$10$CSoUH6mGrTARBvbV9HR.guFSbO1vGQgTMUlKCDmy.K.9bg3a4CBLK'
+[2015-11-26 6:03:05.235256] [debug] snedden passed to be inserted
+[2015-11-26 6:03:05.235508] [debug] Inside insertUser() function.
+[2015-11-26 6:03:05.235733] [debug] The database is not null - OK
+[2015-11-26 6:03:05.236927] [info] v1sneddenv2gonsalvesv3asdad@rit.eduv4$2y$10$CSoUH6mGrTARBvbV9HR.guFSbO1vGQgTMUlKCDmy.K.9bg3a4CBLKv5v62015-11-26 6:03:05
+[2015-11-26 6:03:05.333040] [info] stmt:INSERT INTO users
+               (first_name,
+                last_name,
+                email,
+                password,
+                status,
+                registration_date)
+            VALUES
+                (?,
+                 ?,
+                 ?,
+                 ?,
+                 ?,
+                 ?)result:1error:
+[2015-11-26 6:03:05.419982] [debug] A user with id 4 was created.
+[2015-11-26 6:03:05.421133] [debug] C:\wamp\www\game project\svcLayer\user\user.php: Already called insertUser() function.

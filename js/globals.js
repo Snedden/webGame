@@ -12,3 +12,4 @@ var turn;
 var gameObj; //gameInit object
 
 console.log('global');
+

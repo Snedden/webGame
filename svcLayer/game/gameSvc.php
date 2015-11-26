@@ -3,6 +3,7 @@
 //Check if they should be here!
 //if so - prepare data and make call to data/biz layer
 
+$logger->info('gameSVC.php included');
 //error_reporting (E_ALL);
 require "./bizDataLayer/gameBizData.php";
 //Why include the database stuff here?  (not doing any db stuff in the service layer!)
@@ -17,9 +18,13 @@ require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli
 	returns:	gameInfo
 				[{"game_id":38,"whoseTurn":1,"player0_name":"Dan","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player1_name":"Fred","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"last_updated":"0000-00-00 00:00:00"}]
 */
+
+
 function start($d){
 	//Should they be here?  (check)
 	//if true:
+	global $logger;
+    $logger->info('gameSVC.php start called');
 	return startData($d);
 }
 /*************************
@@ -59,6 +64,9 @@ function changeBoard($d){
 							//38~piece_1|10~4~6~1
 	$h=explode('~',$d);
 	//changeBoardData($gameId,$pieceId,$boardI,$boardJ,$playerId);
+	global $logger;
+	$logger->info('inside game SVC changeBoard');
+	
 	changeBoardData($h[0],$h[1],$h[2],$h[3],$h[4],$h[5]);
 }
 /*************************

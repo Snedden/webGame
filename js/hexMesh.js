@@ -1,6 +1,6 @@
 
 function hexMesh(){
-	 var side=35;
+	 var side=32;
 	 //console.log('hexMesh');
 	 var drawnCentroids=[];  //array of centroids of hex which are drawn on the scree
 	 var drawnAroundCentroids=[];	//array of centroid of hex which have hex drawn ALL around them 
@@ -60,14 +60,24 @@ function hexMesh(){
 			//unitArray[unit.num].isMoving=true;  //set in memory unit to isMoving
 			unit.isMoving=true;   //set  isMoving
 			var self=this;
-			var repeater;
-			var dxy=1;
-			this.selected
-			var curX=unit.unitEle.getAttribute('cx');
-			var curY=unit.unitEle.getAttribute('cy');
+			//var repeater;
+			//var dxy=1;
+			this.selected;
+            
+
+            //trying to translate 
+			var transformAttr = ' translate(' +(moveToHex.cx) + ',' + (moveToHex.cy ) + ')';
+			//unit.unitEle.style.transformOrigin=hexArray[0].cx,hexArray[0].cy;
+            unit.unitEle.setAttribute('transform', transformAttr);
+		    
+		   // unit.unitEle.setAttribute('cx',moveToHex.cx);
+		    //unit.unitEle.setAttribute('cy',moveToHex.cy);	
+          
+			//var curX=unit.unitEle.getAttribute('cx');
+			//var curY=unit.unitEle.getAttribute('cy');
 			var attackingBool=0;
 			//console.log('curX '+curX+'curY ',curY);
-			if(curX<moveToHex.cx) //moveRight
+			/*if(curX<moveToHex.cx) //moveRight
 			{
 				unit.unitEle.setAttribute('cx',curX*1+dxy);
 				//this.selectedEle.setAttribute('cx',curX*1+dxy);
@@ -87,12 +97,12 @@ function hexMesh(){
 				//console.log('move Up');
 				unit.unitEle.setAttribute('cy',curY*1-dxy);
 				//this.selectedEle.setAttribute('cy',curY*1-dxy);
-			}
+			}*/
 			//console.log('condition:'+curY+'<'+parseInt(moveToHex.cy));
 			
 			//destination hex
-			if((Math.abs(curY-moveToHex.cy))<1&&(Math.abs(curX-moveToHex.cx)<1)){
-				clearTimeout(repeater);                           //stop moment 
+			//if((Math.abs(curY-moveToHex.cy))<1&&(Math.abs(curX-moveToHex.cx)<1)){
+			//	clearTimeout(repeater);                           //stop moment 
                 hexArray[unit.hexagon.num].isOccupied=false; //set isOccupied of start-hex as false
 				hexArray[moveToHex.num].isOccupied=true;   //set isOccupied of the destination hex
 				//unitArray[unit.num].hexagon=moveToHex;   //set final location of in memory unit
@@ -106,13 +116,11 @@ function hexMesh(){
                 unit.moveHpText();            ///move HPtex
 				//change in database
 				
-				if(attacking){
-					unit.attackUnit(); // if user attack after moment
-					attackingBool=1;
-				}
-
+				
+                 console.log(fromUserClick); 
 				//Don't change when call back
 				if(fromUserClick){
+					console.log('changeBoard called');
 					changeBoardAjax(unit.num,moveToHex.num,moveToHex.num,attackingBool,'changeBoard',gameId);
 				}
 				
@@ -129,11 +137,11 @@ function hexMesh(){
                 
 				return true; //piece was succesfully moved
 
-			}
+			//}
 			
-			else if(!repeater){
-			repeater=setTimeout(function(){self.moveSelected(moveToHex,unit,fromUserClick,attacking)},1); 
-			}
+			//else if(!repeater){
+			//repeater=setTimeout(function(){self.moveSelected(moveToHex,unit,fromUserClick,attacking)},1); 
+			//}
 			
 		//}	
 		//else if(moveToHex.isOccupied){
@@ -176,7 +184,7 @@ function hexMesh(){
 				hexCounter++;
 				hexArray[hexCounter]=new Hexagon(i,j,side,hexCounter,hexCounter);  //(cx,cy,side,id,num) id and num are same
 				//console.log(i,j);
-				hexArray[hexCounter].makeHex(svg,svgns);
+				hexArray[hexCounter].makeHex(svg);
 			}
 				
 		}
