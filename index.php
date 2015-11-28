@@ -29,11 +29,12 @@
 
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <!--<script src="js/main.js"></script>-->
         <script type="text/javascript">
         //ajax call 
         function ajaxCall(getPost,d,callback){
-//console.log(getPost,d,callback);  
+        console.log(getPost,d,callback);  
         $.ajax({
             type: getPost,
             async: true,
@@ -62,28 +63,42 @@
         };
 
         function callBackReg(jsonObj){
-             console.log('call abck recieve',jsonObj);
+             console.log('call abck recieve',typeof jsonObj);
+              if((typeof jsonObj)==='object'){
+
+                $("#onSubmitResponseMsg").text(jsonObj.error);
+            }
+            else if(jsonObj===1){//returened true
+                $("#onSubmitResponseMsg").text('User added');
+            }
+            else{
+                $("#onSubmitResponseMsg").text('User not added');
+            }
+
         } ;
 
-            function signIn() {
-                console.log("Called signIn function");
-                var loginData = {};
-                $('#loginForm').find('input[name]').each(function (index, node) {
-                    loginData[node.name] = node.value;
-                });
+        function signIn() {
+            console.log("Called signIn function");
+            var loginData = {};
+            $('#loginForm').find('input[name]').each(function (index, node) {
+                loginData[node.name] = node.value;
+            });
 //                ajaxCall({method: 'getAthorizationToken', a: 'login', data: loginData},
-                console.log(loginData);
-                ajaxCall({method: 'signIn', a: 'login', data: loginData},
-                processSingInResponse, 'POST');
-                event.preventDefault();
+            console.log(loginData);
+            ajaxCall({method: 'signIn', a: 'user', data: loginData},
+            processSingInResponse, 'POST');
+            event.preventDefault();
 
 
+        }
+
+        function processSingInResponse(data) {
+            console.log(data ,typeof data);
+            if((typeof data)==object){
+                $("#onSubmitResponseMsg").text(data.error);
             }
 
-            function processSingInResponse(data) {
-                console.log(data);
-
-            }
+        }
 
          
 
@@ -153,6 +168,7 @@
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                                        
                                     </div>
                                     <div class="form-group">
                                         <label for="userName">Username</label>
@@ -167,6 +183,7 @@
                                         <input name="password2" type="password" class="form-control" id="password2" placeholder="Re-enter Password">
                                     </div>
                                     <button class="btn btn-warning" onclick="registerNew();">Register</button>
+                                    <label id='onSubmitResponseMsg'>Response message would go here!</label>
                                 </form></div>
                         </div>
                     </div>
@@ -180,8 +197,8 @@
             </footer>
         </div> <!-- /container -->        
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      
+        
       
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/userFunctions.js"></script>

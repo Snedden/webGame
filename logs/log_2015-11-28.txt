@@ -1,0 +1,4 @@
+[2015-11-28 18:14:42.167104] [info] inside user.php
+[2015-11-28 18:14:42.176496] [debug] insider registerUser() function
+[2015-11-28 18:16:07.508759] [info] inside user.php
+[2015-11-28 18:16:07.517935] [debug] insider registerUser() function

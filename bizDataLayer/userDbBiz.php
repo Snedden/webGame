@@ -1,8 +1,15 @@
 <?php 
 
 function insertUser($newUserData) {
+
+
 	global $logger, $mysqli;
 	$logger->debug("Inside insertUser() function.");
+	 //Check if email already exists
+    $user=getUser($newUserData['email']);
+    $logger->info("got user from getUser".$user);
+
+	
 	if ($mysqli == null) {
 		$logger->error("Database is not setup property");
 	} else {
@@ -43,5 +50,29 @@ function insertUser($newUserData) {
 
 	$stmt->close();
 	$mysqli->close();
+}
+
+function getUser($emailId){
+	global $logger,$mysqli;
+	$logger->info("Insidd getUser with emailID:".$emailId);
+	global $mysqli;
+	$sql="SELECT * FROM users WHERE email=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+			$logger->info("Inside if email:".$emailId);
+			$stmt->bind_param("s",$emailId);
+			$logger->info("Inside if email:".$emailId);
+			$data=returnJson($stmt);
+			$logger->info("Inside if data:".$emailId);
+			$mysqli->close();
+			return $data;
+		}else{
+			$logger->error("An error occured in getUser".$mysqli->error);
+			throw new Exception("An error occurred in getUser");
+		}
+	}catch (Exception $e) {
+        log_error($e, $sql, null);
+		return false;
+    }
 }
 ?>
