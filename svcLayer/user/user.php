@@ -2,9 +2,10 @@
 ini_set('display_errors', 1);
  global $logger;
  $logger->info("inside user.php");
-
+ $validationError=false;
 //require_once("./vendor/wixel/gump/gump.class.php");
-require_once("./bizDataLayer/gameBizData.php");
+require_once("./bizDataLayer/commonDbFunctions.php");
+require_once("./bizDataLayer/userDbBiz.php");
 require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli;
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,23 +22,18 @@ require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli
  */
 function registerUser($d, $ip, $token) {
    
-    global $logger;
+    global $logger,$validationError;
     $logger->debug("insider registerUser() function");
-   // $data = $d;
-    
-   
-    
 
     //Check if data is valid
-    $data=validateData($d);
-   
-    
-
-    if(!$data){
+    $data=validateData($d);  
+    $logger->debug("validate data".$data);
+     $logger->debug("validateError flag ".$validationError);
+    if($validationError){ //if error
         $errorMsg = array(
-                'error' =>'Data send is invalid.'
+                'error' => $data
             );
-            $logger->info("user exist error as".$errorMsg);
+            $logger->info($errorMsg);
             return json_encode($errorMsg);
     }
    
@@ -47,7 +43,7 @@ function registerUser($d, $ip, $token) {
     
     // Prepared data for the database use
     // Hash password
-    $password_hash = password_hash($validated_data['password1'], PASSWORD_BCRYPT);
+    $password_hash = password_hash($data['password1'], PASSWORD_BCRYPT);
     $logger->debug("Hashed password: '".$password_hash."'");
     
     
@@ -67,9 +63,10 @@ function registerUser($d, $ip, $token) {
     return insertUser($userData);
     
 }
-
+//this is the function I call
 function validateData($data){
-    $logger->debug("insider validateDatar() function");
+    global $logger,$validationError;
+    $logger->debug("insider validateDatar() function");  //loggin out if the function is call ,but it is not
     
     $gump = new GUMP();
    // $logger->info("gump:".$gump);
@@ -79,64 +76,86 @@ function validateData($data){
         'firstName'    => 'required|alpha_numeric|max_len,100|min_len,6',
         'lastName'    => 'required|max_len,100|min_len,6',
         'email'       => 'required|valid_email',
-        'password'      => 'required|max_len,100|min_len,6',
-        'status' => 'required|integer'
+        'password1'      => 'required|max_len,100|min_len,6'
+        
     ));
 
     $gump->filter_rules(array(
-        'firstName'    => 'required|alpha_numeric|max_len,100|min_len,6',
-        'lastName'    => 'required|max_len,100|min_len,6',
-        'email'       => 'required|valid_email',
-        'password'      => 'required|max_len,100|min_len,6',
-        'status' => 'required|integer'
+        'firstName' => 'trim|sanitize_string',
+        'lastName'=>'trim|sanitize_string',
+        'password1' => 'trim',
+        'email'    => 'trim|sanitize_email'
+        
     ));
 
-    $validated_data = $gump->run($data);
 
+
+    $validated_data = $gump->run($data);
+    $logger->info("after validate data ".$validated_data);
     if($validated_data === false) {
-        return false;
-    } else {
+       $error=$gump->get_readable_errors(true);
+        $logger->info("return false".$error);
+        $validationError=true;
+        return $error;
+    } 
+    else {
+        $logger->info("returned valid data");
+        $validationError=false;
         return $validated_data;
     }
     
 }
 
 
-function signIn($data, $ipAddress, $token) {
-    // Cleanse username and password
-    // TODO
+function signIn($d, $ip, $token) {
+    
     
     global $logger, $SECRET_KEY;
     
-    $logger->debug(__FILE__ . ": Inside the signIn function.");
+    $logger->debug(" signIn function. data $d ip $ip token $token" );
     
-    $userName = $data['userName'];      //user name is emailid
-    $userPassword = $data['password'];
+    $userEmail = $d['userEmail'];      //user name is emailid
+    $userPassword = $d['password'];
 
 
-    $user = getUser($userName);
-    if (is_null($user)) {
+    $user = getUser($userEmail);
+    //$logger->info('Email id from getUser '.implode(',', array_keys($user[0])));
+    //$userRow=$user[0];
+    $logger->info('passworrd from form '.$userPassword);
+    $logger->info('password  from getUser '.$user[0]['password']);
+    if (count($user)==0) {//no user found
        
-        header('response_code 401');
+        $logger->info('email is not found in  db');
         $errorResponse = array(
             'errorMessage' => 'Failed to authenticate user. '
-            . 'Username/password combination cannot be validated.'
-        );
-        setResponseHeaders();
-        echo json_encode($errorResponse);
-    } else {
-        // Check if the password matches
-        if (password_verify($userPassword, $user->passwordHash)){
-            $logger->debug(__FILE__.": User login succeeded for username: ".$userName);
-            // function tokenizeIdData($userId, $ipAddress, $secretKey)
-            tokenizeIdData($user->userId, $ipAddress, $SECRET_KEY);
-            $logger->debug(__FILE__.": Security token set.");
-//            header( "Location: http://localhost/battleship/lobby.php" ); // redirect to lobby
-//            $logger->debug(__FILE__.": The user has been redirected to lobby.");
             
-        } else {
-            $logger->warn(__FILE__.": User login failed for username: ".$userName);
-            // TODO: return error message
+        );
+       
+        echo json_encode($errorResponse);
+    }
+    else {
+        // Check if the password matches
+        $hashedPassword=$user[0]['password'];
+        $logger->debug("user password $userPassword , hashedPassword $hashedPassword". gettype($userPassword).' '.gettype($hashedPassword));
+
+        if (password_verify($userPassword,$hashedPassword)){
+
+            $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
+            session_start();
+            $_SESSION['user_id'] = $user[0]['iduser'];
+            $logger->info("Session set  ". $_SESSION['user_id']);
+            $Response = array(
+                'Message' => "Logged-in"
+            );
+            echo json_encode($Response);
+        } 
+        else {
+            $logger->error(" User  failed to authenticate ");
+             $errorResponse = array(
+                'errorMessage' => "Failed to authenticate user. "
+            );
+            
+            echo json_encode($errorResponse);
         }
         
     }

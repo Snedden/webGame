@@ -63,7 +63,7 @@
         };
 
         function callBackReg(jsonObj){
-             console.log('call abck recieve',typeof jsonObj);
+             console.log('call abck recieve', jsonObj);
               if((typeof jsonObj)==='object'){
 
                 $("#onSubmitResponseMsg").text(jsonObj.error);
@@ -83,20 +83,21 @@
             $('#loginForm').find('input[name]').each(function (index, node) {
                 loginData[node.name] = node.value;
             });
-//                ajaxCall({method: 'getAthorizationToken', a: 'login', data: loginData},
-            console.log(loginData);
-            ajaxCall({method: 'signIn', a: 'user', data: loginData},
-            processSingInResponse, 'POST');
+            console.log('data',loginData);
+            ajaxCall("POST",{method: 'signIn', a: 'user', data: loginData},signInCallBack);
+            
             event.preventDefault();
 
 
-        }
+        };
 
-        function processSingInResponse(data) {
-            console.log(data ,typeof data);
-            if((typeof data)==object){
-                $("#onSubmitResponseMsg").text(data.error);
+        function signInCallBack(data) {
+            console.log('sign in call back',data,data.Message ,typeof data.Message, data.Message==='Logged-in');
+            if(data.Message==='Logged-in'){
+                console.log('procees to lobby..');
+                window.location='lobby.php';
             }
+           
 
         }
 
@@ -142,7 +143,7 @@
                             <div class="panel-body">
                                 <form id="loginForm" class="form-sign" role="form">
                                     <div class="form-group">
-                                        <input name="userName" type="text" placeholder="Username" class="form-control">
+                                        <input name="userEmail" type="email" placeholder="EmailID" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <input name="password" type="password" placeholder="Password" class="form-control">

@@ -273,7 +273,7 @@ function insertUser($newUserData) {
         
         $stmt->bind_param('ssssis', $newUserData['firstName'], $newUserData['lastName'], $newUserData['email'], $newUserData['password'],$newUserData['status'],$newUserData['registration_date']);
         $logger->info("v1".$newUserData['firstName']."v2".$newUserData['lastName']."v3".$newUserData['email']."v4".$newUserData['password']."v5".$newUserData['statusId']."v6".$newUserData['registration_date']);
-		$logger->info('stmt:'.$sql.'result:'.$stmt->execute().'error:'.$mysqli->error);
+		//$logger->info('stmt:'.$sql.'result:'.$stmt->execute().'error:'.$mysqli->error);
 		if ($stmt->execute()) {
 			$newUserId = $mysqli->insert_id;
 			$logger->debug("A user with id " . $newUserId . " was created.");

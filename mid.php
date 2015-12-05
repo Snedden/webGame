@@ -13,7 +13,8 @@
 		}
 		$serviceMethod=$_REQUEST['method'];
         $data=$_REQUEST['data'];
-        // $logger->info('Service Method is '.$serviceMethod.' Data is '.$data.'server '.$_SERVER['REMOTE_ADDR'].'cokkie '.$_COOKIE['token']);
+       // $dataString=implode(" ",$data);
+        //$logger->info("Service Method is". $serviceMethod." Data is ". $dataString. " server ".  $_SERVER['REMOTE_ADDR']);
 		
 		 //$result=start($data);
      
