@@ -1,6 +1,6 @@
 <?php
 global $logger;
-$logger->info("inside user.php");
+//$logger->info("inside lobby.php");
 require_once("./bizDataLayer/commonDbFunctions.php");
 require_once("./bizDataLayer/lobbyDbBiz.php");
 require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli;
@@ -17,7 +17,7 @@ function enterChat($d,$ip,$token){
 
 function readChats($d,$ip,$token){
 	global $logger;
-	$logger->info('in readChats, data '. readChatsDb());
+	//$logger->info('in readChats, data '. readChatsDb());
 	return readChatsDb($d);
 }
 

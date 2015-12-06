@@ -102,7 +102,32 @@ function insertUser($newUserData) {
 	
 }
 
-function getUser($emailId){
+
+function getUserByIdDB($userId){
+	global $logger,$mysqli;
+	$logger->info("Insidd getUserByIdDB with idUser:".$userId);
+	global $mysqli;
+	$sql="SELECT first_name,last_name FROM users WHERE idUser=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+
+			$stmt->bind_param("s",$userId);
+
+			$data=bindSql($stmt);
+
+			$mysqli->close();
+			return $data;
+		}else{
+			$logger->error("An error occured in prepare statement getUser".$mysqli->error);
+			throw new Exception("An error occurred in getUser");
+		}
+	}catch (Exception $e) {
+		$logger->error("An error occured in getUser".$mysqli->error);
+		return false;
+	}
+}
+
+function getUserByEmailDB($emailId){
 	global $logger,$mysqli;
 	$logger->info("Insidd getUser with emailID:".$emailId);
 	global $mysqli;

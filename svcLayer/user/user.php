@@ -118,7 +118,7 @@ function signIn($d, $ip, $token) {
     $userPassword = $d['password'];
 
 
-    $user = getUser($userEmail);
+    $user = getUserByEmail($userEmail);
     //$logger->info('Email id from getUser '.implode(',', array_keys($user[0])));
     //$userRow=$user[0];
     $logger->info('passworrd from form '.$userPassword);
@@ -159,4 +159,14 @@ function signIn($d, $ip, $token) {
         }
         
     }
+}
+
+function getUserById($userId){
+    global $logger;
+    $logger->info("inside getUserById id:$userId");
+    return json_encode(getUserByIdDB($userId));
+}
+
+function getUserByEmail($userEmail){
+    return getUserByEmailDB($userEmail);
 }

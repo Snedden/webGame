@@ -17,4 +17,4 @@ session_destroy();
 <body>
 <h1>You are now logged out. Please come again</h1>
 </body>
-</htl>
+</html>

@@ -19,7 +19,7 @@
 		 //$result=start($data);
      
 		$result=@call_user_func($serviceMethod,$data,$_SERVER['REMOTE_ADDR'],$_COOKIE['token']);
-	    $logger->info('result at mid is '.$result);
+	   // $logger->info('result at mid is '.$result);
         
 
 		if($result){
@@ -29,6 +29,10 @@
 			echo $result;
 
 
+		}
+		else {
+			header("Content-Type:text/plain");
+			echo 'null';
 		}
 	}
 ?>

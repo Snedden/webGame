@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f32940c3-56c1-4409-b60f-e9e3daefdc59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logout.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-11-22.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-11-23.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-11-24.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-11-26.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-11-27.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-11-28.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/wixel/gump" afterPath="$PROJECT_DIR$/vendor/wixel/gump" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/gameBizData.php" afterPath="$PROJECT_DIR$/bizDataLayer/gameBizData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" afterPath="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" afterPath="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lobby.php" afterPath="$PROJECT_DIR$/lobby.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_2015-12-05.txt" afterPath="$PROJECT_DIR$/logs/log_2015-12-05.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mid.php" afterPath="$PROJECT_DIR$/mid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/lobby/lobby.php" afterPath="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/user/user.php" afterPath="$PROJECT_DIR$/svcLayer/user/user.php" />
     </list>
     <ignored path="game project.iws" />
@@ -42,50 +37,25 @@
       <file leaf-file-name="lobby.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lobby.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5747331">
-              <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.68105066">
+              <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
               <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logout.php">
+      <file leaf-file-name="Logger.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logger.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lobby.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commonDbFunctions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.807693">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log_2015-12-05.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/log_2015-12-05.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3809" column="50" selection-start-line="3809" selection-start-column="50" selection-end-line="3809" selection-end-column="50" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,8 +64,18 @@
       <file leaf-file-name="mid.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mid.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.735849">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -104,21 +84,32 @@
       <file leaf-file-name="lobbyDbBiz.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8461537">
-              <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+            <state vertical-scroll-proportion="24.192308">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
-                <marker date="1449295941934" expanded="true" signature="376:522" placeholder="INSERT INTO chatMessages..." />
-                <marker date="1449295941934" expanded="true" signature="1512:1577" placeholder="select text,..." />
+                <marker date="1449379681348" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
+                <marker date="1449379681348" expanded="true" signature="1516:1562" placeholder="select text,..." />
+                <marker date="1449379681348" expanded="true" signature="1516:1563" placeholder="select text,..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="lobby.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="94" column="110" selection-start-line="94" selection-start-column="110" selection-end-line="94" selection-end-column="110" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log_2015-12-06.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/log_2015-12-06.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9281" column="0" selection-start-line="9281" selection-start-column="0" selection-end-line="9281" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,8 +118,8 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.115385">
-              <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="30" />
+            <state vertical-scroll-proportion="-13.769231">
+              <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -137,13 +128,25 @@
       <file leaf-file-name="userDbBiz.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.538462">
-              <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+            <state vertical-scroll-proportion="-2.3962264">
+              <caret line="109" column="65" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
               <folding>
-                <marker date="1449340212227" expanded="true" signature="346:379" placeholder="select * fro..users..." />
-                <marker date="1449340212227" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
-                <marker date="1449340212227" expanded="true" signature="3027:3060" placeholder="SELECT * FRO..users..." />
+                <marker date="1449380804003" expanded="true" signature="346:379" placeholder="select * fro..users..." />
+                <marker date="1449380804003" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
+                <marker date="1449380804003" expanded="true" signature="3037:3082" placeholder="SELECT * FRO..users..." />
+                <marker date="1449380804003" expanded="true" signature="3037:3090" placeholder="SELECT * FRO..users..." />
+                <marker date="1449380804003" expanded="true" signature="3642:3675" placeholder="SELECT * FRO..users..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonDbFunctions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.807693">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,14 +159,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
-        <option value="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
-        <option value="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-05.txt" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/svcLayer/user/user.php" />
-        <option value="$PROJECT_DIR$/lobby.php" />
         <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
+        <option value="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
+        <option value="$PROJECT_DIR$/logs/log_2015-12-06.txt" />
+        <option value="$PROJECT_DIR$/svcLayer/user/user.php" />
+        <option value="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
+        <option value="$PROJECT_DIR$/mid.php" />
+        <option value="$PROJECT_DIR$/lobby.php" />
       </list>
     </option>
   </component>
@@ -443,7 +448,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -469,8 +479,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449295941934" expanded="true" signature="376:522" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449295941934" expanded="true" signature="1512:1577" placeholder="select text,..." />
+            <marker date="1449379681348" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1449379681348" expanded="true" signature="1516:1562" placeholder="select text,..." />
+            <marker date="1449379681348" expanded="true" signature="1516:1563" placeholder="select text,..." />
           </folding>
         </state>
       </provider>
@@ -480,7 +491,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -490,62 +506,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8461537">
-          <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
-          <folding>
-            <marker date="1449295941934" expanded="true" signature="376:522" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449295941934" expanded="true" signature="1512:1577" placeholder="select text,..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.538462">
-          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding>
-            <marker date="1449340212227" expanded="true" signature="346:379" placeholder="select * fro..users..." />
-            <marker date="1449340212227" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
-            <marker date="1449340212227" expanded="true" signature="3027:3060" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.807693">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/log_2015-12-05.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3809" column="50" selection-start-line="3809" selection-start-column="50" selection-end-line="3809" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <caret line="4711" column="50" selection-start-line="4711" selection-start-column="50" selection-end-line="4711" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -558,15 +532,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
+    <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.115385">
-          <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="30" />
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
+    <entry file="file://$PROJECT_DIR$/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="24.192308">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <marker date="1449379681348" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1449379681348" expanded="true" signature="1516:1562" placeholder="select text,..." />
+            <marker date="1449379681348" expanded="true" signature="1516:1563" placeholder="select text,..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.807693">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-06.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9281" column="0" selection-start-line="9281" selection-start-column="0" selection-end-line="9281" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
@@ -574,12 +584,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.769231">
+          <caret line="166" column="47" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3962264">
+          <caret line="109" column="65" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
+          <folding>
+            <marker date="1449380804003" expanded="true" signature="346:379" placeholder="select * fro..users..." />
+            <marker date="1449380804003" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
+            <marker date="1449380804003" expanded="true" signature="3037:3082" placeholder="SELECT * FRO..users..." />
+            <marker date="1449380804003" expanded="true" signature="3037:3090" placeholder="SELECT * FRO..users..." />
+            <marker date="1449380804003" expanded="true" signature="3642:3675" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.735849">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lobby.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5747331">
-          <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.68105066">
+          <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

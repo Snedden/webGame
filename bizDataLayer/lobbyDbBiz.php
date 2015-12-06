@@ -3,7 +3,7 @@
 
 
  global $logger;
- $logger->info('inside lobbyDbBiz'.__FILE__);
+ //$logger->info('inside lobbyDbBiz'.__FILE__);
  function enterChatDb($d){
  	global $logger,$mysqli;
 
@@ -65,21 +65,21 @@
 
  function readChatsDb($d){
 	global $logger,$mysqli;
-	$logger->info('inside readChatsDb()');
+	//$logger->info('inside readChatsDb()');
 	
-	$sql="select text,iduser,TIMESTAMP from chatMessages where TIMESTAMP >?";
+	$sql="select text,iduser,TIMESTAMP from chatMessages ";
 
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			
-			$logger->info("prepared statement is good in read chat");
-
-			if (!$stmt->bind_param( $d['lastTimeStamp']) {
+			//$logger->info("prepared statement is good in read chat");
+			/*
+			if (!$stmt->bind_param( $d['lastTimeStamp'])) {
 				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
-
+			*/
 			$data=bindSql($stmt);
-			$logger->info("result for bindSql" . implode(" ",$data[0]));
+			//$logger->info("result for bindSql" . implode(" ",$data[0]));
 			
 			
 			return json_encode($data);

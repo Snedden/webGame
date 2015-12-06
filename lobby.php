@@ -26,7 +26,7 @@
      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script>
          function ajaxCall(getPost,d,callback){
-       // console.log(getPost,d,callback);  
+       // console.log(getPost,d,callback);
         $.ajax({
             type: getPost,
             async: true,
@@ -43,39 +43,95 @@
           }
         });
         }
+
+
+
+
+
         var lastTimeStamp='1899-11-30 00:00:00';
+         function init(){
+
+             addChatListeners();
+             getUserAjax();
+             readChatsAjax();
+         }
+
+         function addChatListeners(){
+             (document.getElementsByTagName('body')[0]).addEventListener('keydown',function(e){ //bind when user starts typing
+                 $('#chatText').focus();                //bring input box in focus
+                 if(e.keyCode == 13){   //enter clicked
+
+                     $('#chatTextbtn').click();
+                 }
+
+
+             });
+         }
+         function getUserAjax(){
+
+
+             var userId="<?php echo $_SESSION["user_id"]  ?>";
+             console.log('userID ',userId);
+
+
+             ajaxCall('GET',{method:'getUserById',a:'user',data:userId},callBackGetUser);
+         }
+
+         function callBackGetUser(jsonObj){
+             console.log(jsonObj,jsonObj[0].first_name,jsonObj[0].last_name,$('#greetingText'));
+             var greeting="Welcome "+jsonObj[0].first_name+" "+jsonObj[0].last_name;
+             $('#greetingText')[0].innerHTML=greeting;
+         }
+
+
         function enterChat(chatMsg){
+
             var chatData={};
             chatData['chatMsg']=$("#chatText").val();
             chatData['userName']=1;
 
             console.log('chat inserted is ',$("#chatText"));
-            ajaxCall('POST',{method:'enterChat',a:'lobby',data:chatData},callBackChat);
-           
+            ajaxCall('POST',{method:'enterChat',a:'lobby',data:chatData},callBackEnterChat);
+
+
         }
+
+         function callBackEnterChat(jsonObject){
+             console.log('called back enter chhat');
+             console.log( $('#chatText'));
+             $("#chatText").val('');
+             //keep the message scoller down always to see new message without scrolling down
+             $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
+         }
+
+
+
+
 
         function readChatsAjax(){
             var chatData={};
             chatData['lastTimeStamp']=lastTimeStamp;
             ajaxCall("GET",{method:'readChats',a:"lobby",data:chatData},callbackReadChat);
-         
-            setTimeout(readChatsAjax,1000);
+
+            setTimeout(readChatsAjax,500);
         }
 
         function callbackReadChat(jsonObj){
-            console.log(jsonObj);
-            console.log( typeof jsonObj);
+            //console.log(jsonObj);
+            //console.log( typeof jsonObj);
+
+
             if((typeof jsonObj)==='object'){
-                console.log( 'is object' );
+                //console.log( 'is object' );
                 $('#chatMessages').text(''); //clear previous chat messages
                 for (var i=0,l=jsonObj.length;i<l;i++){
                         
-                    console.log('Appended ',jsonObj[i].text);
+                   // console.log('Appended ',jsonObj[i].text);
                     var chatElement=$('<li class="media"> ' +
                         '<div class="media-body">'+
                             '<div  class="media"> ' +
                                 '<a class="pull-left" href="#">' +
-                                    '<img class="media-object img-circle " src="assets/img/user.gif" /> ' +
+                                    '<span class="glyphicon glyphicon-user"></span> ' +
                                 '</a> ' +
                                 '<div  class="media-body" >' +jsonObj[i].text+
                                     '<br />'+
@@ -88,22 +144,22 @@
 
                     $('#chatMessages').append(chatElement);
 
+                    //return false;
 
                 }
             }
+
         }
 
 
-        function callBackChat(jsonObj){
-            console.log(jsonObj);
-        }
+
     </script> 
 
 </head>
-<body onload="readChatsAjax()" style="font-family:Verdana">
+<body onload="init()" style="font-family:Verdana">
   <div class="container">
 <div class="row " style="padding-top:40px;">
-    <h3 class="text-center" >BOOTSTRAP CHAT EXAMPLE </h3>
+    <h3 id="greetingText" class="text-center" >Welcome user </h3>
     <a href="logout.php" style="float:right">logout</a>
     <br /><br />
     <div class="col-md-8">
@@ -120,7 +176,7 @@
                 <div class="input-group">
                                     <input type="text" id='chatText' class="form-control" placeholder="Enter Message" />
                                     <span class="input-group-btn">
-                                        <button class="btn btn-info" onclick="enterChat()" type="button">SEND</button>
+                                        <button id="chatTextbtn" class="btn btn-info" onclick="enterChat()" type="button">SEND</button>
                                     </span>
                                 </div>
             </div>
