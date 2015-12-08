@@ -25,14 +25,14 @@
 		if($result){
 			//might need the header cache stuff
 			header("Content-Type:text/plain");
-           // $logger->info("return value from mid php".$result);
+            $logger->info("return value from mid php".$result);
 			echo $result;
 
 
 		}
 		else {
 			header("Content-Type:text/plain");
-			echo 'null';
+
 		}
 	}
 ?>

@@ -140,14 +140,23 @@ function signIn($d, $ip, $token) {
 
         if (password_verify($userPassword,$hashedPassword)){
 
-            $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
-            session_start();
-            $_SESSION['user_id'] = $user[0]['iduser'];
-            $logger->info("Session set  ". $_SESSION['user_id']);
-            $Response = array(
-                'Message' => "Logged-in"
-            );
-            echo json_encode($Response);
+
+            if(makeOnlineDB($user[0]['iduser'])) {
+                $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
+                session_start();
+                $_SESSION['user_id'] = $user[0]['iduser'];
+                $logger->info("Session set  ". $_SESSION['user_id']);
+                $Response = array(
+                    'Message' => "Logged-in"
+                );
+                echo json_encode($Response);
+            }
+            else{
+                $logger->error(" database failed to update status in login ");
+                $errorResponse = array(
+                    'errorMessage' => "Failed to authenticate user. "
+                );
+            }
         } 
         else {
             $logger->error(" User  failed to authenticate ");
@@ -161,6 +170,10 @@ function signIn($d, $ip, $token) {
     }
 }
 
+function makeOnline($userId){
+    return makeOnlineDB($userId);
+}
+
 function getUserById($userId){
     global $logger;
     $logger->info("inside getUserById id:$userId");
@@ -169,4 +182,10 @@ function getUserById($userId){
 
 function getUserByEmail($userEmail){
     return getUserByEmailDB($userEmail);
+}
+
+function logOut($userId){
+    global $logger;
+    $logger->info('in logOut with userID '.$userId);
+    return logOutDB($userId);
 }

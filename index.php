@@ -94,7 +94,7 @@
         function signInCallBack(data) {
             console.log('sign in call back',data,data.Message ,typeof data.Message, data.Message==='Logged-in');
             if(data.Message==='Logged-in'){
-                console.log('procees to lobby..');
+                console.log('proceed to lobby..');
                 window.location='lobby.php';
             }
            

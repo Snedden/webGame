@@ -1,0 +1,404 @@
+[2015-12-08 6:49:26.085923] [info] inside user.php
+[2015-12-08 6:49:26.215970] [info] inside getUserById id:9
+[2015-12-08 6:49:26.216387] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-08 6:49:26.217509] [info] Inside bind sql
+[2015-12-08 6:49:26.218796] [info] bind columns0 1
+[2015-12-08 6:49:26.219837] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-08 6:49:26.257452] [info] in getOnlineUsers
+[2015-12-08 6:49:26.257911] [info] inside getOnlineUsersDb
+[2015-12-08 6:49:26.258776] [info] Inside bind sql
+[2015-12-08 6:49:26.259057] [info] inside getOpenChallenge() id:9 
+[2015-12-08 6:49:26.259547] [info] inside getOpenChallengessDB
+[2015-12-08 6:49:26.278976] [info] bind columns0 1 2
+[2015-12-08 6:49:26.279997] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-08 6:49:26.280646] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"},{"first_name":"Daniel","last_name":"Boggard","email":"Dan21@rit.edu"}]
+[2015-12-08 6:49:26.291208] [info] Inside bind sql
+[2015-12-08 6:49:26.294121] [info] Inside bind sql
+[2015-12-08 6:49:26.305403] [info] bind columns0 1
+[2015-12-08 6:49:26.306289] [info] return data from getOpenChallengesDB sql Array
+[2015-12-08 6:49:26.306993] [info] return value from mid php{"email":"Sneddento@indiatimes.com","challenge_id":18}
+[2015-12-08 6:49:26.378305] [info] bind columns0 1 2 3
+[2015-12-08 6:49:26.380472] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"}]
+[2015-12-08 6:49:28.139350] [info] inside enterChallenge toEmail 
+[2015-12-08 6:49:28.139995] [info] Insidd getUser with emailID:
+[2015-12-08 6:49:28.141263] [info] Inside bind sql
+[2015-12-08 6:49:28.143539] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:49:28.144515] [info] inside enterChallenge challengeUser
+[2015-12-08 6:49:28.144969] [info] inside getOnlineUsersDb
+[2015-12-08 6:49:28.148569] [error] Could not insert a challenge into db.Le champ 'to_user' ne peut être vide (null)
+[2015-12-08 6:50:46.130120] [info] inside user.php
+[2015-12-08 6:50:46.236407] [info] inside getUserById id:9
+[2015-12-08 6:50:46.236972] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-08 6:50:46.238662] [info] Inside bind sql
+[2015-12-08 6:50:46.240641] [info] bind columns0 1
+[2015-12-08 6:50:46.242549] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-08 6:50:46.282130] [info] in getOnlineUsers
+[2015-12-08 6:50:46.282726] [info] inside getOnlineUsersDb
+[2015-12-08 6:50:46.284039] [info] Inside bind sql
+[2015-12-08 6:50:46.285170] [info] Inside bind sql
+[2015-12-08 6:50:46.285634] [info] bind columns0 1 2
+[2015-12-08 6:50:46.286449] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-08 6:50:46.287234] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"},{"first_name":"Daniel","last_name":"Boggard","email":"Dan21@rit.edu"}]
+[2015-12-08 6:50:46.312499] [info] inside getOpenChallenge() id:9 
+[2015-12-08 6:50:46.313127] [info] inside getOpenChallengessDB
+[2015-12-08 6:50:46.314599] [info] Inside bind sql
+[2015-12-08 6:50:46.342498] [info] bind columns0 1
+[2015-12-08 6:50:46.343713] [info] return data from getOpenChallengesDB sql Array
+[2015-12-08 6:50:46.344815] [info] return value from mid php{"email":"Sneddento@indiatimes.com","challenge_id":18}
+[2015-12-08 6:50:46.430269] [info] bind columns0 1 2 3
+[2015-12-08 6:50:46.467870] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"}]
+[2015-12-08 6:50:48.880458] [info] inside enterChallenge toEmail Sneddento@indiatimes.com
+[2015-12-08 6:50:48.881334] [info] Insidd getUser with emailID:Sneddento@indiatimes.com
+[2015-12-08 6:50:48.882663] [info] Inside bind sql
+[2015-12-08 6:50:48.884135] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:50:48.884829] [info] inside enterChallenge challengeUser9
+[2015-12-08 6:50:48.885126] [info] inside getOnlineUsersDb
+[2015-12-08 6:50:48.886868] [info] C:\wamp\www\game project\bizDataLayer\lobbyDbBiz.php: There are open challenges 
+[2015-12-08 6:50:48.887182] [info] user exist error asArray
+[2015-12-08 6:50:48.887710] [info] return value from mid php{"error":"Email Id already exist,forgot password?."}
+[2015-12-08 6:51:48.582324] [info] inside enterChallenge toEmail Dan21@rit.edu
+[2015-12-08 6:51:48.583060] [info] Insidd getUser with emailID:Dan21@rit.edu
+[2015-12-08 6:51:48.584394] [info] Inside bind sql
+[2015-12-08 6:51:48.586026] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:51:48.586724] [info] inside enterChallenge challengeUser10
+[2015-12-08 6:51:48.587017] [info] inside getOnlineUsersDb
+[2015-12-08 6:51:48.588956] [info] C:\wamp\www\game project\bizDataLayer\lobbyDbBiz.php: There are open challenges 
+[2015-12-08 6:51:48.589293] [info] user exist error asArray
+[2015-12-08 6:51:48.589845] [info] return value from mid php{"error":"You have already sent a challenge to this user."}
+[2015-12-08 6:53:18.480112] [info] inside user.php
+[2015-12-08 6:53:19.292232] [info] inside getUserById id:9
+[2015-12-08 6:53:19.292733] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-08 6:53:19.294054] [info] Inside bind sql
+[2015-12-08 6:53:19.296215] [info] bind columns0 1
+[2015-12-08 6:53:19.296454] [info] in getOnlineUsers
+[2015-12-08 6:53:19.296940] [info] inside getOnlineUsersDb
+[2015-12-08 6:53:19.297584] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-08 6:53:19.298281] [info] Inside bind sql
+[2015-12-08 6:53:19.298944] [info] inside getOpenChallenge() id:9 
+[2015-12-08 6:53:19.299470] [info] inside getOpenChallengessDB
+[2015-12-08 6:53:19.300168] [info] bind columns0 1 2
+[2015-12-08 6:53:19.300931] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-08 6:53:19.300945] [info] Inside bind sql
+[2015-12-08 6:53:19.301724] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"},{"first_name":"Daniel","last_name":"Boggard","email":"Dan21@rit.edu"}]
+[2015-12-08 6:53:19.303432] [info] bind columns0 1
+[2015-12-08 6:53:19.304924] [info] Inside bind sql
+[2015-12-08 6:53:19.587721] [info] bind columns0 1 2 3
+[2015-12-08 6:53:19.656284] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"}]
+[2015-12-08 6:53:19.959117] [info] return data from getOpenChallengesDB sql 
+[2015-12-08 6:53:19.960046] [info] return value from mid phpnull
+[2015-12-08 6:53:22.837167] [info] inside enterChallenge toEmail Sneddento@indiatimes.com
+[2015-12-08 6:53:22.837904] [info] Insidd getUser with emailID:Sneddento@indiatimes.com
+[2015-12-08 6:53:22.839286] [info] Inside bind sql
+[2015-12-08 6:53:22.841310] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:53:22.842209] [info] inside enterChallenge challengeUser9
+[2015-12-08 6:53:22.842644] [info] inside getOnlineUsersDb
+[2015-12-08 6:53:24.052339] [info] challenge inserted
+[2015-12-08 6:53:24.165847] [info] return value from mid php{"chlgnid":1,"status":"open"}
+[2015-12-08 6:53:24.508776] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:24.509459] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:24.510876] [info] Inside bind sql
+[2015-12-08 6:53:24.512099] [info] bind columns0
+[2015-12-08 6:53:24.512588] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:24.513132] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:26.429781] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:26.430506] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:26.431719] [info] Inside bind sql
+[2015-12-08 6:53:26.433083] [info] bind columns0
+[2015-12-08 6:53:26.433823] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:26.434585] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:27.680731] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:27.681478] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:27.682720] [info] Inside bind sql
+[2015-12-08 6:53:27.684500] [info] bind columns0
+[2015-12-08 6:53:27.685446] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:27.686378] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:28.789519] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:28.790261] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:28.791703] [info] Inside bind sql
+[2015-12-08 6:53:28.794120] [info] bind columns0
+[2015-12-08 6:53:28.795346] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:28.796224] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:29.875050] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:29.875776] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:29.877027] [info] Inside bind sql
+[2015-12-08 6:53:29.878449] [info] bind columns0
+[2015-12-08 6:53:29.879200] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:29.880068] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:30.958713] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:30.959469] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:30.960582] [info] Inside bind sql
+[2015-12-08 6:53:30.962412] [info] bind columns0
+[2015-12-08 6:53:30.962912] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:30.963857] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:32.258896] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:32.259500] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:32.260498] [info] Inside bind sql
+[2015-12-08 6:53:32.261704] [info] bind columns0
+[2015-12-08 6:53:32.262171] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:32.262681] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:33.803231] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:33.803976] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:33.805243] [info] Inside bind sql
+[2015-12-08 6:53:33.806698] [info] bind columns0
+[2015-12-08 6:53:33.807408] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:33.808212] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:34.892707] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:34.893430] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:34.894824] [info] Inside bind sql
+[2015-12-08 6:53:34.896492] [info] bind columns0
+[2015-12-08 6:53:34.897243] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:34.898118] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:35.981832] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:35.983133] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:35.985564] [info] Inside bind sql
+[2015-12-08 6:53:35.987092] [info] bind columns0
+[2015-12-08 6:53:35.987869] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:35.988636] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:37.285115] [info] inside getChallengeStatus() id:1
+[2015-12-08 6:53:37.285743] [info] inside getChallengeStatusDB
+[2015-12-08 6:53:37.286834] [info] Inside bind sql
+[2015-12-08 6:53:37.288044] [info] bind columns0
+[2015-12-08 6:53:37.288510] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:53:37.289000] [info] return value from mid php{"chlgnid":"1","status":"open"}
+[2015-12-08 6:53:38.383896] [info] inside user.php
+[2015-12-08 6:53:38.502140] [info] inside getUserById id:9
+[2015-12-08 6:53:38.502674] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-08 6:53:38.503982] [info] Inside bind sql
+[2015-12-08 6:53:38.504599] [info] in getOnlineUsers
+[2015-12-08 6:53:38.505110] [info] inside getOnlineUsersDb
+[2015-12-08 6:53:38.505672] [info] bind columns0 1
+[2015-12-08 6:53:38.506652] [info] Inside bind sql
+[2015-12-08 6:53:38.507324] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-08 6:53:38.508251] [info] Inside bind sql
+[2015-12-08 6:53:38.508780] [info] bind columns0 1 2
+[2015-12-08 6:53:38.509577] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-08 6:53:38.510286] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"},{"first_name":"Daniel","last_name":"Boggard","email":"Dan21@rit.edu"}]
+[2015-12-08 6:53:38.511358] [info] inside getOpenChallenge() id:9 
+[2015-12-08 6:53:38.511929] [info] inside getOpenChallengessDB
+[2015-12-08 6:53:38.574035] [info] bind columns0 1 2 3
+[2015-12-08 6:53:38.576787] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"}]
+[2015-12-08 6:53:38.724785] [info] Inside bind sql
+[2015-12-08 6:53:39.105428] [info] bind columns0 1
+[2015-12-08 6:53:39.106231] [info] return data from getOpenChallengesDB sql Array
+[2015-12-08 6:53:39.106950] [info] return value from mid php{"email":"Sneddento@indiatimes.com","challenge_id":1}
+[2015-12-08 6:53:44.458781] [info] inside enterChallenge toEmail Sneddento@indiatimes.com
+[2015-12-08 6:53:44.459409] [info] Insidd getUser with emailID:Sneddento@indiatimes.com
+[2015-12-08 6:53:44.460547] [info] Inside bind sql
+[2015-12-08 6:53:44.462198] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:53:44.463263] [info] inside enterChallenge challengeUser9
+[2015-12-08 6:53:44.463778] [info] inside getOnlineUsersDb
+[2015-12-08 6:53:44.465689] [info] C:\wamp\www\game project\bizDataLayer\lobbyDbBiz.php: There are open challenges 
+[2015-12-08 6:53:44.465998] [info] user exist error asArray
+[2015-12-08 6:53:44.466500] [info] return value from mid php{"error":"You have already sent a challenge to this user."}
+[2015-12-08 6:54:05.936574] [info] inside enterChallenge toEmail Dan21@rit.edu
+[2015-12-08 6:54:05.937266] [info] Insidd getUser with emailID:Dan21@rit.edu
+[2015-12-08 6:54:05.938364] [info] Inside bind sql
+[2015-12-08 6:54:05.939888] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:54:05.940578] [info] inside enterChallenge challengeUser10
+[2015-12-08 6:54:05.940972] [info] inside getOnlineUsersDb
+[2015-12-08 6:54:06.025152] [info] challenge inserted
+[2015-12-08 6:54:06.026834] [info] return value from mid php{"chlgnid":2,"status":"open"}
+[2015-12-08 6:54:06.158437] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:06.159517] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:06.160785] [info] Inside bind sql
+[2015-12-08 6:54:06.162163] [info] bind columns0
+[2015-12-08 6:54:06.162950] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:06.163754] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:07.591886] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:07.592618] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:07.593929] [info] Inside bind sql
+[2015-12-08 6:54:07.595474] [info] bind columns0
+[2015-12-08 6:54:07.596252] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:07.597142] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:08.803667] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:08.804682] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:08.805870] [info] Inside bind sql
+[2015-12-08 6:54:08.807077] [info] bind columns0
+[2015-12-08 6:54:08.807550] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:08.808062] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:09.947590] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:09.948324] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:09.949520] [info] Inside bind sql
+[2015-12-08 6:54:09.951297] [info] bind columns0
+[2015-12-08 6:54:09.952553] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:09.953437] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:11.082385] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:11.083270] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:11.085316] [info] Inside bind sql
+[2015-12-08 6:54:11.087003] [info] bind columns0
+[2015-12-08 6:54:11.087769] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:11.088649] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:12.236752] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:12.237545] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:12.238807] [info] Inside bind sql
+[2015-12-08 6:54:12.240411] [info] bind columns0
+[2015-12-08 6:54:12.241179] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:12.241928] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:13.401197] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:13.401933] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:13.403132] [info] Inside bind sql
+[2015-12-08 6:54:13.404287] [info] bind columns0
+[2015-12-08 6:54:13.404728] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:13.405203] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:14.476313] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:14.477093] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:14.478336] [info] Inside bind sql
+[2015-12-08 6:54:14.479523] [info] bind columns0
+[2015-12-08 6:54:14.480040] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:14.480565] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:15.591406] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:15.592225] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:15.593700] [info] Inside bind sql
+[2015-12-08 6:54:15.595474] [info] bind columns0
+[2015-12-08 6:54:15.596286] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:15.597238] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:16.680478] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:16.681236] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:16.682393] [info] Inside bind sql
+[2015-12-08 6:54:16.683700] [info] bind columns0
+[2015-12-08 6:54:16.684201] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:16.684719] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:17.768331] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:17.769064] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:17.770299] [info] Inside bind sql
+[2015-12-08 6:54:17.771940] [info] bind columns0
+[2015-12-08 6:54:17.772681] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:17.773472] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:18.890506] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:18.891272] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:18.892740] [info] Inside bind sql
+[2015-12-08 6:54:18.894432] [info] bind columns0
+[2015-12-08 6:54:18.895347] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:18.896374] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:19.978384] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:19.979132] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:19.980585] [info] Inside bind sql
+[2015-12-08 6:54:19.982454] [info] bind columns0
+[2015-12-08 6:54:19.983228] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:19.984138] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:21.083955] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:21.084701] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:21.085736] [info] Inside bind sql
+[2015-12-08 6:54:21.086838] [info] bind columns0
+[2015-12-08 6:54:21.087275] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:21.087774] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:22.214520] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:22.215307] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:22.216922] [info] Inside bind sql
+[2015-12-08 6:54:22.218801] [info] bind columns0
+[2015-12-08 6:54:22.219681] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:22.220597] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:23.346904] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:23.347743] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:23.350168] [info] Inside bind sql
+[2015-12-08 6:54:23.352961] [info] bind columns0
+[2015-12-08 6:54:23.353769] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:23.354676] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:24.514645] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:24.515403] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:24.516561] [info] Inside bind sql
+[2015-12-08 6:54:24.517879] [info] bind columns0
+[2015-12-08 6:54:24.518352] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:24.518868] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:25.659485] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:25.660242] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:25.661645] [info] Inside bind sql
+[2015-12-08 6:54:25.663168] [info] bind columns0
+[2015-12-08 6:54:25.664067] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:25.665050] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:26.848423] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:26.849478] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:26.851641] [info] Inside bind sql
+[2015-12-08 6:54:26.853034] [info] bind columns0
+[2015-12-08 6:54:26.853790] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:26.854677] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:27.959403] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:27.960269] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:27.961649] [info] Inside bind sql
+[2015-12-08 6:54:27.963078] [info] bind columns0
+[2015-12-08 6:54:27.963849] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:27.964478] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:29.103440] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:29.104295] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:29.105881] [info] Inside bind sql
+[2015-12-08 6:54:29.108170] [info] bind columns0
+[2015-12-08 6:54:29.109028] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:29.110069] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:30.279263] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:30.280080] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:30.281511] [info] Inside bind sql
+[2015-12-08 6:54:30.283303] [info] bind columns0
+[2015-12-08 6:54:30.283994] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:30.284749] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:31.517802] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:31.518800] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:31.521126] [info] Inside bind sql
+[2015-12-08 6:54:31.522968] [info] bind columns0
+[2015-12-08 6:54:31.523559] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:31.524194] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:32.679728] [info] inside getChallengeStatus() id:2
+[2015-12-08 6:54:32.680474] [info] inside getChallengeStatusDB
+[2015-12-08 6:54:32.681900] [info] Inside bind sql
+[2015-12-08 6:54:32.684127] [info] bind columns0
+[2015-12-08 6:54:32.684966] [info] return data from getChallengeStatusDb sql open
+[2015-12-08 6:54:32.686003] [info] return value from mid php{"chlgnid":"2","status":"open"}
+[2015-12-08 6:54:33.194856] [info] inside user.php
+[2015-12-08 6:54:33.209728] [info] inside getUserById id:9
+[2015-12-08 6:54:33.210346] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-08 6:54:33.211870] [info] Inside bind sql
+[2015-12-08 6:54:33.213917] [info] bind columns0 1
+[2015-12-08 6:54:33.216020] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-08 6:54:33.267146] [info] inside getOpenChallenge() id:9 
+[2015-12-08 6:54:33.267719] [info] inside getOpenChallengessDB
+[2015-12-08 6:54:33.269162] [info] Inside bind sql
+[2015-12-08 6:54:33.271625] [info] bind columns0 1
+[2015-12-08 6:54:33.272495] [info] return data from getOpenChallengesDB sql Array
+[2015-12-08 6:54:33.273399] [info] return value from mid php{"email":"Sneddento@indiatimes.com","challenge_id":1}
+[2015-12-08 6:54:33.281621] [info] Inside bind sql
+[2015-12-08 6:54:33.322593] [info] in getOnlineUsers
+[2015-12-08 6:54:33.323106] [info] inside getOnlineUsersDb
+[2015-12-08 6:54:33.324525] [info] Inside bind sql
+[2015-12-08 6:54:33.325786] [info] bind columns0 1 2 3
+[2015-12-08 6:54:33.326316] [info] bind columns0 1 2
+[2015-12-08 6:54:33.327066] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-08 6:54:33.327967] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"},{"first_name":"Daniel","last_name":"Boggard","email":"Dan21@rit.edu"}]
+[2015-12-08 6:54:33.328586] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"}]
+[2015-12-08 6:54:36.304059] [info] inside enterChallenge toEmail Sneddento@indiatimes.com
+[2015-12-08 6:54:36.305236] [info] Insidd getUser with emailID:Sneddento@indiatimes.com
+[2015-12-08 6:54:36.306499] [info] Inside bind sql
+[2015-12-08 6:54:36.308269] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:54:36.309374] [info] inside enterChallenge challengeUser9
+[2015-12-08 6:54:36.309814] [info] inside getOnlineUsersDb
+[2015-12-08 6:54:36.311568] [info] C:\wamp\www\game project\bizDataLayer\lobbyDbBiz.php: There are open challenges 
+[2015-12-08 6:54:36.312066] [info] user exist error asArray
+[2015-12-08 6:54:36.312763] [info] return value from mid php{"error":"You have already sent a challenge to this user."}
+[2015-12-08 6:54:37.994684] [info] inside enterChallenge toEmail Dan21@rit.edu
+[2015-12-08 6:54:37.995419] [info] Insidd getUser with emailID:Dan21@rit.edu
+[2015-12-08 6:54:37.996692] [info] Inside bind sql
+[2015-12-08 6:54:37.998667] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-08 6:54:37.999639] [info] inside enterChallenge challengeUser10
+[2015-12-08 6:54:38.000073] [info] inside getOnlineUsersDb
+[2015-12-08 6:54:38.001779] [info] C:\wamp\www\game project\bizDataLayer\lobbyDbBiz.php: There are open challenges 
+[2015-12-08 6:54:38.002197] [info] user exist error asArray
+[2015-12-08 6:54:38.002836] [info] return value from mid php{"error":"You have already sent a challenge to this user."}
+[2015-12-08 6:57:10.097927] [info] inside user.php
+[2015-12-08 6:57:10.168118] [info] inside getUserById id:9
+[2015-12-08 6:57:10.168626] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-08 6:57:10.170125] [info] Inside bind sql
+[2015-12-08 6:57:10.171956] [info] bind columns0 1
+[2015-12-08 6:57:10.173959] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-08 6:57:10.212225] [info] in getOnlineUsers
+[2015-12-08 6:57:10.213063] [info] inside getOnlineUsersDb
+[2015-12-08 6:57:10.214587] [info] Inside bind sql
+[2015-12-08 6:57:10.216314] [info] Inside bind sql
+[2015-12-08 6:57:10.216469] [info] bind columns0 1 2
+[2015-12-08 6:57:10.217274] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-08 6:57:10.218240] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"},{"first_name":"Daniel","last_name":"Boggard","email":"Dan21@rit.edu"}]
+[2015-12-08 6:57:10.219192] [info] inside getOpenChallenge() id:9 
+[2015-12-08 6:57:10.219764] [info] inside getOpenChallengessDB
+[2015-12-08 6:57:10.221334] [info] Inside bind sql
+[2015-12-08 6:57:10.224206] [info] bind columns0 1
+[2015-12-08 6:57:10.225004] [info] return data from getOpenChallengesDB sql Array
+[2015-12-08 6:57:10.225893] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":1}]
+[2015-12-08 6:57:10.281193] [info] bind columns0 1 2 3
+[2015-12-08 6:57:10.283823] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"}]

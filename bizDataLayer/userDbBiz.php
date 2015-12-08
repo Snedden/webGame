@@ -102,6 +102,64 @@ function insertUser($newUserData) {
 	
 }
 
+function logOutDB($userId){
+	global $logger,$mysqli;
+	$logger->info("Insidd logOutDB with idUser:".$userId);
+	global $mysqli;
+	$sql="update  users set status=0 WHERE idUser=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+
+			if(!$stmt->bind_param("s",$userId)){
+				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+			}
+
+			if (!$stmt->execute()) {
+				$logger->error( "Execute failed logoutDB: (" . $stmt->errno . ") " . $stmt->error);
+			}
+
+			$mysqli->close();
+			return true;
+		}else{
+			$logger->error("An error occured in prepare statement logoutDB".$mysqli->error);
+			throw new Exception("An error occurred in getUser");
+			return false;
+		}
+	}catch (Exception $e) {
+		$logger->error("An error occured in logoutDB".$mysqli->error);
+		return false;
+	}
+}
+
+function makeOnlineDB($userId){
+	global $logger,$mysqli;
+	$logger->info("Insidd makeOnline with idUser:".$userId);
+	global $mysqli;
+	$sql="update  users set status=1 WHERE idUser=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+
+			if(!$stmt->bind_param("s",$userId)){
+				$logger->error( "Binding parameters failed makeONlineDb: (" . $stmt->errno . ") " . $stmt->error);
+			}
+
+			if (!$stmt->execute()) {
+				$logger->error( "Execute failed makeonlineDB: (" . $stmt->errno . ") " . $stmt->error);
+			}
+
+			$mysqli->close();
+			return true;
+		}else{
+			$logger->error("An error occured in prepare statement makeOnline".$mysqli->error);
+			throw new Exception("An error occurred in getUser");
+			return false;
+		}
+	}catch (Exception $e) {
+		$logger->error("An error occured in makeonlineDB".$mysqli->error);
+		return false;
+	}
+}
+
 
 function getUserByIdDB($userId){
 	global $logger,$mysqli;
@@ -127,29 +185,9 @@ function getUserByIdDB($userId){
 	}
 }
 
-function getUserByEmailDB($emailId){
-	global $logger,$mysqli;
-	$logger->info("Insidd getUser with emailID:".$emailId);
-	global $mysqli;
-	$sql="SELECT * FROM users WHERE email=?";
-	try{
-		if($stmt=$mysqli->prepare($sql)){
-			
-			$stmt->bind_param("s",$emailId);
-			
-			$data=bindSql($stmt);
-			
-			$mysqli->close();
-			return $data;
-		}else{
-			$logger->error("An error occured in prepare statement getUser".$mysqli->error);
-			throw new Exception("An error occurred in getUser");
-		}
-	}catch (Exception $e) {
-        $logger->error("An error occured in getUser".$mysqli->error);
-		return false;
-    }
-}
+
+
+
 
 
 
