@@ -12,7 +12,7 @@ function enterChat($d,$ip,$token){
    // $logger->info("gump:".$gump);
     $cleanChat = $gump->sanitize($d); // 
 
-	enterChatDb($cleanChat);
+	return enterChatDb($cleanChat);
 }
 
 function readChats($d,$ip,$token){
@@ -24,7 +24,7 @@ function readChats($d,$ip,$token){
 function getOnlineUsers($d){
 	global $logger;
 	$logger->info('in getOnlineUsers');
-	return getOnlineUsersDb();
+	return getOnlineUsersDb($d);
 }
 
 function enterChallenge($d) {
@@ -48,4 +48,23 @@ function getOpenChallenges($user){
 	$logger->info("inside getOpenChallenge() id:$user ");
 	return getOpenChallengesDB($user);
 }
+
+function getSentChallenges($user){
+	global $logger;
+	$logger->info("inside getSentChallenge() id:$user ");
+	return getSentChallengesDB($user);
+}
+
+function acceptChallenge($d){
+	global $logger;
+	$logger->info('inside acceptChallenge from challenge ID '. $d);
+	return acceptChallengeDB($d);
+}
+
+function rejectChallenge($d){
+	global $logger;
+	$logger->info('inside rejectChallenge from challenge ID '. $d);
+	return rejectChallengeDB($d);
+}
+
 

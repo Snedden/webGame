@@ -5,17 +5,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/wixel/gump" afterPath="$PROJECT_DIR$/vendor/wixel/gump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php" afterPath="$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" afterPath="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" afterPath="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lobby.php" afterPath="$PROJECT_DIR$/lobby.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_2015-12-05.txt" afterPath="$PROJECT_DIR$/logs/log_2015-12-05.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_2015-12-06.txt" afterPath="$PROJECT_DIR$/logs/log_2015-12-06.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mid.php" afterPath="$PROJECT_DIR$/mid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_2015-12-08.txt" afterPath="$PROJECT_DIR$/logs/log_2015-12-08.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/lobby/lobby.php" afterPath="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/user/user.php" afterPath="$PROJECT_DIR$/svcLayer/user/user.php" />
     </list>
     <ignored path="game project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,28 +33,28 @@
       <file leaf-file-name="lobby.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lobby.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.846153">
-              <caret line="207" column="95" selection-start-line="207" selection-start-column="95" selection-end-line="207" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="135" column="48" selection-start-line="135" selection-start-column="48" selection-end-line="135" selection-end-column="48" />
               <folding>
-                <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-                <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+                <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -71,17 +64,27 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="97" selection-end-column="44" />
+              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="98" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mid.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mid.php">
+      <file leaf-file-name="log_2015-12-10.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/log_2015-12-10.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <caret line="255442" column="61" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logger.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,21 +93,45 @@
       <file leaf-file-name="lobbyDbBiz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30093458">
-              <caret line="280" column="11" selection-start-line="280" selection-start-column="11" selection-end-line="282" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.5150977">
+              <caret line="321" column="12" selection-start-line="321" selection-start-column="12" selection-end-line="321" selection-end-column="12" />
               <folding>
-                <marker date="1449554283341" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
-                <marker date="1449554283341" expanded="true" signature="1582:1716" placeholder="select text,..." />
-                <marker date="1449554283341" expanded="true" signature="1582:1720" placeholder="select text,..." />
-                <marker date="1449554283341" expanded="true" signature="1582:1740" placeholder="SELECT u.fir..chatmessages..." />
-                <marker date="1449554283341" expanded="true" signature="2627:2686" placeholder="select first..users..." />
-                <marker date="1449554283341" expanded="true" signature="3361:3421" placeholder="select chall..." />
-                <marker date="1449554283341" expanded="true" signature="3361:3425" placeholder="select chall..." />
-                <marker date="1449554283341" expanded="true" signature="3361:3446" placeholder="select chall..challenges..." />
-                <marker date="1449554283341" expanded="true" signature="4283:4384" placeholder="insert into challenges..." />
-                <marker date="1449554283341" expanded="true" signature="5364:5414" placeholder="SELECT * FRO..users..." />
-                <marker date="1449554283341" expanded="true" signature="6241:6414" placeholder="Select disti..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+                <marker date="1449765290794" expanded="true" signature="1566:1700" placeholder="select text,..." />
+                <marker date="1449765290794" expanded="true" signature="1566:1704" placeholder="select text,..." />
+                <marker date="1449765290794" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+                <marker date="1449765290794" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+                <marker date="1449765290794" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+                <marker date="1449765290794" expanded="true" signature="3504:3564" placeholder="select chall..." />
+                <marker date="1449765290794" expanded="true" signature="3504:3568" placeholder="select chall..." />
+                <marker date="1449765290794" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+                <marker date="1449765290794" expanded="true" signature="5507:5557" placeholder="SELECT * FRO..users..." />
+                <marker date="1449765290794" expanded="true" signature="6384:6557" placeholder="Select disti..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="7177:7583" placeholder="Select disti..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="7182:7583" placeholder="Select disti..challenge_id..." />
+                <marker date="1449765290794" expanded="true" signature="7255:7443" placeholder="select ch.ch..." />
+                <marker date="1449765290794" expanded="true" signature="8172:8232" placeholder="update chall..." />
+                <marker date="1449765290794" expanded="true" signature="9076:9304" placeholder="select u.fir..users..." />
+                <marker date="1449765290794" expanded="true" signature="9137:9208" placeholder="SELECT to_us..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="9137:9209" placeholder="SELECT to_us..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="9229:9302" placeholder="SELECT from_..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="9229:9303" placeholder="SELECT from_..challenges..." />
+                <marker date="1449765290794" expanded="true" signature="9686:9737" placeholder="insert into heroes_games..." />
+                <marker date="1449765290794" expanded="true" signature="9686:9749" placeholder="insert into heroes_games..." />
+                <marker date="1449765290794" expanded="true" signature="10261:10289" placeholder="update chall..." />
+                <marker date="1449765290794" expanded="true" signature="10261:10319" placeholder="update chall..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log_2015-12-09.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/log_2015-12-09.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,31 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log_2015-12-07.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/log_2015-12-07.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="263" column="61" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lobby.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.584906">
-              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log_2015-12-08.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/log_2015-12-08.txt">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="376" column="0" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -165,7 +172,7 @@
         <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding>
                 <marker date="1449452611727" expanded="true" signature="991:1024" placeholder="SELECT * FRO..users..." />
               </folding>
@@ -176,8 +183,8 @@
       <file leaf-file-name="userDbBiz.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769">
-              <caret line="47" column="10" selection-start-line="39" selection-start-column="8" selection-end-line="47" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
               <folding>
                 <marker date="1449452604253" expanded="true" signature="346:379" placeholder="select * fro..users..." />
                 <marker date="1449452604253" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
@@ -209,8 +216,10 @@
         <option value="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
         <option value="$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-07.txt" />
-        <option value="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-08.txt" />
+        <option value="$PROJECT_DIR$/logs/log_2015-12-09.txt" />
+        <option value="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
+        <option value="$PROJECT_DIR$/logs/log_2015-12-10.txt" />
         <option value="$PROJECT_DIR$/lobby.php" />
         <option value="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
       </list>
@@ -229,7 +238,7 @@
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -256,7 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,6 +375,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -388,6 +410,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +463,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25148368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -478,54 +501,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="223" column="42" selection-start-line="223" selection-start-column="42" selection-end-line="223" selection-end-column="42" />
-          <folding>
-            <marker date="1449554283341" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1716" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1720" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1740" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1449554283341" expanded="true" signature="2627:2686" placeholder="select first..users..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3421" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3425" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3446" placeholder="select chall..challenges..." />
-            <marker date="1449554283341" expanded="true" signature="4283:4384" placeholder="insert into challenges..." />
-            <marker date="1449554283341" expanded="true" signature="5364:5414" placeholder="SELECT * FRO..users..." />
-            <marker date="1449554283341" expanded="true" signature="6241:6414" placeholder="Select disti..challenges..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/gameBizData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1448753302571" expanded="true" signature="874:1080" placeholder="UPDATE heroe..." />
-            <marker date="1448753302571" expanded="true" signature="1492:1534" placeholder="SELECT * FRO..heroes_games..." />
-            <marker date="1448753302571" expanded="true" signature="2047:2097" placeholder="SELECT whose..heroes_games..." />
-            <marker date="1448753302571" expanded="true" signature="2633:2704" placeholder="UPDATE heroe..." />
-            <marker date="1448753302571" expanded="true" signature="2911:2982" placeholder="UPDATE heroe..." />
-            <marker date="1448753302571" expanded="true" signature="3189:3260" placeholder="UPDATE heroe..." />
-            <marker date="1448753302571" expanded="true" signature="3804:3978" placeholder="UPDATE heroe..." />
-            <marker date="1448753302571" expanded="true" signature="4476:4518" placeholder="SELECT * FRO..heroes_games..." />
-            <marker date="1448753302571" expanded="true" signature="6458:6496" placeholder="select iduse..users..." />
-            <marker date="1448753302571" expanded="true" signature="7544:7863" placeholder="INSERT INTO users..." />
-            <marker date="1448753302571" expanded="true" signature="9145:9178" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-07.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="263" column="61" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -538,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3442" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,25 +547,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -600,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="97" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,17 +589,31 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="172" column="43" selection-start-line="172" selection-start-column="43" selection-end-line="172" selection-end-column="43" />
           <folding>
-            <marker date="1449554283341" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1716" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1720" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1740" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1449554283341" expanded="true" signature="2627:2686" placeholder="select first..users..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3421" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3425" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3446" placeholder="select chall..challenges..." />
-            <marker date="1449554283341" expanded="true" signature="4283:4384" placeholder="insert into challenges..." />
-            <marker date="1449554283341" expanded="true" signature="5364:5414" placeholder="SELECT * FRO..users..." />
-            <marker date="1449554283341" expanded="true" signature="6241:6414" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1449765290794" expanded="true" signature="5507:5557" placeholder="SELECT * FRO..users..." />
+            <marker date="1449765290794" expanded="true" signature="6384:6557" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7177:7583" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7182:7583" placeholder="Select disti..challenge_id..." />
+            <marker date="1449765290794" expanded="true" signature="7255:7443" placeholder="select ch.ch..." />
+            <marker date="1449765290794" expanded="true" signature="8172:8232" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="9076:9304" placeholder="select u.fir..users..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9208" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9209" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9302" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9303" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9737" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9749" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10289" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10319" placeholder="update chall..." />
           </folding>
         </state>
       </provider>
@@ -656,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="61" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,25 +692,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -741,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,17 +741,31 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
           <folding>
-            <marker date="1449554283341" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1716" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1720" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1740" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1449554283341" expanded="true" signature="2627:2686" placeholder="select first..users..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3421" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3425" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3446" placeholder="select chall..challenges..." />
-            <marker date="1449554283341" expanded="true" signature="4283:4384" placeholder="insert into challenges..." />
-            <marker date="1449554283341" expanded="true" signature="5364:5414" placeholder="SELECT * FRO..users..." />
-            <marker date="1449554283341" expanded="true" signature="6241:6414" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1449765290794" expanded="true" signature="5507:5557" placeholder="SELECT * FRO..users..." />
+            <marker date="1449765290794" expanded="true" signature="6384:6557" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7177:7583" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7182:7583" placeholder="Select disti..challenge_id..." />
+            <marker date="1449765290794" expanded="true" signature="7255:7443" placeholder="select ch.ch..." />
+            <marker date="1449765290794" expanded="true" signature="8172:8232" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="9076:9304" placeholder="select u.fir..users..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9208" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9209" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9302" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9303" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9737" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9749" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10289" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10319" placeholder="update chall..." />
           </folding>
         </state>
       </provider>
@@ -826,25 +824,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
-            <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -861,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,17 +867,31 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449554283341" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1716" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1720" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1740" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1449554283341" expanded="true" signature="2627:2686" placeholder="select first..users..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3421" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3425" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3446" placeholder="select chall..challenges..." />
-            <marker date="1449554283341" expanded="true" signature="4283:4384" placeholder="insert into challenges..." />
-            <marker date="1449554283341" expanded="true" signature="5364:5414" placeholder="SELECT * FRO..users..." />
-            <marker date="1449554283341" expanded="true" signature="6241:6414" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1449765290794" expanded="true" signature="5507:5557" placeholder="SELECT * FRO..users..." />
+            <marker date="1449765290794" expanded="true" signature="6384:6557" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7177:7583" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7182:7583" placeholder="Select disti..challenge_id..." />
+            <marker date="1449765290794" expanded="true" signature="7255:7443" placeholder="select ch.ch..." />
+            <marker date="1449765290794" expanded="true" signature="8172:8232" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="9076:9304" placeholder="select u.fir..users..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9208" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9209" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9302" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9303" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9737" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9749" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10289" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10319" placeholder="update chall..." />
           </folding>
         </state>
       </provider>
@@ -890,25 +901,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -918,25 +929,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -945,13 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -990,19 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
+    <entry file="file://$PROJECT_DIR$/mid.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="11" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="97" selection-end-column="44" />
-          <folding />
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1010,6 +1005,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="263" column="61" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-08.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70430" column="0" selection-start-line="70430" selection-start-column="0" selection-end-line="70430" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ajaxFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-09.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <marker date="1449452611727" expanded="true" signature="991:1024" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
+          <folding>
+            <marker date="1449452604253" expanded="true" signature="346:379" placeholder="select * fro..users..." />
+            <marker date="1449452604253" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
+            <marker date="1449452604253" expanded="true" signature="3026:3067" placeholder="update users..." />
+            <marker date="1449452604253" expanded="true" signature="3052:3067" placeholder="SELECT first..users..." />
+            <marker date="1449452604253" expanded="true" signature="3829:3870" placeholder="update users..." />
+            <marker date="1449452604253" expanded="true" signature="4660:4705" placeholder="SELECT * FRO..users..." />
+            <marker date="1449452604253" expanded="true" signature="4660:4713" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="98" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1034,100 +1100,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <marker date="1449452611727" expanded="true" signature="991:1024" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="47" column="10" selection-start-line="39" selection-start-column="8" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <marker date="1449452604253" expanded="true" signature="346:379" placeholder="select * fro..users..." />
-            <marker date="1449452604253" expanded="true" signature="1426:1745" placeholder="INSERT INTO users..." />
-            <marker date="1449452604253" expanded="true" signature="3026:3067" placeholder="update users..." />
-            <marker date="1449452604253" expanded="true" signature="3052:3067" placeholder="SELECT first..users..." />
-            <marker date="1449452604253" expanded="true" signature="3829:3870" placeholder="update users..." />
-            <marker date="1449452604253" expanded="true" signature="4660:4705" placeholder="SELECT * FRO..users..." />
-            <marker date="1449452604253" expanded="true" signature="4660:4713" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.584906">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-08.txt">
+    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-10.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="376" column="0" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+          <caret line="255442" column="61" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lobby.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.846153">
-          <caret line="207" column="95" selection-start-line="207" selection-start-column="95" selection-end-line="207" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="48" selection-start-line="135" selection-start-column="48" selection-end-line="135" selection-end-column="48" />
           <folding>
-            <marker date="1449553842516" expanded="true" signature="7016:7068" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7117" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7170" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7403" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7404" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7570" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7684" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7701" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7925" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:7962" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8258" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8292" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8328" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7016:8396" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7069:7116" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7253:7269" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="7469:7481" placeholder="..." />
-            <marker date="1449553842516" expanded="true" signature="8050:8258" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10387" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10436" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10489" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10722" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10723" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:10912" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11026" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11043" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11267" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11304" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11600" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11634" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11670" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10335:11738" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10388:10435" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10572:10588" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="10811:10823" placeholder="..." />
+            <marker date="1449715323012" expanded="true" signature="11392:11600" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30093458">
-          <caret line="280" column="11" selection-start-line="280" selection-start-column="11" selection-end-line="282" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.5150977">
+          <caret line="321" column="12" selection-start-line="321" selection-start-column="12" selection-end-line="321" selection-end-column="12" />
           <folding>
-            <marker date="1449554283341" expanded="true" signature="378:524" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1716" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1720" placeholder="select text,..." />
-            <marker date="1449554283341" expanded="true" signature="1582:1740" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1449554283341" expanded="true" signature="2627:2686" placeholder="select first..users..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3421" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3425" placeholder="select chall..." />
-            <marker date="1449554283341" expanded="true" signature="3361:3446" placeholder="select chall..challenges..." />
-            <marker date="1449554283341" expanded="true" signature="4283:4384" placeholder="insert into challenges..." />
-            <marker date="1449554283341" expanded="true" signature="5364:5414" placeholder="SELECT * FRO..users..." />
-            <marker date="1449554283341" expanded="true" signature="6241:6414" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1449765290794" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1449765290794" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1449765290794" expanded="true" signature="5507:5557" placeholder="SELECT * FRO..users..." />
+            <marker date="1449765290794" expanded="true" signature="6384:6557" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7177:7583" placeholder="Select disti..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="7182:7583" placeholder="Select disti..challenge_id..." />
+            <marker date="1449765290794" expanded="true" signature="7255:7443" placeholder="select ch.ch..." />
+            <marker date="1449765290794" expanded="true" signature="8172:8232" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="9076:9304" placeholder="select u.fir..users..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9208" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9137:9209" placeholder="SELECT to_us..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9302" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9229:9303" placeholder="SELECT from_..challenges..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9737" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="9686:9749" placeholder="insert into heroes_games..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10289" placeholder="update chall..." />
+            <marker date="1449765290794" expanded="true" signature="10261:10319" placeholder="update chall..." />
           </folding>
         </state>
       </provider>

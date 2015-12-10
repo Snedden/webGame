@@ -54,7 +54,7 @@
              populateOnlineUsers();  //online users list
              addChatListeners();//chat interactivelty
              readChatsAjax(); //read chat heart beat
-             getOpenChallenges();//get open challenges
+
          }
 
          function addChatListeners(){
@@ -80,11 +80,12 @@
              ajaxCall('GET',{method:'getUserById',a:'user',data:userId},callBackGetUser);
          }
 
-
+         var firstName; //need to have wider scope as I use it at entering game
 
          function callBackGetUser(jsonObj){
              console.log(jsonObj,jsonObj[0].first_name,jsonObj[0].last_name,$('#greetingText'));
-             var greeting="Welcome "+jsonObj[0].first_name+" "+jsonObj[0].last_name;
+             firstName=jsonObj[0].first_name;
+             var greeting="Welcome "+firstName+" "+jsonObj[0].last_name;
              $('#greetingText')[0].innerHTML=greeting;
          }
 
@@ -96,10 +97,72 @@
              //console.log('userID ',userId);
 
              ajaxCall('GET',{method:'getOpenChallenges',a:'lobby',data:userId},callBackGetOpenChallenges);
+             setTimeout(getOpenChallenges,1000);
          }
 
          function callBackGetOpenChallenges(jsonObj){
              console.log('Open challenges',jsonObj);
+             if(jsonObj) {
+                 for (var i= 0,l=jsonObj.length;i<l;i++){
+                     var chlgIcon=document.getElementById(jsonObj[i].email);
+                     var chlgSentDiv=document.getElementById("challengeSentBy~"+jsonObj[i].email);
+                     if(chlgIcon&&chlgSentDiv) {
+                         chlgIcon.style.display = "none";
+                         chlgSentDiv.style.display = "block";
+                         var c=chlgSentDiv.childNodes;
+                         c[0].setAttribute('id','accept~'+jsonObj[i].challenge_id);
+                         c[0].addEventListener('click',function(){
+                            acceptChallenge(this);
+                         });
+                         c[1].setAttribute('id','reject~'+jsonObj[i].challenge_id);
+                         c[1].addEventListener('click',function(){
+                             rejectChallenge(this);
+                         });
+                     }
+                     else
+                     {
+                         console.error("challenge div/icon was not set before changing");
+                     }
+
+                 }
+             }
+         }
+         /////////GET SENT CHALLENGES
+         function getSentChallenges(){
+             var userId="<?php echo $_SESSION["user_id"]  ?>";
+             //console.log('userID ',userId);
+
+             ajaxCall('GET',{method:'getSentChallenges',a:'lobby',data:userId},callBackGetSentChallenges);
+             setTimeout(getSentChallenges,1000);
+         }
+
+         function callBackGetSentChallenges(jsonObj){
+             console.log('Sent challenges',jsonObj);
+             if(jsonObj) {
+                 for (var i = 0, l = jsonObj.length; i < l; i++) {
+                     console.log(jsonObj[i].email);
+                     var chlgIcon=document.getElementById(jsonObj[i].email);
+                     if(chlgIcon) {
+                         if(jsonObj[i].status==='open') {
+                             chlgIcon.setAttribute('src', 'assets/icons/balls.gif'); ///make icon as waiting for opponent to accept challenge
+                             chlgIcon.setAttribute('title', 'Waiting for acceptance');
+                             chlgIcon.removeAttribute("onclick");
+                         }
+                         else if(jsonObj[i].status==='rejected'){
+                             chlgIcon.setAttribute('src', 'assets/icons/history-swords-crossed.png'); ///make icon as waiting for opponent to accept challenge
+                             chlgIcon.setAttribute('title', 'Challenge');
+                             chlgIcon.setAttribute("onclick","challengeUser(this)");
+                         }
+                         else{
+                             console.error('unexpected status returned sentChallgens');
+                         }
+                     }
+                     else
+                     {
+                         console.log("challenge div/icon was not set before changing");
+                     }
+                 }
+             }
          }
          ///////////////////// LOG OUT
          function logOutAjax(){
@@ -147,7 +210,7 @@
             chatData['lastTimeStamp']=lastTimeStamp;
             ajaxCall("GET",{method:'readChats',a:"lobby",data:chatData},callbackReadChat);
 
-           // setTimeout(readChatsAjax,500);
+           //setTimeout(readChatsAjax,500);
         }
 
 
@@ -194,11 +257,14 @@
          }
          ////ONLINE USERS HEARTBEAT
         function populateOnlineUsers(){
-            ajaxCall("GET",{method:'getOnlineUsers',a:"lobby",data:''},populateOnlineUsersCallBack);
+            var userId="<?php echo $_SESSION["user_id"]  ?>";
+            ajaxCall("GET",{method:'getOnlineUsers',a:"lobby",data:userId},populateOnlineUsersCallBack);
+           // setTimeout(populateOnlineUsers,1000);
         }
 
         function populateOnlineUsersCallBack(jsonObj){
              console.log('online users ',jsonObj);
+            $('#onlineUsers').text('');
             if(jsonObj) {
                 for (var i = 0, l = jsonObj.length; i < l; i++) {
                     var onlineUserElement = $(' <li class="media">' +
@@ -206,7 +272,7 @@
                         '<div class="media">' +
                         '<div class="pull-left" >' +
                             '<img class=" btn media-object img-circle" style="max-height:40px;"   id="'+jsonObj[i].email+'" onclick="challengeUser(this)" title="Challenge" alt="Chl" src="assets/icons/history-swords-crossed.png" />' +
-                            '<div id="challengeSent" style="display:none">'+
+                            '<div id="challengeSentBy~'+jsonObj[i].email+'" style="display:none">'+
                                 '<button type="button" class="btn btn-default btn-sm">'+
                                     '<span class="glyphicon glyphicon-ok"></span> '+
                                 '</button>'+
@@ -230,6 +296,8 @@
             else{
                 $('#onlineUsers').append('<p>No users online</p>');
             }
+            getOpenChallenges();//get open challenges
+            getSentChallenges();//get all the challenges sent by this user
          }
 
         /////CHALLENGE METHODS
@@ -277,6 +345,38 @@
             }
 
         }
+        function acceptChallenge(e){
+             console.log(e.getAttribute("id"));
+            var eleId=e.getAttribute("id");
+            var idArray= eleId.split('~'); //idFormat= accept~id
+            var challengeId=idArray[1]
+            ajaxCall('POST',{method:'acceptChallenge',a:"lobby",data:challengeId},acceptChallengeCallBack);
+         }
+
+        function acceptChallengeCallBack(gameID){
+            if(gameID){
+                console.log('proceed to game..');
+                window.location='game.php?player='+firstName+'&gameId='+gameID; //using only firstName to enter in game table
+            }
+        }
+
+
+         function rejectChallenge(e){
+             console.log(e.getAttribute("id"));
+             var eleId=e.getAttribute("id");
+             var idArray= eleId.split('~'); //idFormat= reject~id
+             var challengeId=idArray[1];
+             ajaxCall('POST',{method:'rejectChallenge',a:"lobby",data:challengeId},function(){
+                 rejectChallengeCallBack(e.parentNode.getAttribute("id"));
+             });
+         }
+
+         function rejectChallengeCallBack(parentID){
+             console.log(parentID);
+             var arrayId=parentID.split("~");//id format challengeSentBy~emailID
+             document.getElementById(parentID).style.display='none';
+             document.getElementById(arrayId[1]).style.display='block';
+         }
 
 
 
