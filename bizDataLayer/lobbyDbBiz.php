@@ -384,41 +384,41 @@ function metChallengesDB($id){
 }
 function rejectChallengeDB($id){
 	global $logger,$mysqli;
-	$logger->info('inside rejectChallengessDB');
+	//$logger->info('inside rejectChallengessDB');
 	$sql="update challenges set status='rejected' where challenge_id=?";
 
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 
 			if (!$stmt->bind_param('i',$id)) {
-				$logger->error( "Binding parameters failed: " . $mysqli->error );
+				//$logger->error( "Binding parameters failed: " . $mysqli->error );
 			}
 
 			if ($stmt->execute()) {
-				$logger->info("challenge updated to rejected");
+				//$logger->info("challenge updated to rejected");
 				return true;
 			}
 			else {
-				$logger->error("Could not update a challenge into db.".$mysqli->error);
+				//$logger->error("Could not update a challenge into db.".$mysqli->error);
 				return false;
 			}
 		}
 		else{
-			$logger->error("An error occured in prepare statementget rejectChallengeDB".$mysqli->error);
+			//$logger->error("An error occured in prepare statementget rejectChallengeDB".$mysqli->error);
 		}
 	}
 	catch (Exception $e) {
-		$logger->error("An error occured in rejectChallengeDB".$mysqli->error);
+		//$logger->error("An error occured in rejectChallengeDB".$mysqli->error);
 		return false;
 	}
 }
 
 function acceptChallengeDB($id){
 	global $logger,$mysqli;
-	$logger->info('inside acceptChallengessDB');
+	//$logger->info('inside acceptChallengessDB');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
 	//get first_name of challenger and challengee
 	$sql="SELECT first_name
@@ -436,7 +436,7 @@ function acceptChallengeDB($id){
 			$stmt->bind_param("ii",$id,$id);
 
 			$data=bindSql($stmt);
-			$logger->info('return firstnames from acceptChallange sql '.print_r($data,true).''. $data[0]['first_name'].''.$data[1]['first_name'] );
+			//$logger->info('return firstnames from acceptChallange sql '.print_r($data,true).''. $data[0]['first_name'].''.$data[1]['first_name'] );
             $challenger= $data[1]['first_name'];
 			$challengee=$data[0]['first_name'];
 
@@ -446,69 +446,69 @@ function acceptChallengeDB($id){
 			try{
 				if($stmt=$mysqli->prepare($sql)){
 					if(!$stmt->bind_param("ss",$challenger,$challengee)){
-						$logger->info("something went wrong in biding params in accept challenge".$mysqli->error);
+						//$logger->info("something went wrong in biding params in accept challenge".$mysqli->error);
 					}
 
 					if ($stmt->execute()) {
 						$newGameId = $mysqli->insert_id;
-						$logger->debug("A game with id " . $newGameId . " was created.");
+						//$logger->debug("A game with id " . $newGameId . " was created.");
 
-						$logger->info("game inserted");
+						//$logger->info("game inserted");
                         //update challenge status to accepted
 						$sql="update test.challenges set status='accepted',game_id=?  where challenge_id=?";
 						try{
 							if($stmt=$mysqli->prepare($sql)){
 
 								if (!$stmt->bind_param('ii',$newGameId,$id)) {
-									$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+									//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 								}
 
 								if ($stmt->execute()) {
-									$logger->info("challenge updated to accepted");
+									//$logger->info("challenge updated to accepted");
 
 									return $newGameId;  //return the new game id that was created
 								}
 								else {
-									$logger->error("Could not update a challenge into db.".$mysqli->error);
+									//$logger->error("Could not update a challenge into db.".$mysqli->error);
 									return false;
 								}
 
 
 							}else{
-								$logger->error("An error occured in prepare statementget acceptChallengeDB".$mysqli->error);
+								//$logger->error("An error occured in prepare statementget acceptChallengeDB".$mysqli->error);
 
 							}
 						}
 						catch (Exception $e) {
-							$logger->error("An error occured in acceptChallengeDB".$mysqli->error);
+							//$logger->error("An error occured in acceptChallengeDB".$mysqli->error);
 							return false;
 						}
 
 					} else {
-						$logger->error("Could not insert a record into game db.");
+						//$logger->error("Could not insert a record into game db.");
 						//$stmt->close();
 						//$mysqli->close();
 						return false;
 					}
 				}
 				else{
-					$logger->info("Something went wrong while preparing statment insert new game ".$mysqli->error);
+					//$logger->info("Something went wrong while preparing statment insert new game ".$mysqli->error);
 					return false;
 				}
 			}
 			catch(Exception $e){
-				$logger->info("something went wrong while inserting new game");
+				//$logger->info("something went wrong while inserting new game");
 				return false;
 			}
 
 		}
 		else{
-			$logger->info('Error in preparing sql statement at acceptChallengeDB'. $mysqli->error);
+			//$logger->info('Error in preparing sql statement at acceptChallengeDB'. $mysqli->error);
 			return false;
 		}
 	}
 	catch(Exception $e){
-		$logger->info('something went wrog in acceptChallenge');
+		//$logger->info('something went wrog in acceptChallenge');
 	}
 }
 

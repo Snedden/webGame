@@ -27,13 +27,13 @@ function registerUser($d, $ip, $token) {
 
     //Check if data is valid
     $data=validateData($d);  
-    $logger->debug("validate data".$data);
-     $logger->debug("validateError flag ".$validationError);
+    //$logger->debug("validate data".$data);
+    // $logger->debug("validateError flag ".$validationError);
     if($validationError){ //if error
         $errorMsg = array(
                 'error' => $data
             );
-            $logger->info($errorMsg);
+           // $logger->info($errorMsg);
             return json_encode($errorMsg);
     }
    
@@ -44,7 +44,7 @@ function registerUser($d, $ip, $token) {
     // Prepared data for the database use
     // Hash password
     $password_hash = password_hash($data['password1'], PASSWORD_BCRYPT);
-    $logger->debug("Hashed password: '".$password_hash."'");
+    //$logger->debug("Hashed password: '".$password_hash."'");
     
     
     $userData = array(
@@ -67,7 +67,7 @@ function registerUser($d, $ip, $token) {
 function checkSession($activity){
     global $logger;
 
-    $logger->info('in check session'.$_SESSION['user_id'].' '.$activity + 10 * 60 ." time :".time());
+    //$logger->info('in check session'.$_SESSION['user_id'].' '.$activity + 10 * 60 ." time :".time());
 
     if ($activity + 10 * 60 < time()) { //set to 10 minutes in
         // session timed out
@@ -83,7 +83,7 @@ function checkSession($activity){
 //this is the function I call
 function validateData($data){
     global $logger,$validationError;
-    $logger->debug("insider validateDatar() function");  //loggin out if the function is call ,but it is not
+    //$logger->debug("insider validateDatar() function");  //loggin out if the function is call ,but it is not
     
     $gump = new GUMP();
    // $logger->info("gump:".$gump);
@@ -108,15 +108,15 @@ function validateData($data){
 
 
     $validated_data = $gump->run($data);
-    $logger->info("after validate data ".$validated_data);
+    //$logger->info("after validate data ".$validated_data);
     if($validated_data === false) {
        $error=$gump->get_readable_errors(true);
-        $logger->info("return false".$error);
+       // $logger->info("return false".$error);
         $validationError=true;
         return $error;
     } 
     else {
-        $logger->info("returned valid data");
+       // $logger->info("returned valid data");
         $validationError=false;
         return $validated_data;
     }
@@ -129,7 +129,7 @@ function signIn($d, $ip, $token) {
     
     global $logger, $SECRET_KEY;
     
-    $logger->debug(" signIn function. data $d ip $ip token $token" );
+   // $logger->debug(" signIn function. data $d ip $ip token $token" );
     
     $userEmail = $d['userEmail'];      //user name is emailid
     $userPassword = $d['password'];
@@ -142,7 +142,7 @@ function signIn($d, $ip, $token) {
     $logger->info('password  from getUser '.$user[0]['password']);
     if (count($user)==0) {//no user found
        
-        $logger->info('email is not found in  db');
+       // $logger->info('email is not found in  db');
         $errorResponse = array(
             'errorMessage' => 'Failed to authenticate user. '
             
@@ -153,31 +153,31 @@ function signIn($d, $ip, $token) {
     else {
         // Check if the password matches
         $hashedPassword=$user[0]['password'];
-        $logger->debug("user password $userPassword , hashedPassword $hashedPassword". gettype($userPassword).' '.gettype($hashedPassword));
+       // $logger->debug("user password $userPassword , hashedPassword $hashedPassword". gettype($userPassword).' '.gettype($hashedPassword));
 
         if (password_verify($userPassword,$hashedPassword)){
 
 
             if(makeOnlineDB($user[0]['iduser'])) {
-                $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
+               // $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
                 session_start();
                 $_SESSION['user_id'] = $user[0]['iduser'];
                 $_SESSION['last_activity'] =time();
-                $logger->info("Session set  ". $_SESSION['user_id'] ."last_activty".$_SESSION['last_activity']);
+               // $logger->info("Session set  ". $_SESSION['user_id'] ."last_activty".$_SESSION['last_activity']);
                 $Response = array(
                     'Message' => "Logged-in"
                 );
                 echo json_encode($Response);
             }
             else{
-                $logger->error(" database failed to update status in login ");
+               // $logger->error(" database failed to update status in login ");
                 $errorResponse = array(
                     'errorMessage' => "Failed to authenticate user. "
                 );
             }
         } 
         else {
-            $logger->error(" User  failed to authenticate ");
+           // $logger->error(" User  failed to authenticate ");
              $errorResponse = array(
                 'errorMessage' => "Failed to authenticate user. "
             );
@@ -194,7 +194,7 @@ function makeOnline($userId){
 
 function getUserById($userId){
     global $logger;
-    $logger->info("inside getUserById id:$userId");
+    //$logger->info("inside getUserById id:$userId");
     return json_encode(getUserByIdDB($userId));
 }
 
@@ -204,6 +204,6 @@ function getUserByEmail($userEmail){
 
 function logOut($userId){
     global $logger;
-    $logger->info('in logOut with userID '.$userId);
+    //$logger->info('in logOut with userID '.$userId);
     return logOutDB($userId);
 }

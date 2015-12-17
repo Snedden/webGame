@@ -3,7 +3,7 @@
 //Check if they should be here!
 //if so - prepare data and make call to data/biz layer
 
-$logger->info('gameSVC.php included');
+//$logger->info('gameSVC.php included');
 //error_reporting (E_ALL);
 require "./bizDataLayer/gameBizData.php";
 //Why include the database stuff here?  (not doing any db stuff in the service layer!)
@@ -25,7 +25,7 @@ function start($d){
 	//Should they be here?  (check)
 	//if true:
 	global $logger;
-    $logger->info('gameSVC.php start called');
+    //$logger->info('gameSVC.php start called');
 	return startData($d);
 }
 /*************************
@@ -66,7 +66,7 @@ function changeBoard($d){
 	$h=explode('~',$d);
 	//changeBoardData($gameId,$pieceId,$boardI,$playerId);
 	global $logger;
-	$logger->info('inside game SVC changeBoard');
+	//$logger->info('inside game SVC changeBoard');
 	
 	changeBoardData($h[0],$h[1],$h[2],$h[3],$h[4],$h[5]);
 }
@@ -84,7 +84,7 @@ function getMove($d){
 
 function winGame($data){
 	global $logger;
-	$logger->info("Data at winGame()".print_r($data,true));
+	//$logger->info("Data at winGame()".print_r($data,true));
 	return winGameDB($data);
 }
 

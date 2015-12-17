@@ -202,7 +202,7 @@ function checkWinnerDB($gameId){
 			$stmt->bind_param("i",$gameId);
 			$data=bindSql($stmt);
 			$data=json_encode($data);
-			
+
 			return $data;
 		}else{
 			throw new Exception("An error occurred while getMoveData");
@@ -215,9 +215,9 @@ function checkWinnerDB($gameId){
 
 function winGameDB($data){
 	global $logger,$mysqli;
-	$logger->info('inside winsDB');
+	//$logger->info('inside winsDB');
 
-	$logger->info("Data at winGameDB()".print_r($data,true));
+	//$logger->info("Data at winGameDB()".print_r($data,true));
 
 
 	$sql="update  heroes_games set status='complete',winner=? where game_id=?";
@@ -230,12 +230,12 @@ function winGameDB($data){
 		    return true;
 		}
 		else{
-			$logger->error('Something went wrong while preparing statement inGameDb'.$mysqli->error);
+			//$logger->error('Something went wrong while preparing statement inGameDb'.$mysqli->error);
 			return false;
 		}
 
 	}catch(Exception $e){
-		$logger->error('Something went wrong while updating status of challenges in metChallengeDB');
+		//$logger->error('Something went wrong while updating status of challenges in metChallengeDB');
 		return false;
 	}
 }

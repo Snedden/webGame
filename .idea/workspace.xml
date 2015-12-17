@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f32940c3-56c1-4409-b60f-e9e3daefdc59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/log_2015-12-13.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/log_2015-12-14.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winner.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-05.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-06.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-08.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-09.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-13.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-14.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/log_2015-12-17.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/wixel/gump" afterPath="$PROJECT_DIR$/vendor/wixel/gump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/gameBizData.php" afterPath="$PROJECT_DIR$/bizDataLayer/gameBizData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" afterPath="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" afterPath="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.php" afterPath="$PROJECT_DIR$/game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ajaxFunctions.js" afterPath="$PROJECT_DIR$/js/ajaxFunctions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/globals.js" afterPath="$PROJECT_DIR$/js/globals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hexMesh.js" afterPath="$PROJECT_DIR$/js/hexMesh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/unit.js" afterPath="$PROJECT_DIR$/js/unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lobby.php" afterPath="$PROJECT_DIR$/lobby.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_2015-12-10.txt" afterPath="$PROJECT_DIR$/logs/log_2015-12-10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mid.php" afterPath="$PROJECT_DIR$/mid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/game/gameSvc.php" afterPath="$PROJECT_DIR$/svcLayer/game/gameSvc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/lobby/lobby.php" afterPath="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/user/user.php" afterPath="$PROJECT_DIR$/svcLayer/user/user.php" />
@@ -80,81 +78,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hexMesh.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/hexMesh.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxFunctions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajaxFunctions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ajaxFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2642487">
+            <state vertical-scroll-proportion="-3.7777777">
               <caret line="134" column="53" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="winner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/winner.php">
+      <file leaf-file-name="lobbyDbBiz.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state vertical-scroll-proportion="-8.781818">
+              <caret line="510" column="10" selection-start-line="510" selection-start-column="10" selection-end-line="510" selection-end-column="10" />
+              <folding>
+                <marker date="1450327838907" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+                <marker date="1450327838907" expanded="true" signature="1566:1700" placeholder="select text,..." />
+                <marker date="1450327838907" expanded="true" signature="1566:1704" placeholder="select text,..." />
+                <marker date="1450327838907" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+                <marker date="1450327838907" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+                <marker date="1450327838907" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+                <marker date="1450327838907" expanded="true" signature="3504:3564" placeholder="select chall..." />
+                <marker date="1450327838907" expanded="true" signature="3504:3568" placeholder="select chall..." />
+                <marker date="1450327838907" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+                <marker date="1450327838907" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
+                <marker date="1450327838907" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
+                <marker date="1450327838907" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
+                <marker date="1450327838907" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
+                <marker date="1450327838907" expanded="true" signature="8206:8262" placeholder="update chall..." />
+                <marker date="1450327838907" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="9258:9318" placeholder="update chall..." />
+                <marker date="1450327838907" expanded="true" signature="10176:10404" placeholder="select u.fir..users..." />
+                <marker date="1450327838907" expanded="true" signature="10237:10308" placeholder="SELECT to_us..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="10237:10309" placeholder="SELECT to_us..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="10329:10402" placeholder="SELECT from_..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="10329:10403" placeholder="SELECT from_..challenges..." />
+                <marker date="1450327838907" expanded="true" signature="10788:10846" placeholder="insert into heroes_games..." />
+                <marker date="1450327838907" expanded="true" signature="10788:10868" placeholder="insert into heroes_games..." />
+                <marker date="1450327838907" expanded="true" signature="11341:11375" placeholder="update chall..." />
+                <marker date="1450327838907" expanded="true" signature="11341:11417" placeholder="update chall..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.192308">
+              <caret line="206" column="6" selection-start-line="206" selection-start-column="6" selection-end-line="206" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game.html">
+      <file leaf-file-name="lobby.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.6181817">
+              <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/player.js">
+      <file leaf-file-name="gameSvc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svcLayer/game/gameSvc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5555553">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="globals.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/globals.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.846154">
-              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="49" />
+            <state vertical-scroll-proportion="-26.581818">
+              <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -163,22 +160,58 @@
       <file leaf-file-name="gameBizData.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bizDataLayer/gameBizData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.18868">
-              <caret line="204" column="12" selection-start-line="204" selection-start-column="12" selection-end-line="204" selection-end-column="12" />
+            <state vertical-scroll-proportion="8.836364">
+              <caret line="217" column="6" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="6" />
               <folding>
-                <marker date="1450324845764" expanded="true" signature="819:850" placeholder="select statu..heroes_games..." />
-                <marker date="1450324845764" expanded="true" signature="819:866" placeholder="select statu..heroes_games..." />
-                <marker date="1450324845764" expanded="true" signature="1568:1790" placeholder="UPDATE heroe..." />
-                <marker date="1450324845764" expanded="true" signature="2247:2289" placeholder="SELECT * FRO..heroes_games..." />
-                <marker date="1450324845764" expanded="true" signature="2892:2942" placeholder="SELECT whose..heroes_games..." />
-                <marker date="1450324845764" expanded="true" signature="3504:3575" placeholder="UPDATE heroe..." />
-                <marker date="1450324845764" expanded="true" signature="3782:3853" placeholder="UPDATE heroe..." />
-                <marker date="1450324845764" expanded="true" signature="4060:4131" placeholder="UPDATE heroe..." />
-                <marker date="1450324845764" expanded="true" signature="4749:4896" placeholder="UPDATE heroe..." />
-                <marker date="1450324845764" expanded="true" signature="5362:5404" placeholder="SELECT * FRO..heroes_games..." />
-                <marker date="1450324845764" expanded="true" signature="5812:5859" placeholder="SELECT winne..heroes_games..." />
-                <marker date="1450324845764" expanded="true" signature="6320:6387" placeholder="update c set..." />
+                <marker date="1450327839135" expanded="true" signature="819:850" placeholder="select statu..heroes_games..." />
+                <marker date="1450327839135" expanded="true" signature="819:866" placeholder="select statu..heroes_games..." />
+                <marker date="1450327839135" expanded="true" signature="1568:1790" placeholder="UPDATE heroe..." />
+                <marker date="1450327839135" expanded="true" signature="2247:2289" placeholder="SELECT * FRO..heroes_games..." />
+                <marker date="1450327839135" expanded="true" signature="2892:2942" placeholder="SELECT whose..heroes_games..." />
+                <marker date="1450327839135" expanded="true" signature="3504:3575" placeholder="UPDATE heroe..." />
+                <marker date="1450327839135" expanded="true" signature="3782:3853" placeholder="UPDATE heroe..." />
+                <marker date="1450327839135" expanded="true" signature="4060:4131" placeholder="UPDATE heroe..." />
+                <marker date="1450327839135" expanded="true" signature="4749:4896" placeholder="UPDATE heroe..." />
+                <marker date="1450327839135" expanded="true" signature="5362:5404" placeholder="SELECT * FRO..heroes_games..." />
+                <marker date="1450327839135" expanded="true" signature="5812:5859" placeholder="SELECT winne..heroes_games..." />
+                <marker date="1450327839135" expanded="true" signature="6321:6388" placeholder="update c set..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exception.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bizDataLayer/exception.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userDbBiz.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.8727274">
+              <caret line="182" column="10" selection-start-line="182" selection-start-column="10" selection-end-line="182" selection-end-column="10" />
+              <folding>
+                <marker date="1450327838801" expanded="true" signature="346:379" placeholder="select * fro..users..." />
+                <marker date="1450327838801" expanded="true" signature="1428:1747" placeholder="INSERT INTO users..." />
+                <marker date="1450327838801" expanded="true" signature="3018:3059" placeholder="update users..." />
+                <marker date="1450327838801" expanded="true" signature="3829:3870" placeholder="update users..." />
+                <marker date="1450327838801" expanded="true" signature="4670:4723" placeholder="SELECT first..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6261343">
+              <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,7 +232,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/logout.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-06.txt" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-05.txt" />
         <option value="$PROJECT_DIR$/bizDataLayer/commonDbFunctions.php" />
@@ -211,23 +243,24 @@
         <option value="$PROJECT_DIR$/logs/log_2015-12-13.txt" />
         <option value="$PROJECT_DIR$/mid.php" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-14.txt" />
-        <option value="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
-        <option value="$PROJECT_DIR$/svcLayer/user/user.php" />
-        <option value="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
-        <option value="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-16.txt" />
         <option value="$PROJECT_DIR$/js/hexMesh.js" />
         <option value="$PROJECT_DIR$/game.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/logs/log_2015-12-17.txt" />
         <option value="$PROJECT_DIR$/js/unit.js" />
-        <option value="$PROJECT_DIR$/svcLayer/game/gameSvc.php" />
-        <option value="$PROJECT_DIR$/bizDataLayer/gameBizData.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/globals.js" />
         <option value="$PROJECT_DIR$/winner.php" />
         <option value="$PROJECT_DIR$/lobby.php" />
         <option value="$PROJECT_DIR$/js/ajaxFunctions.js" />
+        <option value="$PROJECT_DIR$/svcLayer/game/gameSvc.php" />
+        <option value="$PROJECT_DIR$/svcLayer/lobby/lobby.php" />
+        <option value="$PROJECT_DIR$/svcLayer/user/user.php" />
+        <option value="$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php" />
+        <option value="$PROJECT_DIR$/bizDataLayer/gameBizData.php" />
+        <option value="$PROJECT_DIR$/bizDataLayer/userDbBiz.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -300,7 +333,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="svcLayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="svcLayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lobby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="svcLayer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bizDataLayer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,34 +511,34 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
           <folding>
-            <marker date="1450300300811" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1700" placeholder="select text,..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1704" placeholder="select text,..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1450300300811" expanded="true" signature="2618:2677" placeholder="select first..users..." />
-            <marker date="1450300300811" expanded="true" signature="2618:2691" placeholder="select first..users..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3564" placeholder="select chall..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3568" placeholder="select chall..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
-            <marker date="1450300300811" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
-            <marker date="1450300300811" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
-            <marker date="1450300300811" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
-            <marker date="1450300300811" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
-            <marker date="1450300300811" expanded="true" signature="8206:8262" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="9256:9316" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="10160:10388" placeholder="select u.fir..users..." />
-            <marker date="1450300300811" expanded="true" signature="10221:10292" placeholder="SELECT to_us..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10221:10293" placeholder="SELECT to_us..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10313:10386" placeholder="SELECT from_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10313:10387" placeholder="SELECT from_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10770:10828" placeholder="insert into heroes_games..." />
-            <marker date="1450300300811" expanded="true" signature="10770:10850" placeholder="insert into heroes_games..." />
-            <marker date="1450300300811" expanded="true" signature="11317:11351" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="11317:11393" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1450327838907" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1450327838907" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1450327838907" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
+            <marker date="1450327838907" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
+            <marker date="1450327838907" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
+            <marker date="1450327838907" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
+            <marker date="1450327838907" expanded="true" signature="8206:8262" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="9258:9318" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="10176:10404" placeholder="select u.fir..users..." />
+            <marker date="1450327838907" expanded="true" signature="10237:10308" placeholder="SELECT to_us..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10237:10309" placeholder="SELECT to_us..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10329:10402" placeholder="SELECT from_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10329:10403" placeholder="SELECT from_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10788:10846" placeholder="insert into heroes_games..." />
+            <marker date="1450327838907" expanded="true" signature="10788:10868" placeholder="insert into heroes_games..." />
+            <marker date="1450327838907" expanded="true" signature="11341:11375" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="11341:11417" placeholder="update chall..." />
           </folding>
         </state>
       </provider>
@@ -461,13 +548,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-06.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37721" column="0" selection-start-line="37721" selection-start-column="0" selection-end-line="37721" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -545,34 +625,34 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1450300300811" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1700" placeholder="select text,..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1704" placeholder="select text,..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1450300300811" expanded="true" signature="2618:2677" placeholder="select first..users..." />
-            <marker date="1450300300811" expanded="true" signature="2618:2691" placeholder="select first..users..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3564" placeholder="select chall..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3568" placeholder="select chall..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
-            <marker date="1450300300811" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
-            <marker date="1450300300811" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
-            <marker date="1450300300811" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
-            <marker date="1450300300811" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
-            <marker date="1450300300811" expanded="true" signature="8206:8262" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="9256:9316" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="10160:10388" placeholder="select u.fir..users..." />
-            <marker date="1450300300811" expanded="true" signature="10221:10292" placeholder="SELECT to_us..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10221:10293" placeholder="SELECT to_us..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10313:10386" placeholder="SELECT from_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10313:10387" placeholder="SELECT from_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10770:10828" placeholder="insert into heroes_games..." />
-            <marker date="1450300300811" expanded="true" signature="10770:10850" placeholder="insert into heroes_games..." />
-            <marker date="1450300300811" expanded="true" signature="11317:11351" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="11317:11393" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1450327838907" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1450327838907" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1450327838907" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
+            <marker date="1450327838907" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
+            <marker date="1450327838907" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
+            <marker date="1450327838907" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
+            <marker date="1450327838907" expanded="true" signature="8206:8262" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="9258:9318" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="10176:10404" placeholder="select u.fir..users..." />
+            <marker date="1450327838907" expanded="true" signature="10237:10308" placeholder="SELECT to_us..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10237:10309" placeholder="SELECT to_us..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10329:10402" placeholder="SELECT from_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10329:10403" placeholder="SELECT from_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10788:10846" placeholder="insert into heroes_games..." />
+            <marker date="1450327838907" expanded="true" signature="10788:10868" placeholder="insert into heroes_games..." />
+            <marker date="1450327838907" expanded="true" signature="11341:11375" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="11341:11417" placeholder="update chall..." />
           </folding>
         </state>
       </provider>
@@ -655,48 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-05.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-06.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-59.185184">
-          <caret line="12129" column="85" selection-start-line="12129" selection-start-column="85" selection-end-line="12129" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-07.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="263" column="61" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-08.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70430" column="0" selection-start-line="70430" selection-start-column="0" selection-end-line="70430" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-09.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="98" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logger.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -704,43 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-10.txt">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="255442" column="61" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="62" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/d3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-13.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53101" column="0" selection-start-line="53101" selection-start-column="0" selection-end-line="53101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-14.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81101" column="10" selection-start-line="8495" selection-start-column="35" selection-end-line="8495" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="22.884615">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,14 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-16.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1048" column="0" selection-start-line="1048" selection-start-column="0" selection-end-line="1048" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -784,85 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="347" column="4" selection-start-line="347" selection-start-column="4" selection-end-line="382" selection-end-column="5" />
-          <folding>
-            <marker date="1450300300811" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1700" placeholder="select text,..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1704" placeholder="select text,..." />
-            <marker date="1450300300811" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
-            <marker date="1450300300811" expanded="true" signature="2618:2677" placeholder="select first..users..." />
-            <marker date="1450300300811" expanded="true" signature="2618:2691" placeholder="select first..users..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3564" placeholder="select chall..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3568" placeholder="select chall..." />
-            <marker date="1450300300811" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
-            <marker date="1450300300811" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
-            <marker date="1450300300811" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
-            <marker date="1450300300811" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
-            <marker date="1450300300811" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
-            <marker date="1450300300811" expanded="true" signature="8206:8262" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="9256:9316" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="10160:10388" placeholder="select u.fir..users..." />
-            <marker date="1450300300811" expanded="true" signature="10221:10292" placeholder="SELECT to_us..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10221:10293" placeholder="SELECT to_us..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10313:10386" placeholder="SELECT from_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10313:10387" placeholder="SELECT from_..challenges..." />
-            <marker date="1450300300811" expanded="true" signature="10770:10828" placeholder="insert into heroes_games..." />
-            <marker date="1450300300811" expanded="true" signature="10770:10850" placeholder="insert into heroes_games..." />
-            <marker date="1450300300811" expanded="true" signature="11317:11351" placeholder="update chall..." />
-            <marker date="1450300300811" expanded="true" signature="11317:11393" placeholder="update chall..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/log_2015-12-17.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6633" column="0" selection-start-line="6633" selection-start-column="0" selection-end-line="6633" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.653847">
-          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="17" />
-          <folding>
-            <marker date="1450282214955" expanded="true" signature="346:379" placeholder="select * fro..users..." />
-            <marker date="1450282214955" expanded="true" signature="1428:1747" placeholder="INSERT INTO users..." />
-            <marker date="1450282214955" expanded="true" signature="3016:3057" placeholder="update users..." />
-            <marker date="1450282214955" expanded="true" signature="3819:3860" placeholder="update users..." />
-            <marker date="1450282214955" expanded="true" signature="4650:4703" placeholder="SELECT first..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/unit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.875">
           <caret line="123" column="94" selection-start-line="123" selection-start-column="94" selection-end-line="123" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svcLayer/game/gameSvc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8679247">
-          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -873,27 +795,6 @@
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="24" />
           <folding>
             <marker date="1449452611727" expanded="true" signature="991:1024" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bizDataLayer/gameBizData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.18868">
-          <caret line="204" column="12" selection-start-line="204" selection-start-column="12" selection-end-line="204" selection-end-column="12" />
-          <folding>
-            <marker date="1450324845764" expanded="true" signature="819:850" placeholder="select statu..heroes_games..." />
-            <marker date="1450324845764" expanded="true" signature="819:866" placeholder="select statu..heroes_games..." />
-            <marker date="1450324845764" expanded="true" signature="1568:1790" placeholder="UPDATE heroe..." />
-            <marker date="1450324845764" expanded="true" signature="2247:2289" placeholder="SELECT * FRO..heroes_games..." />
-            <marker date="1450324845764" expanded="true" signature="2892:2942" placeholder="SELECT whose..heroes_games..." />
-            <marker date="1450324845764" expanded="true" signature="3504:3575" placeholder="UPDATE heroe..." />
-            <marker date="1450324845764" expanded="true" signature="3782:3853" placeholder="UPDATE heroe..." />
-            <marker date="1450324845764" expanded="true" signature="4060:4131" placeholder="UPDATE heroe..." />
-            <marker date="1450324845764" expanded="true" signature="4749:4896" placeholder="UPDATE heroe..." />
-            <marker date="1450324845764" expanded="true" signature="5362:5404" placeholder="SELECT * FRO..heroes_games..." />
-            <marker date="1450324845764" expanded="true" signature="5812:5859" placeholder="SELECT winne..heroes_games..." />
-            <marker date="1450324845764" expanded="true" signature="6320:6387" placeholder="update c set..." />
           </folding>
         </state>
       </provider>
@@ -988,8 +889,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ajaxFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2642487">
+        <state vertical-scroll-proportion="-3.7777777">
           <caret line="134" column="53" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svcLayer/game/gameSvc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.581818">
+          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svcLayer/lobby/lobby.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6181817">
+          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svcLayer/user/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.192308">
+          <caret line="206" column="6" selection-start-line="206" selection-start-column="6" selection-end-line="206" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/lobbyDbBiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.781818">
+          <caret line="510" column="10" selection-start-line="510" selection-start-column="10" selection-end-line="510" selection-end-column="10" />
+          <folding>
+            <marker date="1450327838907" expanded="true" signature="362:508" placeholder="INSERT INTO chatMessages..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1700" placeholder="select text,..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1704" placeholder="select text,..." />
+            <marker date="1450327838907" expanded="true" signature="1566:1724" placeholder="SELECT u.fir..chatmessages..." />
+            <marker date="1450327838907" expanded="true" signature="2618:2677" placeholder="select first..users..." />
+            <marker date="1450327838907" expanded="true" signature="2618:2691" placeholder="select first..users..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3564" placeholder="select chall..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3568" placeholder="select chall..." />
+            <marker date="1450327838907" expanded="true" signature="3504:3589" placeholder="select chall..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="4426:4527" placeholder="insert into challenges..." />
+            <marker date="1450327838907" expanded="true" signature="5507:5565" placeholder="SELECT * FRO..users..." />
+            <marker date="1450327838907" expanded="true" signature="6432:6605" placeholder="Select disti..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="7225:7610" placeholder="Select disti..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="7230:7605" placeholder="Select disti..challenge_id..." />
+            <marker date="1450327838907" expanded="true" signature="7230:7610" placeholder="Select disti..challenge_id..." />
+            <marker date="1450327838907" expanded="true" signature="7313:7516" placeholder="select ch.ch..." />
+            <marker date="1450327838907" expanded="true" signature="8206:8262" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="8414:8465" placeholder="select game_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="9258:9318" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="10176:10404" placeholder="select u.fir..users..." />
+            <marker date="1450327838907" expanded="true" signature="10237:10308" placeholder="SELECT to_us..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10237:10309" placeholder="SELECT to_us..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10329:10402" placeholder="SELECT from_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10329:10403" placeholder="SELECT from_..challenges..." />
+            <marker date="1450327838907" expanded="true" signature="10788:10846" placeholder="insert into heroes_games..." />
+            <marker date="1450327838907" expanded="true" signature="10788:10868" placeholder="insert into heroes_games..." />
+            <marker date="1450327838907" expanded="true" signature="11341:11375" placeholder="update chall..." />
+            <marker date="1450327838907" expanded="true" signature="11341:11417" placeholder="update chall..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/gameBizData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.836364">
+          <caret line="217" column="6" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="6" />
+          <folding>
+            <marker date="1450327839135" expanded="true" signature="819:850" placeholder="select statu..heroes_games..." />
+            <marker date="1450327839135" expanded="true" signature="819:866" placeholder="select statu..heroes_games..." />
+            <marker date="1450327839135" expanded="true" signature="1568:1790" placeholder="UPDATE heroe..." />
+            <marker date="1450327839135" expanded="true" signature="2247:2289" placeholder="SELECT * FRO..heroes_games..." />
+            <marker date="1450327839135" expanded="true" signature="2892:2942" placeholder="SELECT whose..heroes_games..." />
+            <marker date="1450327839135" expanded="true" signature="3504:3575" placeholder="UPDATE heroe..." />
+            <marker date="1450327839135" expanded="true" signature="3782:3853" placeholder="UPDATE heroe..." />
+            <marker date="1450327839135" expanded="true" signature="4060:4131" placeholder="UPDATE heroe..." />
+            <marker date="1450327839135" expanded="true" signature="4749:4896" placeholder="UPDATE heroe..." />
+            <marker date="1450327839135" expanded="true" signature="5362:5404" placeholder="SELECT * FRO..heroes_games..." />
+            <marker date="1450327839135" expanded="true" signature="5812:5859" placeholder="SELECT winne..heroes_games..." />
+            <marker date="1450327839135" expanded="true" signature="6321:6388" placeholder="update c set..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/exception.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bizDataLayer/userDbBiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8727274">
+          <caret line="182" column="10" selection-start-line="182" selection-start-column="10" selection-end-line="182" selection-end-column="10" />
+          <folding>
+            <marker date="1450327838801" expanded="true" signature="346:379" placeholder="select * fro..users..." />
+            <marker date="1450327838801" expanded="true" signature="1428:1747" placeholder="INSERT INTO users..." />
+            <marker date="1450327838801" expanded="true" signature="3018:3059" placeholder="update users..." />
+            <marker date="1450327838801" expanded="true" signature="3829:3870" placeholder="update users..." />
+            <marker date="1450327838801" expanded="true" signature="4670:4723" placeholder="SELECT first..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6261343">
+          <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
           <folding />
         </state>
       </provider>

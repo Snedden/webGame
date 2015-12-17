@@ -104,7 +104,7 @@ function insertUser($newUserData) {
 
 function logOutDB($userId){
 	global $logger,$mysqli;
-	$logger->info("Insidd logOutDB with idUser:".$userId);
+	//$logger->info("Insidd logOutDB with idUser:".$userId);
 	global $mysqli;
 	$sql="update  users set status=0 WHERE idUser=?";
 	try{
@@ -115,47 +115,47 @@ function logOutDB($userId){
 			}
 
 			if (!$stmt->execute()) {
-				$logger->error( "Execute failed logoutDB: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Execute failed logoutDB: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			$mysqli->close();
 			return true;
 		}else{
-			$logger->error("An error occured in prepare statement logoutDB".$mysqli->error);
+			//$logger->error("An error occured in prepare statement logoutDB".$mysqli->error);
 			throw new Exception("An error occurred in getUser");
 			return false;
 		}
 	}catch (Exception $e) {
-		$logger->error("An error occured in logoutDB".$mysqli->error);
+		//$logger->error("An error occured in logoutDB".$mysqli->error);
 		return false;
 	}
 }
 
 function makeOnlineDB($userId){
 	global $logger,$mysqli;
-	$logger->info("Insidd makeOnline with idUser:".$userId);
+	//$logger->info("Insidd makeOnline with idUser:".$userId);
 	global $mysqli;
 	$sql="update  users set status=1 WHERE idUser=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 
 			if(!$stmt->bind_param("s",$userId)){
-				$logger->error( "Binding parameters failed makeONlineDb: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed makeONlineDb: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			if (!$stmt->execute()) {
-				$logger->error( "Execute failed makeonlineDB: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Execute failed makeonlineDB: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			$mysqli->close();
 			return true;
 		}else{
-			$logger->error("An error occured in prepare statement makeOnline".$mysqli->error);
+			//$logger->error("An error occured in prepare statement makeOnline".$mysqli->error);
 			throw new Exception("An error occurred in getUser");
 			return false;
 		}
 	}catch (Exception $e) {
-		$logger->error("An error occured in makeonlineDB".$mysqli->error);
+		//$logger->error("An error occured in makeonlineDB".$mysqli->error);
 		return false;
 	}
 }
@@ -163,7 +163,7 @@ function makeOnlineDB($userId){
 
 function getUserByIdDB($userId){
 	global $logger,$mysqli;
-	$logger->info("Insidd getUserByIdDB with idUser:".$userId);
+	//$logger->info("Insidd getUserByIdDB with idUser:".$userId);
 	global $mysqli;
 	$sql="SELECT first_name,last_name FROM users WHERE idUser=?";
 	try{
@@ -180,7 +180,7 @@ function getUserByIdDB($userId){
 			throw new Exception("An error occurred in getUser");
 		}
 	}catch (Exception $e) {
-		$logger->error("An error occured in getUser".$mysqli->error);
+		//$logger->error("An error occured in getUser".$mysqli->error);
 		return false;
 	}
 }

@@ -97,6 +97,10 @@
                 console.log('proceed to lobby..');
                 window.location='lobby.php';
             }
+            else{
+                console.log('span change',data.errorMessage)
+                $("#onSignin").text(data.errorMessage);
+            }
            
 
         }
@@ -149,6 +153,7 @@
                                         <input name="password" type="password" placeholder="Password" class="form-control">
                                     </div>
                                     <input type="button" class="btn btn-success" onclick="return signIn();" value="Sign In" />
+                                    <span id='onSignin'></span>
                                 </form>
                             </div>
                         </div>
