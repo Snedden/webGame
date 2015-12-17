@@ -14,7 +14,7 @@
 		$serviceMethod=$_REQUEST['method'];
         $data=$_REQUEST['data'];
        // $dataString=implode(" ",$data);
-        //$logger->info("Service Method is". $serviceMethod." Data is ". $dataString. " server ".  $_SERVER['REMOTE_ADDR']);
+        $logger->info("callBack");
 		
 		 //$result=start($data);
      

@@ -1,0 +1,1226 @@
+[2015-12-16 23:54:50.092411] [info] gameSVC.php included
+[2015-12-16 23:54:50.140394] [info] callBack
+[2015-12-16 23:54:50.155073] [info] gameSVC.php start called
+[2015-12-16 23:54:50.155647] [info] startData in gameBizData.php called with parameter4
+[2015-12-16 23:54:50.157584] [info] Inside bind sql
+[2015-12-16 23:54:50.159352] [info] bind columns0
+[2015-12-16 23:54:50.159928] [info] Game Status:0
+[2015-12-16 23:54:50.161417] [info] Inside bind sql
+[2015-12-16 23:54:50.163701] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:54:50.164674] [info] Return data from start [{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:54:50.165229] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:54:54.229789] [info] gameSVC.php included
+[2015-12-16 23:54:54.241724] [info] callBack
+[2015-12-16 23:54:54.242352] [info] gameSVC.php start called
+[2015-12-16 23:54:54.242810] [info] startData in gameBizData.php called with parameter4
+[2015-12-16 23:54:54.244059] [info] Inside bind sql
+[2015-12-16 23:54:54.245280] [info] bind columns0
+[2015-12-16 23:54:54.245719] [info] Game Status:0
+[2015-12-16 23:54:54.246984] [info] Inside bind sql
+[2015-12-16 23:54:54.248658] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:54:54.249689] [info] Return data from start [{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:54:54.250171] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:54:54.745745] [info] gameSVC.php included
+[2015-12-16 23:54:54.755047] [info] callBack
+[2015-12-16 23:54:54.756587] [info] Inside bind sql
+[2015-12-16 23:54:54.758024] [info] bind columns0
+[2015-12-16 23:54:54.759346] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:54:57.759443] [info] gameSVC.php included
+[2015-12-16 23:54:57.778657] [info] callBack
+[2015-12-16 23:54:57.780106] [info] Inside bind sql
+[2015-12-16 23:54:57.781636] [info] bind columns0
+[2015-12-16 23:54:57.783488] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:55:00.773286] [info] gameSVC.php included
+[2015-12-16 23:55:00.784816] [info] callBack
+[2015-12-16 23:55:00.787121] [info] Inside bind sql
+[2015-12-16 23:55:00.791193] [info] bind columns0
+[2015-12-16 23:55:00.793438] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:55:02.247124] [info] gameSVC.php included
+[2015-12-16 23:55:02.256179] [info] callBack
+[2015-12-16 23:55:02.767066] [info] gameSVC.php included
+[2015-12-16 23:55:02.820921] [info] callBack
+[2015-12-16 23:55:02.821986] [info] inside game SVC changeBoard
+[2015-12-16 23:55:02.822310] [info] inside game SVC changeBoardData
+[2015-12-16 23:55:03.570152] [info] gameSVC.php included
+[2015-12-16 23:55:03.580661] [info] callBack
+[2015-12-16 23:55:03.582432] [info] Inside bind sql
+[2015-12-16 23:55:03.583940] [info] bind columns0
+[2015-12-16 23:55:03.585185] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:03.782020] [info] gameSVC.php included
+[2015-12-16 23:55:03.791466] [info] callBack
+[2015-12-16 23:55:03.792970] [info] Inside bind sql
+[2015-12-16 23:55:03.794049] [info] bind columns0
+[2015-12-16 23:55:03.794980] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:03.853426] [info] gameSVC.php included
+[2015-12-16 23:55:03.862896] [info] callBack
+[2015-12-16 23:55:03.864620] [info] Inside bind sql
+[2015-12-16 23:55:03.866596] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:03.868065] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:06.794269] [info] gameSVC.php included
+[2015-12-16 23:55:06.805232] [info] callBack
+[2015-12-16 23:55:06.806869] [info] Inside bind sql
+[2015-12-16 23:55:06.808624] [info] bind columns0
+[2015-12-16 23:55:06.810679] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:06.895853] [info] gameSVC.php included
+[2015-12-16 23:55:06.915903] [info] callBack
+[2015-12-16 23:55:06.917798] [info] Inside bind sql
+[2015-12-16 23:55:06.920485] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:06.922470] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:07.573302] [info] gameSVC.php included
+[2015-12-16 23:55:07.587033] [info] callBack
+[2015-12-16 23:55:07.588692] [info] Inside bind sql
+[2015-12-16 23:55:07.590684] [info] bind columns0
+[2015-12-16 23:55:07.592190] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:10.586354] [info] gameSVC.php included
+[2015-12-16 23:55:10.595513] [info] callBack
+[2015-12-16 23:55:10.596709] [info] Inside bind sql
+[2015-12-16 23:55:10.598022] [info] bind columns0
+[2015-12-16 23:55:10.598916] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:10.649997] [info] gameSVC.php included
+[2015-12-16 23:55:10.657865] [info] callBack
+[2015-12-16 23:55:10.659637] [info] Inside bind sql
+[2015-12-16 23:55:10.662039] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:10.663512] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:11.677176] [info] gameSVC.php included
+[2015-12-16 23:55:11.696887] [info] callBack
+[2015-12-16 23:55:11.698324] [info] Inside bind sql
+[2015-12-16 23:55:11.699516] [info] bind columns0
+[2015-12-16 23:55:11.700892] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:14.556864] [info] gameSVC.php included
+[2015-12-16 23:55:14.564806] [info] callBack
+[2015-12-16 23:55:14.566061] [info] Inside bind sql
+[2015-12-16 23:55:14.567372] [info] bind columns0
+[2015-12-16 23:55:14.568562] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:14.613814] [info] gameSVC.php included
+[2015-12-16 23:55:14.621114] [info] callBack
+[2015-12-16 23:55:14.622519] [info] Inside bind sql
+[2015-12-16 23:55:14.624299] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:14.625238] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:15.583235] [info] gameSVC.php included
+[2015-12-16 23:55:15.594937] [info] callBack
+[2015-12-16 23:55:15.596966] [info] Inside bind sql
+[2015-12-16 23:55:15.599870] [info] bind columns0
+[2015-12-16 23:55:15.601385] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:18.555035] [info] gameSVC.php included
+[2015-12-16 23:55:18.562334] [info] callBack
+[2015-12-16 23:55:18.563546] [info] Inside bind sql
+[2015-12-16 23:55:18.564577] [info] bind columns0
+[2015-12-16 23:55:18.565606] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:18.611901] [info] gameSVC.php included
+[2015-12-16 23:55:18.618654] [info] callBack
+[2015-12-16 23:55:18.619991] [info] Inside bind sql
+[2015-12-16 23:55:18.621705] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:18.622646] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:19.575882] [info] gameSVC.php included
+[2015-12-16 23:55:19.589868] [info] callBack
+[2015-12-16 23:55:19.591583] [info] Inside bind sql
+[2015-12-16 23:55:19.593277] [info] bind columns0
+[2015-12-16 23:55:19.595284] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:22.555414] [info] gameSVC.php included
+[2015-12-16 23:55:22.563500] [info] callBack
+[2015-12-16 23:55:22.565042] [info] Inside bind sql
+[2015-12-16 23:55:22.566338] [info] bind columns0
+[2015-12-16 23:55:22.567487] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:22.616513] [info] gameSVC.php included
+[2015-12-16 23:55:22.624367] [info] callBack
+[2015-12-16 23:55:22.625875] [info] Inside bind sql
+[2015-12-16 23:55:22.627645] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:22.628659] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:23.571240] [info] gameSVC.php included
+[2015-12-16 23:55:23.582745] [info] callBack
+[2015-12-16 23:55:23.584245] [info] Inside bind sql
+[2015-12-16 23:55:23.585282] [info] bind columns0
+[2015-12-16 23:55:23.586304] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:26.551453] [info] gameSVC.php included
+[2015-12-16 23:55:26.560146] [info] callBack
+[2015-12-16 23:55:26.561321] [info] Inside bind sql
+[2015-12-16 23:55:26.562500] [info] bind columns0
+[2015-12-16 23:55:26.563432] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:26.608131] [info] gameSVC.php included
+[2015-12-16 23:55:26.615514] [info] callBack
+[2015-12-16 23:55:26.616857] [info] Inside bind sql
+[2015-12-16 23:55:26.618575] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:26.619544] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:27.559019] [info] gameSVC.php included
+[2015-12-16 23:55:27.569539] [info] callBack
+[2015-12-16 23:55:27.570684] [info] Inside bind sql
+[2015-12-16 23:55:27.571691] [info] bind columns0
+[2015-12-16 23:55:27.572710] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:29.562479] [info] gameSVC.php included
+[2015-12-16 23:55:29.569756] [info] callBack
+[2015-12-16 23:55:29.571209] [info] Inside bind sql
+[2015-12-16 23:55:29.572519] [info] bind columns0
+[2015-12-16 23:55:29.573432] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:29.613852] [info] gameSVC.php included
+[2015-12-16 23:55:29.620954] [info] callBack
+[2015-12-16 23:55:29.622400] [info] Inside bind sql
+[2015-12-16 23:55:29.624111] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:29.625097] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:31.565933] [info] gameSVC.php included
+[2015-12-16 23:55:31.574331] [info] callBack
+[2015-12-16 23:55:31.575418] [info] Inside bind sql
+[2015-12-16 23:55:31.576396] [info] bind columns0
+[2015-12-16 23:55:31.577388] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:33.565011] [info] gameSVC.php included
+[2015-12-16 23:55:33.572319] [info] callBack
+[2015-12-16 23:55:33.573714] [info] Inside bind sql
+[2015-12-16 23:55:33.575035] [info] bind columns0
+[2015-12-16 23:55:33.576267] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:33.616312] [info] gameSVC.php included
+[2015-12-16 23:55:33.623143] [info] callBack
+[2015-12-16 23:55:33.624495] [info] Inside bind sql
+[2015-12-16 23:55:33.626209] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:33.627150] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:35.553167] [info] gameSVC.php included
+[2015-12-16 23:55:35.561696] [info] callBack
+[2015-12-16 23:55:35.562863] [info] Inside bind sql
+[2015-12-16 23:55:35.564073] [info] bind columns0
+[2015-12-16 23:55:35.564950] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:37.567296] [info] gameSVC.php included
+[2015-12-16 23:55:37.577423] [info] callBack
+[2015-12-16 23:55:37.578943] [info] Inside bind sql
+[2015-12-16 23:55:37.580440] [info] bind columns0
+[2015-12-16 23:55:37.582097] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:37.638290] [info] gameSVC.php included
+[2015-12-16 23:55:37.646490] [info] callBack
+[2015-12-16 23:55:37.648026] [info] Inside bind sql
+[2015-12-16 23:55:37.649832] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:37.651320] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:39.561259] [info] gameSVC.php included
+[2015-12-16 23:55:39.570024] [info] callBack
+[2015-12-16 23:55:39.571217] [info] Inside bind sql
+[2015-12-16 23:55:39.572442] [info] bind columns0
+[2015-12-16 23:55:39.573327] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:41.562689] [info] gameSVC.php included
+[2015-12-16 23:55:41.570667] [info] callBack
+[2015-12-16 23:55:41.571841] [info] Inside bind sql
+[2015-12-16 23:55:41.573035] [info] bind columns0
+[2015-12-16 23:55:41.574230] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:41.626224] [info] gameSVC.php included
+[2015-12-16 23:55:41.633877] [info] callBack
+[2015-12-16 23:55:41.635752] [info] Inside bind sql
+[2015-12-16 23:55:41.637723] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:41.639086] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:43.569607] [info] gameSVC.php included
+[2015-12-16 23:55:43.579298] [info] callBack
+[2015-12-16 23:55:43.581013] [info] Inside bind sql
+[2015-12-16 23:55:43.582290] [info] bind columns0
+[2015-12-16 23:55:43.583501] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:45.551561] [info] gameSVC.php included
+[2015-12-16 23:55:45.558725] [info] callBack
+[2015-12-16 23:55:45.560084] [info] Inside bind sql
+[2015-12-16 23:55:45.561089] [info] bind columns0
+[2015-12-16 23:55:45.562093] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:45.602482] [info] gameSVC.php included
+[2015-12-16 23:55:45.609358] [info] callBack
+[2015-12-16 23:55:45.610683] [info] Inside bind sql
+[2015-12-16 23:55:45.612395] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:45.613390] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:47.560385] [info] gameSVC.php included
+[2015-12-16 23:55:47.569714] [info] callBack
+[2015-12-16 23:55:47.570878] [info] Inside bind sql
+[2015-12-16 23:55:47.572134] [info] bind columns0
+[2015-12-16 23:55:47.573014] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:49.568449] [info] gameSVC.php included
+[2015-12-16 23:55:49.575715] [info] callBack
+[2015-12-16 23:55:49.577111] [info] Inside bind sql
+[2015-12-16 23:55:49.578428] [info] bind columns0
+[2015-12-16 23:55:49.579641] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:49.620639] [info] gameSVC.php included
+[2015-12-16 23:55:49.627482] [info] callBack
+[2015-12-16 23:55:49.628818] [info] Inside bind sql
+[2015-12-16 23:55:49.630789] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:49.631746] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:51.554305] [info] gameSVC.php included
+[2015-12-16 23:55:51.562910] [info] callBack
+[2015-12-16 23:55:51.564101] [info] Inside bind sql
+[2015-12-16 23:55:51.565339] [info] bind columns0
+[2015-12-16 23:55:51.566225] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:53.559528] [info] gameSVC.php included
+[2015-12-16 23:55:53.566821] [info] callBack
+[2015-12-16 23:55:53.568027] [info] Inside bind sql
+[2015-12-16 23:55:53.569224] [info] bind columns0
+[2015-12-16 23:55:53.570079] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:53.618120] [info] gameSVC.php included
+[2015-12-16 23:55:53.628304] [info] callBack
+[2015-12-16 23:55:53.629944] [info] Inside bind sql
+[2015-12-16 23:55:53.631699] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:53.632992] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:54.568779] [info] gameSVC.php included
+[2015-12-16 23:55:54.579483] [info] callBack
+[2015-12-16 23:55:54.580683] [info] Inside bind sql
+[2015-12-16 23:55:54.581943] [info] bind columns0
+[2015-12-16 23:55:54.583134] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:57.560307] [info] gameSVC.php included
+[2015-12-16 23:55:57.567801] [info] callBack
+[2015-12-16 23:55:57.568912] [info] Inside bind sql
+[2015-12-16 23:55:57.569922] [info] bind columns0
+[2015-12-16 23:55:57.570952] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:55:57.618731] [info] gameSVC.php included
+[2015-12-16 23:55:57.626235] [info] callBack
+[2015-12-16 23:55:57.627665] [info] Inside bind sql
+[2015-12-16 23:55:57.629386] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:55:57.630367] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:55:58.572676] [info] gameSVC.php included
+[2015-12-16 23:55:58.581602] [info] callBack
+[2015-12-16 23:55:58.582711] [info] Inside bind sql
+[2015-12-16 23:55:58.583713] [info] bind columns0
+[2015-12-16 23:55:58.584722] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:01.578941] [info] gameSVC.php included
+[2015-12-16 23:56:01.586302] [info] callBack
+[2015-12-16 23:56:01.587507] [info] Inside bind sql
+[2015-12-16 23:56:01.588687] [info] bind columns0
+[2015-12-16 23:56:01.589688] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:01.629273] [info] gameSVC.php included
+[2015-12-16 23:56:01.636357] [info] callBack
+[2015-12-16 23:56:01.637789] [info] Inside bind sql
+[2015-12-16 23:56:01.639504] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:01.640441] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:02.581058] [info] gameSVC.php included
+[2015-12-16 23:56:02.592431] [info] callBack
+[2015-12-16 23:56:02.593944] [info] Inside bind sql
+[2015-12-16 23:56:02.595427] [info] bind columns0
+[2015-12-16 23:56:02.596708] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:05.554737] [info] gameSVC.php included
+[2015-12-16 23:56:05.563750] [info] callBack
+[2015-12-16 23:56:05.564997] [info] Inside bind sql
+[2015-12-16 23:56:05.566030] [info] bind columns0
+[2015-12-16 23:56:05.567078] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:05.609752] [info] gameSVC.php included
+[2015-12-16 23:56:05.618913] [info] callBack
+[2015-12-16 23:56:05.620609] [info] Inside bind sql
+[2015-12-16 23:56:05.622703] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:05.624161] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:06.557184] [info] gameSVC.php included
+[2015-12-16 23:56:06.566895] [info] callBack
+[2015-12-16 23:56:06.568061] [info] Inside bind sql
+[2015-12-16 23:56:06.569338] [info] bind columns0
+[2015-12-16 23:56:06.570650] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:08.557770] [info] gameSVC.php included
+[2015-12-16 23:56:08.565248] [info] callBack
+[2015-12-16 23:56:08.566626] [info] Inside bind sql
+[2015-12-16 23:56:08.568003] [info] bind columns0
+[2015-12-16 23:56:08.569375] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:08.620826] [info] gameSVC.php included
+[2015-12-16 23:56:08.630384] [info] callBack
+[2015-12-16 23:56:08.632025] [info] Inside bind sql
+[2015-12-16 23:56:08.633882] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:08.634957] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:10.567292] [info] gameSVC.php included
+[2015-12-16 23:56:10.578241] [info] callBack
+[2015-12-16 23:56:10.579730] [info] Inside bind sql
+[2015-12-16 23:56:10.581087] [info] bind columns0
+[2015-12-16 23:56:10.582340] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:12.555124] [info] gameSVC.php included
+[2015-12-16 23:56:12.562881] [info] callBack
+[2015-12-16 23:56:12.564140] [info] Inside bind sql
+[2015-12-16 23:56:12.565340] [info] bind columns0
+[2015-12-16 23:56:12.566221] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:12.617048] [info] gameSVC.php included
+[2015-12-16 23:56:12.624135] [info] callBack
+[2015-12-16 23:56:12.625480] [info] Inside bind sql
+[2015-12-16 23:56:12.627235] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:12.628382] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:14.563148] [info] gameSVC.php included
+[2015-12-16 23:56:14.571754] [info] callBack
+[2015-12-16 23:56:14.573206] [info] Inside bind sql
+[2015-12-16 23:56:14.574551] [info] bind columns0
+[2015-12-16 23:56:14.575773] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:16.563169] [info] gameSVC.php included
+[2015-12-16 23:56:16.570193] [info] callBack
+[2015-12-16 23:56:16.571578] [info] Inside bind sql
+[2015-12-16 23:56:16.572918] [info] bind columns0
+[2015-12-16 23:56:16.574127] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:16.615171] [info] gameSVC.php included
+[2015-12-16 23:56:16.622267] [info] callBack
+[2015-12-16 23:56:16.623691] [info] Inside bind sql
+[2015-12-16 23:56:16.625552] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:16.626774] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:18.553282] [info] gameSVC.php included
+[2015-12-16 23:56:18.561743] [info] callBack
+[2015-12-16 23:56:18.562952] [info] Inside bind sql
+[2015-12-16 23:56:18.564169] [info] bind columns0
+[2015-12-16 23:56:18.565161] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:20.577989] [info] gameSVC.php included
+[2015-12-16 23:56:20.585587] [info] callBack
+[2015-12-16 23:56:20.587001] [info] Inside bind sql
+[2015-12-16 23:56:20.588047] [info] bind columns0
+[2015-12-16 23:56:20.589452] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:20.674422] [info] gameSVC.php included
+[2015-12-16 23:56:20.682032] [info] callBack
+[2015-12-16 23:56:20.683602] [info] Inside bind sql
+[2015-12-16 23:56:20.685261] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:20.686737] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:22.559829] [info] gameSVC.php included
+[2015-12-16 23:56:22.568406] [info] callBack
+[2015-12-16 23:56:22.569622] [info] Inside bind sql
+[2015-12-16 23:56:22.571055] [info] bind columns0
+[2015-12-16 23:56:22.572535] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:24.558835] [info] gameSVC.php included
+[2015-12-16 23:56:24.566797] [info] callBack
+[2015-12-16 23:56:24.568285] [info] Inside bind sql
+[2015-12-16 23:56:24.569587] [info] bind columns0
+[2015-12-16 23:56:24.570962] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:24.625195] [info] gameSVC.php included
+[2015-12-16 23:56:24.633021] [info] callBack
+[2015-12-16 23:56:24.634675] [info] Inside bind sql
+[2015-12-16 23:56:24.636615] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:24.637926] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:26.557574] [info] gameSVC.php included
+[2015-12-16 23:56:26.566302] [info] callBack
+[2015-12-16 23:56:26.568017] [info] Inside bind sql
+[2015-12-16 23:56:26.569246] [info] bind columns0
+[2015-12-16 23:56:26.570117] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:28.560015] [info] gameSVC.php included
+[2015-12-16 23:56:28.568121] [info] callBack
+[2015-12-16 23:56:28.569602] [info] Inside bind sql
+[2015-12-16 23:56:28.570944] [info] bind columns0
+[2015-12-16 23:56:28.572179] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:28.646178] [info] gameSVC.php included
+[2015-12-16 23:56:28.653377] [info] callBack
+[2015-12-16 23:56:28.655267] [info] Inside bind sql
+[2015-12-16 23:56:28.657486] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:28.659636] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:30.568255] [info] gameSVC.php included
+[2015-12-16 23:56:30.577517] [info] callBack
+[2015-12-16 23:56:30.579809] [info] Inside bind sql
+[2015-12-16 23:56:30.581183] [info] bind columns0
+[2015-12-16 23:56:30.582556] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:32.560744] [info] gameSVC.php included
+[2015-12-16 23:56:32.568404] [info] callBack
+[2015-12-16 23:56:32.569506] [info] Inside bind sql
+[2015-12-16 23:56:32.570522] [info] bind columns0
+[2015-12-16 23:56:32.571522] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:32.620565] [info] gameSVC.php included
+[2015-12-16 23:56:32.627746] [info] callBack
+[2015-12-16 23:56:32.629086] [info] Inside bind sql
+[2015-12-16 23:56:32.630808] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:32.631789] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:34.559350] [info] gameSVC.php included
+[2015-12-16 23:56:34.567723] [info] callBack
+[2015-12-16 23:56:34.568892] [info] Inside bind sql
+[2015-12-16 23:56:34.570084] [info] bind columns0
+[2015-12-16 23:56:34.570976] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:36.567131] [info] gameSVC.php included
+[2015-12-16 23:56:36.575330] [info] callBack
+[2015-12-16 23:56:36.576802] [info] Inside bind sql
+[2015-12-16 23:56:36.578155] [info] bind columns0
+[2015-12-16 23:56:36.579533] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:36.626816] [info] gameSVC.php included
+[2015-12-16 23:56:36.634103] [info] callBack
+[2015-12-16 23:56:36.635554] [info] Inside bind sql
+[2015-12-16 23:56:36.637768] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:36.639247] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:38.555154] [info] gameSVC.php included
+[2015-12-16 23:56:38.564151] [info] callBack
+[2015-12-16 23:56:38.565314] [info] Inside bind sql
+[2015-12-16 23:56:38.566504] [info] bind columns0
+[2015-12-16 23:56:38.567353] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:40.565814] [info] gameSVC.php included
+[2015-12-16 23:56:40.574456] [info] callBack
+[2015-12-16 23:56:40.575995] [info] Inside bind sql
+[2015-12-16 23:56:40.577558] [info] bind columns0
+[2015-12-16 23:56:40.578936] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:40.628163] [info] gameSVC.php included
+[2015-12-16 23:56:40.636687] [info] callBack
+[2015-12-16 23:56:40.638315] [info] Inside bind sql
+[2015-12-16 23:56:40.640373] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:40.641557] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:42.560640] [info] gameSVC.php included
+[2015-12-16 23:56:42.570270] [info] callBack
+[2015-12-16 23:56:42.571527] [info] Inside bind sql
+[2015-12-16 23:56:42.572686] [info] bind columns0
+[2015-12-16 23:56:42.574027] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:44.563932] [info] gameSVC.php included
+[2015-12-16 23:56:44.571119] [info] callBack
+[2015-12-16 23:56:44.572247] [info] Inside bind sql
+[2015-12-16 23:56:44.573247] [info] bind columns0
+[2015-12-16 23:56:44.574239] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:44.615652] [info] gameSVC.php included
+[2015-12-16 23:56:44.622657] [info] callBack
+[2015-12-16 23:56:44.623939] [info] Inside bind sql
+[2015-12-16 23:56:44.625998] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:44.626969] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:46.554877] [info] gameSVC.php included
+[2015-12-16 23:56:46.563306] [info] callBack
+[2015-12-16 23:56:46.565038] [info] Inside bind sql
+[2015-12-16 23:56:46.566407] [info] bind columns0
+[2015-12-16 23:56:46.567526] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:48.565901] [info] gameSVC.php included
+[2015-12-16 23:56:48.573185] [info] callBack
+[2015-12-16 23:56:48.574575] [info] Inside bind sql
+[2015-12-16 23:56:48.575979] [info] bind columns0
+[2015-12-16 23:56:48.577271] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:48.660423] [info] gameSVC.php included
+[2015-12-16 23:56:48.667335] [info] callBack
+[2015-12-16 23:56:48.668698] [info] Inside bind sql
+[2015-12-16 23:56:48.671267] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:48.672549] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:50.632519] [info] gameSVC.php included
+[2015-12-16 23:56:50.641300] [info] callBack
+[2015-12-16 23:56:50.642457] [info] Inside bind sql
+[2015-12-16 23:56:50.643451] [info] bind columns0
+[2015-12-16 23:56:50.644454] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:52.552265] [info] gameSVC.php included
+[2015-12-16 23:56:52.559889] [info] callBack
+[2015-12-16 23:56:52.561002] [info] Inside bind sql
+[2015-12-16 23:56:52.562000] [info] bind columns0
+[2015-12-16 23:56:52.562868] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:52.611869] [info] gameSVC.php included
+[2015-12-16 23:56:52.620465] [info] callBack
+[2015-12-16 23:56:52.621840] [info] Inside bind sql
+[2015-12-16 23:56:52.623565] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:52.624861] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:54.568139] [info] gameSVC.php included
+[2015-12-16 23:56:54.577169] [info] callBack
+[2015-12-16 23:56:54.578587] [info] Inside bind sql
+[2015-12-16 23:56:54.579866] [info] bind columns0
+[2015-12-16 23:56:54.581229] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:56.570621] [info] gameSVC.php included
+[2015-12-16 23:56:56.579030] [info] callBack
+[2015-12-16 23:56:56.580343] [info] Inside bind sql
+[2015-12-16 23:56:56.581581] [info] bind columns0
+[2015-12-16 23:56:56.582489] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:56:56.633697] [info] gameSVC.php included
+[2015-12-16 23:56:56.640780] [info] callBack
+[2015-12-16 23:56:56.642097] [info] Inside bind sql
+[2015-12-16 23:56:56.643815] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:56:56.644756] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:56:58.559626] [info] gameSVC.php included
+[2015-12-16 23:56:58.568357] [info] callBack
+[2015-12-16 23:56:58.569580] [info] Inside bind sql
+[2015-12-16 23:56:58.570765] [info] bind columns0
+[2015-12-16 23:56:58.571641] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:00.558569] [info] gameSVC.php included
+[2015-12-16 23:57:00.565819] [info] callBack
+[2015-12-16 23:57:00.567250] [info] Inside bind sql
+[2015-12-16 23:57:00.568419] [info] bind columns0
+[2015-12-16 23:57:00.569586] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:00.616673] [info] gameSVC.php included
+[2015-12-16 23:57:00.623389] [info] callBack
+[2015-12-16 23:57:00.624788] [info] Inside bind sql
+[2015-12-16 23:57:00.626511] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:00.627455] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:02.564354] [info] gameSVC.php included
+[2015-12-16 23:57:02.573101] [info] callBack
+[2015-12-16 23:57:02.574251] [info] Inside bind sql
+[2015-12-16 23:57:02.575407] [info] bind columns0
+[2015-12-16 23:57:02.576270] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:04.559736] [info] gameSVC.php included
+[2015-12-16 23:57:04.567079] [info] callBack
+[2015-12-16 23:57:04.568628] [info] Inside bind sql
+[2015-12-16 23:57:04.569814] [info] bind columns0
+[2015-12-16 23:57:04.570848] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:04.617311] [info] gameSVC.php included
+[2015-12-16 23:57:04.624167] [info] callBack
+[2015-12-16 23:57:04.625549] [info] Inside bind sql
+[2015-12-16 23:57:04.627296] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:04.628288] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:06.559212] [info] gameSVC.php included
+[2015-12-16 23:57:06.567843] [info] callBack
+[2015-12-16 23:57:06.568980] [info] Inside bind sql
+[2015-12-16 23:57:06.569991] [info] bind columns0
+[2015-12-16 23:57:06.571098] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:08.553154] [info] gameSVC.php included
+[2015-12-16 23:57:08.561108] [info] callBack
+[2015-12-16 23:57:08.562751] [info] Inside bind sql
+[2015-12-16 23:57:08.564383] [info] bind columns0
+[2015-12-16 23:57:08.565627] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:08.611996] [info] gameSVC.php included
+[2015-12-16 23:57:08.619236] [info] callBack
+[2015-12-16 23:57:08.620985] [info] Inside bind sql
+[2015-12-16 23:57:08.622941] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:08.624030] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:10.558459] [info] gameSVC.php included
+[2015-12-16 23:57:10.567367] [info] callBack
+[2015-12-16 23:57:10.568767] [info] Inside bind sql
+[2015-12-16 23:57:10.570089] [info] bind columns0
+[2015-12-16 23:57:10.571306] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:12.581816] [info] gameSVC.php included
+[2015-12-16 23:57:12.589169] [info] callBack
+[2015-12-16 23:57:12.590342] [info] Inside bind sql
+[2015-12-16 23:57:12.591625] [info] bind columns0
+[2015-12-16 23:57:12.592742] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:12.634193] [info] gameSVC.php included
+[2015-12-16 23:57:12.641406] [info] callBack
+[2015-12-16 23:57:12.642752] [info] Inside bind sql
+[2015-12-16 23:57:12.644459] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:12.645397] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:14.572231] [info] gameSVC.php included
+[2015-12-16 23:57:14.582609] [info] callBack
+[2015-12-16 23:57:14.583962] [info] Inside bind sql
+[2015-12-16 23:57:14.585325] [info] bind columns0
+[2015-12-16 23:57:14.586749] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:16.552561] [info] gameSVC.php included
+[2015-12-16 23:57:16.559640] [info] callBack
+[2015-12-16 23:57:16.560839] [info] Inside bind sql
+[2015-12-16 23:57:16.562056] [info] bind columns0
+[2015-12-16 23:57:16.562916] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:16.609919] [info] gameSVC.php included
+[2015-12-16 23:57:16.618227] [info] callBack
+[2015-12-16 23:57:16.619599] [info] Inside bind sql
+[2015-12-16 23:57:16.621318] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:16.622265] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:18.567325] [info] gameSVC.php included
+[2015-12-16 23:57:18.575856] [info] callBack
+[2015-12-16 23:57:18.577083] [info] Inside bind sql
+[2015-12-16 23:57:18.578315] [info] bind columns0
+[2015-12-16 23:57:18.579312] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:20.554558] [info] gameSVC.php included
+[2015-12-16 23:57:20.561741] [info] callBack
+[2015-12-16 23:57:20.563173] [info] Inside bind sql
+[2015-12-16 23:57:20.564522] [info] bind columns0
+[2015-12-16 23:57:20.565759] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:20.609801] [info] gameSVC.php included
+[2015-12-16 23:57:20.616731] [info] callBack
+[2015-12-16 23:57:20.618150] [info] Inside bind sql
+[2015-12-16 23:57:20.619868] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:20.620836] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:22.599030] [info] gameSVC.php included
+[2015-12-16 23:57:22.610707] [info] callBack
+[2015-12-16 23:57:22.612291] [info] Inside bind sql
+[2015-12-16 23:57:22.614242] [info] bind columns0
+[2015-12-16 23:57:22.615751] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:24.557893] [info] gameSVC.php included
+[2015-12-16 23:57:24.565989] [info] callBack
+[2015-12-16 23:57:24.567184] [info] Inside bind sql
+[2015-12-16 23:57:24.568355] [info] bind columns0
+[2015-12-16 23:57:24.569359] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:24.614232] [info] gameSVC.php included
+[2015-12-16 23:57:24.621174] [info] callBack
+[2015-12-16 23:57:24.622477] [info] Inside bind sql
+[2015-12-16 23:57:24.624191] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:24.625128] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:26.560610] [info] gameSVC.php included
+[2015-12-16 23:57:26.569377] [info] callBack
+[2015-12-16 23:57:26.570961] [info] Inside bind sql
+[2015-12-16 23:57:26.572295] [info] bind columns0
+[2015-12-16 23:57:26.573520] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:28.561551] [info] gameSVC.php included
+[2015-12-16 23:57:28.568711] [info] callBack
+[2015-12-16 23:57:28.569835] [info] Inside bind sql
+[2015-12-16 23:57:28.570842] [info] bind columns0
+[2015-12-16 23:57:28.571834] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:28.613965] [info] gameSVC.php included
+[2015-12-16 23:57:28.620871] [info] callBack
+[2015-12-16 23:57:28.622303] [info] Inside bind sql
+[2015-12-16 23:57:28.624113] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:28.625024] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:30.564258] [info] gameSVC.php included
+[2015-12-16 23:57:30.573551] [info] callBack
+[2015-12-16 23:57:30.574773] [info] Inside bind sql
+[2015-12-16 23:57:30.575979] [info] bind columns0
+[2015-12-16 23:57:30.577008] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:32.564655] [info] gameSVC.php included
+[2015-12-16 23:57:32.571872] [info] callBack
+[2015-12-16 23:57:32.572992] [info] Inside bind sql
+[2015-12-16 23:57:32.573990] [info] bind columns0
+[2015-12-16 23:57:32.574990] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:32.617615] [info] gameSVC.php included
+[2015-12-16 23:57:32.624591] [info] callBack
+[2015-12-16 23:57:32.626007] [info] Inside bind sql
+[2015-12-16 23:57:32.627763] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:32.628740] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:34.571234] [info] gameSVC.php included
+[2015-12-16 23:57:34.579659] [info] callBack
+[2015-12-16 23:57:34.580758] [info] Inside bind sql
+[2015-12-16 23:57:34.581744] [info] bind columns0
+[2015-12-16 23:57:34.582676] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:36.565213] [info] gameSVC.php included
+[2015-12-16 23:57:36.572668] [info] callBack
+[2015-12-16 23:57:36.574074] [info] Inside bind sql
+[2015-12-16 23:57:36.575400] [info] bind columns0
+[2015-12-16 23:57:36.576857] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:36.692799] [info] gameSVC.php included
+[2015-12-16 23:57:36.703811] [info] callBack
+[2015-12-16 23:57:36.705796] [info] Inside bind sql
+[2015-12-16 23:57:36.708653] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:36.710686] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:38.553828] [info] gameSVC.php included
+[2015-12-16 23:57:38.562323] [info] callBack
+[2015-12-16 23:57:38.563496] [info] Inside bind sql
+[2015-12-16 23:57:38.564690] [info] bind columns0
+[2015-12-16 23:57:38.565546] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:40.551105] [info] gameSVC.php included
+[2015-12-16 23:57:40.558645] [info] callBack
+[2015-12-16 23:57:40.559789] [info] Inside bind sql
+[2015-12-16 23:57:40.560790] [info] bind columns0
+[2015-12-16 23:57:40.561954] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:40.644817] [info] gameSVC.php included
+[2015-12-16 23:57:40.651693] [info] callBack
+[2015-12-16 23:57:40.653112] [info] Inside bind sql
+[2015-12-16 23:57:40.654825] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:40.655762] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:42.562640] [info] gameSVC.php included
+[2015-12-16 23:57:42.571296] [info] callBack
+[2015-12-16 23:57:42.572468] [info] Inside bind sql
+[2015-12-16 23:57:42.573632] [info] bind columns0
+[2015-12-16 23:57:42.574686] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:44.562283] [info] gameSVC.php included
+[2015-12-16 23:57:44.570436] [info] callBack
+[2015-12-16 23:57:44.571882] [info] Inside bind sql
+[2015-12-16 23:57:44.573251] [info] bind columns0
+[2015-12-16 23:57:44.574143] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:44.621313] [info] gameSVC.php included
+[2015-12-16 23:57:44.628598] [info] callBack
+[2015-12-16 23:57:44.630060] [info] Inside bind sql
+[2015-12-16 23:57:44.631683] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:44.632884] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:46.556822] [info] gameSVC.php included
+[2015-12-16 23:57:46.565507] [info] callBack
+[2015-12-16 23:57:46.566952] [info] Inside bind sql
+[2015-12-16 23:57:46.568258] [info] bind columns0
+[2015-12-16 23:57:46.569564] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:48.566632] [info] gameSVC.php included
+[2015-12-16 23:57:48.575732] [info] callBack
+[2015-12-16 23:57:48.577507] [info] Inside bind sql
+[2015-12-16 23:57:48.579039] [info] bind columns0
+[2015-12-16 23:57:48.580565] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:48.624469] [info] gameSVC.php included
+[2015-12-16 23:57:48.631820] [info] callBack
+[2015-12-16 23:57:48.633631] [info] Inside bind sql
+[2015-12-16 23:57:48.636023] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:48.637689] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:50.573858] [info] gameSVC.php included
+[2015-12-16 23:57:50.583623] [info] callBack
+[2015-12-16 23:57:50.585011] [info] Inside bind sql
+[2015-12-16 23:57:50.586469] [info] bind columns0
+[2015-12-16 23:57:50.587707] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:52.562179] [info] gameSVC.php included
+[2015-12-16 23:57:52.569274] [info] callBack
+[2015-12-16 23:57:52.570858] [info] Inside bind sql
+[2015-12-16 23:57:52.572212] [info] bind columns0
+[2015-12-16 23:57:52.573091] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:52.620270] [info] gameSVC.php included
+[2015-12-16 23:57:52.627166] [info] callBack
+[2015-12-16 23:57:52.628551] [info] Inside bind sql
+[2015-12-16 23:57:52.630326] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:52.631730] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:54.554241] [info] gameSVC.php included
+[2015-12-16 23:57:54.562807] [info] callBack
+[2015-12-16 23:57:54.564003] [info] Inside bind sql
+[2015-12-16 23:57:54.565197] [info] bind columns0
+[2015-12-16 23:57:54.566095] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:56.560106] [info] gameSVC.php included
+[2015-12-16 23:57:56.569103] [info] callBack
+[2015-12-16 23:57:56.570529] [info] Inside bind sql
+[2015-12-16 23:57:56.571855] [info] bind columns0
+[2015-12-16 23:57:56.572961] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:57:56.618091] [info] gameSVC.php included
+[2015-12-16 23:57:56.625425] [info] callBack
+[2015-12-16 23:57:56.626765] [info] Inside bind sql
+[2015-12-16 23:57:56.628523] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:57:56.629472] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:57:58.565131] [info] gameSVC.php included
+[2015-12-16 23:57:58.576165] [info] callBack
+[2015-12-16 23:57:58.577728] [info] Inside bind sql
+[2015-12-16 23:57:58.579152] [info] bind columns0
+[2015-12-16 23:57:58.580553] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:00.549293] [info] gameSVC.php included
+[2015-12-16 23:58:00.556387] [info] callBack
+[2015-12-16 23:58:00.557825] [info] Inside bind sql
+[2015-12-16 23:58:00.559104] [info] bind columns0
+[2015-12-16 23:58:00.560158] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:00.603255] [info] gameSVC.php included
+[2015-12-16 23:58:00.610183] [info] callBack
+[2015-12-16 23:58:00.611541] [info] Inside bind sql
+[2015-12-16 23:58:00.613256] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:00.614233] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:02.580292] [info] gameSVC.php included
+[2015-12-16 23:58:02.591594] [info] callBack
+[2015-12-16 23:58:02.593055] [info] Inside bind sql
+[2015-12-16 23:58:02.594439] [info] bind columns0
+[2015-12-16 23:58:02.595830] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:04.571556] [info] gameSVC.php included
+[2015-12-16 23:58:04.579833] [info] callBack
+[2015-12-16 23:58:04.581276] [info] Inside bind sql
+[2015-12-16 23:58:04.582572] [info] bind columns0
+[2015-12-16 23:58:04.583655] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:04.645499] [info] gameSVC.php included
+[2015-12-16 23:58:04.654586] [info] callBack
+[2015-12-16 23:58:04.656018] [info] Inside bind sql
+[2015-12-16 23:58:04.657814] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:04.659095] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:06.555191] [info] gameSVC.php included
+[2015-12-16 23:58:06.563697] [info] callBack
+[2015-12-16 23:58:06.565031] [info] Inside bind sql
+[2015-12-16 23:58:06.566225] [info] bind columns0
+[2015-12-16 23:58:06.567075] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:08.560345] [info] gameSVC.php included
+[2015-12-16 23:58:08.568103] [info] callBack
+[2015-12-16 23:58:08.569258] [info] Inside bind sql
+[2015-12-16 23:58:08.570292] [info] bind columns0
+[2015-12-16 23:58:08.571306] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:08.618647] [info] gameSVC.php included
+[2015-12-16 23:58:08.625382] [info] callBack
+[2015-12-16 23:58:08.626693] [info] Inside bind sql
+[2015-12-16 23:58:08.628407] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:08.629384] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:10.559945] [info] gameSVC.php included
+[2015-12-16 23:58:10.568588] [info] callBack
+[2015-12-16 23:58:10.569983] [info] Inside bind sql
+[2015-12-16 23:58:10.571299] [info] bind columns0
+[2015-12-16 23:58:10.572510] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:12.564115] [info] gameSVC.php included
+[2015-12-16 23:58:12.572052] [info] callBack
+[2015-12-16 23:58:12.573504] [info] Inside bind sql
+[2015-12-16 23:58:12.574753] [info] bind columns0
+[2015-12-16 23:58:12.575881] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:12.618541] [info] gameSVC.php included
+[2015-12-16 23:58:12.626960] [info] callBack
+[2015-12-16 23:58:12.628612] [info] Inside bind sql
+[2015-12-16 23:58:12.630328] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:12.631728] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:14.610385] [info] gameSVC.php included
+[2015-12-16 23:58:14.621450] [info] callBack
+[2015-12-16 23:58:14.622638] [info] Inside bind sql
+[2015-12-16 23:58:14.623650] [info] bind columns0
+[2015-12-16 23:58:14.624773] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:16.563853] [info] gameSVC.php included
+[2015-12-16 23:58:16.570996] [info] callBack
+[2015-12-16 23:58:16.572207] [info] Inside bind sql
+[2015-12-16 23:58:16.573415] [info] bind columns0
+[2015-12-16 23:58:16.574300] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:16.622860] [info] gameSVC.php included
+[2015-12-16 23:58:16.630126] [info] callBack
+[2015-12-16 23:58:16.631537] [info] Inside bind sql
+[2015-12-16 23:58:16.633703] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:16.635166] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:18.554877] [info] gameSVC.php included
+[2015-12-16 23:58:18.563323] [info] callBack
+[2015-12-16 23:58:18.564523] [info] Inside bind sql
+[2015-12-16 23:58:18.565715] [info] bind columns0
+[2015-12-16 23:58:18.566566] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:20.556616] [info] gameSVC.php included
+[2015-12-16 23:58:20.564028] [info] callBack
+[2015-12-16 23:58:20.565819] [info] Inside bind sql
+[2015-12-16 23:58:20.567285] [info] bind columns0
+[2015-12-16 23:58:20.568784] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:20.623435] [info] gameSVC.php included
+[2015-12-16 23:58:20.630938] [info] callBack
+[2015-12-16 23:58:20.633004] [info] Inside bind sql
+[2015-12-16 23:58:20.635411] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:20.637020] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:22.559145] [info] gameSVC.php included
+[2015-12-16 23:58:22.568706] [info] callBack
+[2015-12-16 23:58:22.569874] [info] Inside bind sql
+[2015-12-16 23:58:22.570921] [info] bind columns0
+[2015-12-16 23:58:22.571963] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:24.565603] [info] gameSVC.php included
+[2015-12-16 23:58:24.572901] [info] callBack
+[2015-12-16 23:58:24.574809] [info] Inside bind sql
+[2015-12-16 23:58:24.576241] [info] bind columns0
+[2015-12-16 23:58:24.577784] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:24.631627] [info] gameSVC.php included
+[2015-12-16 23:58:24.639945] [info] callBack
+[2015-12-16 23:58:24.642105] [info] Inside bind sql
+[2015-12-16 23:58:24.644536] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:24.646164] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:26.573118] [info] gameSVC.php included
+[2015-12-16 23:58:26.582418] [info] callBack
+[2015-12-16 23:58:26.584208] [info] Inside bind sql
+[2015-12-16 23:58:26.585794] [info] bind columns0
+[2015-12-16 23:58:26.587317] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:28.592623] [info] gameSVC.php included
+[2015-12-16 23:58:28.614218] [info] callBack
+[2015-12-16 23:58:28.615947] [info] Inside bind sql
+[2015-12-16 23:58:28.617595] [info] bind columns0
+[2015-12-16 23:58:28.619417] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:28.676927] [info] gameSVC.php included
+[2015-12-16 23:58:28.684604] [info] callBack
+[2015-12-16 23:58:28.686506] [info] Inside bind sql
+[2015-12-16 23:58:28.688929] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:28.690834] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:30.568957] [info] gameSVC.php included
+[2015-12-16 23:58:30.577276] [info] callBack
+[2015-12-16 23:58:30.578481] [info] Inside bind sql
+[2015-12-16 23:58:30.579699] [info] bind columns0
+[2015-12-16 23:58:30.580580] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:32.561872] [info] gameSVC.php included
+[2015-12-16 23:58:32.570502] [info] callBack
+[2015-12-16 23:58:32.572251] [info] Inside bind sql
+[2015-12-16 23:58:32.573884] [info] bind columns0
+[2015-12-16 23:58:32.575329] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:32.624578] [info] gameSVC.php included
+[2015-12-16 23:58:32.631576] [info] callBack
+[2015-12-16 23:58:32.632947] [info] Inside bind sql
+[2015-12-16 23:58:32.634660] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:32.635597] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:34.563471] [info] gameSVC.php included
+[2015-12-16 23:58:34.572138] [info] callBack
+[2015-12-16 23:58:34.573621] [info] Inside bind sql
+[2015-12-16 23:58:34.574821] [info] bind columns0
+[2015-12-16 23:58:34.575684] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:36.567857] [info] gameSVC.php included
+[2015-12-16 23:58:36.575218] [info] callBack
+[2015-12-16 23:58:36.576379] [info] Inside bind sql
+[2015-12-16 23:58:36.577378] [info] bind columns0
+[2015-12-16 23:58:36.578368] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:36.623991] [info] gameSVC.php included
+[2015-12-16 23:58:36.631084] [info] callBack
+[2015-12-16 23:58:36.632771] [info] Inside bind sql
+[2015-12-16 23:58:36.635137] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:36.636384] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:38.554994] [info] gameSVC.php included
+[2015-12-16 23:58:38.563205] [info] callBack
+[2015-12-16 23:58:38.564372] [info] Inside bind sql
+[2015-12-16 23:58:38.565560] [info] bind columns0
+[2015-12-16 23:58:38.566442] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:40.567321] [info] gameSVC.php included
+[2015-12-16 23:58:40.575048] [info] callBack
+[2015-12-16 23:58:40.576631] [info] Inside bind sql
+[2015-12-16 23:58:40.578047] [info] bind columns0
+[2015-12-16 23:58:40.579735] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:40.628750] [info] gameSVC.php included
+[2015-12-16 23:58:40.637779] [info] callBack
+[2015-12-16 23:58:40.639760] [info] Inside bind sql
+[2015-12-16 23:58:40.642239] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:40.643841] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:42.557539] [info] gameSVC.php included
+[2015-12-16 23:58:42.566708] [info] callBack
+[2015-12-16 23:58:42.567890] [info] Inside bind sql
+[2015-12-16 23:58:42.568892] [info] bind columns0
+[2015-12-16 23:58:42.569885] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:44.613353] [info] gameSVC.php included
+[2015-12-16 23:58:44.621298] [info] callBack
+[2015-12-16 23:58:44.622766] [info] Inside bind sql
+[2015-12-16 23:58:44.624083] [info] bind columns0
+[2015-12-16 23:58:44.625324] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:44.668446] [info] gameSVC.php included
+[2015-12-16 23:58:44.676300] [info] callBack
+[2015-12-16 23:58:44.677644] [info] Inside bind sql
+[2015-12-16 23:58:44.679394] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:44.680335] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:46.564682] [info] gameSVC.php included
+[2015-12-16 23:58:46.573136] [info] callBack
+[2015-12-16 23:58:46.574470] [info] Inside bind sql
+[2015-12-16 23:58:46.575678] [info] bind columns0
+[2015-12-16 23:58:46.576560] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:48.564476] [info] gameSVC.php included
+[2015-12-16 23:58:48.572438] [info] callBack
+[2015-12-16 23:58:48.573908] [info] Inside bind sql
+[2015-12-16 23:58:48.575180] [info] bind columns0
+[2015-12-16 23:58:48.575944] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:48.618191] [info] gameSVC.php included
+[2015-12-16 23:58:48.625180] [info] callBack
+[2015-12-16 23:58:48.626548] [info] Inside bind sql
+[2015-12-16 23:58:48.628262] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:48.629441] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:50.568213] [info] gameSVC.php included
+[2015-12-16 23:58:50.577455] [info] callBack
+[2015-12-16 23:58:50.579294] [info] Inside bind sql
+[2015-12-16 23:58:50.580522] [info] bind columns0
+[2015-12-16 23:58:50.581531] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:52.556678] [info] gameSVC.php included
+[2015-12-16 23:58:52.564146] [info] callBack
+[2015-12-16 23:58:52.565543] [info] Inside bind sql
+[2015-12-16 23:58:52.566828] [info] bind columns0
+[2015-12-16 23:58:52.568150] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:52.622741] [info] gameSVC.php included
+[2015-12-16 23:58:52.639374] [info] callBack
+[2015-12-16 23:58:52.642538] [info] Inside bind sql
+[2015-12-16 23:58:52.645760] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:52.647902] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:54.148468] [info] gameSVC.php included
+[2015-12-16 23:58:54.158711] [info] callBack
+[2015-12-16 23:58:54.160026] [info] gameSVC.php start called
+[2015-12-16 23:58:54.160847] [info] startData in gameBizData.php called with parameter4
+[2015-12-16 23:58:54.162117] [info] Inside bind sql
+[2015-12-16 23:58:54.163532] [info] bind columns0
+[2015-12-16 23:58:54.164304] [info] Game Status:0
+[2015-12-16 23:58:54.165699] [info] Inside bind sql
+[2015-12-16 23:58:54.167309] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:58:54.168401] [info] Return data from start [{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:54.168828] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:58:54.572326] [info] gameSVC.php included
+[2015-12-16 23:58:54.583514] [info] callBack
+[2015-12-16 23:58:54.585226] [info] Inside bind sql
+[2015-12-16 23:58:54.586941] [info] bind columns0
+[2015-12-16 23:58:54.588790] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:58:57.606971] [info] gameSVC.php included
+[2015-12-16 23:58:57.621341] [info] callBack
+[2015-12-16 23:58:57.623270] [info] Inside bind sql
+[2015-12-16 23:58:57.625155] [info] bind columns0
+[2015-12-16 23:58:57.627084] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:59:00.256138] [info] gameSVC.php included
+[2015-12-16 23:59:00.267204] [info] callBack
+[2015-12-16 23:59:00.267940] [info] gameSVC.php start called
+[2015-12-16 23:59:00.268408] [info] startData in gameBizData.php called with parameter4
+[2015-12-16 23:59:00.269795] [info] Inside bind sql
+[2015-12-16 23:59:00.271455] [info] bind columns0
+[2015-12-16 23:59:00.272222] [info] Game Status:0
+[2015-12-16 23:59:00.274111] [info] Inside bind sql
+[2015-12-16 23:59:00.276588] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:00.278296] [info] Return data from start [{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:59:00.278825] [info] return value from mid php[{"game_id":4,"whoseTurn":1,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":null}]
+[2015-12-16 23:59:00.894663] [info] gameSVC.php included
+[2015-12-16 23:59:00.902420] [info] callBack
+[2015-12-16 23:59:00.903930] [info] Inside bind sql
+[2015-12-16 23:59:00.905426] [info] bind columns0
+[2015-12-16 23:59:00.906831] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:59:03.932143] [info] gameSVC.php included
+[2015-12-16 23:59:03.941184] [info] callBack
+[2015-12-16 23:59:03.942905] [info] Inside bind sql
+[2015-12-16 23:59:03.944546] [info] bind columns0
+[2015-12-16 23:59:03.946063] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:59:06.914649] [info] gameSVC.php included
+[2015-12-16 23:59:06.924449] [info] callBack
+[2015-12-16 23:59:06.926121] [info] Inside bind sql
+[2015-12-16 23:59:06.927849] [info] bind columns0
+[2015-12-16 23:59:06.929630] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-16 23:59:08.230839] [info] gameSVC.php included
+[2015-12-16 23:59:08.269088] [info] callBack
+[2015-12-16 23:59:08.270016] [info] inside game SVC changeBoard
+[2015-12-16 23:59:08.270960] [info] inside game SVC changeBoardData attackunit 1
+[2015-12-16 23:59:08.290262] [info] gameSVC.php included
+[2015-12-16 23:59:08.301899] [info] callBack
+[2015-12-16 23:59:09.697551] [info] gameSVC.php included
+[2015-12-16 23:59:09.708699] [info] callBack
+[2015-12-16 23:59:09.710534] [info] Inside bind sql
+[2015-12-16 23:59:09.712552] [info] bind columns0
+[2015-12-16 23:59:09.714365] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:09.920160] [info] gameSVC.php included
+[2015-12-16 23:59:09.928431] [info] callBack
+[2015-12-16 23:59:09.929723] [info] Inside bind sql
+[2015-12-16 23:59:09.930757] [info] bind columns0
+[2015-12-16 23:59:09.931787] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:09.999068] [info] gameSVC.php included
+[2015-12-16 23:59:10.009290] [info] callBack
+[2015-12-16 23:59:10.011081] [info] Inside bind sql
+[2015-12-16 23:59:10.013628] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:10.015407] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:12.687288] [info] gameSVC.php included
+[2015-12-16 23:59:12.699954] [info] callBack
+[2015-12-16 23:59:12.702075] [info] Inside bind sql
+[2015-12-16 23:59:12.704493] [info] bind columns0
+[2015-12-16 23:59:12.706475] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:12.938309] [info] gameSVC.php included
+[2015-12-16 23:59:12.947808] [info] callBack
+[2015-12-16 23:59:12.949316] [info] Inside bind sql
+[2015-12-16 23:59:12.950701] [info] bind columns0
+[2015-12-16 23:59:12.952150] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:13.116770] [info] gameSVC.php included
+[2015-12-16 23:59:13.127756] [info] callBack
+[2015-12-16 23:59:13.129755] [info] Inside bind sql
+[2015-12-16 23:59:13.133136] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:13.135226] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:15.726924] [info] gameSVC.php included
+[2015-12-16 23:59:15.754971] [info] callBack
+[2015-12-16 23:59:15.758210] [info] Inside bind sql
+[2015-12-16 23:59:15.763005] [info] bind columns0
+[2015-12-16 23:59:15.764799] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:15.939363] [info] gameSVC.php included
+[2015-12-16 23:59:15.949800] [info] callBack
+[2015-12-16 23:59:15.951335] [info] Inside bind sql
+[2015-12-16 23:59:15.952620] [info] bind columns0
+[2015-12-16 23:59:15.953838] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:16.019732] [info] gameSVC.php included
+[2015-12-16 23:59:16.032063] [info] callBack
+[2015-12-16 23:59:16.034902] [info] Inside bind sql
+[2015-12-16 23:59:16.038466] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:16.040895] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:18.705746] [info] gameSVC.php included
+[2015-12-16 23:59:18.718900] [info] callBack
+[2015-12-16 23:59:18.720738] [info] Inside bind sql
+[2015-12-16 23:59:18.722461] [info] bind columns0
+[2015-12-16 23:59:18.723989] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:18.952507] [info] gameSVC.php included
+[2015-12-16 23:59:18.983964] [info] callBack
+[2015-12-16 23:59:18.986569] [info] Inside bind sql
+[2015-12-16 23:59:18.990833] [info] bind columns0
+[2015-12-16 23:59:18.993338] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:19.061966] [info] gameSVC.php included
+[2015-12-16 23:59:19.074525] [info] callBack
+[2015-12-16 23:59:19.078684] [info] Inside bind sql
+[2015-12-16 23:59:19.081921] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:19.085427] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:21.970756] [info] gameSVC.php included
+[2015-12-16 23:59:21.978151] [info] callBack
+[2015-12-16 23:59:21.979657] [info] Inside bind sql
+[2015-12-16 23:59:21.980865] [info] bind columns0
+[2015-12-16 23:59:21.981890] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:22.040877] [info] gameSVC.php included
+[2015-12-16 23:59:22.053877] [info] callBack
+[2015-12-16 23:59:22.055962] [info] Inside bind sql
+[2015-12-16 23:59:22.058612] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:22.060810] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:22.563122] [info] gameSVC.php included
+[2015-12-16 23:59:22.570755] [info] callBack
+[2015-12-16 23:59:22.572227] [info] Inside bind sql
+[2015-12-16 23:59:22.573648] [info] bind columns0
+[2015-12-16 23:59:22.575115] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:24.996869] [info] gameSVC.php included
+[2015-12-16 23:59:25.005124] [info] callBack
+[2015-12-16 23:59:25.006628] [info] Inside bind sql
+[2015-12-16 23:59:25.008132] [info] bind columns0
+[2015-12-16 23:59:25.009845] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:25.074736] [info] gameSVC.php included
+[2015-12-16 23:59:25.083718] [info] callBack
+[2015-12-16 23:59:25.085483] [info] Inside bind sql
+[2015-12-16 23:59:25.087887] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:25.088943] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:26.563246] [info] gameSVC.php included
+[2015-12-16 23:59:26.570626] [info] callBack
+[2015-12-16 23:59:26.571891] [info] Inside bind sql
+[2015-12-16 23:59:26.573116] [info] bind columns0
+[2015-12-16 23:59:26.573993] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:27.976515] [info] gameSVC.php included
+[2015-12-16 23:59:27.984443] [info] callBack
+[2015-12-16 23:59:27.985804] [info] Inside bind sql
+[2015-12-16 23:59:27.987127] [info] bind columns0
+[2015-12-16 23:59:27.988548] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:28.054896] [info] gameSVC.php included
+[2015-12-16 23:59:28.064563] [info] callBack
+[2015-12-16 23:59:28.066014] [info] Inside bind sql
+[2015-12-16 23:59:28.067774] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:28.069415] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:30.551496] [info] gameSVC.php included
+[2015-12-16 23:59:30.558790] [info] callBack
+[2015-12-16 23:59:30.560318] [info] Inside bind sql
+[2015-12-16 23:59:30.561798] [info] bind columns0
+[2015-12-16 23:59:30.563270] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:30.994929] [info] gameSVC.php included
+[2015-12-16 23:59:31.003530] [info] callBack
+[2015-12-16 23:59:31.005037] [info] Inside bind sql
+[2015-12-16 23:59:31.006314] [info] bind columns0
+[2015-12-16 23:59:31.007213] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:31.064573] [info] gameSVC.php included
+[2015-12-16 23:59:31.071979] [info] callBack
+[2015-12-16 23:59:31.073427] [info] Inside bind sql
+[2015-12-16 23:59:31.075407] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:31.076433] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:34.008358] [info] gameSVC.php included
+[2015-12-16 23:59:34.018568] [info] callBack
+[2015-12-16 23:59:34.020405] [info] Inside bind sql
+[2015-12-16 23:59:34.022202] [info] bind columns0
+[2015-12-16 23:59:34.024224] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:34.127089] [info] gameSVC.php included
+[2015-12-16 23:59:34.137044] [info] callBack
+[2015-12-16 23:59:34.138899] [info] Inside bind sql
+[2015-12-16 23:59:34.141760] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:34.143626] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:34.553482] [info] gameSVC.php included
+[2015-12-16 23:59:34.561671] [info] callBack
+[2015-12-16 23:59:34.562894] [info] Inside bind sql
+[2015-12-16 23:59:34.564640] [info] bind columns0
+[2015-12-16 23:59:34.565990] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:37.023124] [info] gameSVC.php included
+[2015-12-16 23:59:37.033165] [info] callBack
+[2015-12-16 23:59:37.035079] [info] Inside bind sql
+[2015-12-16 23:59:37.036703] [info] bind columns0
+[2015-12-16 23:59:37.038446] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:37.112461] [info] gameSVC.php included
+[2015-12-16 23:59:37.125622] [info] callBack
+[2015-12-16 23:59:37.127655] [info] Inside bind sql
+[2015-12-16 23:59:37.130996] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:37.134598] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:37.567239] [info] gameSVC.php included
+[2015-12-16 23:59:37.576637] [info] callBack
+[2015-12-16 23:59:37.578402] [info] Inside bind sql
+[2015-12-16 23:59:37.579893] [info] bind columns0
+[2015-12-16 23:59:37.581976] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:40.022887] [info] gameSVC.php included
+[2015-12-16 23:59:40.034102] [info] callBack
+[2015-12-16 23:59:40.036133] [info] Inside bind sql
+[2015-12-16 23:59:40.038101] [info] bind columns0
+[2015-12-16 23:59:40.040360] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:40.125293] [info] gameSVC.php included
+[2015-12-16 23:59:40.136413] [info] callBack
+[2015-12-16 23:59:40.139164] [info] Inside bind sql
+[2015-12-16 23:59:40.141969] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:40.144099] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:40.592675] [info] gameSVC.php included
+[2015-12-16 23:59:40.602901] [info] callBack
+[2015-12-16 23:59:40.605096] [info] Inside bind sql
+[2015-12-16 23:59:40.606611] [info] bind columns0
+[2015-12-16 23:59:40.608109] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:43.033173] [info] gameSVC.php included
+[2015-12-16 23:59:43.046379] [info] callBack
+[2015-12-16 23:59:43.048391] [info] Inside bind sql
+[2015-12-16 23:59:43.050216] [info] bind columns0
+[2015-12-16 23:59:43.052392] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:43.125464] [info] gameSVC.php included
+[2015-12-16 23:59:43.137305] [info] callBack
+[2015-12-16 23:59:43.139766] [info] Inside bind sql
+[2015-12-16 23:59:43.143037] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:43.146908] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:43.595868] [info] gameSVC.php included
+[2015-12-16 23:59:43.607101] [info] callBack
+[2015-12-16 23:59:43.608584] [info] Inside bind sql
+[2015-12-16 23:59:43.609954] [info] bind columns0
+[2015-12-16 23:59:43.611356] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:46.028875] [info] gameSVC.php included
+[2015-12-16 23:59:46.036345] [info] callBack
+[2015-12-16 23:59:46.037724] [info] Inside bind sql
+[2015-12-16 23:59:46.038868] [info] bind columns0
+[2015-12-16 23:59:46.039894] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:46.116771] [info] gameSVC.php included
+[2015-12-16 23:59:46.126848] [info] callBack
+[2015-12-16 23:59:46.128866] [info] Inside bind sql
+[2015-12-16 23:59:46.130680] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:46.131664] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:46.611133] [info] gameSVC.php included
+[2015-12-16 23:59:46.618823] [info] callBack
+[2015-12-16 23:59:46.620109] [info] Inside bind sql
+[2015-12-16 23:59:46.621313] [info] bind columns0
+[2015-12-16 23:59:46.622693] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:49.087511] [info] gameSVC.php included
+[2015-12-16 23:59:49.095612] [info] callBack
+[2015-12-16 23:59:49.096756] [info] Inside bind sql
+[2015-12-16 23:59:49.097933] [info] bind columns0
+[2015-12-16 23:59:49.098951] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:49.151602] [info] gameSVC.php included
+[2015-12-16 23:59:49.160741] [info] callBack
+[2015-12-16 23:59:49.162465] [info] Inside bind sql
+[2015-12-16 23:59:49.164875] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:49.166569] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:49.617090] [info] gameSVC.php included
+[2015-12-16 23:59:49.627331] [info] callBack
+[2015-12-16 23:59:49.628809] [info] Inside bind sql
+[2015-12-16 23:59:49.629987] [info] bind columns0
+[2015-12-16 23:59:49.631409] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:52.056236] [info] gameSVC.php included
+[2015-12-16 23:59:52.066577] [info] callBack
+[2015-12-16 23:59:52.068203] [info] Inside bind sql
+[2015-12-16 23:59:52.069708] [info] bind columns0
+[2015-12-16 23:59:52.071139] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:52.142368] [info] gameSVC.php included
+[2015-12-16 23:59:52.154442] [info] callBack
+[2015-12-16 23:59:52.156410] [info] Inside bind sql
+[2015-12-16 23:59:52.159503] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:52.160936] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:52.627134] [info] gameSVC.php included
+[2015-12-16 23:59:52.637573] [info] callBack
+[2015-12-16 23:59:52.639453] [info] Inside bind sql
+[2015-12-16 23:59:52.641201] [info] bind columns0
+[2015-12-16 23:59:52.642805] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:55.572501] [info] gameSVC.php included
+[2015-12-16 23:59:55.582452] [info] callBack
+[2015-12-16 23:59:55.583991] [info] Inside bind sql
+[2015-12-16 23:59:55.585479] [info] bind columns0
+[2015-12-16 23:59:55.586961] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:55.651144] [info] gameSVC.php included
+[2015-12-16 23:59:55.663140] [info] callBack
+[2015-12-16 23:59:55.664769] [info] Inside bind sql
+[2015-12-16 23:59:55.666388] [info] bind columns0
+[2015-12-16 23:59:55.667680] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:55.732290] [info] gameSVC.php included
+[2015-12-16 23:59:55.742912] [info] callBack
+[2015-12-16 23:59:55.744822] [info] Inside bind sql
+[2015-12-16 23:59:55.749818] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:55.751794] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]
+[2015-12-16 23:59:58.647221] [info] gameSVC.php included
+[2015-12-16 23:59:58.656968] [info] callBack
+[2015-12-16 23:59:58.658749] [info] Inside bind sql
+[2015-12-16 23:59:58.660739] [info] bind columns0
+[2015-12-16 23:59:58.662436] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:59.566052] [info] gameSVC.php included
+[2015-12-16 23:59:59.573460] [info] callBack
+[2015-12-16 23:59:59.574618] [info] Inside bind sql
+[2015-12-16 23:59:59.575820] [info] bind columns0
+[2015-12-16 23:59:59.576698] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-16 23:59:59.631517] [info] gameSVC.php included
+[2015-12-16 23:59:59.638608] [info] callBack
+[2015-12-16 23:59:59.639936] [info] Inside bind sql
+[2015-12-16 23:59:59.641644] [info] bind columns0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+[2015-12-16 23:59:59.642623] [info] return value from mid php[{"game_id":4,"whoseTurn":0,"player0_name":"Snedden","player0_pieceID":"0","player0_boardI":"24","player0_boardJ":"24","player0_attacking":0,"player1_name":"Thomas","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":1,"last_updated":"2015-12-16 16:14:27","status":"inGame","winner":null,"attackedUnit":"1"}]

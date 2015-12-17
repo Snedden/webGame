@@ -34,34 +34,32 @@ function hexMesh(){
 		unit22.makeUnit(svg);
 	}
 
-	this.changeTurn= function changeTurn(fromUserClick){
+	this.changeTurn= function changeTurn(){
 				//locally
 				console.log('Before:',turn);
 				turn=Math.abs(turn-1);
 				console.log('after:',turn);
-				
+
 				//how about for the server (and other player)?
 				//send JSON message to server, have both clients monitor server to know who's turn it is...
 				//document.getElementById('output2').firstChild.data='playerId '+playerId+ ' turn '+turn;
-				if(fromUserClick){
-					changeServerTurnAjax('changeTurn',gameId);
-					gameObj.changeHelpInfo("Opponents turn");
-				}
+				changeServerTurnAjax('changeTurn',gameId);
+				gameObj.changeHelpInfo("Opponents turn");
+
 			}		
 	
 
-	this.moveSelected=function moveSelected(moveToHex,unit,fromUserClick,attacking){
+	this.moveSelected=function moveSelected(moveToHex,unit,fromUserClick,attacking,attackedUnit){
 	console.log('moveToHex:',moveToHex.num,'unit:',unit,'fromUserClick:',fromUserClick,'attacking:',attacking);	
-		//if(moveToHex.isOccupied===false){
+
 			//setting new cords on screen
 			//console.log('unit1',unit);
-			//unit.unselectAll();
+
 			this.selectedEle=document.getElementById(unit.id); //get corresponding html dom unit
-			//unitArray[unit.num].isMoving=true;  //set in memory unit to isMoving
+
 			unit.isMoving=true;   //set  isMoving
 			var self=this;
-			//var repeater;
-			//var dxy=1;
+
 			this.selected;
             
 
@@ -70,84 +68,42 @@ function hexMesh(){
 			//unit.unitEle.style.transformOrigin=hexArray[0].cx,hexArray[0].cy;
             unit.unitEle.setAttribute('transform', transformAttr);
 		    
-		   // unit.unitEle.setAttribute('cx',moveToHex.cx);
-		    //unit.unitEle.setAttribute('cy',moveToHex.cy);	
-          
-			//var curX=unit.unitEle.getAttribute('cx');
-			//var curY=unit.unitEle.getAttribute('cy');
-			var attackingBool=0;
-			//console.log('curX '+curX+'curY ',curY);
-			/*if(curX<moveToHex.cx) //moveRight
-			{
-				unit.unitEle.setAttribute('cx',curX*1+dxy);
-				//this.selectedEle.setAttribute('cx',curX*1+dxy);
-			}
-			if(curX>moveToHex.cx)//moveLeft
-			{
-				unit.unitEle.setAttribute('cx',curX*1-dxy);
-				//this.selectedEle.setAttribute('cx',curX*1-dxy);
-			}
-			if(curY<moveToHex.cy)//movedown
-			{
-				unit.unitEle.setAttribute('cy',curY*1+dxy);
-				//this.selectedEle.setAttribute('cy',curY*1+dxy);
-			}
-			if(curY>moveToHex.cy)//moveup
-			{
-				//console.log('move Up');
-				unit.unitEle.setAttribute('cy',curY*1-dxy);
-				//this.selectedEle.setAttribute('cy',curY*1-dxy);
-			}*/
-			//console.log('condition:'+curY+'<'+parseInt(moveToHex.cy));
-			
-			//destination hex
-			//if((Math.abs(curY-moveToHex.cy))<1&&(Math.abs(curX-moveToHex.cx)<1)){
-			//	clearTimeout(repeater);                           //stop moment 
-                hexArray[unit.hexagon.num].isOccupied=false; //set isOccupied of start-hex as false
-				hexArray[moveToHex.num].isOccupied=true;   //set isOccupied of the destination hex
-				//unitArray[unit.num].hexagon=moveToHex;   //set final location of in memory unit
 
-				unit.hexagon=moveToHex;                               
-				//this.selectedUnit.hexagon=moveToHex;                  //placeHolder final location 
-				
-				unit.isMoving=false;  //set in memory unit to isMoving as false
-				//this.selectedUnit.isMoving=false;   //set place holder as isMoving as false
-                
-                unit.moveHpText();            ///move HPtex
-				//change in database
-				
-				
-                 console.log(fromUserClick); 
-				//Don't change when call back
-				if(fromUserClick){
-					console.log('changeBoard called');
-					changeBoardAjax(unit.num,moveToHex.num,moveToHex.num,attackingBool,'changeBoard',gameId);
-				}
-				
-				this.changeTurn(fromUserClick);
 
-				
-                console.log(unitArray);
-				console.log('cleared');
-				//clear selectedUnit in memnory
-				//this.selectedUnit={	name:'placeholder',
-				//		isMoving:false};    //need to initialize it to act as a property  need to ask professor why
- 				//Clear selected dom unit
-				//this.selectedEle='';
-                
-				return true; //piece was succesfully moved
+			//stop moment
+			hexArray[unit.hexagon.num].isOccupied=false; //set isOccupied of start-hex as false
+			hexArray[moveToHex.num].isOccupied=true;   //set isOccupied of the destination hex
 
-			//}
-			
-			//else if(!repeater){
-			//repeater=setTimeout(function(){self.moveSelected(moveToHex,unit,fromUserClick,attacking)},1); 
-			//}
-			
-		//}	
-		//else if(moveToHex.isOccupied){
-		//	console.warn('place is occupied by a unit');
-		//	return false; //can;t move piece
-		///}
+
+			unit.hexagon=moveToHex;
+
+
+			unit.isMoving=false;  //set in memory unit to isMoving as false
+
+
+			unit.moveHpText();            ///move HPtex
+			//change in database
+			var attactkedUnit=(attackedUnit)?attackedUnit:'none';
+			var attackingBool = (attacking) ? 1:0;
+			console.log(fromUserClick);
+			//Don't change when call back
+			if(fromUserClick){
+				console.log('changeBoard called');
+				changeBoardAjax(unit.num,moveToHex.num,attackingBool,attactkedUnit.num,'changeBoard',gameId);
+				this.changeTurn();// local turn is change in the call back of the heartbeat for the opponent
+				gameObj.changeHelpInfo("Opponents turn");
+			}
+
+
+
+
+			console.log(unitArray);
+			console.log('cleared');
+
+
+			return true; //piece was succesfully moved
+
+
 	}
 	
 	//get the unit from unit array

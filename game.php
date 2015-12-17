@@ -1,7 +1,14 @@
 <!doctype html>
 <html>
 	<head>
-		
+		<!--checking if user is authenticated-->
+		<?php
+		session_start();
+		if (!isset($_SESSION["user_id"]))
+		{
+			header("location: index.php");
+		}
+		?>
     <title>
 	 Heroes
 	</title>
@@ -19,7 +26,7 @@
           	<h1 id="playerNameHeading"><?php echo $_GET['player']?></h1>
           	<p id="infoPara"></p>
 		</div>
-		<svg id="color-fill" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="450" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg id="svgId" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="450" xmlns:xlink="http://www.w3.org/1999/xlink">
 	  
 			
 		</svg>
@@ -69,7 +76,7 @@
 			var gameId=<?php echo $_GET['gameId'] ?>;
 			var player="<?php echo $_GET['player']?>";
 			//alert(playerId);
-			initGameAjax('start', 38);
+			initGameAjax('start', gameId);
 	</script>
 	
 

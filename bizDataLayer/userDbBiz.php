@@ -39,7 +39,7 @@ function insertUser($newUserData) {
 
 		if($stmt->fetch()){
 			$logger->info(__FILE__.": User is not null.");
-			$logger->debug(__FILE__.": ".$user);
+			//$logger->debug(__FILE__.": ".$user);
 			$errorMsg = array(
 	            'error' =>'Email Id already exist,forgot password?.'
 	        );
@@ -70,7 +70,7 @@ function insertUser($newUserData) {
                  ?,
                  ?,
                  ?)";
-	$newUserId;
+
 	try {
 		$stmt = $mysqli->prepare($sql);
 		$logger->info("inside try of insert user");

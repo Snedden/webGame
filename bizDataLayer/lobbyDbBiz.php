@@ -246,7 +246,7 @@ function getChallengeStatusDB($d){
 		$logger->error("Database is not setup property");
 	}
     $chlgnId=$d['id'];
-	$sql="SELECT status FROM challenges WHERE challenge_id=?";
+	$sql="SELECT status,game_id FROM challenges WHERE challenge_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 
@@ -257,7 +257,8 @@ function getChallengeStatusDB($d){
 			//$mysqli->close();
 			$formatData=[
 					'chlgnid'=>$chlgnId,
-					'status'=>$data[0]['status']
+					'status'=>$data[0]['status'],
+				    'game_id'=>$data[0]['game_id']
 			];
 			return json_encode($formatData);
 		}else{
@@ -313,15 +314,17 @@ function getSentChallengesDB($user){
 	}
 
 	$sql="
-		  Select distinct u.email,c.challenge_id,c.status,c.timestamp
+		  Select distinct u.email,c.challenge_id,c.game_id,c.status,c.timestamp
 			from
-				(select ch.challenge_id,ch.status,ch.from_user,ch.to_user,timestamp, (select Max(timestamp) from 						challenges where to_user=ch.to_user and from_user=9) as latest from test.challenges ch  ) c
+				(select ch.challenge_id,ch.game_id,ch.status,ch.from_user,ch.to_user,timestamp, (select Max(timestamp) from challenges
+				 where to_user=ch.to_user and from_user=?) as latest
+				 from test.challenges ch  ) c
 			join test.users u
 			on
 			 	c.to_user=u.iduser
 			and
 		  	c.latest=c.timestamp
-		  where (c.status='open' || c.status='rejected')";   ///get most recent challenge which was open or rejected
+		  ";   ///get most recent challenge
 
 	try{
 		if($stmt=$mysqli->prepare($sql)){
@@ -340,7 +343,45 @@ function getSentChallengesDB($user){
 			$logger->info('something went wrog in getSentChallenge');
 	}
 }
+//update challenge status to 'met'
+function metChallengesDB($id){
+	global $logger,$mysqli;
+	$logger->info('inside getOpenChallengessDB');
 
+	$sql="update  challenges set status='met' where challenge_id=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+			$stmt->bind_param("i",$id);
+			$stmt->execute();
+			$stmt->close();
+
+			//get gameid to return
+			$sql="select game_id from challenges where challenge_id=?";
+			try{
+				if($stmt=$mysqli->prepare($sql)){
+					$stmt->bind_param("i",$id);
+					$data=bindSql($stmt);
+
+					$game_id=$data[0]['game_id'];
+					return $game_id;
+				}
+				else{
+					$logger->error('Somthing went wrong in prepare statement of game in metchallnge'.$mysqli->error);
+				}
+			}catch(Excpetino $e){
+				$logger->error('Something went wrong in getting status of the game  in startData');
+			}
+		}
+		else{
+			$logger->info('Something went wrong while preparing statement metChallngeDb'.$mysqli->error);
+			return false;
+		}
+
+	}catch(Exception $e){
+		$logger->info('Something went wrong while updating status of challenges in metChallengeDB');
+		return false;
+	}
+}
 function rejectChallengeDB($id){
 	global $logger,$mysqli;
 	$logger->info('inside rejectChallengessDB');
@@ -400,7 +441,7 @@ function acceptChallengeDB($id){
 			$challengee=$data[0]['first_name'];
 
 			//insert a new game in games table
-			$sql="insert into heroes_games(player0_name,player1_name) values(?,?)";
+			$sql="insert into heroes_games(player0_name,player1_name,status) values(?,?,'started')";
 
 			try{
 				if($stmt=$mysqli->prepare($sql)){
@@ -411,15 +452,14 @@ function acceptChallengeDB($id){
 					if ($stmt->execute()) {
 						$newGameId = $mysqli->insert_id;
 						$logger->debug("A game with id " . $newGameId . " was created.");
-						$stmt->close();
-						$mysqli->close();
+
 						$logger->info("game inserted");
                         //update challenge status to accepted
-						$sql="update challeges set status='accepted'where challenge_id=?";
+						$sql="update test.challenges set status='accepted',game_id=?  where challenge_id=?";
 						try{
 							if($stmt=$mysqli->prepare($sql)){
 
-								if (!$stmt->bind_param('i',$id)) {
+								if (!$stmt->bind_param('ii',$newGameId,$id)) {
 									$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 								}
 

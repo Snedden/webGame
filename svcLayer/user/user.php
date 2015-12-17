@@ -53,7 +53,7 @@ function registerUser($d, $ip, $token) {
         'email' => $data['email'],
         
         'password' => $password_hash,
-        'status' => 1,
+        'status' => 0,
         'registration_date' => date('Y-m-d G:i:s')
     );
     
@@ -63,6 +63,23 @@ function registerUser($d, $ip, $token) {
     return insertUser($userData);
     
 }
+//check session
+function checkSession($activity){
+    global $logger;
+
+    $logger->info('in check session'.$_SESSION['user_id'].' '.$activity + 10 * 60 ." time :".time());
+
+    if ($activity + 10 * 60 < time()) { //set to 10 minutes in
+        // session timed out
+        return true;
+    } else {
+        // session ok
+        return false;
+    }
+}
+
+
+
 //this is the function I call
 function validateData($data){
     global $logger,$validationError;
@@ -145,7 +162,8 @@ function signIn($d, $ip, $token) {
                 $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
                 session_start();
                 $_SESSION['user_id'] = $user[0]['iduser'];
-                $logger->info("Session set  ". $_SESSION['user_id']);
+                $_SESSION['last_activity'] =time();
+                $logger->info("Session set  ". $_SESSION['user_id'] ."last_activty".$_SESSION['last_activity']);
                 $Response = array(
                     'Message' => "Logged-in"
                 );

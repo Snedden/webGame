@@ -23,40 +23,71 @@ if(mysqli_connect_errno()){
 	
 */
 function startData($gameId){
-	//$logger->info('startData in gameBizData.php called with parameter'.$gameId);
-	global $mysqli;
-	//return $gameId.'sdf';
-	//simple test for THIS 'game' - resets the last move and such to empty
-	$sql = "UPDATE heroes_games SET player0_pieceID=null, player0_boardI=null, player0_boardJ=null,player0_attacking=0, player1_pieceID=null, player1_boardI=null, player1_boardJ=null,player1_attacking=0 WHERE game_id=?";
+
+	global $mysqli,$logger;
+	$logger->info('startData in gameBizData.php called with parameter'.$gameId);
+    //Get status of the current game
+	$sql="select status from heroes_games where game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
-			//bind parameters for the markers (s - string, i - int, d - double, b - blob)
 			$stmt->bind_param("i",$gameId);
-			$stmt->execute();
-			$stmt->close();
-		}else{
-        	throw new Exception("An error occurred while setting up data");
-        }
-	}catch (Exception $e) {
-        log_error($e, $sql, null);
-		return false;
-    }
+			$data=bindSql($stmt);
+
+			$gameStatus=$data[0]['status'];
+		}
+		else{
+			$logger->error('Somthing went wrong in prepare statement of game in startData()'.$mysqli->error);
+		}
+	}catch(Excpetino $e){
+		$logger->error('Something went wrong in getting status of the game  in startData');
+	}
+
+
+	$logger->info('Game Status:'.strcmp('inGame',$gameStatus));
+	//Init game table only once ,to avoid refresh button click by the user
+	if(strcmp('inGame',$gameStatus)!=0){
+   		 $logger->info('inside start game update');
+
+		//return $gameId.'sdf';
+		//simple test for THIS 'game' - resets the last move and such to empty
+		$sql = "UPDATE heroes_games SET player0_pieceID=null, player0_boardI=null, player0_boardJ=null,player0_attacking=0, player1_pieceID=null, player1_boardI=null, player1_boardJ=null,player1_attacking=0,status='inGame' WHERE game_id=?";
+		try{
+			if($stmt=$mysqli->prepare($sql)){
+				//bind parameters for the markers (s - string, i - int, d - double, b - blob)
+				$stmt->bind_param("i",$gameId);
+				$stmt->execute();
+				$stmt->close();
+			}else{
+
+				$logger->info('There was a error in prepare statement startData '.$mysqli->error);
+			}
+		}catch (Exception $e) {
+			log_error($e, $sql, null);
+			return false;
+		}
+
+	}  //end of heroes_table init
+
 	//get the init of the game
 	$sql = "SELECT * FROM heroes_games WHERE game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			//bind parameters for the markers (s - string, i - int, d - double, b - blob)
 			$stmt->bind_param("i",$gameId);
-			$data=returnJson($stmt);
+			$data=bindSql($stmt);
+			$data=json_encode($data);
 			$mysqli->close();
+			$logger->info("Return data from start $data");
 			return $data;
 		}else{
-            throw new Exception("An error occurred while fetching record data");
+			$logger->info('There was a error in prepare statement startData select '.$mysqli->error);
         }
 	}catch (Exception $e) {
         log_error($e, $sql, null);
 		return false;
     }
+
+
 }
 /*************************
 	checkTurnData
@@ -67,7 +98,8 @@ function checkTurnData($gameId){
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			$stmt->bind_param("i",$gameId);
-			$data=returnJson($stmt);
+			$data=bindSql($stmt);
+			$data=json_encode($data);
 			$mysqli->close();
 			return $data;
 		}else{
@@ -107,7 +139,7 @@ function changeTurnData($gameId){
         	throw new Exception("An error occurred while changing turn, step 3");
         }
 	}catch (Exception $e) {
-        log_error($e, $sql, null);
+
 		return false;
     }
 	$mysqli->close();
@@ -115,22 +147,22 @@ function changeTurnData($gameId){
 /*************************
 	changeBoardData 38~dragon|1|0~32~32~0
 */
-function changeBoardData($gameId,$pieceId,$boardI,$boardJ,$playerId,$isAttack){
+//val+"~"+pieceId+"~"+boardI+"~"+PlayerId+"~"+isAttacking+"~"+attackedPiece
+function changeBoardData($gameId,$pieceId,$boardI,$playerId,$isAttack,$attackedUnit){
 
 	//update the board
 	global $mysqli;
 	global $logger;
 
-	$logger->info('inside game SVC changeBoardData');
-	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=".$isAttack.", player".$playerId."_boardJ=? WHERE game_id=?";
+	$logger->info('inside game SVC changeBoardData attackunit '.$attackedUnit);
+	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=?,attackedUnit=? WHERE game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
-			$stmt->bind_param("siii",$pieceId,$boardI,$boardJ,$gameId);
+			$stmt->bind_param("siisi",$pieceId,$boardI,$isAttack,$attackedUnit,$gameId);
 			$stmt->execute();
 			$stmt->close();
 		}else{
-			$logger->info('error while inserting change board data');
-        	throw new Exception("An error occurred while changeBoard");
+			$logger->error('prepared stament failed in changeboard data'.$mysqli->error);
         }
 	}catch (Exception $e) {
         log_error($e, $sql, null);
@@ -147,7 +179,8 @@ function getMoveData($gameId){
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			$stmt->bind_param("i",$gameId);
-			$data=returnJson($stmt);
+			$data=bindSql($stmt);
+			$data=json_encode($data);
 			$mysqli->close();
 			return $data;
 		}else{
@@ -158,13 +191,61 @@ function getMoveData($gameId){
 		return false;
     }
 }
+
+function checkWinnerDB($gameId){
+	global $mysqli;
+
+	global $mysqli;
+	$sql="SELECT winner FROM heroes_games WHERE game_id=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+			$stmt->bind_param("i",$gameId);
+			$data=bindSql($stmt);
+			$data=json_encode($data);
+			
+			return $data;
+		}else{
+			throw new Exception("An error occurred while getMoveData");
+		}
+	}catch (Exception $e) {
+		log_error($e, $sql, null);
+		return false;
+	}
+}
+
+function winGameDB($data){
+	global $logger,$mysqli;
+	$logger->info('inside winsDB');
+
+	$logger->info("Data at winGameDB()".print_r($data,true));
+
+
+	$sql="update  heroes_games set status='complete',winner=? where game_id=?";
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+			$stmt->bind_param("ii",$data[playerId],$data[gameId]);
+			$stmt->execute();
+			$stmt->close();
+
+		    return true;
+		}
+		else{
+			$logger->error('Something went wrong while preparing statement inGameDb'.$mysqli->error);
+			return false;
+		}
+
+	}catch(Exception $e){
+		$logger->error('Something went wrong while updating status of challenges in metChallengeDB');
+		return false;
+	}
+}
 /*********************************Utilities*********************************/
 /*************************
 	returnJson
 	takes: prepared statement
 		-parameters already bound
 	returns: json encoded multi-dimensional associative array
-*/
+
 function returnJson ($stmt){
 	$stmt->execute();
 	$stmt->store_result();
@@ -193,133 +274,9 @@ function returnJson ($stmt){
 	header("Content-Type:text/plain");
 	// This will become the response value for the XMLHttpRequest object
     return json_encode($data);
-}
+}*/
 
 
-//users tables interactions
-function insertUser($newUserData) {
 
-
-	global $logger, $mysqli;
-	$logger->debug("Inside insertUser() function.");
-	 
-    
-   
-	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
-	} else {
-		$logger->debug("The database is not null - OK");
-	}
-
-	//Check if email already exists
-    $sql="select iduser from users where email=?";
-    try{
-    	/* Prepared statement, stage 1: prepare */
-		if (!($stmt = $mysqli->prepare($sql))) {
-    		 $logger->error("Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error);
-		}
-
-		/* Prepared statement, stage 2: bind and execute */
-		
-		if (!$stmt->bind_param('s', $newUserData['email'])) {
-		    $logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
-		}
-
-		if (!$stmt->execute()) {
-		    $logger->error( "Execute failed: (" . $stmt->errno . ") " . $stmt->error);
-		}
-		
-		
-		$logger->info( "result user : ". $stmt->fetch());
-
-
-		if($stmt->fetch()){
-			$logger->info(__FILE__.": User is not null.");
-			$logger->debug(__FILE__.": ".$user);
-			$errorMsg = array(
-	            'error' =>'Email Id already exist,forgot password?.'
-	        );
-	        $logger->info("user exist error as".$errorMsg);
-	        return json_encode($errorMsg);
-		} 
-
-    }
-    catch(Exception $ex){
-     	$logger->error('failed to read user from db'.$mysqli->error);
-     	return false;
-    }
-   
-
-
-	//register user
-	$sql = "INSERT INTO users
-               (first_name,
-                last_name,
-                email,
-                password,
-                status,
-                registration_date)
-            VALUES
-                (?,
-                 ?,
-                 ?,
-                 ?,
-                 ?,
-                 ?)";
-	$newUserId;
-	try {
-		$stmt = $mysqli->prepare($sql);
-		$logger->info("inside try of insert user");
-        
-        $stmt->bind_param('ssssis', $newUserData['firstName'], $newUserData['lastName'], $newUserData['email'], $newUserData['password'],$newUserData['status'],$newUserData['registration_date']);
-        $logger->info("v1".$newUserData['firstName']."v2".$newUserData['lastName']."v3".$newUserData['email']."v4".$newUserData['password']."v5".$newUserData['statusId']."v6".$newUserData['registration_date']);
-		//$logger->info('stmt:'.$sql.'result:'.$stmt->execute().'error:'.$mysqli->error);
-		if ($stmt->execute()) {
-			$newUserId = $mysqli->insert_id;
-			$logger->debug("A user with id " . $newUserId . " was created.");
-			$stmt->close();
-			$mysqli->close();
-			$logger->info("user inserted");
-			return true;
-		} else {
-			$logger->error("Could not insert a record into db.");
-			$stmt->close();
-			$mysqli->close();
-			return false;
-		}
-	} catch (Exception $ex) {
-		$logger->error("An error occurred when trying to run a query.");
-		$logger->error($ex->getMessage());
-		$stmt->close();
-		$mysqli->close();
-		return false;
-	}
-
-	
-}
-
-function getUser($emailId){
-	global $logger,$mysqli;
-	$logger->info("Insidd getUser with emailID:".$emailId);
-	global $mysqli;
-	$sql="SELECT * FROM users WHERE email=?";
-	try{
-		if($stmt=$mysqli->prepare($sql)){
-			
-			$stmt->bind_param("s",$emailId);
-			
-			$data=returnJson($stmt);
-			
-			//$mysqli->close();
-			return $data;
-		}else{
-			$logger->error("An error occured in getUser".$mysqli->error);
-			throw new Exception("An error occurred in getUser");
-		}
-	}catch (Exception $e) {
-        log_error($e, $sql, null);
-		return false;
-    }
-}
 
 ?>

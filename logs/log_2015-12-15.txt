@@ -1,0 +1,2005 @@
+[2015-12-15 21:12:24.081504] [info] inside user.php
+[2015-12-15 21:12:25.104415] [info] callBack
+[2015-12-15 21:12:25.151134] [debug]  signIn function. data Array ip ::1 token 
+[2015-12-15 21:12:25.151932] [info] Insidd getUser with emailID:sneddento@indiatimes.com
+[2015-12-15 21:12:25.403723] [info] Inside bind sql
+[2015-12-15 21:12:25.465946] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-15 21:12:25.467171] [info] passworrd from form indiatimes@123
+[2015-12-15 21:12:25.467581] [info] password  from getUser $2y$10$cUFERCn6oETbrGViyrajOujqQbVpZb.VRGpwLCuNHqNt41S73S9xC
+[2015-12-15 21:12:25.467927] [debug] user password indiatimes@123 , hashedPassword $2y$10$cUFERCn6oETbrGViyrajOujqQbVpZb.VRGpwLCuNHqNt41S73S9xCstring string
+[2015-12-15 21:12:25.776715] [info] Insidd makeOnline with idUser:9
+[2015-12-15 21:12:26.220479] [info]  User login succeeded for username: Array['iduser'] 
+[2015-12-15 21:12:26.262362] [info] Session set  9last_activty1450210346
+[2015-12-15 21:12:27.619895] [info] inside user.php
+[2015-12-15 21:12:27.839415] [info] callBack
+[2015-12-15 21:12:27.840018] [info] inside getUserById id:9
+[2015-12-15 21:12:27.840315] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-15 21:12:27.842170] [info] Inside bind sql
+[2015-12-15 21:12:27.902018] [info] bind columns0 1
+[2015-12-15 21:12:27.903565] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-15 21:12:30.818567] [info] callBack
+[2015-12-15 21:12:30.854810] [info] in getOnlineUsers
+[2015-12-15 21:12:30.855292] [info] inside getOnlineUsersDb
+[2015-12-15 21:12:30.959177] [info] Inside bind sql
+[2015-12-15 21:12:31.106287] [info] bind columns0 1 2
+[2015-12-15 21:12:31.106873] [info] result for bindSql
+[2015-12-15 21:12:31.107507] [info] return value from mid phpnull
+[2015-12-15 21:12:31.475348] [info] callBack
+[2015-12-15 21:12:31.476428] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:31.476727] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:31.539531] [info] callBack
+[2015-12-15 21:12:31.540271] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:31.540544] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:31.453002] [info] callBack
+[2015-12-15 21:12:31.603169] [info] Inside bind sql
+[2015-12-15 21:12:31.633666] [info] Inside bind sql
+[2015-12-15 21:12:31.798846] [info] Inside bind sql
+[2015-12-15 21:12:31.832653] [info] bind columns0 1
+[2015-12-15 21:12:31.833261] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:31.834008] [info] return value from mid phpnull
+[2015-12-15 21:12:32.110996] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:32.111610] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:32.112175] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:32.165616] [info] bind columns0 1 2 3
+[2015-12-15 21:12:32.185786] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"good morning","timestamp":"2015-12-08 10:18:25"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-08 10:18:43"},{"first_name":"snedden","last_name":"gonsalves","text":"does it work now?","timestamp":"2015-12-08 10:22:41"},{"first_name":"Daniel","last_name":"Boggard","text":"looks like it does","timestamp":"2015-12-08 10:22:53"},{"first_name":"Daniel","last_name":"Boggard","text":"gotta leave","timestamp":"2015-12-08 10:23:41"},{"first_name":"Daniel","last_name":"Boggard","text":"hey dan","timestamp":"2015-12-13 21:17:01"}]
+[2015-12-15 21:12:32.257390] [info] callBack
+[2015-12-15 21:12:32.258209] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:32.258564] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:32.259656] [info] Inside bind sql
+[2015-12-15 21:12:32.282597] [info] callBack
+[2015-12-15 21:12:32.283447] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:32.283732] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:32.337862] [info] Inside bind sql
+[2015-12-15 21:12:32.346508] [info] bind columns0 1
+[2015-12-15 21:12:32.347227] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:32.348207] [info] return value from mid phpnull
+[2015-12-15 21:12:32.445473] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:32.446099] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:32.446654] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:33.618318] [info] inside user.php
+[2015-12-15 21:12:33.670269] [info] callBack
+[2015-12-15 21:12:33.671129] [info] 600 time :1450210353
+[2015-12-15 21:12:34.059253] [info] callBack
+[2015-12-15 21:12:34.060412] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:34.060878] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:34.062809] [info] Inside bind sql
+[2015-12-15 21:12:34.065444] [info] bind columns0 1
+[2015-12-15 21:12:34.066184] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:34.066915] [info] return value from mid phpnull
+[2015-12-15 21:12:34.105293] [info] callBack
+[2015-12-15 21:12:34.106359] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:34.106837] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:34.121880] [info] Inside bind sql
+[2015-12-15 21:12:34.203768] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:34.204467] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:34.205179] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:34.793135] [info] callBack
+[2015-12-15 21:12:34.794075] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:34.794560] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:34.796066] [info] Inside bind sql
+[2015-12-15 21:12:34.798082] [info] bind columns0 1
+[2015-12-15 21:12:34.798585] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:34.799022] [info] return value from mid phpnull
+[2015-12-15 21:12:34.834326] [info] callBack
+[2015-12-15 21:12:34.835223] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:34.835650] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:34.837240] [info] Inside bind sql
+[2015-12-15 21:12:34.905416] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:34.906050] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:34.906563] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:35.773564] [info] callBack
+[2015-12-15 21:12:35.774295] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:35.774610] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:35.776135] [info] Inside bind sql
+[2015-12-15 21:12:35.817209] [info] callBack
+[2015-12-15 21:12:35.817905] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:35.818173] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:35.819334] [info] Inside bind sql
+[2015-12-15 21:12:35.821225] [info] bind columns0 1
+[2015-12-15 21:12:35.821732] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:35.822199] [info] return value from mid phpnull
+[2015-12-15 21:12:35.926434] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:35.927427] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:35.928152] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:36.817729] [info] callBack
+[2015-12-15 21:12:36.818671] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:36.818819] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:36.819113] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:36.819322] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:36.820528] [info] Inside bind sql
+[2015-12-15 21:12:36.821078] [info] Inside bind sql
+[2015-12-15 21:12:36.822514] [info] bind columns0 1
+[2015-12-15 21:12:36.823328] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:36.824109] [info] return value from mid phpnull
+[2015-12-15 21:12:36.884708] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:36.885262] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:36.885776] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:37.433475] [info] inside user.php
+[2015-12-15 21:12:37.442245] [info] callBack
+[2015-12-15 21:12:37.443058] [info] 600 time :1450210357
+[2015-12-15 21:12:37.805655] [info] callBack
+[2015-12-15 21:12:37.806638] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:37.806848] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:37.807080] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:37.807272] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:37.808809] [info] Inside bind sql
+[2015-12-15 21:12:37.809236] [info] Inside bind sql
+[2015-12-15 21:12:37.811114] [info] bind columns0 1
+[2015-12-15 21:12:37.811845] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:37.812614] [info] return value from mid phpnull
+[2015-12-15 21:12:37.893028] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:37.893629] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:37.894471] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:38.797091] [info] callBack
+[2015-12-15 21:12:38.797889] [info] callBack
+[2015-12-15 21:12:38.798165] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:38.798603] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:38.798650] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:38.799031] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:38.801276] [info] Inside bind sql
+[2015-12-15 21:12:38.801963] [info] Inside bind sql
+[2015-12-15 21:12:38.803973] [info] bind columns0 1
+[2015-12-15 21:12:38.804769] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:38.805377] [info] return value from mid phpnull
+[2015-12-15 21:12:38.860768] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:38.861305] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:38.861805] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:39.814723] [info] callBack
+[2015-12-15 21:12:39.815598] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:39.816036] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:39.817598] [info] Inside bind sql
+[2015-12-15 21:12:39.818289] [info] Inside bind sql
+[2015-12-15 21:12:39.819396] [info] bind columns0 1
+[2015-12-15 21:12:39.819930] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:39.820759] [info] return value from mid phpnull
+[2015-12-15 21:12:39.893979] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:39.894526] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:39.895066] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:40.805814] [info] callBack
+[2015-12-15 21:12:40.806349] [info] callBack
+[2015-12-15 21:12:40.806751] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:40.807027] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:40.807202] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:40.807476] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:40.808569] [info] Inside bind sql
+[2015-12-15 21:12:40.809401] [info] Inside bind sql
+[2015-12-15 21:12:40.810594] [info] bind columns0 1
+[2015-12-15 21:12:40.811384] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:40.812150] [info] return value from mid phpnull
+[2015-12-15 21:12:40.865828] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:40.866477] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:40.866955] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:41.810818] [info] callBack
+[2015-12-15 21:12:41.811187] [info] callBack
+[2015-12-15 21:12:41.811791] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:41.811940] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:41.812275] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:41.812428] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:41.813710] [info] Inside bind sql
+[2015-12-15 21:12:41.814344] [info] Inside bind sql
+[2015-12-15 21:12:41.816035] [info] bind columns0 1
+[2015-12-15 21:12:41.816679] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:41.817269] [info] return value from mid phpnull
+[2015-12-15 21:12:41.887131] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:41.887696] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:41.888204] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:42.427679] [info] inside user.php
+[2015-12-15 21:12:42.473855] [info] callBack
+[2015-12-15 21:12:42.474493] [info] 600 time :1450210362
+[2015-12-15 21:12:42.827820] [info] callBack
+[2015-12-15 21:12:42.828942] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:42.829457] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:42.831211] [info] Inside bind sql
+[2015-12-15 21:12:42.833698] [info] bind columns0 1
+[2015-12-15 21:12:42.834214] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:42.834830] [info] return value from mid phpnull
+[2015-12-15 21:12:42.864425] [info] callBack
+[2015-12-15 21:12:42.865411] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:42.865849] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:42.867760] [info] Inside bind sql
+[2015-12-15 21:12:42.929035] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:42.929603] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:42.930107] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:43.813175] [info] callBack
+[2015-12-15 21:12:43.814044] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:43.814501] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:43.815757] [info] Inside bind sql
+[2015-12-15 21:12:43.817759] [info] bind columns0 1
+[2015-12-15 21:12:43.818454] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:43.819001] [info] return value from mid phpnull
+[2015-12-15 21:12:43.844384] [info] callBack
+[2015-12-15 21:12:43.845278] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:43.845730] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:43.847707] [info] Inside bind sql
+[2015-12-15 21:12:43.927978] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:43.928559] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:43.929246] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:44.832864] [info] callBack
+[2015-12-15 21:12:44.833781] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:44.834083] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:44.835278] [info] Inside bind sql
+[2015-12-15 21:12:44.837033] [info] bind columns0 1
+[2015-12-15 21:12:44.837527] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:44.837996] [info] return value from mid phpnull
+[2015-12-15 21:12:44.862572] [info] callBack
+[2015-12-15 21:12:44.863346] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:44.863852] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:44.865602] [info] Inside bind sql
+[2015-12-15 21:12:44.925345] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:44.925887] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:44.926431] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:45.862504] [info] callBack
+[2015-12-15 21:12:45.862689] [info] callBack
+[2015-12-15 21:12:45.863557] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:45.864026] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:45.864213] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:45.865575] [info] Inside bind sql
+[2015-12-15 21:12:45.866086] [info] Inside bind sql
+[2015-12-15 21:12:45.867635] [info] bind columns0 1
+[2015-12-15 21:12:45.868446] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:45.869292] [info] return value from mid phpnull
+[2015-12-15 21:12:45.952305] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:45.953151] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:45.953916] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:46.874845] [info] callBack
+[2015-12-15 21:12:46.875693] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:46.876144] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:46.877635] [info] Inside bind sql
+[2015-12-15 21:12:46.878150] [info] Inside bind sql
+[2015-12-15 21:12:46.879292] [info] bind columns0 1
+[2015-12-15 21:12:46.879765] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:46.880388] [info] return value from mid phpnull
+[2015-12-15 21:12:46.932661] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:46.933774] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:46.934489] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:47.435796] [info] inside user.php
+[2015-12-15 21:12:47.442572] [info] callBack
+[2015-12-15 21:12:47.443334] [info] 600 time :1450210367
+[2015-12-15 21:12:47.856550] [info] callBack
+[2015-12-15 21:12:47.857481] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:47.857985] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:47.859489] [info] Inside bind sql
+[2015-12-15 21:12:47.861737] [info] bind columns0 1
+[2015-12-15 21:12:47.862530] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:47.862791] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:47.862967] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:47.863445] [info] return value from mid phpnull
+[2015-12-15 21:12:47.864872] [info] Inside bind sql
+[2015-12-15 21:12:47.926383] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:47.926917] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:47.927514] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:48.901444] [info] callBack
+[2015-12-15 21:12:48.902400] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:48.902877] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:48.904299] [info] Inside bind sql
+[2015-12-15 21:12:48.906106] [info] bind columns0 1
+[2015-12-15 21:12:48.906637] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:48.907365] [info] return value from mid phpnull
+[2015-12-15 21:12:48.912235] [info] callBack
+[2015-12-15 21:12:48.913151] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:48.913729] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:48.915447] [info] Inside bind sql
+[2015-12-15 21:12:49.006148] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:49.006704] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:49.007225] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:49.919461] [info] callBack
+[2015-12-15 21:12:49.920464] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:49.920563] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:49.920943] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:49.921087] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:49.922291] [info] Inside bind sql
+[2015-12-15 21:12:49.922857] [info] Inside bind sql
+[2015-12-15 21:12:49.923975] [info] bind columns0 1
+[2015-12-15 21:12:49.924431] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:49.924927] [info] return value from mid phpnull
+[2015-12-15 21:12:49.983640] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:49.984375] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:49.985135] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:50.908874] [info] callBack
+[2015-12-15 21:12:50.909787] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:50.910279] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:50.910273] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:50.911557] [info] Inside bind sql
+[2015-12-15 21:12:50.912239] [info] Inside bind sql
+[2015-12-15 21:12:50.913542] [info] bind columns0 1
+[2015-12-15 21:12:50.914309] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:50.915225] [info] return value from mid phpnull
+[2015-12-15 21:12:50.981658] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:50.982461] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:50.983196] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:51.879379] [info] callBack
+[2015-12-15 21:12:51.880362] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:51.880968] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:51.882654] [info] Inside bind sql
+[2015-12-15 21:12:51.884771] [info] bind columns0 1
+[2015-12-15 21:12:51.885520] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:51.886184] [info] return value from mid phpnull
+[2015-12-15 21:12:51.962229] [info] callBack
+[2015-12-15 21:12:51.963077] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:51.963416] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:51.965133] [info] Inside bind sql
+[2015-12-15 21:12:52.046782] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:52.047382] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:52.048245] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:52.439728] [info] inside user.php
+[2015-12-15 21:12:52.446990] [info] callBack
+[2015-12-15 21:12:52.447623] [info] 600 time :1450210372
+[2015-12-15 21:12:52.921381] [info] callBack
+[2015-12-15 21:12:52.922103] [info] callBack
+[2015-12-15 21:12:52.922343] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:52.922815] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:52.922873] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:52.923295] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:52.924194] [info] Inside bind sql
+[2015-12-15 21:12:52.925082] [info] Inside bind sql
+[2015-12-15 21:12:52.925940] [info] bind columns0 1
+[2015-12-15 21:12:52.926428] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:52.926989] [info] return value from mid phpnull
+[2015-12-15 21:12:52.978364] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:52.978939] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:52.979422] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:53.958313] [info] callBack
+[2015-12-15 21:12:53.959151] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:53.959429] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:53.960582] [info] Inside bind sql
+[2015-12-15 21:12:53.962353] [info] bind columns0 1
+[2015-12-15 21:12:53.962862] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:53.963335] [info] return value from mid phpnull
+[2015-12-15 21:12:54.008344] [info] callBack
+[2015-12-15 21:12:54.009129] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:54.009566] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:54.011141] [info] Inside bind sql
+[2015-12-15 21:12:54.061983] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:54.062540] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:54.063054] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:54.965715] [info] callBack
+[2015-12-15 21:12:54.966523] [info] callBack
+[2015-12-15 21:12:54.966631] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:54.967050] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:54.967194] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:54.967617] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:54.968328] [info] Inside bind sql
+[2015-12-15 21:12:54.969326] [info] Inside bind sql
+[2015-12-15 21:12:54.970103] [info] bind columns0 1
+[2015-12-15 21:12:54.970840] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:54.971712] [info] return value from mid phpnull
+[2015-12-15 21:12:55.005445] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:55.006241] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:55.006994] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:55.905261] [info] callBack
+[2015-12-15 21:12:55.906246] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:55.906857] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:55.908288] [info] Inside bind sql
+[2015-12-15 21:12:55.910640] [info] bind columns0 1
+[2015-12-15 21:12:55.911494] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:55.912182] [info] return value from mid phpnull
+[2015-12-15 21:12:55.941546] [info] callBack
+[2015-12-15 21:12:55.942461] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:55.942946] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:55.945079] [info] Inside bind sql
+[2015-12-15 21:12:56.035274] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:56.035816] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:56.036376] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:56.988099] [info] callBack
+[2015-12-15 21:12:56.989073] [info] callBack
+OpenChallenge() id:9 
+[2015-12-15 21:12:56.989577] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:56.990967] [info] Inside bind sql
+[2015-12-15 21:12:56.993138] [info] bind columns0 1
+[2015-12-15 21:12:56.993793] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:56.994379] [info] return value from mid phpnull
+[2015-12-15 21:12:57.007375] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:57.007733] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:57.009577] [info] Inside bind sql
+[2015-12-15 21:12:57.083858] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:57.084482] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:57.085081] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:57.447798] [info] inside user.php
+[2015-12-15 21:12:57.599104] [info] callBack
+[2015-12-15 21:12:57.599910] [info] 600 time :1450210377
+[2015-12-15 21:12:58.116534] [info] callBack
+[2015-12-15 21:12:58.117218] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:58.117522] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:58.118705] [info] Inside bind sql
+[2015-12-15 21:12:58.120336] [info] callBack
+[2015-12-15 21:12:58.120989] [info] bind columns0 1
+[2015-12-15 21:12:58.121123] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:58.121583] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:58.121840] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:58.122805] [info] return value from mid phpnull
+[2015-12-15 21:12:58.123872] [info] Inside bind sql
+[2015-12-15 21:12:58.243792] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:58.244868] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:58.245651] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:12:59.020462] [info] callBack
+[2015-12-15 21:12:59.021291] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:12:59.021610] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:59.022701] [info] Inside bind sql
+[2015-12-15 21:12:59.024506] [info] bind columns0 1
+[2015-12-15 21:12:59.024991] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:12:59.025489] [info] return value from mid phpnull
+[2015-12-15 21:12:59.032535] [info] callBack
+[2015-12-15 21:12:59.033265] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:12:59.033659] [info] inside getOpenChallengessDB
+[2015-12-15 21:12:59.035319] [info] Inside bind sql
+[2015-12-15 21:12:59.092508] [info] bind columns0 1 2 3 4
+[2015-12-15 21:12:59.093194] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:12:59.093715] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:00.000292] [info] callBack
+[2015-12-15 21:13:00.001080] [info] callBack
+[2015-12-15 21:13:00.001267] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:00.001739] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:00.002356] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:00.003077] [info] Inside bind sql
+[2015-12-15 21:13:00.004818] [info] bind columns0 1
+[2015-12-15 21:13:00.005317] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:00.005881] [info] return value from mid phpnull
+[2015-12-15 21:13:00.017575] [info] Inside bind sql
+[2015-12-15 21:13:00.074691] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:00.075248] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:00.075762] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:00.973476] [info] callBack
+[2015-12-15 21:13:00.974246] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:00.974582] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:00.975652] [info] Inside bind sql
+[2015-12-15 21:13:00.977401] [info] bind columns0 1
+[2015-12-15 21:13:00.977874] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:00.978360] [info] return value from mid phpnull
+[2015-12-15 21:13:01.044234] [info] callBack
+[2015-12-15 21:13:01.044915] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:01.045190] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:01.046652] [info] Inside bind sql
+[2015-12-15 21:13:01.118396] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:01.118962] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:01.119545] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:01.280395] [info] inside user.php
+[2015-12-15 21:13:01.335846] [info] callBack
+[2015-12-15 21:13:01.349965] [debug]  signIn function. data Array ip ::1 token 
+[2015-12-15 21:13:01.350490] [info] Insidd getUser with emailID:tommy52@gump.com
+[2015-12-15 21:13:01.351897] [info] Inside bind sql
+[2015-12-15 21:13:01.354048] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-15 21:13:01.354832] [info] passworrd from form castAway@123
+[2015-12-15 21:13:01.355176] [info] password  from getUser $2y$10$uTNXTj1i17Xq/95TlZLN3umYcS7zrQiWmQgXCpT.AiMzfHMudizQy
+[2015-12-15 21:13:01.355477] [debug] user password castAway@123 , hashedPassword $2y$10$uTNXTj1i17Xq/95TlZLN3umYcS7zrQiWmQgXCpT.AiMzfHMudizQystring string
+[2015-12-15 21:13:01.654656] [info] Insidd makeOnline with idUser:11
+[2015-12-15 21:13:01.860976] [info]  User login succeeded for username: Array['iduser'] 
+[2015-12-15 21:13:01.888583] [info] Session set  11last_activty1450210381
+[2015-12-15 21:13:02.044970] [info] callBack
+[2015-12-15 21:13:02.046161] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:02.046673] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:02.048111] [info] Inside bind sql
+[2015-12-15 21:13:02.050527] [info] bind columns0 1
+[2015-12-15 21:13:02.051105] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:02.051630] [info] return value from mid phpnull
+[2015-12-15 21:13:02.071365] [info] callBack
+[2015-12-15 21:13:02.072228] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:02.072699] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:02.074703] [info] Inside bind sql
+[2015-12-15 21:13:02.170038] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:02.170578] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:02.171250] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:02.458591] [info] inside user.php
+[2015-12-15 21:13:02.513577] [info] inside user.php
+[2015-12-15 21:13:02.778044] [info] callBack
+[2015-12-15 21:13:02.778757] [info] 600 time :1450210382
+[2015-12-15 21:13:02.958161] [info] callBack
+[2015-12-15 21:13:02.958848] [info] inside getUserById id:11
+[2015-12-15 21:13:02.959172] [info] Insidd getUserByIdDB with idUser:11
+[2015-12-15 21:13:02.960196] [info] Inside bind sql
+[2015-12-15 21:13:02.961429] [info] bind columns0 1
+[2015-12-15 21:13:02.962344] [info] return value from mid php[{"first_name":"Thomas","last_name":"Hankss"}]
+[2015-12-15 21:13:03.183387] [info] callBack
+[2015-12-15 21:13:03.244627] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:03.245177] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:03.247107] [info] Inside bind sql
+[2015-12-15 21:13:03.340053] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:03.340635] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:03.341137] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:03.591801] [info] callBack
+[2015-12-15 21:13:03.628164] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:03.628664] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:03.630069] [info] Inside bind sql
+[2015-12-15 21:13:03.677377] [info] bind columns0 1
+[2015-12-15 21:13:03.678244] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:03.679034] [info] return value from mid phpnull
+[2015-12-15 21:13:04.111577] [info] callBack
+[2015-12-15 21:13:04.112390] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:04.112665] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:04.113755] [info] Inside bind sql
+[2015-12-15 21:13:04.115421] [info] bind columns0 1
+[2015-12-15 21:13:04.115897] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:04.116386] [info] return value from mid phpnull
+[2015-12-15 21:13:04.168065] [info] callBack
+[2015-12-15 21:13:04.168828] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:04.169122] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:04.170595] [info] Inside bind sql
+[2015-12-15 21:13:04.287545] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:04.288111] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:04.288635] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:05.099529] [info] callBack
+[2015-12-15 21:13:05.100363] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:05.100683] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:05.143292] [info] Inside bind sql
+[2015-12-15 21:13:05.145437] [info] bind columns0 1
+[2015-12-15 21:13:05.145942] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:05.146449] [info] return value from mid phpnull
+[2015-12-15 21:13:05.155432] [info] callBack
+[2015-12-15 21:13:05.156239] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:05.156651] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:05.158065] [info] Inside bind sql
+[2015-12-15 21:13:05.425967] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:05.426578] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:05.427103] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:06.122494] [info] callBack
+[2015-12-15 21:13:06.123358] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:06.123668] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:06.124759] [info] Inside bind sql
+[2015-12-15 21:13:06.126508] [info] bind columns0 1
+[2015-12-15 21:13:06.126983] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:06.127468] [info] return value from mid phpnull
+[2015-12-15 21:13:06.184519] [info] callBack
+[2015-12-15 21:13:06.185245] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:06.185513] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:06.187000] [info] Inside bind sql
+[2015-12-15 21:13:06.251466] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:06.252022] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:06.252528] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:06.506805] [info] callBack
+[2015-12-15 21:13:06.580068] [info] Inside bind sql
+[2015-12-15 21:13:06.741133] [info] bind columns0 1 2 3
+[2015-12-15 21:13:06.726669] [info] callBack
+[2015-12-15 21:13:06.755413] [info] in getOnlineUsers
+[2015-12-15 21:13:06.755872] [info] inside getOnlineUsersDb
+[2015-12-15 21:13:06.774640] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"good morning","timestamp":"2015-12-08 10:18:25"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-08 10:18:43"},{"first_name":"snedden","last_name":"gonsalves","text":"does it work now?","timestamp":"2015-12-08 10:22:41"},{"first_name":"Daniel","last_name":"Boggard","text":"looks like it does","timestamp":"2015-12-08 10:22:53"},{"first_name":"Daniel","last_name":"Boggard","text":"gotta leave","timestamp":"2015-12-08 10:23:41"},{"first_name":"Daniel","last_name":"Boggard","text":"hey dan","timestamp":"2015-12-13 21:17:01"}]
+[2015-12-15 21:13:06.791894] [info] Inside bind sql
+[2015-12-15 21:13:06.843252] [info] bind columns0 1 2
+[2015-12-15 21:13:06.844002] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-15 21:13:06.844964] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"}]
+[2015-12-15 21:13:06.992100] [info] inside user.php
+[2015-12-15 21:13:07.066561] [info] callBack
+[2015-12-15 21:13:07.067348] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:07.067377] [info] callBack
+[2015-12-15 21:13:07.067802] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:07.068057] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:07.068495] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:07.068891] [info] callBack
+[2015-12-15 21:13:07.069217] [info] Inside bind sql
+[2015-12-15 21:13:07.069576] [info] 600 time :1450210387
+[2015-12-15 21:13:07.070389] [info] Inside bind sql
+[2015-12-15 21:13:07.071367] [info] bind columns0 1
+[2015-12-15 21:13:07.072149] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:07.072994] [info] return value from mid phpnull
+[2015-12-15 21:13:07.174187] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:07.174773] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:07.175312] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:07.720133] [info] inside user.php
+[2015-12-15 21:13:07.811594] [info] callBack
+[2015-12-15 21:13:07.812323] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:07.812704] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:07.813736] [info] Inside bind sql
+[2015-12-15 21:13:07.843458] [info] bind columns0 1
+[2015-12-15 21:13:07.844408] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:07.845140] [info] return value from mid phpnull
+[2015-12-15 21:13:07.845997] [info] callBack
+[2015-12-15 21:13:07.846733] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:07.847209] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:07.848778] [info] Inside bind sql
+[2015-12-15 21:13:07.874430] [info] callBack
+[2015-12-15 21:13:07.875268] [info] 600 time :1450210387
+[2015-12-15 21:13:07.880820] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:07.881654] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:07.882450] [info] return value from mid phpnull
+[2015-12-15 21:13:07.954612] [info] callBack
+[2015-12-15 21:13:07.955472] [info] callBack
+[2015-12-15 21:13:07.955540] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:07.956049] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:07.956223] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:07.956732] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:07.957406] [info] Inside bind sql
+[2015-12-15 21:13:07.958626] [info] Inside bind sql
+[2015-12-15 21:13:07.959333] [info] bind columns0 1
+[2015-12-15 21:13:07.960098] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:07.960858] [info] return value from mid phpnull
+[2015-12-15 21:13:08.004897] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:08.005470] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:08.005974] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:08.295413] [info] callBack
+[2015-12-15 21:13:08.296334] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:08.296833] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:08.298312] [info] Inside bind sql
+[2015-12-15 21:13:08.300484] [info] bind columns0 1
+[2015-12-15 21:13:08.301173] [info] callBack
+[2015-12-15 21:13:08.301278] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:08.301963] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:08.302216] [info] return value from mid phpnull
+[2015-12-15 21:13:08.302422] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:08.304282] [info] Inside bind sql
+[2015-12-15 21:13:08.380393] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:08.381016] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:08.381556] [info] return value from mid phpnull
+[2015-12-15 21:13:08.989269] [info] callBack
+[2015-12-15 21:13:08.990283] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:08.990649] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:08.991807] [info] Inside bind sql
+[2015-12-15 21:13:08.993652] [info] bind columns0 1
+[2015-12-15 21:13:08.994143] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:08.994647] [info] return value from mid phpnull
+[2015-12-15 21:13:09.022443] [info] callBack
+[2015-12-15 21:13:09.023159] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:09.023519] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:09.025015] [info] Inside bind sql
+[2015-12-15 21:13:09.074692] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:09.075275] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:09.075845] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:09.276269] [info] callBack
+[2015-12-15 21:13:09.277231] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:09.277461] [info] callBack
+[2015-12-15 21:13:09.277683] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:09.278109] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:09.278562] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:09.278935] [info] Inside bind sql
+[2015-12-15 21:13:09.280121] [info] Inside bind sql
+[2015-12-15 21:13:09.280582] [info] bind columns0 1
+[2015-12-15 21:13:09.281346] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:09.282083] [info] return value from mid phpnull
+[2015-12-15 21:13:09.308053] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:09.308626] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:09.309230] [info] return value from mid phpnull
+[2015-12-15 21:13:09.838773] [info] callBack
+[2015-12-15 21:13:09.839642] [info] inside enterChallenge toEmail Sneddento@indiatimes.com
+[2015-12-15 21:13:09.839916] [info] Insidd getUser with emailID:Sneddento@indiatimes.com
+[2015-12-15 21:13:09.840970] [info] Inside bind sql
+[2015-12-15 21:13:09.842427] [info] bind columns0 1 2 3 4 5 6 7
+[2015-12-15 21:13:09.843106] [info] inside enterChallenge challengeUser9
+[2015-12-15 21:13:09.843379] [info] inside getOnlineUsersDb
+[2015-12-15 21:13:10.112128] [info] callBack
+[2015-12-15 21:13:10.112920] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:10.112992] [info] callBack
+[2015-12-15 21:13:10.113404] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:10.113744] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:10.114217] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:10.115355] [info] Inside bind sql
+[2015-12-15 21:13:10.362752] [info] challenge inserted
+[2015-12-15 21:13:10.414454] [info] Inside bind sql
+[2015-12-15 21:13:10.435415] [info] callBack
+[2015-12-15 21:13:10.436132] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:10.436455] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:10.437517] [info] Inside bind sql
+[2015-12-15 21:13:10.464716] [info] bind columns0 1
+[2015-12-15 21:13:10.465562] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:10.465699] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:10.466320] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:10.496747] [info] return value from mid php{"chlgnid":2,"status":"open"}
+[2015-12-15 21:13:10.543869] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:10.544519] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:10.545346] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:10.606930] [info] callBack
+[2015-12-15 21:13:10.607758] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:10.608225] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:10.646241] [info] Inside bind sql
+[2015-12-15 21:13:10.736983] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:10.737868] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:10.738997] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:10.965179] [info] callBack
+[2015-12-15 21:13:10.966579] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:10.967266] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:10.968215] [info] callBack
+[2015-12-15 21:13:10.968576] [info] Inside bind sql
+[2015-12-15 21:13:10.969017] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:10.969501] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:10.970850] [info] bind columns0 1
+[2015-12-15 21:13:10.971630] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:10.972359] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:11.041956] [info] Inside bind sql
+[2015-12-15 21:13:11.107279] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:11.107841] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:11.108350] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:11.266120] [info] callBack
+[2015-12-15 21:13:11.267086] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:11.267561] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:11.268867] [info] Inside bind sql
+[2015-12-15 21:13:11.270917] [info] bind columns0 1
+[2015-12-15 21:13:11.271641] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:11.272238] [info] return value from mid phpnull
+[2015-12-15 21:13:11.297841] [info] callBack
+[2015-12-15 21:13:11.298747] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:11.299200] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:11.300721] [info] Inside bind sql
+[2015-12-15 21:13:11.334712] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:11.335294] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:11.335800] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:11.992455] [info] callBack
+[2015-12-15 21:13:11.992810] [info] callBack
+[2015-12-15 21:13:11.993339] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:11.993798] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:11.995178] [info] Inside bind sql
+[2015-12-15 21:13:12.022994] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:12.023521] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:12.025417] [info] Inside bind sql
+[2015-12-15 21:13:12.039334] [info] bind columns0 1
+[2015-12-15 21:13:12.039869] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:12.040489] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:12.085707] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:12.086267] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:12.086750] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:12.455332] [info] inside user.php
+[2015-12-15 21:13:12.462007] [info] callBack
+[2015-12-15 21:13:12.462799] [info] 600 time :1450210392
+[2015-12-15 21:13:12.736408] [info] callBack
+[2015-12-15 21:13:12.737318] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:12.737926] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:12.755399] [info] callBack
+[2015-12-15 21:13:12.756175] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:12.756614] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:12.757664] [info] Inside bind sql
+[2015-12-15 21:13:12.794526] [info] Inside bind sql
+[2015-12-15 21:13:12.801171] [info] bind columns0 1
+[2015-12-15 21:13:12.801992] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:12.802697] [info] return value from mid phpnull
+[2015-12-15 21:13:12.830322] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:12.830878] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:12.831506] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:12.838613] [info] inside user.php
+[2015-12-15 21:13:12.879224] [info] callBack
+[2015-12-15 21:13:12.879854] [info] 600 time :1450210392
+[2015-12-15 21:13:12.995703] [info] callBack
+[2015-12-15 21:13:12.996666] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:12.996731] [info] callBack
+[2015-12-15 21:13:12.997160] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:12.997514] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:12.997989] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:12.999341] [info] Inside bind sql
+[2015-12-15 21:13:13.001245] [info] bind columns0 1
+[2015-12-15 21:13:13.001776] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:13.002284] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:13.050065] [info] Inside bind sql
+[2015-12-15 21:13:13.132148] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:13.132718] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:13.133215] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:14.047935] [info] callBack
+[2015-12-15 21:13:14.048875] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:14.049012] [info] callBack
+[2015-12-15 21:13:14.049355] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:14.049757] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:14.050240] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:14.050681] [info] Inside bind sql
+[2015-12-15 21:13:14.051877] [info] Inside bind sql
+[2015-12-15 21:13:14.052539] [info] bind columns0 1
+[2015-12-15 21:13:14.053312] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:14.054052] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:14.146801] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:14.147372] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:14.147903] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:14.791426] [info] callBack
+[2015-12-15 21:13:14.792347] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:14.792845] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:14.795089] [info] Inside bind sql
+[2015-12-15 21:13:14.825742] [info] callBack
+[2015-12-15 21:13:14.826531] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:14.826997] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:14.840756] [info] Inside bind sql
+[2015-12-15 21:13:14.840993] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:14.841926] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:14.842747] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:14.843343] [info] bind columns0 1
+[2015-12-15 21:13:14.844430] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:14.845366] [info] return value from mid phpnull
+[2015-12-15 21:13:15.669348] [info] inside user.php
+[2015-12-15 21:13:15.824901] [info] callBack
+[2015-12-15 21:13:15.825691] [info] in getOnlineUsers
+[2015-12-15 21:13:15.826149] [info] inside getOnlineUsersDb
+[2015-12-15 21:13:15.827358] [info] Inside bind sql
+[2015-12-15 21:13:15.847703] [info] callBack
+[2015-12-15 21:13:15.848427] [info] inside getUserById id:9
+[2015-12-15 21:13:15.848885] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-15 21:13:15.849936] [info] Inside bind sql
+[2015-12-15 21:13:15.851342] [info] bind columns0 1
+[2015-12-15 21:13:15.852694] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-15 21:13:15.880070] [info] callBack
+[2015-12-15 21:13:15.880866] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:15.881262] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:15.882390] [info] Inside bind sql
+[2015-12-15 21:13:15.884216] [info] bind columns0 1
+[2015-12-15 21:13:15.884753] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:15.885267] [info] return value from mid phpnull
+[2015-12-15 21:13:15.950263] [info] bind columns0 1 2
+[2015-12-15 21:13:15.951196] [info] result for bindSqlThomas Hankss tommy52@gump.com
+[2015-12-15 21:13:15.951904] [info] return value from mid php[{"first_name":"Thomas","last_name":"Hankss","email":"tommy52@gump.com"}]
+[2015-12-15 21:13:16.269390] [info] callBack
+[2015-12-15 21:13:16.270340] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:16.270960] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:16.272444] [info] Inside bind sql
+[2015-12-15 21:13:16.274413] [info] bind columns0 1
+[2015-12-15 21:13:16.275075] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:16.275734] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:16.302881] [info] callBack
+[2015-12-15 21:13:16.304157] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:16.304640] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:16.306819] [info] Inside bind sql
+[2015-12-15 21:13:16.403026] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:16.403949] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:16.404768] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:16.791619] [info] callBack
+[2015-12-15 21:13:16.792531] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:16.792970] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:16.794728] [info] Inside bind sql
+[2015-12-15 21:13:16.830440] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:16.831028] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:16.831538] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:17.313987] [info] callBack
+[2015-12-15 21:13:17.314949] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:17.315357] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:17.316569] [info] Inside bind sql
+[2015-12-15 21:13:17.318686] [info] bind columns0 1
+[2015-12-15 21:13:17.319396] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:17.320097] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:17.842051] [info] inside user.php
+[2015-12-15 21:13:17.970503] [info] callBack
+[2015-12-15 21:13:17.971519] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:17.971987] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:17.973488] [info] Inside bind sql
+[2015-12-15 21:13:18.027360] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:18.027962] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:18.028487] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:18.049089] [info] callBack
+[2015-12-15 21:13:18.049932] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:18.050234] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:18.051503] [info] Inside bind sql
+[2015-12-15 21:13:18.053642] [info] bind columns0 1
+[2015-12-15 21:13:18.054168] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:18.054646] [info] return value from mid phpnull
+[2015-12-15 21:13:18.225627] [info] callBack
+[2015-12-15 21:13:18.226334] [info] 600 time :1450210398
+[2015-12-15 21:13:19.788641] [info] gameSVC.php included
+[2015-12-15 21:13:19.836291] [info] callBack
+[2015-12-15 21:13:19.837071] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:19.837557] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:19.839154] [info] Inside bind sql
+[2015-12-15 21:13:19.841445] [info] bind columns0 1
+[2015-12-15 21:13:19.842282] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:19.843662] [info] return value from mid phpnull
+[2015-12-15 21:13:19.896617] [info] callBack
+[2015-12-15 21:13:19.897363] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:19.897855] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:19.929728] [info] Inside bind sql
+[2015-12-15 21:13:20.042495] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:20.043253] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:20.043984] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:20.263756] [info] callBack
+[2015-12-15 21:13:20.264514] [info] gameSVC.php start called
+[2015-12-15 21:13:20.264990] [info] startData in gameBizData.php called with parameter1
+[2015-12-15 21:13:20.363564] [info] Something went wrong while preparing statement update challenge startGameDBErreur de syntaxe près de 'table challenges set status='met' where game_id=?' à la ligne 1
+[2015-12-15 21:13:20.386758] [info] callBack
+[2015-12-15 21:13:20.457180] [info] Inside bind sql
+[2015-12-15 21:13:20.519807] [info] bind columns0 1 2 3
+[2015-12-15 21:13:20.603015] [info] Return data from start [{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:13:20.603437] [info] return value from mid php[{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:13:20.600245] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"good morning","timestamp":"2015-12-08 10:18:25"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-08 10:18:43"},{"first_name":"snedden","last_name":"gonsalves","text":"does it work now?","timestamp":"2015-12-08 10:22:41"},{"first_name":"Daniel","last_name":"Boggard","text":"looks like it does","timestamp":"2015-12-08 10:22:53"},{"first_name":"Daniel","last_name":"Boggard","text":"gotta leave","timestamp":"2015-12-08 10:23:41"},{"first_name":"Daniel","last_name":"Boggard","text":"hey dan","timestamp":"2015-12-13 21:17:01"}]
+[2015-12-15 21:13:21.009114] [info] callBack
+[2015-12-15 21:13:21.022794] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:21.023195] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:21.043005] [info] Inside bind sql
+[2015-12-15 21:13:21.160114] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:21.160717] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:21.161367] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:21.725131] [info] gameSVC.php included
+[2015-12-15 21:13:21.926897] [info] callBack
+[2015-12-15 21:13:21.927542] [info] callBack
+[2015-12-15 21:13:21.928292] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:21.928626] [info] callBack
+[2015-12-15 21:13:21.928756] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:21.929321] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:21.929774] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:21.930779] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:21.931025] [info] Inside bind sql
+[2015-12-15 21:13:21.931108] [info] Inside bind sql
+[2015-12-15 21:13:21.933222] [info] bind columns0 1
+[2015-12-15 21:13:21.933989] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:21.934741] [info] return value from mid phpnull
+[2015-12-15 21:13:21.967762] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:21.968341] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:21.968846] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:22.721391] [info] inside user.php
+[2015-12-15 21:13:22.837100] [info] callBack
+[2015-12-15 21:13:22.837708] [info] 600 time :1450210402
+[2015-12-15 21:13:22.910800] [info] callBack
+[2015-12-15 21:13:22.911453] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:22.911775] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:22.912858] [info] Inside bind sql
+[2015-12-15 21:13:22.914623] [info] bind columns0 1
+[2015-12-15 21:13:22.915103] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:22.915579] [info] return value from mid phpnull
+[2015-12-15 21:13:23.814623] [info] callBack
+[2015-12-15 21:13:23.815563] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:23.815954] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:23.817370] [info] Inside bind sql
+[2015-12-15 21:13:23.888629] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:23.889178] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:23.889730] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:23.936784] [info] gameSVC.php included
+[2015-12-15 21:13:23.970660] [info] callBack
+[2015-12-15 21:13:23.973927] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:24.777906] [info] callBack
+[2015-12-15 21:13:24.778800] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:24.778862] [info] callBack
+[2015-12-15 21:13:24.779268] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:24.779516] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:24.779959] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:24.781158] [info] Inside bind sql
+[2015-12-15 21:13:24.781348] [info] Inside bind sql
+[2015-12-15 21:13:24.783433] [info] bind columns0 1
+[2015-12-15 21:13:24.784183] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:24.785113] [info] return value from mid phpnull
+[2015-12-15 21:13:24.852675] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:24.853214] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:24.853770] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:25.792277] [info] callBack
+[2015-12-15 21:13:25.793087] [info] callBack
+[2015-12-15 21:13:25.793191] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:25.793662] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:25.793780] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:25.794260] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:25.795005] [info] Inside bind sql
+[2015-12-15 21:13:25.796386] [info] Inside bind sql
+[2015-12-15 21:13:25.797158] [info] bind columns0 1
+[2015-12-15 21:13:25.797904] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:25.798660] [info] return value from mid phpnull
+[2015-12-15 21:13:25.860625] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:25.861210] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:25.861717] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:26.803425] [info] callBack
+[2015-12-15 21:13:26.804290] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:26.804717] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:26.806201] [info] Inside bind sql
+[2015-12-15 21:13:26.808428] [info] bind columns0 1
+[2015-12-15 21:13:26.809235] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:26.810029] [info] return value from mid phpnull
+[2015-12-15 21:13:26.820040] [info] callBack
+[2015-12-15 21:13:26.820856] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:26.821320] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:26.823209] [info] Inside bind sql
+[2015-12-15 21:13:26.912465] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:26.913096] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:26.913691] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:26.956003] [info] gameSVC.php included
+[2015-12-15 21:13:26.964268] [info] callBack
+[2015-12-15 21:13:26.967391] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:27.726526] [info] inside user.php
+[2015-12-15 21:13:27.792645] [info] callBack
+[2015-12-15 21:13:27.793658] [info] 600 time :1450210407
+[2015-12-15 21:13:27.809241] [info] callBack
+[2015-12-15 21:13:27.809952] [info] callBack
+OpenChallenge() id:11 
+[2015-12-15 21:13:27.810432] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:27.810818] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:27.811254] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:27.811836] [info] Inside bind sql
+[2015-12-15 21:13:27.814019] [info] bind columns0 1
+[2015-12-15 21:13:27.814807] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:27.815659] [info] return value from mid phpnull
+[2015-12-15 21:13:27.819097] [info] Inside bind sql
+[2015-12-15 21:13:27.889170] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:27.889728] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:27.890248] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:28.803637] [info] callBack
+[2015-12-15 21:13:28.804630] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:28.805108] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:28.806658] [info] Inside bind sql
+[2015-12-15 21:13:28.808434] [info] bind columns0 1
+[2015-12-15 21:13:28.808913] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:28.809417] [info] return value from mid phpnull
+[2015-12-15 21:13:28.820461] [info] callBack
+[2015-12-15 21:13:28.821203] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:28.821649] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:28.823355] [info] Inside bind sql
+[2015-12-15 21:13:28.879436] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:28.879986] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:28.880506] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:29.826020] [info] callBack
+[2015-12-15 21:13:29.827162] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:29.827277] [info] callBack
+[2015-12-15 21:13:29.827680] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:29.828006] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:29.828469] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:29.829364] [info] Inside bind sql
+[2015-12-15 21:13:29.830530] [info] Inside bind sql
+[2015-12-15 21:13:29.831489] [info] bind columns0 1
+[2015-12-15 21:13:29.832238] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:29.832962] [info] return value from mid phpnull
+[2015-12-15 21:13:29.894144] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:29.894721] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:29.895205] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:29.957194] [info] gameSVC.php included
+[2015-12-15 21:13:29.966928] [info] callBack
+[2015-12-15 21:13:29.971273] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:30.826011] [info] callBack
+[2015-12-15 21:13:30.826694] [info] callBack
+[2015-12-15 21:13:30.826958] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:30.827370] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:30.827678] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:30.827795] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:30.829134] [info] Inside bind sql
+[2015-12-15 21:13:30.829651] [info] Inside bind sql
+[2015-12-15 21:13:30.830974] [info] bind columns0 1
+[2015-12-15 21:13:30.831736] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:30.832648] [info] return value from mid phpnull
+[2015-12-15 21:13:30.900146] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:30.901376] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:30.902187] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:31.755990] [info] callBack
+[2015-12-15 21:13:31.757103] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:31.757608] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:31.758757] [info] Inside bind sql
+[2015-12-15 21:13:31.761126] [info] bind columns0 1
+[2015-12-15 21:13:31.761908] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:31.762645] [info] return value from mid phpnull
+[2015-12-15 21:13:31.808567] [info] callBack
+[2015-12-15 21:13:31.809474] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:31.809952] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:31.811774] [info] Inside bind sql
+[2015-12-15 21:13:31.877876] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:31.878456] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:31.879012] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:32.784780] [info] inside user.php
+[2015-12-15 21:13:32.785660] [info] callBack
+[2015-12-15 21:13:32.786385] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:32.786835] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:32.788320] [info] Inside bind sql
+[2015-12-15 21:13:32.790618] [info] bind columns0 1
+[2015-12-15 21:13:32.791436] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:32.792325] [info] return value from mid phpnull
+[2015-12-15 21:13:32.845309] [info] callBack
+[2015-12-15 21:13:32.846096] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:32.846576] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:32.848464] [info] Inside bind sql
+[2015-12-15 21:13:32.864918] [info] callBack
+[2015-12-15 21:13:32.865705] [info] 600 time :1450210412
+[2015-12-15 21:13:32.939496] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:32.940274] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:32.941035] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:32.974395] [info] gameSVC.php included
+[2015-12-15 21:13:33.014916] [info] callBack
+[2015-12-15 21:13:33.018111] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:33.761948] [info] callBack
+[2015-12-15 21:13:33.762891] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:33.763212] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:33.764506] [info] Inside bind sql
+[2015-12-15 21:13:33.766613] [info] bind columns0 1
+[2015-12-15 21:13:33.767379] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:33.768070] [info] return value from mid phpnull
+[2015-12-15 21:13:33.822860] [info] callBack
+[2015-12-15 21:13:33.823860] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:33.824565] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:33.828458] [info] Inside bind sql
+[2015-12-15 21:13:33.911287] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:33.912682] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:33.913309] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:34.848261] [info] callBack
+[2015-12-15 21:13:34.849163] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:34.849605] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:34.851061] [info] Inside bind sql
+[2015-12-15 21:13:34.853842] [info] bind columns0 1
+[2015-12-15 21:13:34.858534] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:34.861399] [info] return value from mid phpnull
+[2015-12-15 21:13:34.897728] [info] callBack
+[2015-12-15 21:13:34.898674] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:34.899163] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:34.900932] [info] Inside bind sql
+[2015-12-15 21:13:34.972336] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:34.973223] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:34.973901] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:36.146538] [info] gameSVC.php included
+[2015-12-15 21:13:36.226351] [info] callBack
+[2015-12-15 21:13:36.229780] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:36.731973] [info] callBack
+[2015-12-15 21:13:36.732892] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:36.733340] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:36.734877] [info] Inside bind sql
+[2015-12-15 21:13:36.737035] [info] bind columns0 1
+[2015-12-15 21:13:36.737835] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:36.738631] [info] return value from mid phpnull
+[2015-12-15 21:13:36.768333] [info] callBack
+[2015-12-15 21:13:36.769224] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:36.769711] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:36.771493] [info] Inside bind sql
+[2015-12-15 21:13:36.844876] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:36.845803] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:36.846590] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:37.848654] [info] callBack
+[2015-12-15 21:13:37.849894] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:37.850303] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:37.851350] [info] Inside bind sql
+[2015-12-15 21:13:37.852961] [info] bind columns0 1
+[2015-12-15 21:13:37.853450] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:37.853941] [info] return value from mid phpnull
+[2015-12-15 21:13:38.738054] [info] inside user.php
+[2015-12-15 21:13:38.750633] [info] callBack
+[2015-12-15 21:13:38.751398] [info] 600 time :1450210418
+[2015-12-15 21:13:38.792593] [info] callBack
+[2015-12-15 21:13:38.793587] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:38.794056] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:38.796117] [info] Inside bind sql
+[2015-12-15 21:13:38.858834] [info] callBack
+[2015-12-15 21:13:38.859639] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:38.860163] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:38.861453] [info] Inside bind sql
+[2015-12-15 21:13:38.863590] [info] bind columns0 1
+[2015-12-15 21:13:38.864396] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:38.865181] [info] return value from mid phpnull
+[2015-12-15 21:13:38.901201] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:38.901758] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:38.902412] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:39.099366] [info] inside user.php
+[2015-12-15 21:13:39.259922] [info] callBack
+[2015-12-15 21:13:39.260691] [info] inside getUserById id:9
+[2015-12-15 21:13:39.261185] [info] Insidd getUserByIdDB with idUser:9
+[2015-12-15 21:13:39.261248] [info] callBack
+[2015-12-15 21:13:39.261920] [info] in getOnlineUsers
+[2015-12-15 21:13:39.262434] [info] callBack
+[2015-12-15 21:13:39.262490] [info] inside getOnlineUsersDb
+[2015-12-15 21:13:39.262681] [info] Inside bind sql
+[2015-12-15 21:13:39.264245] [info] Inside bind sql
+[2015-12-15 21:13:39.264348] [info] bind columns0 1
+[2015-12-15 21:13:39.265733] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves"}]
+[2015-12-15 21:13:39.285192] [info] Inside bind sql
+[2015-12-15 21:13:39.287796] [info] bind columns0 1 2
+[2015-12-15 21:13:39.288686] [info] result for bindSqlThomas Hankss tommy52@gump.com
+[2015-12-15 21:13:39.289689] [info] return value from mid php[{"first_name":"Thomas","last_name":"Hankss","email":"tommy52@gump.com"}]
+[2015-12-15 21:13:39.324848] [info] bind columns0 1 2 3
+[2015-12-15 21:13:39.326703] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"good morning","timestamp":"2015-12-08 10:18:25"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-08 10:18:43"},{"first_name":"snedden","last_name":"gonsalves","text":"does it work now?","timestamp":"2015-12-08 10:22:41"},{"first_name":"Daniel","last_name":"Boggard","text":"looks like it does","timestamp":"2015-12-08 10:22:53"},{"first_name":"Daniel","last_name":"Boggard","text":"gotta leave","timestamp":"2015-12-08 10:23:41"},{"first_name":"Daniel","last_name":"Boggard","text":"hey dan","timestamp":"2015-12-13 21:17:01"}]
+[2015-12-15 21:13:40.793884] [info] callBack
+[2015-12-15 21:13:40.794610] [info] callBack
+[2015-12-15 21:13:40.794905] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:40.795397] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:40.795571] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:40.796087] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:40.797439] [info] Inside bind sql
+[2015-12-15 21:13:40.798614] [info] Inside bind sql
+[2015-12-15 21:13:40.800188] [info] bind columns0 1
+[2015-12-15 21:13:40.801002] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:40.801940] [info] return value from mid phpnull
+[2015-12-15 21:13:40.918834] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:40.919802] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:40.920722] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:40.992729] [info] callBack
+[2015-12-15 21:13:40.993587] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:40.994119] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:41.029481] [info] callBack
+[2015-12-15 21:13:41.030400] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:41.027070] [info] Inside bind sql
+[2015-12-15 21:13:41.030893] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:41.032624] [info] Inside bind sql
+[2015-12-15 21:13:41.035219] [info] bind columns0 1
+[2015-12-15 21:13:41.036418] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:41.037327] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:41.090883] [info] inside user.php
+[2015-12-15 21:13:41.160074] [info] callBack
+[2015-12-15 21:13:41.160931] [info] 600 time :1450210421
+[2015-12-15 21:13:41.207039] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:41.207998] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:41.208879] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:41.559422] [info] callBack
+[2015-12-15 21:13:41.560292] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:41.561249] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:41.562551] [info] Inside bind sql
+[2015-12-15 21:13:41.564841] [info] bind columns0 1
+[2015-12-15 21:13:41.565830] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:41.566600] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:41.570760] [info] callBack
+[2015-12-15 21:13:41.571594] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:41.572058] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:41.573939] [info] Inside bind sql
+[2015-12-15 21:13:41.638684] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:41.639247] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:41.639724] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:41.727741] [info] callBack
+[2015-12-15 21:13:41.728684] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:41.729059] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:41.730722] [info] Inside bind sql
+[2015-12-15 21:13:41.783035] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:41.783721] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:41.784418] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:42.371390] [info] callBack
+[2015-12-15 21:13:42.372400] [info] inside getOpenChallenge() id:9 
+[2015-12-15 21:13:42.372762] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:42.373899] [info] Inside bind sql
+[2015-12-15 21:13:42.375910] [info] bind columns0 1
+[2015-12-15 21:13:42.376455] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:42.376967] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2}]
+[2015-12-15 21:13:42.387924] [info] callBack
+[2015-12-15 21:13:42.388721] [info] inside getSentChallenge() id:9 
+[2015-12-15 21:13:42.389403] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:42.391690] [info] Inside bind sql
+[2015-12-15 21:13:42.455717] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:42.456712] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:42.457611] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":1,"game_id":1,"status":"accepted","timestamp":"2015-12-14 00:28:14"}]
+[2015-12-15 21:13:42.732553] [info] callBack
+[2015-12-15 21:13:42.733428] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:42.733921] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:42.735178] [info] Inside bind sql
+[2015-12-15 21:13:42.737351] [info] bind columns0 1
+[2015-12-15 21:13:42.738179] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:42.738920] [info] return value from mid phpnull
+[2015-12-15 21:13:42.769754] [info] callBack
+[2015-12-15 21:13:42.770653] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:42.771061] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:42.772975] [info] Inside bind sql
+[2015-12-15 21:13:42.856091] [info] gameSVC.php included
+[2015-12-15 21:13:42.865243] [info] callBack
+[2015-12-15 21:13:42.865957] [info] gameSVC.php start called
+[2015-12-15 21:13:42.866367] [info] startData in gameBizData.php called with parameter1
+[2015-12-15 21:13:42.867584] [info] Something went wrong while preparing statement update challenge startGameDBErreur de syntaxe près de 'table challenges set status='met' where game_id=?' à la ligne 1
+[2015-12-15 21:13:42.874026] [info] Return data from start [{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:13:42.874712] [info] return value from mid php[{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:13:42.881278] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:42.882147] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:42.882942] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:43.242362] [info] gameSVC.php included
+[2015-12-15 21:13:43.250124] [info] callBack
+[2015-12-15 21:13:43.253144] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:43.722662] [info] callBack
+[2015-12-15 21:13:43.723467] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:43.723793] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:43.724881] [info] Inside bind sql
+[2015-12-15 21:13:43.726660] [info] bind columns0 1
+[2015-12-15 21:13:43.727133] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:43.727617] [info] return value from mid phpnull
+[2015-12-15 21:13:44.727811] [info] inside user.php
+[2015-12-15 21:13:44.771287] [info] callBack
+[2015-12-15 21:13:44.772083] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:44.772381] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:44.774324] [info] Inside bind sql
+[2015-12-15 21:13:44.787878] [info] callBack
+[2015-12-15 21:13:44.788655] [info] 600 time :1450210424
+[2015-12-15 21:13:44.789378] [info] callBack
+[2015-12-15 21:13:44.790127] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:44.790586] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:44.792083] [info] Inside bind sql
+[2015-12-15 21:13:44.794281] [info] bind columns0 1
+[2015-12-15 21:13:44.795052] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:44.795821] [info] return value from mid phpnull
+[2015-12-15 21:13:44.842257] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:44.842837] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:44.843372] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:45.730236] [info] callBack
+[2015-12-15 21:13:45.731060] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:45.731338] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:45.732902] [info] Inside bind sql
+[2015-12-15 21:13:45.804584] [info] callBack
+[2015-12-15 21:13:45.805357] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:45.805809] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:45.807065] [info] Inside bind sql
+[2015-12-15 21:13:45.809061] [info] bind columns0 1
+[2015-12-15 21:13:45.809565] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:45.810107] [info] return value from mid phpnull
+[2015-12-15 21:13:45.821902] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:45.822722] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:45.823471] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:46.211998] [info] gameSVC.php included
+[2015-12-15 21:13:46.219849] [info] callBack
+[2015-12-15 21:13:46.222628] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:46.742042] [info] callBack
+[2015-12-15 21:13:46.742835] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:46.743144] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:46.744730] [info] Inside bind sql
+[2015-12-15 21:13:46.804399] [info] callBack
+[2015-12-15 21:13:46.805233] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:46.805689] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:46.807199] [info] Inside bind sql
+[2015-12-15 21:13:46.809673] [info] bind columns0 1
+[2015-12-15 21:13:46.810225] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:46.810920] [info] return value from mid phpnull
+[2015-12-15 21:13:46.815136] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:46.816096] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:46.816953] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:47.748583] [info] callBack
+[2015-12-15 21:13:47.749576] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:47.750086] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:47.752177] [info] Inside bind sql
+[2015-12-15 21:13:47.807820] [info] callBack
+[2015-12-15 21:13:47.808837] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:47.809334] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:47.811014] [info] Inside bind sql
+[2015-12-15 21:13:47.813604] [info] bind columns0 1
+[2015-12-15 21:13:47.814402] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:47.815145] [info] return value from mid phpnull
+[2015-12-15 21:13:47.826673] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:47.827677] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:47.828491] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:48.463716] [info] inside user.php
+[2015-12-15 21:13:48.498682] [info] callBack
+[2015-12-15 21:13:48.499785] [info] in logOut with userID 11
+[2015-12-15 21:13:48.500986] [info] Insidd logOutDB with idUser:11
+[2015-12-15 21:13:48.574300] [info] return value from mid php1
+[2015-12-15 21:13:48.722570] [info] inside user.php
+[2015-12-15 21:13:48.727123] [info] callBack
+[2015-12-15 21:13:48.727842] [info] in getOnlineUsers
+[2015-12-15 21:13:48.728266] [info] inside getOnlineUsersDb
+[2015-12-15 21:13:48.730134] [info] Inside bind sql
+[2015-12-15 21:13:48.732755] [info] bind columns0 1 2
+[2015-12-15 21:13:48.733596] [info] result for bindSqlsnedden gonsalves Sneddento@indiatimes.com
+[2015-12-15 21:13:48.734474] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","email":"Sneddento@indiatimes.com"}]
+[2015-12-15 21:13:48.741153] [info] callBack
+[2015-12-15 21:13:48.741894] [info] inside getUserById id:11
+[2015-12-15 21:13:48.742384] [info] Insidd getUserByIdDB with idUser:11
+[2015-12-15 21:13:48.743860] [info] Inside bind sql
+[2015-12-15 21:13:48.745497] [info] bind columns0 1
+[2015-12-15 21:13:48.746877] [info] return value from mid php[{"first_name":"Thomas","last_name":"Hankss"}]
+[2015-12-15 21:13:48.817048] [info] callBack
+[2015-12-15 21:13:48.818906] [info] Inside bind sql
+[2015-12-15 21:13:48.893547] [info] bind columns0 1 2 3
+[2015-12-15 21:13:48.896624] [info] return value from mid php[{"first_name":"snedden","last_name":"gonsalves","text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":"snedden","last_name":"gonsalves","text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":"Daniel","last_name":"Boggard","text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":"Daniel","last_name":"Boggard","text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":"snedden","last_name":"gonsalves","text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":"snedden","last_name":"gonsalves","text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":"snedden","last_name":"gonsalves","text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":"snedden","last_name":"gonsalves","text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":"snedden","last_name":"gonsalves","text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":"snedden","last_name":"gonsalves","text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":"snedden","last_name":"gonsalves","text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":"snedden","last_name":"gonsalves","text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":"snedden","last_name":"gonsalves","text":"good morning","timestamp":"2015-12-08 10:18:25"},{"first_name":"Daniel","last_name":"Boggard","text":"hey!","timestamp":"2015-12-08 10:18:43"},{"first_name":"snedden","last_name":"gonsalves","text":"does it work now?","timestamp":"2015-12-08 10:22:41"},{"first_name":"Daniel","last_name":"Boggard","text":"looks like it does","timestamp":"2015-12-08 10:22:53"},{"first_name":"Daniel","last_name":"Boggard","text":"gotta leave","timestamp":"2015-12-08 10:23:41"},{"first_name":"Daniel","last_name":"Boggard","text":"hey dan","timestamp":"2015-12-13 21:17:01"}]
+[2015-12-15 21:13:48.922719] [info] callBack
+[2015-12-15 21:13:48.923676] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:48.924166] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:48.925553] [info] Inside bind sql
+[2015-12-15 21:13:48.929208] [info] bind columns0 1
+[2015-12-15 21:13:48.929982] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:48.930732] [info] return value from mid phpnull
+[2015-12-15 21:13:48.935314] [info] callBack
+[2015-12-15 21:13:48.936110] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:48.936603] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:48.938421] [info] Inside bind sql
+[2015-12-15 21:13:49.012991] [info] inside user.php
+[2015-12-15 21:13:49.022278] [info] callBack
+[2015-12-15 21:13:49.023066] [info] 600 time :1450210429
+[2015-12-15 21:13:49.047633] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:49.048664] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:49.049518] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:49.220475] [info] gameSVC.php included
+[2015-12-15 21:13:49.247792] [info] callBack
+[2015-12-15 21:13:49.250825] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:49.954437] [info] callBack
+[2015-12-15 21:13:49.955305] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:49.955751] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:49.957282] [info] Inside bind sql
+[2015-12-15 21:13:49.959489] [info] bind columns0 1
+[2015-12-15 21:13:49.960423] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:49.961049] [info] return value from mid phpnull
+[2015-12-15 21:13:49.971808] [info] callBack
+[2015-12-15 21:13:49.972598] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:49.973212] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:49.975177] [info] Inside bind sql
+[2015-12-15 21:13:50.041551] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:50.042676] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:50.043562] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:50.923310] [info] callBack
+[2015-12-15 21:13:50.924211] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:50.924923] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:50.926657] [info] Inside bind sql
+[2015-12-15 21:13:50.929018] [info] bind columns0 1
+[2015-12-15 21:13:50.929801] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:50.930536] [info] return value from mid phpnull
+[2015-12-15 21:13:50.982512] [info] callBack
+[2015-12-15 21:13:50.983460] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:50.983798] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:50.985279] [info] Inside bind sql
+[2015-12-15 21:13:51.043539] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:51.044131] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:51.044651] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:51.947949] [info] callBack
+[2015-12-15 21:13:51.949013] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:51.949513] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:51.950933] [info] Inside bind sql
+[2015-12-15 21:13:51.953689] [info] bind columns0 1
+[2015-12-15 21:13:51.954516] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:51.955291] [info] return value from mid phpnull
+[2015-12-15 21:13:51.984580] [info] callBack
+[2015-12-15 21:13:51.985383] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:51.985802] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:51.987807] [info] Inside bind sql
+[2015-12-15 21:13:52.064500] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:52.065067] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:52.065608] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:52.227248] [info] gameSVC.php included
+[2015-12-15 21:13:52.235006] [info] callBack
+[2015-12-15 21:13:52.237878] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:52.949951] [info] callBack
+[2015-12-15 21:13:52.950900] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:52.951219] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:52.952397] [info] Inside bind sql
+[2015-12-15 21:13:52.954636] [info] bind columns0 1
+[2015-12-15 21:13:52.955440] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:52.956228] [info] return value from mid phpnull
+[2015-12-15 21:13:52.966396] [info] callBack
+[2015-12-15 21:13:52.967175] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:52.967647] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:52.969551] [info] Inside bind sql
+[2015-12-15 21:13:53.039294] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:53.039843] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:53.040335] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:54.039001] [info] callBack
+[2015-12-15 21:13:54.100277] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:54.101531] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:54.102746] [info] callBack
+[2015-12-15 21:13:54.103164] [info] Inside bind sql
+[2015-12-15 21:13:54.103471] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:54.103925] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:54.105338] [info] bind columns0 1
+[2015-12-15 21:13:54.105612] [info] Inside bind sql
+[2015-12-15 21:13:54.106080] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:54.106831] [info] return value from mid phpnull
+[2015-12-15 21:13:54.125313] [info] inside user.php
+[2015-12-15 21:13:54.142719] [info] callBack
+[2015-12-15 21:13:54.143559] [info] 600 time :1450210434
+[2015-12-15 21:13:54.213810] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:54.214670] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:54.215456] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:55.327795] [info] gameSVC.php included
+[2015-12-15 21:13:55.381491] [info] callBack
+[2015-12-15 21:13:55.385085] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:55.762634] [info] callBack
+[2015-12-15 21:13:55.763484] [info] callBack
+[2015-12-15 21:13:55.763585] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:55.764086] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:55.764250] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:55.764683] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:55.765707] [info] Inside bind sql
+[2015-12-15 21:13:55.767051] [info] Inside bind sql
+[2015-12-15 21:13:55.788006] [info] bind columns0 1
+[2015-12-15 21:13:55.788861] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:55.789669] [info] return value from mid phpnull
+[2015-12-15 21:13:55.849131] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:55.850054] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:55.850820] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:56.872366] [info] callBack
+[2015-12-15 21:13:56.873218] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:56.873541] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:56.874732] [info] Inside bind sql
+[2015-12-15 21:13:56.876514] [info] bind columns0 1
+[2015-12-15 21:13:56.877007] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:56.877453] [info] return value from mid phpnull
+[2015-12-15 21:13:56.890515] [info] callBack
+[2015-12-15 21:13:56.891329] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:56.891834] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:56.893635] [info] Inside bind sql
+[2015-12-15 21:13:56.945555] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:56.946140] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:56.946711] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:57.750102] [info] callBack
+[2015-12-15 21:13:57.750966] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:57.751243] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:57.752293] [info] Inside bind sql
+[2015-12-15 21:13:57.754213] [info] bind columns0 1
+[2015-12-15 21:13:57.754735] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:57.755223] [info] return value from mid phpnull
+[2015-12-15 21:13:58.447593] [info] gameSVC.php included
+[2015-12-15 21:13:58.551071] [info] callBack
+[2015-12-15 21:13:58.554172] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:13:58.730686] [info] callBack
+[2015-12-15 21:13:58.731585] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:58.732079] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:58.733892] [info] Inside bind sql
+[2015-12-15 21:13:58.763895] [info] callBack
+[2015-12-15 21:13:58.764692] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:13:58.765182] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:58.766428] [info] Inside bind sql
+[2015-12-15 21:13:58.768043] [info] bind columns0 1
+[2015-12-15 21:13:58.768537] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:13:58.769035] [info] return value from mid phpnull
+[2015-12-15 21:13:58.823400] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:58.824070] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:58.824697] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:13:59.721980] [info] inside user.php
+[2015-12-15 21:13:59.795021] [info] callBack
+[2015-12-15 21:13:59.795839] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:13:59.796112] [info] callBack
+[2015-12-15 21:13:59.796303] [info] inside getOpenChallengessDB
+[2015-12-15 21:13:59.796761] [info] 600 time :1450210439
+[2015-12-15 21:13:59.798398] [info] Inside bind sql
+[2015-12-15 21:13:59.877486] [info] bind columns0 1 2 3 4
+[2015-12-15 21:13:59.878067] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:13:59.878583] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:00.759926] [info] callBack
+[2015-12-15 21:14:00.760833] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:00.761213] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:00.762312] [info] Inside bind sql
+[2015-12-15 21:14:00.764077] [info] bind columns0 1
+[2015-12-15 21:14:00.764554] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:00.765077] [info] return value from mid phpnull
+[2015-12-15 21:14:00.794833] [info] callBack
+[2015-12-15 21:14:00.795465] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:00.795772] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:00.797205] [info] Inside bind sql
+[2015-12-15 21:14:00.860496] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:00.861066] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:00.861596] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:01.402937] [info] gameSVC.php included
+[2015-12-15 21:14:01.411187] [info] callBack
+[2015-12-15 21:14:01.414403] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:01.724699] [info] callBack
+[2015-12-15 21:14:01.725653] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:01.726073] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:01.727098] [info] Inside bind sql
+[2015-12-15 21:14:01.728662] [info] bind columns0 1
+[2015-12-15 21:14:01.729121] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:01.729599] [info] return value from mid phpnull
+[2015-12-15 21:14:02.782668] [info] callBack
+[2015-12-15 21:14:02.783581] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:02.784018] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:02.785695] [info] Inside bind sql
+[2015-12-15 21:14:02.852861] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:02.853444] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:02.854029] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:03.784090] [info] callBack
+[2015-12-15 21:14:03.784940] [info] callBack
+[2015-12-15 21:14:03.785101] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:03.785593] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:03.785768] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:03.786243] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:03.786900] [info] Inside bind sql
+[2015-12-15 21:14:03.788099] [info] Inside bind sql
+[2015-12-15 21:14:03.788716] [info] bind columns0 1
+[2015-12-15 21:14:03.789167] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:03.789621] [info] return value from mid phpnull
+[2015-12-15 21:14:03.894555] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:03.895121] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:03.895669] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:04.411176] [info] gameSVC.php included
+[2015-12-15 21:14:04.472884] [info] callBack
+[2015-12-15 21:14:04.475717] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:04.724247] [info] inside user.php
+[2015-12-15 21:14:04.767433] [info] callBack
+[2015-12-15 21:14:04.768328] [info] 600 time :1450210444
+[2015-12-15 21:14:04.768838] [info] callBack
+[2015-12-15 21:14:04.769571] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:04.770035] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:04.771368] [info] Inside bind sql
+[2015-12-15 21:14:04.772599] [info] callBack
+[2015-12-15 21:14:04.773355] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:04.773473] [info] bind columns0 1
+[2015-12-15 21:14:04.773798] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:04.774147] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:04.774781] [info] return value from mid phpnull
+[2015-12-15 21:14:04.775505] [info] Inside bind sql
+[2015-12-15 21:14:04.836791] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:04.837651] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:04.838409] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:05.796626] [info] callBack
+[2015-12-15 21:14:05.797631] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:05.797739] [info] callBack
+[2015-12-15 21:14:05.798116] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:05.798615] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:05.799055] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:05.799566] [info] Inside bind sql
+[2015-12-15 21:14:05.801160] [info] Inside bind sql
+[2015-12-15 21:14:05.801678] [info] bind columns0 1
+[2015-12-15 21:14:05.802627] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:05.803792] [info] return value from mid phpnull
+[2015-12-15 21:14:05.888159] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:05.888765] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:05.889286] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:06.731276] [info] callBack
+[2015-12-15 21:14:06.732381] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:06.732690] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:06.733777] [info] Inside bind sql
+[2015-12-15 21:14:06.735553] [info] bind columns0 1
+[2015-12-15 21:14:06.736052] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:06.736507] [info] return value from mid phpnull
+[2015-12-15 21:14:06.781400] [info] callBack
+[2015-12-15 21:14:06.782311] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:06.782744] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:06.784632] [info] Inside bind sql
+[2015-12-15 21:14:06.841588] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:06.842346] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:06.843240] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:07.419517] [info] gameSVC.php included
+[2015-12-15 21:14:07.438643] [info] callBack
+[2015-12-15 21:14:07.441711] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:07.739264] [info] callBack
+[2015-12-15 21:14:07.740190] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:07.740653] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:07.741764] [info] Inside bind sql
+[2015-12-15 21:14:07.743822] [info] bind columns0 1
+[2015-12-15 21:14:07.744666] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:07.745409] [info] return value from mid phpnull
+[2015-12-15 21:14:07.777332] [info] callBack
+[2015-12-15 21:14:07.778248] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:07.778601] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:07.780112] [info] Inside bind sql
+[2015-12-15 21:14:07.861068] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:07.861632] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:07.862370] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:08.732904] [info] callBack
+[2015-12-15 21:14:08.733750] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:08.734098] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:08.735193] [info] Inside bind sql
+[2015-12-15 21:14:08.736943] [info] bind columns0 1
+[2015-12-15 21:14:08.737416] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:08.737907] [info] return value from mid phpnull
+[2015-12-15 21:14:08.783658] [info] callBack
+[2015-12-15 21:14:08.784646] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:08.785049] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:08.786590] [info] Inside bind sql
+[2015-12-15 21:14:08.841753] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:08.842360] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:08.843101] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:09.737152] [info] inside user.php
+[2015-12-15 21:14:09.750652] [info] callBack
+[2015-12-15 21:14:09.751465] [info] 600 time :1450210449
+[2015-12-15 21:14:09.782258] [info] callBack
+[2015-12-15 21:14:09.782999] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:09.783412] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:09.784919] [info] Inside bind sql
+[2015-12-15 21:14:09.787313] [info] bind columns0 1
+[2015-12-15 21:14:09.788129] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:09.789366] [info] return value from mid phpnull
+[2015-12-15 21:14:09.812772] [info] callBack
+[2015-12-15 21:14:09.813713] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:09.813996] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:09.815450] [info] Inside bind sql
+[2015-12-15 21:14:09.893001] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:09.893560] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:09.894078] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:10.427146] [info] gameSVC.php included
+[2015-12-15 21:14:10.472605] [info] callBack
+[2015-12-15 21:14:10.475821] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:10.775238] [info] callBack
+[2015-12-15 21:14:10.776161] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:10.776619] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:10.778378] [info] Inside bind sql
+[2015-12-15 21:14:10.780781] [info] bind columns0 1
+[2015-12-15 21:14:10.781601] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:10.782550] [info] return value from mid phpnull
+[2015-12-15 21:14:10.816098] [info] callBack
+[2015-12-15 21:14:10.816972] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:10.817274] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:10.818814] [info] Inside bind sql
+[2015-12-15 21:14:10.914397] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:10.914951] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:10.915429] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:11.783521] [info] callBack
+[2015-12-15 21:14:11.784394] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:11.784833] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:11.786164] [info] callBack
+[2015-12-15 21:14:11.786339] [info] Inside bind sql
+[2015-12-15 21:14:11.786869] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:11.787338] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:11.788604] [info] bind columns0 1
+[2015-12-15 21:14:11.789235] [info] Inside bind sql
+[2015-12-15 21:14:11.789357] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:11.790221] [info] return value from mid phpnull
+[2015-12-15 21:14:11.853044] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:11.853864] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:11.854506] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:12.751368] [info] callBack
+[2015-12-15 21:14:12.752311] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:12.752794] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:12.754044] [info] Inside bind sql
+[2015-12-15 21:14:12.756282] [info] bind columns0 1
+[2015-12-15 21:14:12.757098] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:12.758049] [info] return value from mid phpnull
+[2015-12-15 21:14:12.801429] [info] callBack
+[2015-12-15 21:14:12.802428] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:12.802885] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:12.804721] [info] Inside bind sql
+[2015-12-15 21:14:12.864342] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:12.864918] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:12.865442] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:13.434591] [info] gameSVC.php included
+[2015-12-15 21:14:13.442245] [info] callBack
+[2015-12-15 21:14:13.445435] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:13.753592] [info] callBack
+[2015-12-15 21:14:13.754328] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:13.754930] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:13.756191] [info] Inside bind sql
+[2015-12-15 21:14:13.758225] [info] bind columns0 1
+[2015-12-15 21:14:13.758936] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:13.759710] [info] return value from mid phpnull
+[2015-12-15 21:14:13.801702] [info] callBack
+[2015-12-15 21:14:13.802476] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:13.802808] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:13.804224] [info] Inside bind sql
+[2015-12-15 21:14:13.857163] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:13.858141] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:13.859015] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:14.719748] [info] inside user.php
+[2015-12-15 21:14:14.733194] [info] callBack
+[2015-12-15 21:14:14.734321] [info] 600 time :1450210454
+[2015-12-15 21:14:14.786201] [info] callBack
+[2015-12-15 21:14:14.787108] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:14.787606] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:14.788921] [info] Inside bind sql
+[2015-12-15 21:14:14.790679] [info] bind columns0 1
+[2015-12-15 21:14:14.791155] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:14.791738] [info] return value from mid phpnull
+[2015-12-15 21:14:14.818690] [info] callBack
+[2015-12-15 21:14:14.819588] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:14.819905] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:14.821372] [info] Inside bind sql
+[2015-12-15 21:14:14.884953] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:14.885791] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:14.886502] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:15.754854] [info] callBack
+[2015-12-15 21:14:15.755800] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:15.756259] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:15.757603] [info] Inside bind sql
+[2015-12-15 21:14:15.759881] [info] bind columns0 1
+[2015-12-15 21:14:15.760461] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:15.761104] [info] return value from mid phpnull
+[2015-12-15 21:14:15.808911] [info] callBack
+[2015-12-15 21:14:15.809685] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:15.809997] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:15.811456] [info] Inside bind sql
+[2015-12-15 21:14:15.864981] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:15.865545] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:15.866089] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:16.438472] [info] gameSVC.php included
+[2015-12-15 21:14:16.486278] [info] callBack
+[2015-12-15 21:14:16.489602] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:16.766295] [info] callBack
+[2015-12-15 21:14:16.767208] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:16.767680] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:16.769043] [info] Inside bind sql
+[2015-12-15 21:14:16.771331] [info] bind columns0 1
+[2015-12-15 21:14:16.772097] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:16.772897] [info] return value from mid phpnull
+[2015-12-15 21:14:16.808512] [info] callBack
+[2015-12-15 21:14:16.809449] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:16.809740] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:16.811245] [info] Inside bind sql
+[2015-12-15 21:14:16.872060] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:16.872737] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:16.873358] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:17.806976] [info] callBack
+[2015-12-15 21:14:17.808007] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:17.808294] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:17.809417] [info] Inside bind sql
+[2015-12-15 21:14:17.811635] [info] bind columns0 1
+[2015-12-15 21:14:17.812629] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:17.813374] [info] return value from mid phpnull
+[2015-12-15 21:14:17.821172] [info] callBack
+[2015-12-15 21:14:17.821959] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:17.822431] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:17.824328] [info] Inside bind sql
+[2015-12-15 21:14:17.887222] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:17.887784] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:17.888287] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:18.838721] [info] callBack
+[2015-12-15 21:14:18.839689] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:18.840173] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:18.841692] [info] Inside bind sql
+[2015-12-15 21:14:18.843847] [info] bind columns0 1
+[2015-12-15 21:14:18.844367] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:18.844867] [info] return value from mid phpnull
+[2015-12-15 21:14:18.881484] [info] callBack
+[2015-12-15 21:14:18.882690] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:18.883177] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:18.885149] [info] Inside bind sql
+[2015-12-15 21:14:18.989490] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:18.990092] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:18.990642] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:19.444350] [info] gameSVC.php included
+[2015-12-15 21:14:19.496306] [info] callBack
+[2015-12-15 21:14:19.500169] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:19.722876] [info] inside user.php
+[2015-12-15 21:14:19.745076] [info] callBack
+[2015-12-15 21:14:19.745872] [info] 600 time :1450210459
+[2015-12-15 21:14:19.800323] [info] callBack
+[2015-12-15 21:14:19.801201] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:19.801659] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:19.802958] [info] Inside bind sql
+[2015-12-15 21:14:19.804784] [info] bind columns0 1
+[2015-12-15 21:14:19.805277] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:19.805810] [info] return value from mid phpnull
+[2015-12-15 21:14:19.829298] [info] callBack
+[2015-12-15 21:14:19.830054] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:19.830360] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:19.831809] [info] Inside bind sql
+[2015-12-15 21:14:19.892838] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:19.893531] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:19.894105] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:20.769232] [info] callBack
+[2015-12-15 21:14:20.770046] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:20.770363] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:20.771362] [info] Inside bind sql
+[2015-12-15 21:14:20.773255] [info] bind columns0 1
+[2015-12-15 21:14:20.773786] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:20.774264] [info] return value from mid phpnull
+[2015-12-15 21:14:20.824707] [info] callBack
+[2015-12-15 21:14:20.825710] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:20.826234] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:20.828104] [info] Inside bind sql
+[2015-12-15 21:14:20.893151] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:20.893723] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:20.894247] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:21.776670] [info] callBack
+[2015-12-15 21:14:21.777401] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:21.777776] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:21.778846] [info] Inside bind sql
+[2015-12-15 21:14:21.780644] [info] bind columns0 1
+[2015-12-15 21:14:21.781204] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:21.781905] [info] return value from mid phpnull
+[2015-12-15 21:14:21.854707] [info] callBack
+[2015-12-15 21:14:21.855631] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:21.855983] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:21.857379] [info] Inside bind sql
+[2015-12-15 21:14:21.911504] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:21.912090] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:21.912600] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:22.448647] [info] gameSVC.php included
+[2015-12-15 21:14:22.530184] [info] callBack
+[2015-12-15 21:14:22.533056] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:22.778417] [info] callBack
+[2015-12-15 21:14:22.779414] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:22.779890] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:22.781869] [info] Inside bind sql
+[2015-12-15 21:14:22.785418] [info] bind columns0 1
+[2015-12-15 21:14:22.786246] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:22.787098] [info] return value from mid phpnull
+[2015-12-15 21:14:22.831856] [info] callBack
+[2015-12-15 21:14:22.832746] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:22.833058] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:22.834590] [info] Inside bind sql
+[2015-12-15 21:14:22.911238] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:22.911854] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:22.912337] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:23.841214] [info] callBack
+[2015-12-15 21:14:23.842209] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:23.842205] [info] callBack
+[2015-12-15 21:14:23.842724] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:23.842956] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:23.843415] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:23.844098] [info] Inside bind sql
+[2015-12-15 21:14:23.845375] [info] Inside bind sql
+[2015-12-15 21:14:23.845989] [info] bind columns0 1
+[2015-12-15 21:14:23.846772] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:23.847491] [info] return value from mid phpnull
+[2015-12-15 21:14:23.944927] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:23.945503] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:23.946033] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:24.731762] [info] inside user.php
+[2015-12-15 21:14:24.887509] [info] inside user.php
+[2015-12-15 21:14:24.955271] [info] callBack
+[2015-12-15 21:14:24.956063] [info] 600 time :1450210464
+[2015-12-15 21:14:25.024190] [info] callBack
+[2015-12-15 21:14:25.025000] [info] inside getOpenChallenge() id:11 
+[2015-12-15 21:14:25.025466] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:25.026756] [info] Inside bind sql
+[2015-12-15 21:14:25.028748] [info] bind columns0 1
+[2015-12-15 21:14:25.029520] [info] return data from getOpenChallengesDB sql 
+[2015-12-15 21:14:25.030373] [info] return value from mid phpnull
+[2015-12-15 21:14:25.035095] [info] callBack
+[2015-12-15 21:14:25.035959] [info] inside getSentChallenge() id:11 
+[2015-12-15 21:14:25.036463] [info] inside getOpenChallengessDB
+[2015-12-15 21:14:25.038430] [info] Inside bind sql
+[2015-12-15 21:14:25.044028] [info] callBack
+[2015-12-15 21:14:25.044830] [info] in logOut with userID 11
+[2015-12-15 21:14:25.045325] [info] Insidd logOutDB with idUser:11
+[2015-12-15 21:14:25.673748] [info] bind columns0 1 2 3 4
+[2015-12-15 21:14:25.674498] [info] return data from getOpenChallengesDB sql Array
+[2015-12-15 21:14:25.675240] [info] return value from mid php[{"email":"Sneddento@indiatimes.com","challenge_id":2,"game_id":null,"status":"open","timestamp":"2015-12-15 15:13:09"}]
+[2015-12-15 21:14:25.759305] [info] gameSVC.php included
+[2015-12-15 21:14:25.784902] [info] return value from mid php1
+[2015-12-15 21:14:25.941770] [info] callBack
+[2015-12-15 21:14:25.944684] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:28.458065] [info] gameSVC.php included
+[2015-12-15 21:14:28.465873] [info] callBack
+[2015-12-15 21:14:28.469238] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:31.468604] [info] gameSVC.php included
+[2015-12-15 21:14:31.530481] [info] callBack
+[2015-12-15 21:14:31.533349] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:34.476845] [info] gameSVC.php included
+[2015-12-15 21:14:34.576272] [info] callBack
+[2015-12-15 21:14:34.579242] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:37.480911] [info] gameSVC.php included
+[2015-12-15 21:14:37.575081] [info] callBack
+[2015-12-15 21:14:37.578192] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:40.507812] [info] gameSVC.php included
+[2015-12-15 21:14:40.574419] [info] callBack
+[2015-12-15 21:14:40.577758] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:43.506370] [info] gameSVC.php included
+[2015-12-15 21:14:43.585422] [info] callBack
+[2015-12-15 21:14:43.588414] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:46.511594] [info] gameSVC.php included
+[2015-12-15 21:14:46.519184] [info] callBack
+[2015-12-15 21:14:46.522468] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:49.514595] [info] gameSVC.php included
+[2015-12-15 21:14:49.608660] [info] callBack
+[2015-12-15 21:14:49.611747] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:52.521159] [info] gameSVC.php included
+[2015-12-15 21:14:52.548444] [info] callBack
+[2015-12-15 21:14:52.551536] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:55.524364] [info] gameSVC.php included
+[2015-12-15 21:14:55.532255] [info] callBack
+[2015-12-15 21:14:55.535470] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:14:58.530766] [info] gameSVC.php included
+[2015-12-15 21:14:58.540581] [info] callBack
+[2015-12-15 21:14:58.544781] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:01.533921] [info] gameSVC.php included
+[2015-12-15 21:15:01.585525] [info] callBack
+[2015-12-15 21:15:01.588499] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:04.538053] [info] gameSVC.php included
+[2015-12-15 21:15:04.598901] [info] callBack
+[2015-12-15 21:15:04.601861] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:07.544428] [info] gameSVC.php included
+[2015-12-15 21:15:07.564554] [info] callBack
+[2015-12-15 21:15:07.567533] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:10.544966] [info] gameSVC.php included
+[2015-12-15 21:15:10.580136] [info] callBack
+[2015-12-15 21:15:10.583162] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:13.552088] [info] gameSVC.php included
+[2015-12-15 21:15:13.596470] [info] callBack
+[2015-12-15 21:15:13.599796] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:15.573755] [info] gameSVC.php included
+[2015-12-15 21:15:15.641669] [info] callBack
+[2015-12-15 21:15:15.642313] [info] gameSVC.php start called
+[2015-12-15 21:15:15.642847] [info] startData in gameBizData.php called with parameter1
+[2015-12-15 21:15:15.643683] [info] Something went wrong while preparing statement update challenge startGameDBErreur de syntaxe près de 'table challenges set status='met' where game_id=?' à la ligne 1
+[2015-12-15 21:15:15.648308] [info] Return data from start [{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:15:15.648668] [info] return value from mid php[{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":null,"player0_boardI":null,"player0_boardJ":null,"player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:15:16.554805] [info] gameSVC.php included
+[2015-12-15 21:15:16.598829] [info] callBack
+[2015-12-15 21:15:16.601802] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:19.565771] [info] gameSVC.php included
+[2015-12-15 21:15:19.641271] [info] callBack
+[2015-12-15 21:15:19.645450] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:22.574184] [info] gameSVC.php included
+[2015-12-15 21:15:22.652385] [info] callBack
+[2015-12-15 21:15:22.657438] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:23.032013] [info] gameSVC.php included
+[2015-12-15 21:15:23.067941] [info] callBack
+[2015-12-15 21:15:23.068722] [info] inside game SVC changeBoard
+[2015-12-15 21:15:23.069217] [info] inside game SVC changeBoardData
+[2015-12-15 21:15:23.114168] [info] gameSVC.php included
+[2015-12-15 21:15:23.123476] [info] callBack
+[2015-12-15 21:15:24.805253] [info] gameSVC.php included
+[2015-12-15 21:15:24.896831] [info] callBack
+[2015-12-15 21:15:24.900408] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:25.574595] [info] gameSVC.php included
+[2015-12-15 21:15:25.584899] [info] callBack
+[2015-12-15 21:15:25.588401] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:25.712717] [info] gameSVC.php included
+[2015-12-15 21:15:25.726025] [info] callBack
+[2015-12-15 21:15:25.732177] [info] return value from mid php[{"game_id":1,"whoseTurn":1,"player0_name":"Thomas","player0_pieceID":"0","player0_boardI":"22","player0_boardJ":"22","player0_attacking":0,"player1_name":"snedden","player1_pieceID":null,"player1_boardI":null,"player1_boardJ":null,"player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:15:28.718708] [info] gameSVC.php included
+[2015-12-15 21:15:28.765222] [info] callBack
+[2015-12-15 21:15:28.768388] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:31.721276] [info] gameSVC.php included
+[2015-12-15 21:15:31.763570] [info] callBack
+[2015-12-15 21:15:31.767330] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:33.635791] [info] gameSVC.php included
+[2015-12-15 21:15:33.718918] [info] callBack
+[2015-12-15 21:15:33.728188] [info] gameSVC.php included
+[2015-12-15 21:15:33.758826] [info] callBack
+[2015-12-15 21:15:33.759572] [info] inside game SVC changeBoard
+[2015-12-15 21:15:33.759984] [info] inside game SVC changeBoardData
+[2015-12-15 21:15:34.621134] [info] gameSVC.php included
+[2015-12-15 21:15:34.658308] [info] callBack
+[2015-12-15 21:15:34.661212] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:34.723423] [info] gameSVC.php included
+[2015-12-15 21:15:34.752276] [info] callBack
+[2015-12-15 21:15:34.755511] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:34.807980] [info] gameSVC.php included
+[2015-12-15 21:15:34.816134] [info] callBack
+[2015-12-15 21:15:34.819730] [info] return value from mid php[{"game_id":1,"whoseTurn":0,"player0_name":"Thomas","player0_pieceID":"0","player0_boardI":"22","player0_boardJ":"22","player0_attacking":0,"player1_name":"snedden","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:15:37.625619] [info] gameSVC.php included
+[2015-12-15 21:15:37.753066] [info] callBack
+[2015-12-15 21:15:37.756468] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:40.642441] [info] gameSVC.php included
+[2015-12-15 21:15:40.651989] [info] callBack
+[2015-12-15 21:15:40.655201] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:43.646163] [info] gameSVC.php included
+[2015-12-15 21:15:43.719336] [info] callBack
+[2015-12-15 21:15:43.722698] [info] return value from mid php[{"whoseTurn":0}]
+[2015-12-15 21:15:43.927992] [info] gameSVC.php included
+[2015-12-15 21:15:43.940735] [info] callBack
+[2015-12-15 21:15:43.968403] [info] gameSVC.php included
+[2015-12-15 21:15:43.979852] [info] callBack
+[2015-12-15 21:15:43.980657] [info] inside game SVC changeBoard
+[2015-12-15 21:15:43.981139] [info] inside game SVC changeBoardData
+[2015-12-15 21:15:46.642263] [info] gameSVC.php included
+[2015-12-15 21:15:46.649913] [info] callBack
+[2015-12-15 21:15:46.653258] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:46.729661] [info] gameSVC.php included
+[2015-12-15 21:15:46.746932] [info] gameSVC.php included
+[2015-12-15 21:15:46.753452] [info] callBack
+[2015-12-15 21:15:46.755161] [info] callBack
+[2015-12-15 21:15:46.757265] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:46.759902] [info] return value from mid php[{"game_id":1,"whoseTurn":1,"player0_name":"Thomas","player0_pieceID":"1","player0_boardI":"204","player0_boardJ":"204","player0_attacking":0,"player1_name":"snedden","player1_pieceID":"2","player1_boardI":"205","player1_boardJ":"205","player1_attacking":0,"last_updated":"2015-12-14 00:28:21","status":null,"winner":null}]
+[2015-12-15 21:15:49.730437] [info] gameSVC.php included
+[2015-12-15 21:15:49.777575] [info] callBack
+[2015-12-15 21:15:49.780657] [info] return value from mid php[{"whoseTurn":1}]
+[2015-12-15 21:15:52.727314] [info] gameSVC.php included
+[2015-12-15 21:15:52.785919] [info] callBack
+[2015-12-15 21:15:52.788835] [info] return value from mid php[{"whoseTurn":1}]

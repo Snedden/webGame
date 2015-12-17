@@ -10,6 +10,7 @@ require "./bizDataLayer/gameBizData.php";
 //because it forces all to go through the service layer in order to get to the bizLayer
 //if someone tries to access the bizLayer on it's own the code will fail since there isn't a connection!
 require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli;
+require_once("./bizDataLayer/commonDbFunctions.php");//some common db functions share among files in db layer
 
 /*************************
 	start
@@ -60,10 +61,10 @@ function checkTurn($d){
 function changeBoard($d){
 	//can they change the board?
 	//if true:
-	//split the data  //data: gameId~pieceId~boardI~boardJ~playerId
+	//split the data  //data: val+"~"+pieceId+"~"+boardI+"~"+PlayerId+"~"+isAttacking+"~"+attackedPiece
 							//38~piece_1|10~4~6~1
 	$h=explode('~',$d);
-	//changeBoardData($gameId,$pieceId,$boardI,$boardJ,$playerId);
+	//changeBoardData($gameId,$pieceId,$boardI,$playerId);
 	global $logger;
 	$logger->info('inside game SVC changeBoard');
 	
@@ -79,5 +80,17 @@ function changeBoard($d){
 function getMove($d){
 	//if it is my turn and I should be here, get the other players move	
 	return getMoveData($d);
+}
+
+function winGame($data){
+	global $logger;
+	$logger->info("Data at winGame()".print_r($data,true));
+	return winGameDB($data);
+}
+
+function checkWinner($gameId){
+	//global $logger;
+	//$logger->info("Data at winner()".print_r($gameId,true));
+	return checkWinnerDB($gameId);
 }
 ?>

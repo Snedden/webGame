@@ -20,7 +20,7 @@
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>BOOTSTRAP CHAT EXAMPLE</title>
+    <title>Heroes Lobby</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -54,6 +54,12 @@
              populateOnlineUsers();  //online users list
              addChatListeners();//chat interactivelty
              readChatsAjax(); //read chat heart beat
+
+             window.onbeforeunload = function ()
+             {
+                 logOutAjax();//logout if user closes window
+             }
+
 
          }
 
@@ -91,7 +97,7 @@
 
 
 
-         /////////GET OPEN CHALLENGES
+         /////////GET OPEN CHALLENGES WHERE TO_USER =me and STATUS=OPEN
          function getOpenChallenges(){
              var userId="<?php echo $_SESSION["user_id"]  ?>";
              //console.log('userID ',userId);
@@ -110,14 +116,27 @@
                          chlgIcon.style.display = "none";
                          chlgSentDiv.style.display = "block";
                          var c=chlgSentDiv.childNodes;
-                         c[0].setAttribute('id','accept~'+jsonObj[i].challenge_id);
-                         c[0].addEventListener('click',function(){
-                            acceptChallenge(this);
-                         });
-                         c[1].setAttribute('id','reject~'+jsonObj[i].challenge_id);
-                         c[1].addEventListener('click',function(){
-                             rejectChallenge(this);
-                         });
+
+                         var Aid='accept~'+jsonObj[i].challenge_id;
+                         c[0].setAttribute('id',Aid);
+                         var Abutton=$(document.getElementById(Aid));
+                         console.log('abutton ',Abutton);
+                         Abutton.attr('onclick','acceptChallenge(this)');
+                         /*if (-1 !== $.inArray(acceptChallenge, Abutton.data('events').click)) {
+                             Abutton.bind('click',function(){
+                                 acceptChallenge(this)});
+                         }*/
+
+
+                         var Rid='reject~'+jsonObj[i].challenge_id;
+                         c[1].setAttribute('id',Rid);
+                         var Rbutton= $(document.getElementById(Rid));
+                         Rbutton.attr('onclick','rejectChallenge(this)');
+                         /*if (-1 !== $.inArray(rejectChallenge, Rbutton.data('events').click)) {
+                             Rbutton.bind('click',function(){
+                                 rejectChallenge(this)});
+                         }*/
+
                      }
                      else
                      {
@@ -127,7 +146,7 @@
                  }
              }
          }
-         /////////GET SENT CHALLENGES
+         /////////GET ALL CHALLENGES WHERE FROM_USER=me and timestamp=most recent
          function getSentChallenges(){
              var userId="<?php echo $_SESSION["user_id"]  ?>";
              //console.log('userID ',userId);
@@ -144,6 +163,7 @@
                      var chlgIcon=document.getElementById(jsonObj[i].email);
                      if(chlgIcon) {
                          if(jsonObj[i].status==='open') {
+                             console.log('waiting for acceptane from '+jsonObj[i].email);
                              chlgIcon.setAttribute('src', 'assets/icons/balls.gif'); ///make icon as waiting for opponent to accept challenge
                              chlgIcon.setAttribute('title', 'Waiting for acceptance');
                              chlgIcon.removeAttribute("onclick");
@@ -153,8 +173,35 @@
                              chlgIcon.setAttribute('title', 'Challenge');
                              chlgIcon.setAttribute("onclick","challengeUser(this)");
                          }
-                         else{
-                             console.error('unexpected status returned sentChallgens');
+
+
+                         else if((jsonObj[i].status==='accepted')){
+                             //update  challenge table to set status as challege 'met'
+
+                                 var challengeID=jsonObj[i].challenge_id;
+
+                                 ajaxCall('GET', {
+                                     method: 'metChallenge',
+                                     a: 'lobby',
+                                     data:challengeID
+                                 },function(gameId){
+                                     console.log('proceed to game..');
+                                     window.location = 'game.php?player=' + firstName + '&gameId=' +gameId;
+                                 } );
+
+                             //callback of setChallnge MET
+
+
+                         }
+                         else if((jsonObj[i].status==='met')){
+
+                                console.log('met chalemge');
+
+                              //   window.location = 'game.php?player=' + firstName + '&gameId=' +jsonObj[i].game_id; //using only firstName to enter in game table
+
+                         }
+                         else {
+                             console.warn('unexpected status returned sentChallgens');
                          }
                      }
                      else
@@ -177,7 +224,23 @@
              if(jsonObj===1){
                  console.log('proceed to logout.php..');
                  window.location='logout.php';
+
              }
+         }
+         //checking for inactivity
+         function checkSessionTimeOut(){
+             var activity="<?php echo $_SESSION["last_activity"]  ?>";
+
+             ajaxCall('GET',{method:'checkSession',a:'user',data:activity},callBackSessionTimeOut);
+             setTimeout(checkSessionTimeOut,5000);
+         }
+
+         function callBackSessionTimeOut(timedOut){
+             console.log('Session',timedOut)
+             if(timedOut){
+                 logOutAjax();
+             }
+
          }
 
         //////////////////////ENTER CHAT
@@ -253,13 +316,13 @@
 
                  }
              }
-
+             checkSessionTimeOut();//check for session TImeout
          }
          ////ONLINE USERS HEARTBEAT
         function populateOnlineUsers(){
             var userId="<?php echo $_SESSION["user_id"]  ?>";
             ajaxCall("GET",{method:'getOnlineUsers',a:"lobby",data:userId},populateOnlineUsersCallBack);
-           // setTimeout(populateOnlineUsers,1000);
+            //setTimeout(populateOnlineUsers,1000);
         }
 
         function populateOnlineUsersCallBack(jsonObj){
@@ -314,6 +377,7 @@
          }
         /////This function is called recursively until challenge status is accepted
         function challengeUserCallBack(jsonObj){
+/*
             console.log('challenge callback ',jsonObj);
             var challengeData={};
             var heartbeat;
@@ -332,10 +396,15 @@
                     console.log('waiting for accpectance');
                 }
                 else if(jsonObj.status==='accepted'){
-                    //go to the game
+
                     if(heartbeat){
                         clearTimeout(heartbeat);//clear heart beat
                     }
+                    //go to the game
+                    console.log('proceed to game..');
+                    var gameID=jsonObj.game_id;
+                    window.location='game.php?player='+firstName+'&gameId='+gameID; //using only firstName to enter in game table
+
 
                     console.log('accepted,proceed to game');
                 }
@@ -343,10 +412,11 @@
                     console.log('callback did not return valid data in challengeUser()');
                 }
             }
+*/
 
         }
         function acceptChallenge(e){
-             console.log(e.getAttribute("id"));
+             console.log('challenge accepted ',e.getAttribute("id"));
             var eleId=e.getAttribute("id");
             var idArray= eleId.split('~'); //idFormat= accept~id
             var challengeId=idArray[1]

@@ -10,7 +10,9 @@ function GameInit() {
 			hexMeshObj.drawOver();
 			hexMeshObj.drawUnits();
 
+			//Start heartbeats
 			checkTurnAjax('checkTurn',gameId);
+			whoIsWining();
 
 			//alert(playerId);
 			//initGameAjax('start', gameId);
@@ -23,5 +25,6 @@ function GameInit() {
                 }
 
 				infoPara.appendChild(infoText);
+
 			}
 		}

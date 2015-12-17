@@ -37,13 +37,17 @@ function initGameAjax(whatMethod,val){
 ////////////////
 function callbackInit(jsonObj){
 	//compare the session name to the player name to find out my playerId;
-	console.log('call back init');
+	console.log('call back init',jsonObj);
+	player2 = jsonObj[0].player1_name;
+	player1 = jsonObj[0].player0_name;
 	turn = jsonObj[0].whoseTurn;
 	if(player == jsonObj[0].player1_name){
-		player2 = jsonObj[0].player0_name;
+
+
 		PlayerId = 1;
 	}else{
 		player2 = jsonObj[0].player1_name;
+
 		PlayerId = 0;
 	}
 	gameObj=new GameInit();
@@ -77,17 +81,18 @@ function changeServerTurnAjax(whatMethod,val){
 //change the board on the server
 //no callback
 ////////////////
-function changeBoardAjax(pieceId,boardI,boardJ,isAttacking,whatMethod,val){
+function changeBoardAjax(pieceId,boardI,isAttacking,attackedPiece,whatMethod,val){
 	//data: gameId~pieceId~boardI~boardJ~playerId
 	console.log('changeBoardAjax',isAttacking);
-	ajaxCall("POST",{method:whatMethod,a:"game",data:val+"~"+pieceId+"~"+boardI+"~"+boardJ+"~"+PlayerId+"~"+isAttacking},null);
+	ajaxCall("POST",{method:whatMethod,a:"game",data:val+"~"+pieceId+"~"+boardI+"~"+PlayerId+"~"+isAttacking+"~"+attackedPiece},null);
 }
 ////checkTurnAjax/////
 //check to see whose turn it is
 //callback is callbackcheckTurn
 ////////////////
 function checkTurnAjax(whatMethod,val){
-	console.log('turn ',turn)
+	console.log('gameId',gameId,'playerId',player);
+	console.log('turn ',turn,'player',PlayerId)
 	if(turn!=PlayerId){
 		ajaxCall("GET",{method:whatMethod,a:"game",data:val},callbackcheckTurn);
 	}
@@ -99,10 +104,11 @@ function checkTurnAjax(whatMethod,val){
 function callbackcheckTurn(jsonObj){
 console.log('DBTurn:'+jsonObj[0].whoseTurn,'PlayerId:'+PlayerId); 	
 	if(jsonObj[0].whoseTurn == PlayerId){
-		//turn = jsonObj[0].whoseTurn;   //changing local turn var
+		 turn = jsonObj[0].whoseTurn;   //changing local turn var
 		//switch turns
 		//Fturn=jsonObj[0].whoseTurn;
 		//get the data from the last guys move
+		console.log('getMove called');
 		getMoveAjax('getMove',gameId);
 		gameObj.changeHelpInfo("Your turn");
 	}
@@ -111,6 +117,35 @@ console.log('DBTurn:'+jsonObj[0].whoseTurn,'PlayerId:'+PlayerId);
 		
 
 }
+
+//check If someone is winner
+function whoIsWining(){
+	ajaxCall('GET',{method:'checkWinner',a:'game',data:gameId},checkWinnerCallBack);
+	setTimeout(whoIsWining,1000);
+}
+
+function checkWinnerCallBack(jsonObj){
+	console.log('winnerObj',jsonObj,' ',jsonObj[0].winner);
+	if(jsonObj[0].winner==0){
+		 console.log(player1+' wins');
+		window.location='winner.php?winner='+player1;
+	}
+	else if(jsonObj[0].winner==1){
+		console.log(player2+' wins');
+		window.location='winner.php?winner='+player2;
+	}
+}
+
+///winGame
+function ajaxWinGame(pId){
+
+	var gameData={
+		gameId:gameId,//super globals initialize at start game
+		playerId:pId
+	}
+	ajaxCall('POST',{method:'winGame',a:'game',data:gameData},null);
+}
+
 ////checkTurnAjax/////
 //get the last move
 //-called after I find out it is my turn
@@ -123,7 +158,8 @@ function getMoveAjax(whatMethod,val){
 //callback for getMoveAjax
 ////////////////
 function callbackGetMove(jsonObj){
-	//console.log('getMove callback');
+
+	console.log('getMove callback jsonObj', jsonObj);
 	//tests to see what I'm getting back!
 	//console.log(jsonObj[0]['player'+Math.abs(PlayerId-1)+'_pieceID']);
     //alert(jsonObj[0]['player'+Math.abs(playerId-1)+'_boardI']);
@@ -131,8 +167,15 @@ function callbackGetMove(jsonObj){
     var lastPieceMovedTo=hexArray[jsonObj[0]['player'+Math.abs(PlayerId-1)+'_boardI']];
     var lastMovedPiece=unitArray[jsonObj[0]['player'+Math.abs(PlayerId-1)+'_pieceID']];
     var attacking=jsonObj[0]['player'+Math.abs(PlayerId-1)+'_attacking']===1?true:false; //if isAttacking is 1 in db then attacking is true
-     console.log('attacking:',attacking);
+	console.log('attacking:',attacking);
     hexMeshObj.moveSelected(lastPieceMovedTo,lastMovedPiece,false,attacking);
+	//if it was an attacking move
+	if(attacking){
+		console.log('json object inside if',jsonObj,'attackedunit',jsonObj[0]['attackedUnit']);
+		var attackedUnit=unitArray[jsonObj[0]['attackedUnit']];
+		attackedUnit.attackUnit(lastMovedPiece);
+
+	}
     //change the text output on the side for whose turn it is
 	//var hold='playerId '+playerId+ ' turn '+turn;
 	//document.getElementById('output2').firstChild.data=hold;

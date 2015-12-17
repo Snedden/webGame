@@ -6,6 +6,8 @@ require_once("./bizDataLayer/lobbyDbBiz.php");
 require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli;
 
 function enterChat($d,$ip,$token){
+	$_SESSION['last_activity'] = time();
+
 	global $logger;
  	$logger->info("inside enterChat  data". implode(" ", $d));
 	 $gump = new GUMP();
@@ -24,10 +26,15 @@ function readChats($d,$ip,$token){
 function getOnlineUsers($d){
 	global $logger;
 	$logger->info('in getOnlineUsers');
+
+
 	return getOnlineUsersDb($d);
+
 }
 
 function enterChallenge($d) {
+	$_SESSION['last_activity'] = time();
+
 	global $logger;
 	$logger->info("inside enterChallenge toEmail ". ($d['toEmail']));
 	$challengedUser=getUserByEmailDB($d['toEmail']);
@@ -49,6 +56,12 @@ function getOpenChallenges($user){
 	return getOpenChallengesDB($user);
 }
 
+function metChallenge($id){
+	global $logger;
+	$logger->info("inside metChallenge() id:$id ");
+	return metChallengesDB($id);
+}
+
 function getSentChallenges($user){
 	global $logger;
 	$logger->info("inside getSentChallenge() id:$user ");
@@ -56,12 +69,16 @@ function getSentChallenges($user){
 }
 
 function acceptChallenge($d){
+	$_SESSION['last_activity'] = time();
+
 	global $logger;
 	$logger->info('inside acceptChallenge from challenge ID '. $d);
 	return acceptChallengeDB($d);
 }
 
 function rejectChallenge($d){
+	$_SESSION['last_activity'] = time();
+
 	global $logger;
 	$logger->info('inside rejectChallenge from challenge ID '. $d);
 	return rejectChallengeDB($d);

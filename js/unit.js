@@ -12,11 +12,13 @@ function Unit(unitType,hex,playerId,typeCount){
 	var fullHp;   //max hit points
 	var currentHp;//current hit points
 	var hpTextEle;//HP text html ele associated with the unit 
-	var unitEle;
-	var attack; 
+	var unitEle; //htmlDOm associated with this unit
+	var attack;
+	var isAlive; //is unit is alive
 	var turnEnded;
 
 	this.unitType=unitType;
+	this.isAlive=true;
 	this.typeCount=typeCount;
 	hexArray[hex.num].isOccupied=true; //set true as occuipied by  unit
 	this.hexagon=hex;
@@ -24,13 +26,27 @@ function Unit(unitType,hex,playerId,typeCount){
 	this.id=this.unitType+'|'+this.typeCount+'|'+this.playerId;
 	this.hp=100;
 	this.currentHp=this.hp;
-	this.attack=50;
+	this.attack=100;
 	
 	this.isMoving=false;
 	this.selected=false;
 	this.turnEnded=false;
 
 	this.unselectAll=unselectAll;
+
+
+
+	this.destroyUnit=function destroyUnit(){
+		//remove from screen
+		var parent = document.getElementById("svgId");
+		parent.removeChild(this.unitEle); //remove element
+		parent.removeChild(this.hpTextEle);//text hp text
+		//remove from memory
+		console.log('taking out unit at position ',this.num);
+		//unitArray.splice(this.num,1);
+		//delete unitArray[this.num];
+		this.isAlive=false;
+	}
 	
 	
 	
@@ -45,8 +61,9 @@ function Unit(unitType,hex,playerId,typeCount){
 				if(hoveredUnitPlayerId!=PlayerId){//sword cursor only on enemy units 
 					console.log(hexMeshObj.selectedUnit.playerId+'!='+this.playerId);
 					ele.style.cursor='url(cursors/use75.cur),pointer';
-					
-						ele.addEventListener('click',function(){unitObj.moveToAttackUnit(hexMeshObj.selectedUnit)});//attack unit unitObj 
+
+					addListenerIfNone(ele,'click', function(){unitObj.moveToAttackUnit(hexMeshObj.selectedUnit)});
+					//ele.addEventListener('click',function(){unitObj.moveToAttackUnit(hexMeshObj.selectedUnit)});//attack unit unitObj
 					
 				}	
 			}
@@ -58,22 +75,25 @@ function Unit(unitType,hex,playerId,typeCount){
 			// attackedUnit is  this,attacking unit is 'unit';
 			var neighNum=this.hexagon.num-1;  //this.hexagon.num-1 is neighbour
 			
-			//var neighbour=hexArray[neighNum]; 
+			//var neighbour=hexArray[neighNum];
+			console.log('moveToAttack');
 			console.log(unitArray[2].hexagon,unit.hexagon);
-				if(hexArray[neighNum].num!=unit.hexagon.num){
-					if(!hexArray[neighNum].isOccupied){
-						hexMeshObj.moveSelected(hexArray[neighNum],unit,true,true);    //move to neighbour first before physically attacking	
+				//if(hexArray[neighNum].num!=unit.hexagon.num){
+			var amStandingNextToVictim=(hexArray[neighNum].num==unit.hexagon.num);
+					if(!hexArray[neighNum].isOccupied||(amStandingNextToVictim)){
+						//moveSelected(moveTo,mover,fromUser,isAttaking,attackedUnit)
+						hexMeshObj.moveSelected(hexArray[neighNum],unit,true,true,this);
 						this.attackUnit(unit);
 					}
 					else{
 						console.warn('Cannot attack unit surrounded');
 					}
 					  
-				}
-				else{
-					console.log('unit before call',unit);
-					this.attackUnit(unit); //attack if standing next to the victim
-				}
+				//}
+				//else{
+				//	console.log('unit before call',unit);
+				//	this.attackUnit(unit); //attack if standing next to the victim
+				//}
 			}
 		else{
 				gameObj.changeHelpInfo('Not your turn');
@@ -82,11 +102,28 @@ function Unit(unitType,hex,playerId,typeCount){
 
 	this.attackUnit=function attackUnit(unit){
 		// attackedUnit is  this,attacking unit is 'unit';
-     	
+     	var aliveUnits=0;
+
      	this.currentHp=this.currentHp-unit.attack;
      	this.hpTextEle.innerHTML=this.currentHp;
+		if(this.currentHp<=0){
+			this.destroyUnit();
+		}
      	console.warn('unit under attack!!!',this);
-
+		//checking how many units are alive
+		for(var i= 0,l=unitArray.length;i<l;i++){
+		console.log('unit of player',unitArray[i].playerId,'exist');
+			if(playerId===unitArray[i].playerId&&unitArray[i].isAlive){  //if my unit are alive in unit array
+				console.log('your alive unit  count ++ ');
+				aliveUnits++;
+			}
+		}
+		console.log('alive count',aliveUnits);
+        if(aliveUnits==0){
+			console.log('you have lost');
+			ajaxWinGame(turn=Math.abs(this.playerId-1)); //as winner would be the other player
+		}
+		console.log('unitArray',unitArray);
 	}
 	
 	this.makeUnit=function makeUnit(board){
@@ -112,8 +149,8 @@ function Unit(unitType,hex,playerId,typeCount){
 		
 		//Enemy units not selectable
 		
-			
-		this.unitEle.onclick=function(){unitObj.selectUnit()};
+		this.unitEle.addEventListener('click',function(){unitObj.selectUnit()})
+		//this.unitEle.onclick=function(){unitObj.selectUnit()};
 			
 		
 			
@@ -131,7 +168,7 @@ function Unit(unitType,hex,playerId,typeCount){
 		//var svg=document.getElementsByTagName('svg')[0];
 		this.num=unitArray.length;
 		//add to memory
-		unitArray.push(this);
+		unitArray.push(this); //[ush into global unit array
 		//add to screen
 		board.appendChild(unit);
 
