@@ -55,10 +55,7 @@
              addChatListeners();//chat interactivelty
              readChatsAjax(); //read chat heart beat
 
-             window.onbeforeunload = function ()
-             {
-                 logOutAjax();//logout if user closes window
-             }
+
 
 
          }
@@ -103,9 +100,9 @@
              //console.log('userID ',userId);
 
              ajaxCall('GET',{method:'getOpenChallenges',a:'lobby',data:userId},callBackGetOpenChallenges);
-             setTimeout(getOpenChallenges,1000);
+             setTimeout(getOpenChallenges,2000);
          }
-
+            //Change icon to open cahllenges
          function callBackGetOpenChallenges(jsonObj){
              console.log('Open challenges',jsonObj);
              if(jsonObj) {
@@ -152,9 +149,10 @@
              //console.log('userID ',userId);
 
              ajaxCall('GET',{method:'getSentChallenges',a:'lobby',data:userId},callBackGetSentChallenges);
-             setTimeout(getSentChallenges,1000);
+             setTimeout(getSentChallenges,2000);
          }
 
+         //Get back all the chlallenges sent by this user and change the icon accordingly
          function callBackGetSentChallenges(jsonObj){
              console.log('Sent challenges',jsonObj);
              if(jsonObj) {
@@ -232,7 +230,7 @@
              var activity="<?php echo $_SESSION["last_activity"]  ?>";
 
              ajaxCall('GET',{method:'checkSession',a:'user',data:activity},callBackSessionTimeOut);
-             setTimeout(checkSessionTimeOut,5000);
+             setTimeout(checkSessionTimeOut,60000);
          }
 
          function callBackSessionTimeOut(timedOut){
@@ -273,7 +271,7 @@
             chatData['lastTimeStamp']=lastTimeStamp;
             ajaxCall("GET",{method:'readChats',a:"lobby",data:chatData},callbackReadChat);
 
-           //setTimeout(readChatsAjax,500);
+           setTimeout(readChatsAjax,2000);
         }
 
 
@@ -286,35 +284,38 @@
              if((typeof jsonObj)==='object'){
                  //console.log( 'is object' );
                  $('#chatMessages').text(''); //clear previous chat messages
-                 for (var i=0,l=jsonObj.length;i<l;i++){
+                 if(jsonObj!=null){
+                     for (var i=0,l=jsonObj.length;i<l;i++){
 
-                     // Split timestamp into [ Y, M, D, h, m, s ]
-                     var t = jsonObj[i].timestamp.split(/[- :]/);
+                         // Split timestamp into [ Y, M, D, h, m, s ]
+                         var t = jsonObj[i].timestamp.split(/[- :]/);
 
-                     // Apply each element to the Date function
-                     var d = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
+                         // Apply each element to the Date function
+                         var d = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
 
-                     // console.log('Appended ',jsonObj[i].text);
-                     var chatElement=$('<li class="media"> ' +
-                         '<div class="media-body">'+
-                         '<div  class="media"> ' +
-                         '<a class="pull-left" href="#">' +
-                         '<span class="glyphicon glyphicon-user"></span> ' +
-                         '</a> ' +
-                         '<div  class="media-body" >' +jsonObj[i].text+
-                         '<br />'+
-                         '<small class="text-muted">'+jsonObj[i].first_name+' '+jsonObj[i].last_name+' | '+d.getDate()+' '+months[d.getMonth()-1]+' at '+d.getHours()+':'+d.getMinutes()+'</small>' +
-                         '<hr />'+
-                         '</div>'+
-                         '</div>'+
-                         '</div>'+
-                         '</li>');
+                         // console.log('Appended ',jsonObj[i].text);
+                         var chatElement=$('<li class="media"> ' +
+                             '<div class="media-body">'+
+                             '<div  class="media"> ' +
+                             '<a class="pull-left" href="#">' +
+                             '<span class="glyphicon glyphicon-user"></span> ' +
+                             '</a> ' +
+                             '<div  class="media-body" >' +jsonObj[i].text+
+                             '<br />'+
+                             '<small class="text-muted">'+jsonObj[i].first_name+' '+jsonObj[i].last_name+' | '+d.getDate()+' '+months[d.getMonth()-1]+' at '+d.getHours()+':'+d.getMinutes()+'</small>' +
+                             '<hr />'+
+                             '</div>'+
+                             '</div>'+
+                             '</div>'+
+                             '</li>');
 
-                     $('#chatMessages').append(chatElement);
+                         $('#chatMessages').append(chatElement);
 
-                     //return false;
+                         //return false;
 
+                     }
                  }
+
              }
              checkSessionTimeOut();//check for session TImeout
          }
@@ -322,7 +323,7 @@
         function populateOnlineUsers(){
             var userId="<?php echo $_SESSION["user_id"]  ?>";
             ajaxCall("GET",{method:'getOnlineUsers',a:"lobby",data:userId},populateOnlineUsersCallBack);
-            //setTimeout(populateOnlineUsers,1000);
+           // setTimeout(populateOnlineUsers,1000);
         }
 
         function populateOnlineUsersCallBack(jsonObj){

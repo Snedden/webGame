@@ -1,4 +1,4 @@
-
+//init game functions
 function GameInit() {
 			console.log('main');
 			side=35;

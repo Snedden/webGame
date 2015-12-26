@@ -1,4 +1,4 @@
-
+///Board ,controls the interectivelity on the board
 function hexMesh(){
 	 var side=32;
 	 //console.log('hexMesh');
@@ -6,12 +6,12 @@ function hexMesh(){
 	 var drawnAroundCentroids=[];	//array of centroid of hex which have hex drawn ALL around them 
 	 var ii=0;	
 
-	var rightEdge=screen.width;
-	var leftEdge=0;
-	var topEdge=0;
-	var botEdge=550;	
+	var rightEdge=900;//dimensions of the board
+	var leftEdge=30;
+	var topEdge=30;
+	var botEdge=400;
 	var svg=document.getElementsByTagName('svg')[0];   //draw around svg
-	var selectedUnit;         //Object in unit array that is selected //initialize in unit.js selectUnit()
+
 	this.selectedUnit={	name:'placeholder',
 						isMoving:false};    //need to initialize it to act as a property  need to ask professor why
  	var selectedEle; 	     //dom that is selected //initialize in unit.js selectUnit()
@@ -23,9 +23,9 @@ function hexMesh(){
 	//draw the units on the board
 	function drawUnits(){
 		//console.log('drawUnits',hexArray);
-		var unit1=new Unit('dragon',hexArray[203],0,1);   //(type,hexagon,playerId,typeCount)
+		var unit1=new Unit('dragon',hexArray[121],0,1);   //(type,hexagon,playerId,typeCount)
 		unit1.makeUnit(svg);
-		var unit12=new Unit('dragon',hexArray[206],0,2);
+		var unit12=new Unit('dragon',hexArray[124],0,2);
 		unit12.makeUnit(svg);
 		
 		var unit2=new Unit('knight',hexArray[23],1,1);
@@ -37,7 +37,7 @@ function hexMesh(){
 	this.changeTurn= function changeTurn(){
 				//locally
 				console.log('Before:',turn);
-				turn=Math.abs(turn-1);
+				turn=Math.abs(turn-1);//change locally for attacker
 				console.log('after:',turn);
 
 				//how about for the server (and other player)?
@@ -46,28 +46,33 @@ function hexMesh(){
 				changeServerTurnAjax('changeTurn',gameId);
 				gameObj.changeHelpInfo("Opponents turn");
 
-			}		
+	}
+
+	//calcuated the distance between param1 and param2
+	//this.moveDistance=function moveDistance(fromHex,toHex){
+		//formula - sqrt((x1-x2)^2+(y1-y2)^2)
+		//var dist=Math.sqrt(Math.pow((fromHex.cx-toHex.cx),2)+Math.pow((fromHex.cy-toHex.cy),2));
+		//return dist;
+	//}
+
 	
-
+   //moves a unit form one hex to other and calls changeboard after movement
 	this.moveSelected=function moveSelected(moveToHex,unit,fromUserClick,attacking,attackedUnit){
-	console.log('moveToHex:',moveToHex.num,'unit:',unit,'fromUserClick:',fromUserClick,'attacking:',attacking);	
+		console.log('moveToHex:',moveToHex.num,'unit:',unit,'fromUserClick:',fromUserClick,'attacking:',attacking);
+		var dist=moveToHex.getDistanceFromSelected(); //distance between the target location and unit in pixels
 
-			//setting new cords on screen
-			//console.log('unit1',unit);
+       console.log('dist:',dist,' speed:',unit.speed,'condition:',unit.speed>dist);
 
-			this.selectedEle=document.getElementById(unit.id); //get corresponding html dom unit
+		if(unit.speed>dist||!fromUserClick){ //check speed if form user click
+			console.log('in');
 
 			unit.isMoving=true;   //set  isMoving
-			var self=this;
 
-			this.selected;
-            
-
-            //trying to translate 
+			//trying to translate
 			var transformAttr = ' translate(' +(moveToHex.cx) + ',' + (moveToHex.cy ) + ')';
 			//unit.unitEle.style.transformOrigin=hexArray[0].cx,hexArray[0].cy;
-            unit.unitEle.setAttribute('transform', transformAttr);
-		    
+			unit.unitEle.setAttribute('transform', transformAttr);
+
 
 
 			//stop moment
@@ -103,6 +108,12 @@ function hexMesh(){
 
 			return true; //piece was succesfully moved
 
+		}
+		else{
+			gameObj.changeHelpInfo("Unit not fast enough");
+			return false;//unit not moved
+		}
+
 
 	}
 	
@@ -132,7 +143,7 @@ function hexMesh(){
 		var offSet=side*(1.73/2);  			//offset to the next block to align the hexagons
 		var hexCounter=1;
 		
-		hexArray[0]=new Hexagon(0,0,side,hexCounter);// starting hex @param1:cx @param2:cy @param3:side @param4:id
+		hexArray[0]=new Hexagon(leftEdge,topEdge,side,hexCounter);// starting hex @param1:cx @param2:cy @param3:side @param4:id
 		
 		for(i=hexArray[0].cx;i<rightEdge;i=i+side*1.5){
 		verticalBlock++;
@@ -144,7 +155,9 @@ function hexMesh(){
 			}
 				
 		}
-	}	
+	}
+	     //keeps on drawing  heaxagon around seed for variable i number of iterations
+		//was thinking of using this later, scraped it as didn't get the time
 		function drawHexAround(cent){
 			var rightEdgeReached=false;
 			var botEdgeReached=false;

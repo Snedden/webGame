@@ -1,6 +1,6 @@
 {
     "require": {
-        "katzgrau/klogger": "dev-master",
+        //"katzgrau/klogger": "dev-master",
         "wixel/gump": "dev-master"
     }
 }

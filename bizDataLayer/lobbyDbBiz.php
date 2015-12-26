@@ -2,22 +2,22 @@
 
 
 
- global $logger;
+ //global $logger;
  //$logger->info('inside lobbyDbBiz'.__FILE__);
  function enterChatDb($d){
- 	global $logger,$mysqli;
+ 	global $mysqli;
 
- 	$logger->info('inside enterChatDb data'. implode("",$d));
+ 	//$logger->info('inside enterChatDb data'. implode("",$d));
 
  	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	} else {
-		$logger->debug("The database is not null - OK");
+		//$logger->debug("The database is not null - OK");
 	}
 
 	//enter chatMessage
 
-	$sql = "INSERT INTO chatMessages
+	$sql = "INSERT INTO chatmessages
                (iduser,
                 text
                 )
@@ -27,36 +27,38 @@
 
 	try {
 		
-		$logger->info("inside try of chatEnter");
+		//$logger->info("inside try of chatEnter");
         
 		if (!($stmt = $mysqli->prepare($sql))) {
-    		 $logger->error("Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error);
+    		// $logger->error("Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error);
+
 		}
 
 		if (!$stmt->bind_param('is',  $d['userId'], $d['chatMsg'])) {
-		    $logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+		   // $logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+
 		}
 
        
-         $logger->info("v1".$d['userId']."v2".$d['chatMsg']);
+        // $logger->info("v1".$d['userId']."v2".$d['chatMsg']);
 		//$logger->info('stmt:'.$sql.'result:'.$stmt->execute().'error:'.$mysqli->error);
 		if ($stmt->execute()) {
 			
-			$logger->info("chat inserted");
-			return true;
+			//$logger->info("chat inserted");
+
 
 		} 
 		else {
-			$logger->error("Could not insert a chat into db.".$mysqli->error);
-			return false;
+			//$logger->error("Could not insert a chat into db.".$mysqli->error);
+
 		}
 	} catch (Exception $ex) {
-		$logger->error("An error occurred when trying to run a query.");
-		return false;
+		//$logger->error("An error occurred when trying to run a query.");
+
 	}
 	finally{
-		$stmt->close();
-		$mysqli->close();
+		//$stmt->close();
+
 	}
 
 
@@ -64,11 +66,11 @@
  }
 
  function readChatsDb($d){
-	global $logger,$mysqli;
+	global $mysqli;
 	//$logger->info('inside readChatsDb()');
 
 	 if ($mysqli == null) {
-		 $logger->error("Database is not setup property");
+		 //$logger->error("Database is not setup property");
 	 }
 
 	$sql="SELECT u.first_name,u.last_name,c.text,c.timestamp
@@ -83,7 +85,7 @@
 			//$logger->info("prepared statement is good in read chat");
 			/*
 			if (!$stmt->bind_param( $d['lastTimeStamp'])) {
-				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
 			*/
 			$data=bindSql($stmt);
@@ -92,12 +94,12 @@
 			
 			return json_encode($data);
 		}else{
-			$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
+			//$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
 			throw new Exception("An error occurred in getUser");
 		}
 	}
 	catch (Exception $e) {
-        $logger->error("An error occured in readChatDB".$mysqli->error);
+       // $logger->error("An error occured in readChatDB".$mysqli->error);
 		return false;
     }
 
@@ -107,11 +109,11 @@
 }
 
 function getOnlineUsersDb($userId){
-	global $logger,$mysqli;
-	$logger->info('inside getOnlineUsersDb');
+	global $mysqli;
+	//$logger->info('inside getOnlineUsersDb');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
 
 	$sql="select first_name,last_name,email from users where status=1 and iduser<>?";
@@ -120,21 +122,21 @@ function getOnlineUsersDb($userId){
 		if($stmt=$mysqli->prepare($sql)){
 
 			if (!$stmt->bind_param('i', $userId)) {
-				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			$data=bindSql($stmt);
-			$logger->info("result for bindSql" . implode(" ",$data[0]));
+			//$logger->info("result for bindSql" . implode(" ",$data[0]));
 
 
 			return json_encode($data);
 		}else{
-			$logger->error("An error occured in prepare statementget OnlineUsersDb".$mysqli->error);
+			//$logger->error("An error occured in prepare statementget OnlineUsersDb".$mysqli->error);
 
 		}
 	}
 	catch (Exception $e) {
-		$logger->error("An error occured in getOnlineUsersDbr".$mysqli->error);
+		//$logger->error("An error occured in getOnlineUsersDbr".$mysqli->error);
 		return false;
 	}
 
@@ -148,11 +150,11 @@ function getOnlineUsersDb($userId){
 }
 
 function enterChallengeDB($from,$to){
-	global $logger,$mysqli;
-	$logger->info('inside getOnlineUsersDb');
+	global $mysqli;
+	//$logger->info('inside getOnlineUsersDb');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
 
 	//check if there are already any open challeges from this user
@@ -160,20 +162,20 @@ function enterChallengeDB($from,$to){
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			if (!$stmt->bind_param('ii',  $from, $to)) {
-				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			if (!$stmt->execute()) {
-				$logger->info("could not excecute getOpen challenges check");
+				//$logger->info("could not excecute getOpen challenges check");
 			}
 			else {
 				if($stmt->fetch()){
-					$logger->info(__FILE__.": There are open challenges ");
+					//$logger->info(__FILE__.": There are open challenges ");
 
 					$errorMsg = array(
 							'error' =>'You have already sent a challenge to this user.'
 					);
-					$logger->info("user exist error as".$errorMsg);
+					//$logger->info("user exist error as".$errorMsg);
 					return json_encode($errorMsg);
 				}
 			}
@@ -182,11 +184,11 @@ function enterChallengeDB($from,$to){
 
 		}
 		else{
-			$logger->info("Error in prepapring statement in checking open challenges ,EnterChallengeDB()");
+			//$logger->info("Error in prepapring statement in checking open challenges ,EnterChallengeDB()");
 		}
 	}
 	catch (Exception $e){
-		$logger->info("Something went wrong in checking open challenges");
+		//$logger->info("Something went wrong in checking open challenges");
 	}
 
     //insert challenge in DB
@@ -203,11 +205,11 @@ function enterChallengeDB($from,$to){
 		if($stmt=$mysqli->prepare($sql)){
 
 			if (!$stmt->bind_param('ii',  $from, $to)) {
-				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			if ($stmt->execute()) {
-				$logger->info("challenge inserted");
+				//$logger->info("challenge inserted");
 
 				$data=[
 					'chlgnid'=>$mysqli->insert_id,
@@ -216,19 +218,19 @@ function enterChallengeDB($from,$to){
 				return  json_encode($data);
 			}
 			else {
-				$logger->error("Could not insert a challenge into db.".$mysqli->error);
+				//$logger->error("Could not insert a challenge into db.".$mysqli->error);
 				return false;
 			}
 
 
 			return json_encode($data);
 		}else{
-			$logger->error("An error occured in prepare statementget enterChallengeDB".$mysqli->error);
+			//$logger->error("An error occured in prepare statementget enterChallengeDB".$mysqli->error);
 
 		}
 	}
 	catch (Exception $e) {
-		$logger->error("An error occured in enterChallengeDB".$mysqli->error);
+		//$logger->error("An error occured in enterChallengeDB".$mysqli->error);
 		return false;
 	}
 
@@ -239,11 +241,11 @@ function enterChallengeDB($from,$to){
 
 
 function getChallengeStatusDB($d){
-	global $logger,$mysqli;
-	$logger->info('inside getChallengeStatusDB');
+	global $mysqli;
+	//$logger->info('inside getChallengeStatusDB');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
     $chlgnId=$d['id'];
 	$sql="SELECT status,game_id FROM challenges WHERE challenge_id=?";
@@ -253,7 +255,7 @@ function getChallengeStatusDB($d){
 			$stmt->bind_param("i",$chlgnId);
 
 			$data=bindSql($stmt);
-            $logger->info('return data from getChallengeStatusDb sql '.$data[0]['status']);
+            //$logger->info('return data from getChallengeStatusDb sql '.$data[0]['status']);
 			//$mysqli->close();
 			$formatData=[
 					'chlgnid'=>$chlgnId,
@@ -262,11 +264,11 @@ function getChallengeStatusDB($d){
 			];
 			return json_encode($formatData);
 		}else{
-			$logger->error("An error occured in prepare statement getChallengeStatus".$mysqli->error);
+			//$logger->error("An error occured in prepare statement getChallengeStatus".$mysqli->error);
 			throw new Exception("An error occurred in getUser");
 		}
 	}catch (Exception $e) {
-		$logger->error("An error occured in getChallengeStatus".$mysqli->error);
+		//$logger->error("An error occured in getChallengeStatus".$mysqli->error);
 		return false;
 	}
 
@@ -275,11 +277,11 @@ function getChallengeStatusDB($d){
 }
 
 function getOpenChallengesDB($user){
-	global $logger,$mysqli;
-	$logger->info('inside getOpenChallengessDB');
+	global $mysqli;
+	//$logger->info('inside getOpenChallengessDB');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
 
 	$sql="Select distinct u.email,c.challenge_id from test.challenges c join test.users u on c.from_user=u.iduser
@@ -291,12 +293,12 @@ function getOpenChallengesDB($user){
 			$stmt->bind_param("i",$user);
 
 			$data=bindSql($stmt);
-			$logger->info('return data from getOpenChallengesDB sql '.array_keys($data[0]));
+			//$logger->info('return data from getOpenChallengesDB sql '.array_keys($data[0]));
 
 			return json_encode($data);
 		}
 		else{
-			$logger->info('Error in preparing sql statement at getOpenChallengeDB'. $mysqli->error);
+			//$logger->info('Error in preparing sql statement at getOpenChallengeDB'. $mysqli->error);
 		}
 	}
 	catch(Exception $e){
@@ -306,11 +308,11 @@ function getOpenChallengesDB($user){
 
 
 function getSentChallengesDB($user){
-	global $logger,$mysqli;
-	$logger->info('inside getOpenChallengessDB');
+	global $mysqli;
+	//$logger->info('inside getOpenChallengessDB');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
 
 	$sql="
@@ -331,22 +333,22 @@ function getSentChallengesDB($user){
 			$stmt->bind_param("i",$user);
 
 			$data=bindSql($stmt);
-			$logger->info('return data from getOpenChallengesDB sql '.array_keys($data[0]));
+			//$logger->info('return data from getOpenChallengesDB sql '.array_keys($data[0]));
 
 			return json_encode($data);
 		}
 		else{
-			$logger->info('Error in preparing sql statement at getOpenChallengeDB'. $mysqli->error);
+			//$logger->info('Error in preparing sql statement at getOpenChallengeDB'. $mysqli->error);
 		}
 	}
 	catch(Exception $e){
-			$logger->info('something went wrog in getSentChallenge');
+			//$logger->info('something went wrog in getSentChallenge');
 	}
 }
 //update challenge status to 'met'
 function metChallengesDB($id){
-	global $logger,$mysqli;
-	$logger->info('inside getOpenChallengessDB');
+	global $mysqli;
+	//$logger->info('inside getOpenChallengessDB');
 
 	$sql="update  challenges set status='met' where challenge_id=?";
 	try{
@@ -366,19 +368,19 @@ function metChallengesDB($id){
 					return $game_id;
 				}
 				else{
-					$logger->error('Somthing went wrong in prepare statement of game in metchallnge'.$mysqli->error);
+					//$logger->error('Somthing went wrong in prepare statement of game in metchallnge'.$mysqli->error);
 				}
 			}catch(Excpetino $e){
-				$logger->error('Something went wrong in getting status of the game  in startData');
+				//$logger->error('Something went wrong in getting status of the game  in startData');
 			}
 		}
 		else{
-			$logger->info('Something went wrong while preparing statement metChallngeDb'.$mysqli->error);
+			//$logger->info('Something went wrong while preparing statement metChallngeDb'.$mysqli->error);
 			return false;
 		}
 
 	}catch(Exception $e){
-		$logger->info('Something went wrong while updating status of challenges in metChallengeDB');
+		//$logger->info('Something went wrong while updating status of challenges in metChallengeDB');
 		return false;
 	}
 }
@@ -422,7 +424,7 @@ function acceptChallengeDB($id){
 	}
 	//get first_name of challenger and challengee
 	$sql="SELECT first_name
-			FROM test.Users
+			FROM test.users
 			WHERE iduser IN
 				(SELECT to_user
 				   FROM test.challenges

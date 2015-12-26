@@ -1,8 +1,8 @@
 <?php
 
 function bindSql ($stmt){
-	global $logger;
-	$logger->info("Inside bind sql");
+	//global $logger;
+	//$logger->info("Inside bind sql");
 
 	$stmt->execute();
 	$stmt->store_result();
@@ -12,7 +12,7 @@ function bindSql ($stmt){
 	while ($column = $meta->fetch_field()) {
     	$bindVarsArray[] = &$results[$column->name];
     }
-    $logger->info('bind columns'. implode(" ",array_keys($bindVarsArray)));
+    //$logger->info('bind columns'. implode(" ",array_keys($bindVarsArray)));
 	//bind it!
 	call_user_func_array(array($stmt, 'bind_result'), $bindVarsArray);
 	//now, go through each row returned,
@@ -30,8 +30,8 @@ function bindSql ($stmt){
 }
 
 function getUserByEmailDB($emailId){
-	global $logger,$mysqli;
-	$logger->info("Insidd getUser with emailID:".$emailId);
+
+	//$logger->info("Insidd getUser with emailID:".$emailId);
 	global $mysqli;
 	$sql="SELECT * FROM users WHERE email=?";
 	try{
@@ -44,11 +44,11 @@ function getUserByEmailDB($emailId){
 			//$mysqli->close();
 			return $data;
 		}else{
-			$logger->error("An error occured in prepare statement getUser".$mysqli->error);
+			//$logger->error("An error occured in prepare statement getUser".$mysqli->error);
 			throw new Exception("An error occurred in getUser");
 		}
 	}catch (Exception $e) {
-		$logger->error("An error occured in getUser".$mysqli->error);
+		//$logger->error("An error occured in getUser".$mysqli->error);
 		return false;
 	}
 }

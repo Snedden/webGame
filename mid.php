@@ -3,8 +3,8 @@
 	
 	  require_once 'vendor/autoload.php';
       
-	  $logger = new Katzgrau\KLogger\Logger(__DIR__.'/logs');
-	 // $logger->info('mid.php called by'.$_REQUEST['method']);
+	 // $logger = new Katzgrau\KLogger\Logger(__DIR__.'/logs');
+	 //$logger->info('mid.php called by'.$_REQUEST['method']);
 
 	if(isset($_REQUEST['method'])){
 		//include all files for needed area (a)
@@ -14,7 +14,7 @@
 		$serviceMethod=$_REQUEST['method'];
         $data=$_REQUEST['data'];
        // $dataString=implode(" ",$data);
-        $logger->info("callBack");
+        //$logger->info("callBack");
 		
 		 //$result=start($data);
      
@@ -25,7 +25,7 @@
 		if($result){
 			//might need the header cache stuff
 			header("Content-Type:text/plain");
-            $logger->info("return value from mid php".$result);
+            //$logger->info("return value from mid php".$result);
 			echo $result;
 
 

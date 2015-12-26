@@ -1,15 +1,15 @@
 <?php
-global $logger;
+//global $logger;
 //$logger->info("inside lobby.php");
 require_once("./bizDataLayer/commonDbFunctions.php");
 require_once("./bizDataLayer/lobbyDbBiz.php");
-require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli;
+require "./bizDataLayer/dbInfoPS.php";//to use we need to put in: global $mysqli;
 
 function enterChat($d,$ip,$token){
 	$_SESSION['last_activity'] = time();
 
-	global $logger;
- 	$logger->info("inside enterChat  data". implode(" ", $d));
+	//global $logger;
+ 	//$logger->info("inside enterChat  data". implode(" ", $d));
 	 $gump = new GUMP();
    // $logger->info("gump:".$gump);
     $cleanChat = $gump->sanitize($d); // 
@@ -18,13 +18,13 @@ function enterChat($d,$ip,$token){
 }
 
 function readChats($d,$ip,$token){
-	global $logger;
+	//global $logger;
 	//$logger->info('in readChats, data '. readChatsDb());
 	return readChatsDb($d);
 }
 
 function getOnlineUsers($d){
-	global $logger;
+	//global $logger;
 	//$logger->info('in getOnlineUsers');
 
 
@@ -35,7 +35,7 @@ function getOnlineUsers($d){
 function enterChallenge($d) {
 	$_SESSION['last_activity'] = time();
 
-	global $logger;
+	//global $logger;
 	//$logger->info("inside enterChallenge toEmail ". ($d['toEmail']));
 	$challengedUser=getUserByEmailDB($d['toEmail']);
 	$challengeTo=$challengedUser[0]['iduser'];
@@ -45,25 +45,25 @@ function enterChallenge($d) {
 }
 
 function getChallengeStatus($d){
-	global $logger;
+	//global $logger;
 	//$logger->info("inside getChallengeStatus() id:". $d['id']);
 	return getChallengeStatusDB($d);
 }
 
 function getOpenChallenges($user){
-	global $logger;
+	//global $logger;
 	//$logger->info("inside getOpenChallenge() id:$user ");
 	return getOpenChallengesDB($user);
 }
 
 function metChallenge($id){
-	global $logger;
+	//global $logger;
 	//$logger->info("inside metChallenge() id:$id ");
 	return metChallengesDB($id);
 }
 
 function getSentChallenges($user){
-	global $logger;
+	//global $logger;
 	//$logger->info("inside getSentChallenge() id:$user ");
 	return getSentChallengesDB($user);
 }
@@ -71,7 +71,7 @@ function getSentChallenges($user){
 function acceptChallenge($d){
 	$_SESSION['last_activity'] = time();
 
-	global $logger;
+	//global $logger;
 	//$logger->info('inside acceptChallenge from challenge ID '. $d);
 	return acceptChallengeDB($d);
 }
@@ -79,7 +79,7 @@ function acceptChallenge($d){
 function rejectChallenge($d){
 	$_SESSION['last_activity'] = time();
 
-	global $logger;
+	//global $logger;
 	//$logger->info('inside rejectChallenge from challenge ID '. $d);
 	return rejectChallengeDB($d);
 }

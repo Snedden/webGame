@@ -65,7 +65,7 @@
 
 
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    	<script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src='js/globals.js'></script>
         <script src="js/ajaxFunctions.js" type="text/javascript"></script>
         <script src='js/main.js'></script>

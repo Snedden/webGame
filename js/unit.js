@@ -1,3 +1,4 @@
+//unit funcitons and attributes
 function Unit(unitType,hex,playerId,typeCount){
 	var id;
 	var unitType;
@@ -26,7 +27,8 @@ function Unit(unitType,hex,playerId,typeCount){
 	this.id=this.unitType+'|'+this.typeCount+'|'+this.playerId;
 	this.hp=100;
 	this.currentHp=this.hp;
-	this.attack=100;
+	this.attack=25;
+	this.speed=200; //speed is in pixels the unit can move
 	
 	this.isMoving=false;
 	this.selected=false;
@@ -34,7 +36,7 @@ function Unit(unitType,hex,playerId,typeCount){
 
 	this.unselectAll=unselectAll;
 
-
+	//hp==0 mean dead decided therer is no need to out of memory
 
 	this.destroyUnit=function destroyUnit(){
 		//remove from screen
@@ -46,10 +48,11 @@ function Unit(unitType,hex,playerId,typeCount){
 		//unitArray.splice(this.num,1);
 		//delete unitArray[this.num];
 		this.isAlive=false;
+		this.hexagon.isOccupied=false;//make hexgon unoccupied after unit is dead
 	}
 	
 	
-	
+	//change icon to sword if mouse hover
 	this.unitHovered=function unitHovered(ele){
 		//something is selected
 		if(typeof hexMeshObj.selectedUnit.playerId!=='undefined'){
@@ -69,21 +72,23 @@ function Unit(unitType,hex,playerId,typeCount){
 			}
 	}
 	
-	//Move the n
+	//Move the a neighbour cell before attack,can only attack from top cell
 	this.moveToAttackUnit=function moveToAttackUnit(unit){
 		if(turn===PlayerId){	
 			// attackedUnit is  this,attacking unit is 'unit';
-			var neighNum=this.hexagon.num-1;  //this.hexagon.num-1 is neighbour
+			var neighNum=this.hexagon.num-1;  //this.hexagon.num-1 is neighbour, again being lazy here as using only top cell as neighbour
 			
 			//var neighbour=hexArray[neighNum];
 			console.log('moveToAttack');
 			console.log(unitArray[2].hexagon,unit.hexagon);
 				//if(hexArray[neighNum].num!=unit.hexagon.num){
 			var amStandingNextToVictim=(hexArray[neighNum].num==unit.hexagon.num);
-					if(!hexArray[neighNum].isOccupied||(amStandingNextToVictim)){
+					if(!hexArray[neighNum].isOccupied||(amStandingNextToVictim)){//no one is blocking the enemmy
 						//moveSelected(moveTo,mover,fromUser,isAttaking,attackedUnit)
-						hexMeshObj.moveSelected(hexArray[neighNum],unit,true,true,this);
-						this.attackUnit(unit);
+						if(hexMeshObj.moveSelected(hexArray[neighNum],unit,true,true,this)){//if movement succesful  than attack
+							this.attackUnit(unit);
+						}
+
 					}
 					else{
 						console.warn('Cannot attack unit surrounded');
@@ -99,7 +104,7 @@ function Unit(unitType,hex,playerId,typeCount){
 				gameObj.changeHelpInfo('Not your turn');
 			}
 	}
-
+     //attack funciton ,
 	this.attackUnit=function attackUnit(unit){
 		// attackedUnit is  this,attacking unit is 'unit';
      	var aliveUnits=0;
@@ -128,7 +133,7 @@ function Unit(unitType,hex,playerId,typeCount){
 	
 	this.makeUnit=function makeUnit(board){
 	    var unitObj=this;
-		//console.log('make unit');
+		console.log('make unit',this);
        
 
 		var unit=document.createElementNS(svgns,'circle');

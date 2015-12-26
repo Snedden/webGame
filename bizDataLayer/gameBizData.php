@@ -24,8 +24,8 @@ if(mysqli_connect_errno()){
 */
 function startData($gameId){
 
-	global $mysqli,$logger;
-	$logger->info('startData in gameBizData.php called with parameter'.$gameId);
+	global $mysqli;
+	//$logger->info('startData in gameBizData.php called with parameter'.$gameId);
     //Get status of the current game
 	$sql="select status from heroes_games where game_id=?";
 	try{
@@ -36,17 +36,17 @@ function startData($gameId){
 			$gameStatus=$data[0]['status'];
 		}
 		else{
-			$logger->error('Somthing went wrong in prepare statement of game in startData()'.$mysqli->error);
+			//$logger->error('Somthing went wrong in prepare statement of game in startData()'.$mysqli->error);
 		}
 	}catch(Excpetino $e){
-		$logger->error('Something went wrong in getting status of the game  in startData');
+		//$logger->error('Something went wrong in getting status of the game  in startData');
 	}
 
 
-	$logger->info('Game Status:'.strcmp('inGame',$gameStatus));
+	//$logger->info('Game Status:'.strcmp('inGame',$gameStatus));
 	//Init game table only once ,to avoid refresh button click by the user
-	if(strcmp('inGame',$gameStatus)!=0){
-   		 $logger->info('inside start game update');
+	//if(strcmp('inGame',$gameStatus)!=0){
+   		 //$logger->info('inside start game update');
 
 		//return $gameId.'sdf';
 		//simple test for THIS 'game' - resets the last move and such to empty
@@ -59,14 +59,14 @@ function startData($gameId){
 				$stmt->close();
 			}else{
 
-				$logger->info('There was a error in prepare statement startData '.$mysqli->error);
+				//$logger->info('There was a error in prepare statement startData '.$mysqli->error);
 			}
 		}catch (Exception $e) {
 			log_error($e, $sql, null);
 			return false;
 		}
 
-	}  //end of heroes_table init
+	//}  //end of heroes_table init
 
 	//get the init of the game
 	$sql = "SELECT * FROM heroes_games WHERE game_id=?";
@@ -77,7 +77,7 @@ function startData($gameId){
 			$data=bindSql($stmt);
 			$data=json_encode($data);
 			$mysqli->close();
-			$logger->info("Return data from start $data");
+			//$logger->info("Return data from start $data");
 			return $data;
 		}else{
 			$logger->info('There was a error in prepare statement startData select '.$mysqli->error);
@@ -154,15 +154,15 @@ function changeBoardData($gameId,$pieceId,$boardI,$playerId,$isAttack,$attackedU
 	global $mysqli;
 	global $logger;
 
-	$logger->info('inside game SVC changeBoardData attackunit '.$attackedUnit);
+	//$logger->info('inside game SVC changeBoardData attackunit '.$attackedUnit);
 	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=?,attackedUnit=? WHERE game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
-			$stmt->bind_param("siisi",$pieceId,$boardI,$isAttack,$attackedUnit,$gameId);
+			$stmt->bind_param("siiii",$pieceId,$boardI,$isAttack,$attackedUnit,$gameId);
 			$stmt->execute();
 			$stmt->close();
 		}else{
-			$logger->error('prepared stament failed in changeboard data'.$mysqli->error);
+			//$logger->error('prepared stament failed in changeboard data'.$mysqli->error);
         }
 	}catch (Exception $e) {
         log_error($e, $sql, null);
@@ -214,7 +214,7 @@ function checkWinnerDB($gameId){
 }
 
 function winGameDB($data){
-	global $logger,$mysqli;
+	global $mysqli;
 	//$logger->info('inside winsDB');
 
 	//$logger->info("Data at winGameDB()".print_r($data,true));

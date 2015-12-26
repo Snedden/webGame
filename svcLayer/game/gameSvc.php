@@ -9,7 +9,7 @@ require "./bizDataLayer/gameBizData.php";
 //Why include the database stuff here?  (not doing any db stuff in the service layer!)
 //because it forces all to go through the service layer in order to get to the bizLayer
 //if someone tries to access the bizLayer on it's own the code will fail since there isn't a connection!
-require "./bizDataLayer/dbInfoPS.inc";//to use we need to put in: global $mysqli;
+require "./bizDataLayer/dbInfoPS.php";//to use we need to put in: global $mysqli;
 require_once("./bizDataLayer/commonDbFunctions.php");//some common db functions share among files in db layer
 
 /*************************
@@ -24,7 +24,7 @@ require_once("./bizDataLayer/commonDbFunctions.php");//some common db functions 
 function start($d){
 	//Should they be here?  (check)
 	//if true:
-	global $logger;
+	//global $logger;
     //$logger->info('gameSVC.php start called');
 	return startData($d);
 }
@@ -65,7 +65,7 @@ function changeBoard($d){
 							//38~piece_1|10~4~6~1
 	$h=explode('~',$d);
 	//changeBoardData($gameId,$pieceId,$boardI,$playerId);
-	global $logger;
+	//global $logger;
 	//$logger->info('inside game SVC changeBoard');
 	
 	changeBoardData($h[0],$h[1],$h[2],$h[3],$h[4],$h[5]);
@@ -83,7 +83,7 @@ function getMove($d){
 }
 
 function winGame($data){
-	global $logger;
+	//global $logger;
 	//$logger->info("Data at winGame()".print_r($data,true));
 	return winGameDB($data);
 }

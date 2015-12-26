@@ -125,7 +125,7 @@ function whoIsWining(){
 }
 
 function checkWinnerCallBack(jsonObj){
-	console.log('winnerObj',jsonObj,' ',jsonObj[0].winner);
+	//console.log('winnerObj',jsonObj,' ',jsonObj[0].winner);
 	if(jsonObj[0].winner==0){
 		 console.log(player1+' wins');
 		window.location='winner.php?winner='+player1;

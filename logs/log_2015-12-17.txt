@@ -1,130 +1,24 @@
-[2015-12-17 5:54:51.470722] [info] inside user.php
-[2015-12-17 5:54:51.475686] [info] callBack
-[2015-12-17 5:54:51.482074] [info] callBack
-[2015-12-17 5:54:51.489084] [info] callBack
-[2015-12-17 5:54:51.489852] [info] inside getOnlineUsersDb
-[2015-12-17 5:54:51.948864] [info] Inside bind sql
-[2015-12-17 5:54:51.984165] [info] Inside bind sql
-[2015-12-17 5:54:52.652404] [info] Inside bind sql
-[2015-12-17 5:54:52.773106] [info] bind columns0 1
-[2015-12-17 5:54:52.774605] [info] return value from mid php[{"first_name":"Daniel","last_name":"Boggard"}]
-[2015-12-17 5:54:53.050510] [info] bind columns0 1 2
-[2015-12-17 5:54:53.051578] [info] result for bindSql
-[2015-12-17 5:54:53.052495] [info] return value from mid phpnull
-[2015-12-17 5:54:53.128789] [info] callBack
-[2015-12-17 5:54:53.129625] [info] inside getOpenChallengessDB
-[2015-12-17 5:54:53.480099] [info] callBack
-[2015-12-17 5:54:53.480864] [info] inside getOpenChallengessDB
-[2015-12-17 5:54:53.509783] [info] Inside bind sql
-[2015-12-17 5:54:53.738507] [info] Inside bind sql
-[2015-12-17 5:54:53.885883] [info] bind columns0 1
-[2015-12-17 5:54:53.886569] [info] return data from getOpenChallengesDB sql 
-[2015-12-17 5:54:53.887212] [info] return value from mid phpnull
-[2015-12-17 5:54:53.953675] [info] bind columns0 1 2 3
-[2015-12-17 5:54:53.956473] [info] return value from mid php[{"first_name":null,"last_name":null,"text":"hello","timestamp":"2015-12-06 02:13:02"},{"first_name":null,"last_name":null,"text":"hey!","timestamp":"2015-12-06 02:13:19"},{"first_name":null,"last_name":null,"text":"eveything alright over there?","timestamp":"2015-12-06 02:14:06"},{"first_name":null,"last_name":null,"text":"yes it is","timestamp":"2015-12-06 02:14:13"},{"first_name":null,"last_name":null,"text":"time seems to be working now","timestamp":"2015-12-06 02:26:15"},{"first_name":null,"last_name":null,"text":"yes","timestamp":"2015-12-06 02:26:25"},{"first_name":null,"last_name":null,"text":"yes it does","timestamp":"2015-12-06 02:26:40"},{"first_name":null,"last_name":null,"text":"now there is problem with the call back","timestamp":"2015-12-06 14:13:30"},{"first_name":null,"last_name":null,"text":"now it would work","timestamp":"2015-12-06 14:14:14"},{"first_name":null,"last_name":null,"text":"insert?","timestamp":"2015-12-06 14:17:38"},{"first_name":null,"last_name":null,"text":"it seems to be working now","timestamp":"2015-12-06 14:19:51"},{"first_name":null,"last_name":null,"text":"is it working?","timestamp":"2015-12-06 14:24:54"},{"first_name":null,"last_name":null,"text":"yes!!","timestamp":"2015-12-06 14:24:58"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:16"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:18"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:19"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":null,"last_name":null,"text":"it is a hack","timestamp":"2015-12-06 14:26:20"},{"first_name":null,"last_name":null,"text":"good morning","timestamp":"2015-12-08 10:18:25"},{"first_name":null,"last_name":null,"text":"hey!","timestamp":"2015-12-08 10:18:43"},{"first_name":null,"last_name":null,"text":"does it work now?","timestamp":"2015-12-08 10:22:41"},{"first_name":null,"last_name":null,"text":"looks like it does","timestamp":"2015-12-08 10:22:53"},{"first_name":null,"last_name":null,"text":"gotta leave","timestamp":"2015-12-08 10:23:41"},{"first_name":null,"last_name":null,"text":"hey dan","timestamp":"2015-12-13 21:17:01"}]
-[2015-12-17 5:54:54.191525] [info] inside user.php
-[2015-12-17 5:54:54.198801] [info] callBack
-[2015-12-17 5:54:54.199798] [info] return value from mid php1
-[2015-12-17 5:54:54.486275] [info] callBack
-[2015-12-17 5:54:54.487196] [info] inside getOpenChallengessDB
-[2015-12-17 5:54:54.496648] [info] callBack
-[2015-12-17 5:54:54.497431] [info] inside getOpenChallengessDB
-[2015-12-17 5:54:54.520524] [info] Inside bind sql
-[2015-12-17 5:54:54.532828] [info] Inside bind sql
-[2015-12-17 5:54:54.569242] [info] inside user.php
-[2015-12-17 5:54:54.635934] [info] bind columns0 1
-[2015-12-17 5:54:54.636576] [info] return data from getOpenChallengesDB sql 
-[2015-12-17 5:54:54.637181] [info] return value from mid phpnull
-[2015-12-17 5:54:54.665707] [info] callBack
-[2015-12-17 5:54:54.732376] [info] bind columns0 1 2 3 4
-[2015-12-17 5:54:54.733122] [info] return data from getOpenChallengesDB sql Array
-[2015-12-17 5:54:54.734075] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2,"game_id":1,"status":"met","timestamp":"2015-12-16 14:57:51"},{"email":"sgg3590@rit.edu","challenge_id":6,"game_id":5,"status":"met","timestamp":"2015-12-16 22:16:00"}]
-[2015-12-17 5:54:55.307436] [info] bind columns0 1 2 3 4
-[2015-12-17 5:54:55.308043] [info] return data from getOpenChallengesDB sql Array
-[2015-12-17 5:54:55.308561] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2,"game_id":1,"status":"met","timestamp":"2015-12-16 14:57:51"},{"email":"sgg3590@rit.edu","challenge_id":6,"game_id":5,"status":"met","timestamp":"2015-12-16 22:16:00"}]
-[2015-12-17 5:54:55.434313] [info] return value from mid php1
-[2015-12-17 5:54:55.486706] [info] callBack
-[2015-12-17 5:54:55.487648] [info] inside getOpenChallengessDB
-[2015-12-17 5:54:55.490228] [info] Inside bind sql
-[2015-12-17 5:54:55.492835] [info] bind columns0 1
-[2015-12-17 5:54:55.493681] [info] return data from getOpenChallengesDB sql 
-[2015-12-17 5:54:55.494576] [info] return value from mid phpnull
-[2015-12-17 5:54:55.513307] [info] inside user.php
-[2015-12-17 5:54:55.526266] [info] callBack
-[2015-12-17 5:54:55.526684] [info] callBack
-[2015-12-17 5:54:55.527081] [info] inside getOpenChallengessDB
-[2015-12-17 5:54:55.528868] [info] Inside bind sql
-[2015-12-17 5:54:55.746046] [info] return value from mid php1
-[2015-12-17 5:54:55.840292] [info] bind columns0 1 2 3 4
-[2015-12-17 5:54:55.840909] [info] return data from getOpenChallengesDB sql Array
-[2015-12-17 5:54:55.841479] [info] return value from mid php[{"email":"tommy52@gump.com","challenge_id":2,"game_id":1,"status":"met","timestamp":"2015-12-16 14:57:51"},{"email":"sgg3590@rit.edu","challenge_id":6,"game_id":5,"status":"met","timestamp":"2015-12-16 22:16:00"}]
-[2015-12-17 5:55:05.310327] [info] inside user.php
-[2015-12-17 5:55:05.322125] [info] callBack
-[2015-12-17 5:55:05.322858] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:55:05.324191] [info] Inside bind sql
-[2015-12-17 5:55:05.325536] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:55:05.326378] [info] passworrd from form sdsd
-[2015-12-17 5:55:05.326652] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 5:55:21.500288] [info] inside user.php
-[2015-12-17 5:55:21.592977] [info] callBack
-[2015-12-17 5:55:21.683710] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:55:21.685386] [info] Inside bind sql
-[2015-12-17 5:55:21.686996] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:55:21.687711] [info] passworrd from form sdsd
-[2015-12-17 5:55:21.687964] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 5:57:05.379272] [info] inside user.php
-[2015-12-17 5:57:05.395906] [info] callBack
-[2015-12-17 5:57:05.396859] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:57:05.398576] [info] Inside bind sql
-[2015-12-17 5:57:05.401191] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:57:05.402343] [info] passworrd from form igbi
-[2015-12-17 5:57:05.402757] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 5:58:03.534693] [info] inside user.php
-[2015-12-17 5:58:03.545283] [info] callBack
-[2015-12-17 5:58:03.558048] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:58:03.560417] [info] Inside bind sql
-[2015-12-17 5:58:03.563178] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:58:03.564737] [info] passworrd from form asda
-[2015-12-17 5:58:03.565416] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 5:58:47.465563] [info] inside user.php
-[2015-12-17 5:58:47.478388] [info] callBack
-[2015-12-17 5:58:47.479171] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:58:47.481957] [info] Inside bind sql
-[2015-12-17 5:58:47.484402] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:58:47.485687] [info] passworrd from form dada
-[2015-12-17 5:58:47.486159] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 5:59:21.123131] [info] inside user.php
-[2015-12-17 5:59:21.135935] [info] callBack
-[2015-12-17 5:59:21.136744] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:59:21.138839] [info] Inside bind sql
-[2015-12-17 5:59:21.142535] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:59:21.144140] [info] passworrd from form asdasd
-[2015-12-17 5:59:21.144639] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 5:59:53.572731] [info] inside user.php
-[2015-12-17 5:59:53.584768] [info] callBack
-[2015-12-17 5:59:53.585829] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 5:59:53.587884] [info] Inside bind sql
-[2015-12-17 5:59:53.590177] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 5:59:53.591274] [info] passworrd from form sadsad
-[2015-12-17 5:59:53.591701] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 6:00:08.421766] [info] inside user.php
-[2015-12-17 6:00:08.437187] [info] callBack
-[2015-12-17 6:00:08.438383] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 6:00:08.482445] [info] Inside bind sql
-[2015-12-17 6:00:08.484107] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 6:00:08.485027] [info] passworrd from form asdas
-[2015-12-17 6:00:08.485308] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 6:00:26.878508] [info] inside user.php
-[2015-12-17 6:00:26.892286] [info] callBack
-[2015-12-17 6:00:26.893239] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 6:00:26.895103] [info] Inside bind sql
-[2015-12-17 6:00:26.897438] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 6:00:26.898561] [info] passworrd from form asdsad
-[2015-12-17 6:00:26.899024] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
-[2015-12-17 6:01:01.684055] [info] inside user.php
-[2015-12-17 6:01:01.697182] [info] callBack
-[2015-12-17 6:01:01.697982] [info] Insidd getUser with emailID:tommy52@gump.com
-[2015-12-17 6:01:01.699383] [info] Inside bind sql
-[2015-12-17 6:01:01.701401] [info] bind columns0 1 2 3 4 5 6 7
-[2015-12-17 6:01:01.702544] [info] passworrd from form asdas
-[2015-12-17 6:01:01.703002] [info] password  from getUser $2y$10$/Boq/IYbgczQM6zfI78hLekigZoDW1sODayxov3NysPDOkJYkxU9y
+[2015-12-17 9:21:55.080087] [info] mid.php called byregisterUser
+[2015-12-17 9:21:56.631712] [debug] Inside insertUser() function.
+[2015-12-17 9:21:56.632154] [debug] The database is not null - OK
+[2015-12-17 9:21:56.765826] [info] result user : 0
+[2015-12-17 9:21:56.767308] [info] inside try of insert user
+[2015-12-17 9:21:56.767713] [info] v1samuelv2adamsssv3sam32@rit.eduv4$2y$10$5oiLgL.qySWaW.lKi15mhODSmcqaNQrGKSlcwNdlr3RBf0litxi1Wv5v62015-12-17 9:21:56
+[2015-12-17 9:21:57.280600] [info] stmt:INSERT INTO users
+               (first_name,
+                last_name,
+                email,
+                password,
+                status,
+                registration_date)
+            VALUES
+                (?,
+                 ?,
+                 ?,
+                 ?,
+                 ?,
+                 ?)result:1error:
+[2015-12-17 9:21:57.710269] [debug] A user with id 5 was created.
+[2015-12-17 9:21:57.711369] [info] user inserted
+[2015-12-17 9:23:33.285224] [info] mid.php called byregisterUser
+[2015-12-17 9:23:59.605559] [info] mid.php called byregisterUser

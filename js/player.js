@@ -1,3 +1,4 @@
+//player object,skiped on using it
 function Player(Id,name){
 	var playerId;
 	var isTurn;

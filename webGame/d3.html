@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+    <script>
+        //DATA =DRIVEN DOCUEMNTS
+        d3.select("BODY")
+                .append("svg")
+                    .attr("width",50)
+                    .attr("height",50)
+                .append("circle")
+                    .attr("cx",25)
+                    .attr("cy",25)
+                .attr("r",25)
+                .style("fill","purple");
+
+        var circleData=[
+            {
+                cx:50,
+                cy:50,
+                r:40,
+                color:"purple"
+            },
+            {
+                cx:150,
+                cy:20,
+                r:580,
+                color:"black"
+            },
+            {
+                cx:70,
+                cy:480,
+                r:298,
+                color:"pink"
+            }
+        ];
+
+        var svgContainer=d3.select("body")
+                .append("svg")
+                .attr("width",200)
+                .attr("height",200);
+        var circles=svgContainer
+                .selectAll("circle") //selects All matched elements
+                                    //Empty selction
+                .data(circleData)                    //Join a array
+                .enter()
+                .append("circle");
+
+        var circleAttr=circles
+                .attr("cx",function(d){return d.cx;})
+                .attr("cy",function(d){return d.cy;})
+                .attr("r",function(d){return d.r;})
+                .style("fill",function(d){return d.color;});
+
+    </script>
+
+</body>
+</html>
