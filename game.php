@@ -1,4 +1,6 @@
-<!doctype html>
+<!doctype html
+
+>
 <html>
 	<head>
 		<!--checking if user is authenticated-->

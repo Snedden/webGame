@@ -32,7 +32,9 @@ Hexagon.prototype.getSelectedUnit=function(){
 }
 
 Hexagon.prototype.getDistanceFromSelected=function getDistanceFromSelected(){
+	console.log('getDistance called');
 	if(hexMeshObj.selectedUnit.hexagon) {
+		console.log('something is selected');
 		//formula - sqrt((x1-x2)^2+(y1-y2)^2)
 		var dist = Math.sqrt(Math.pow((hexMeshObj.selectedUnit.hexagon.cx - this.cx), 2) + Math.pow((hexMeshObj.selectedUnit.hexagon.cy - this.cy), 2));
 		console.log('distance:', dist);
@@ -76,6 +78,7 @@ Hexagon.prototype.makeHex=function(ele){//ele is the parent element to draw in
 	hex.setAttributeNS(null,'points',x1+','+y1+' '+x2+','+y2+' '+x3+','+y3+' '+x4+','+y4+' '+x5+','+y5+' '+x6+','+y6);//create at origin
 	hex.setAttributeNS(null,'class','hex');
 	hex.setAttributeNS(null,'id',this.id);
+	hex.setAttributeNS(null,'data-hexNum',this.num);
 
 	//adding mouse events to hex dom
 	this.elem=hex;
@@ -105,35 +108,31 @@ Hexagon.prototype.makeHex=function(ele){//ele is the parent element to draw in
 		console.log('event removed');
 	},false);
 	//mouse click
-	hex.onclick=function(){
-		console.log(this.id);
+	hex.addEventListener('click',function(){
+		console.log('num:',hexObj.num);
 		//var dist=hexObj.getDistanceFromSelected();
 		//var selectedUnit=hexObj.getSelectedUnit();
 		if( turn===PlayerId){
 			//if(selectedUnit.speed>dist){
-				if(hexMeshObj.selectedUnit.id){//something is selected
-					if(!hexObj.isOccupied){
-						hexMeshObj.moveSelected(hexObj,hexMeshObj.selectedUnit,true);
-					}
-					else{
-						console.warn('Place already occupied');
-					}
+			if(hexMeshObj.selectedUnit.id){//something is selected
+				if(!hexObj.isOccupied){
+					hexMeshObj.moveSelected(hexObj,hexMeshObj.selectedUnit,true);
 				}
 				else{
-					console.warn('select a unit first');
+					console.warn('Place already occupied');
 				}
+			}
+			else{
+				console.warn('select a unit first');
+			}
 
-			//}
-			//else{
 
-			//	gameObj.changeHelpInfo('Unit not fast enough');
-			//}
 		}
 		else{
 			gameObj.changeHelpInfo('Not your turn');
 		}
 
-	};
+	});
 	//var svg=document.getElementsByTagName('svg')[0];
 	ele.appendChild(hex);
 	var transformAttr = ' translate(' +hexObj.cx + ',' + hexObj.cy+ ')';

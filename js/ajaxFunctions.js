@@ -91,8 +91,8 @@ function changeBoardAjax(pieceId,boardI,isAttacking,attackedPiece,whatMethod,val
 //callback is callbackcheckTurn
 ////////////////
 function checkTurnAjax(whatMethod,val){
-	console.log('gameId',gameId,'playerId',player);
-	console.log('turn ',turn,'player',PlayerId)
+	//console.log('gameId',gameId,'playerId',player);
+	//console.log('turn ',turn,'player',PlayerId)
 	if(turn!=PlayerId){
 		ajaxCall("GET",{method:whatMethod,a:"game",data:val},callbackcheckTurn);
 	}
@@ -102,7 +102,7 @@ function checkTurnAjax(whatMethod,val){
 //callback for checkTurnAjax
 ////////////////
 function callbackcheckTurn(jsonObj){
-console.log('DBTurn:'+jsonObj[0].whoseTurn,'PlayerId:'+PlayerId); 	
+//console.log('DBTurn:'+jsonObj[0].whoseTurn,'PlayerId:'+PlayerId);
 	if(jsonObj[0].whoseTurn == PlayerId){
 		 turn = jsonObj[0].whoseTurn;   //changing local turn var
 		//switch turns

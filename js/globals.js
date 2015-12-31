@@ -18,12 +18,57 @@ var addedListeners = {
 
 };
 
-function addListenerIfNone(addTo,eventType, func) {
-    if ((addedListeners[addTo]===func)&&(addedListeners[eventType] ===eventType)) return;//event is alreaday present
-    addedListeners[addTo] = func;//if not add
-    addedListeners[eventType] =eventType;
-    addTo.addEventListener(eventType, func);
-    console.log('event ',eventType,' added on ', addTo);
+function addListenerIfNone(addTo,eventType, func) {//needs  id as a attribute
+
+    //console.warn("addTo:",addTo.id);
+    console.warn("type:",eventType);
+    //console.warn("func:",func);
+    if(addTo&&addTo.id){
+        if (addedListeners[addTo.id+eventType]===eventType)
+        {
+            console.warn('event not added');
+            return;
+
+        }//event is alreaday present
+        else{
+            addedListeners[addTo.id+eventType]= eventType;
+
+            addTo.addEventListener(eventType, func,true);
+            console.warn('event added');
+            //console.warn('addedListerners',addedListeners);
+        }
+
+        // console.warn('event ',eventType,' added on ', addTo);
+    }
+    else{
+        console.warn("Elements needs to have id attribute or not null");
+        return false;
+    }
+}
+
+function removeListenerIfPresent(addTo,eventType, func) {//needs  id as a attribute
+    //console.warn("addTo:",addTo.id);
+    //console.warn("type:",eventType);
+    //console.warn("func:",func);
+    if(addTo&&addTo.id){
+        if (addedListeners[addTo.id+eventType]){ //event present
+            addedListeners[addTo.id+eventType]= null;
+
+            addTo.removeEventListener(eventType, func,true);
+            console.warn("event  removed!");
+            //console.warn('addedListerners',addedListeners);
+        }
+        else{
+            //console.warn("event not removed!");
+            return false;
+        }
+
+        // console.warn('event ',eventType,' added on ', addTo);
+    }
+    else{
+        console.warn("Elements needs to have id attribute or not null");
+        return false;
+    }
 }
 
 console.log('global');

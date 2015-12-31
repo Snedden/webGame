@@ -25,7 +25,11 @@ body {
 			  //transform-origin: 50% 50%;
 			  //-webkit-transform-origin: 50% 50%;
 			}
-			
+
+			.attackFrom{
+				fill: #ff0000;
+			}
+
 			.selected{
 			stroke: #ff0000;
 			stroke-width: 5;

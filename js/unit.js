@@ -18,6 +18,8 @@ function Unit(unitType,hex,playerId,typeCount){
 	var isAlive; //is unit is alive
 	var turnEnded;
 
+	var self=this;
+
 	this.unitType=unitType;
 	this.isAlive=true;
 	this.typeCount=typeCount;
@@ -28,13 +30,15 @@ function Unit(unitType,hex,playerId,typeCount){
 	this.hp=100;
 	this.currentHp=this.hp;
 	this.attack=25;
-	this.speed=200; //speed is in pixels the unit can move
+	this.speed=800; //speed is in pixels the unit can move
 	
 	this.isMoving=false;
 	this.selected=false;
 	this.turnEnded=false;
 
 	this.unselectAll=unselectAll;
+
+
 
 	//hp==0 mean dead decided therer is no need to out of memory
 
@@ -57,52 +61,322 @@ function Unit(unitType,hex,playerId,typeCount){
 		//something is selected
 		if(typeof hexMeshObj.selectedUnit.playerId!=='undefined'){
 			var unitObj=this;
-			//console.log(PlayerId,ele.id );
+			var attackFromHexEle;//hexEle the attack will take place from
+
 			var idArr=ele.id.split('|');  //knight|1|0
-			//console.log('idArr',idArr);
+
+
 			var hoveredUnitPlayerId=idArr[2];
 				if(hoveredUnitPlayerId!=PlayerId){//sword cursor only on enemy units 
 					console.log(hexMeshObj.selectedUnit.playerId+'!='+this.playerId);
 					ele.style.cursor='url(cursors/use75.cur),pointer';
 
-					addListenerIfNone(ele,'click', function(){unitObj.moveToAttackUnit(hexMeshObj.selectedUnit)});
-					//ele.addEventListener('click',function(){unitObj.moveToAttackUnit(hexMeshObj.selectedUnit)});//attack unit unitObj
+					var mX= unitObj.hexagon.cx;
+					var mY=unitObj.hexagon.cy+110;//hard coding offset ,might need to change this as HTML DOM chahnges
+					var hexId= hexArray[this.hexagon.num].id;
+					var hexRowCol=hexId.toString().split(",");
+					var hexRow=Number(hexRowCol[0]);
+					var hexCol=Number(hexRowCol[1]);
+					var hexIdRUp,hexIdRDown,hexIdLUp,hexIdLDown;
+					var hexEleRUp,hexEleRDown,hexEleLUp,hexEleLDown;
+
+					var hexIdUp=(hexRow-1)+','+hexCol;
+					var hexEleUp= document.getElementById(hexIdUp);
+
+					var hexIdDown=(hexRow+1)+','+hexCol;
+					var hexEleDown= document.getElementById(hexIdDown);
+					var attackFromHex;//the hex the attack would take place from
+
+					//to account for irregular alignation of hex columns
+					if(hexCol%2!==0){ //columsn 1,3,5,...
+						hexIdRUp=(hexRow-1)+','+(hexCol+1);
+						hexEleRUp= document.getElementById(hexIdRUp);
+
+						hexIdRDown=hexRow+','+(hexCol+1);
+						hexEleRDown= document.getElementById(hexIdRDown);
+
+						hexIdLUp=(hexRow-1)+','+(hexCol-1);
+						hexEleLUp= document.getElementById(hexIdLUp);
+
+						hexIdLDown=hexRow+','+(hexCol-1);
+						hexEleLDown= document.getElementById(hexIdLDown);
+					}
+					else{//columns 2,4,6 ...
+						hexIdRUp=hexRow+','+(hexCol+1);
+						hexEleRUp= document.getElementById(hexIdRUp);
+
+						hexIdRDown=(hexRow+1)+','+(hexCol+1);
+						hexEleRDown= document.getElementById(hexIdRDown);
+
+						hexIdLUp=hexRow+','+(hexCol-1);
+						hexEleLUp= document.getElementById(hexIdLUp);
+
+						hexIdLDown=(hexRow+1)+','+(hexCol-1);
+						hexEleLDown= document.getElementById(hexIdLDown);
+					}
+
+					//console.warn('up',hexEleUp,'down',hexEleDown,'UR',hexEleRUp,'DR',hexEleRDown,'UL',hexEleLUp,'DL',hexEleLDown);
+					window.moveUnitHandler=function moveUnitHandler(){
+						unitObj.moveToAttackUnit(hexMeshObj.selectedUnit,attackFromHex);
+					};
+
+                    window.moveAttackFromHex=function(e){
+						console.log('mX:'+unitObj.hexagon.cx+' mY:'+(unitObj.hexagon.cy)+' pageX:'+ e.pageX+' pageY:'+ (e.pageY-110));
+						console.log('Math.abs(e.pageX-mX)',Math.abs(e.pageX-mX))
+
+
+
+
+						if (e.pageY < mY&&Math.abs(e.pageX-mX)<6&&hexRow!=1) {//up
+							if(hexEleUp) {
+								hexEleUp.style.fill="#ff0000";
+							}
+							//reset other highlighted hexs
+							if(hexEleDown){
+								hexEleDown.style.fill=null;
+							}
+							if(hexEleRDown){
+								hexEleRDown.style.fill=null;
+							}
+							if(hexEleLUp){
+								hexEleLUp.style.fill=null;
+							}
+							if(hexEleLDown){
+								hexEleLDown.style.fill=null;
+							}
+							if(hexEleRUp){
+								hexEleRUp.style.fill=null;
+							}
+							//assgin hex
+							if(hexEleUp){
+								attackFromHexEle=hexEleUp;
+							}
+
+						} else if(e.pageY > mY&&Math.abs(e.pageX-mX)<6) {//down
+
+							if(hexEleDown) {
+								hexEleDown.style.fill="#ff0000";
+							}
+							//reset other highlighted hexs
+							if(hexEleUp){
+								hexEleUp.style.fill=null;
+							}
+							if(hexEleRDown){
+								hexEleRDown.style.fill=null;
+							}
+							if(hexEleLUp){
+								hexEleLUp.style.fill=null;
+							}
+							if(hexEleLDown){
+								hexEleLDown.style.fill=null;
+							}
+							if(hexEleRUp){
+								hexEleRUp.style.fill=null;
+							}
+							//assgin hex
+							if(hexEleDown){
+								attackFromHexEle=hexEleDown;
+							}
+						}
+						else if(e.pageX > mX&& e.pageY < mY) {//right up
+
+							if(hexEleRUp) {
+								hexEleRUp.style.fill="#ff0000";
+							}
+							//reset other highlighted hexs
+							if(hexEleUp){
+								hexEleUp.style.fill=null;
+							}
+							if(hexEleRDown){
+								hexEleRDown.style.fill=null;
+							}
+							if(hexEleLUp){
+								hexEleLUp.style.fill=null;
+							}
+							if(hexEleLDown){
+								hexEleLDown.style.fill=null;
+							}
+							if(hexEleDown){
+								hexEleDown.style.fill=null;
+							}
+							//assgin hex
+							if(hexEleRUp){
+								attackFromHexEle=hexEleRUp;
+							}
+						}
+						else if(e.pageX > mX&& e.pageY > mY) {//rightdown
+
+							if(hexEleRDown) {
+								hexEleRDown.style.fill="#ff0000";
+							}
+							//reset other highlighted hexs
+							if(hexEleUp){
+								hexEleUp.style.fill=null;
+							}
+							if(hexEleRUp){
+								hexEleRUp.style.fill=null;
+							}
+							if(hexEleLUp){
+								hexEleLUp.style.fill=null;
+							}
+							if(hexEleLDown){
+								hexEleLDown.style.fill=null;
+							}
+							if(hexEleDown){
+								hexEleDown.style.fill=null;
+							}
+							//assgin hex
+							if(hexEleRDown){
+								attackFromHexEle=hexEleRDown;
+							}
+						}
+						else if(e.pageX < mX && e.pageY<mY) {//left up
+
+							if(hexEleLUp) {
+								hexEleLUp.style.fill="#ff0000";
+							}
+							//reset other highlighted hexs
+							if(hexEleUp){
+								hexEleUp.style.fill=null;
+							}
+							if(hexEleRUp){
+								hexEleRUp.style.fill=null;
+							}
+							if(hexEleRDown){
+								hexEleRDown.style.fill=null;
+							}
+							if(hexEleLDown){
+								hexEleLDown.style.fill=null;
+							}
+							if(hexEleDown){
+								hexEleDown.style.fill=null;
+							}
+							//assgin hex
+							if(hexEleLUp){
+								attackFromHexEle=hexEleLUp;
+							}
+						}
+						else  { //left down //if(e.pageX < mX && e.pageY>mY)
+							if(hexEleLDown) {
+								hexEleLDown.style.fill = "#ff0000";
+							}
+								//reset other highlighted hexs
+							if(hexEleUp){
+								hexEleUp.style.fill=null;
+							}
+							if(hexEleRUp){
+								hexEleRUp.style.fill=null;
+							}
+							if(hexEleRDown){
+								hexEleRDown.style.fill=null;
+							}
+							if(hexEleLUp){
+								hexEleLUp.style.fill=null;
+							}
+							if(hexEleDown){
+								hexEleDown.style.fill=null;
+							}
+							//assgin hex
+							if(hexEleLDown){
+								attackFromHexEle=hexEleLDown;
+							}
+
+						}
+
+						//console.warn('attackFRomEnd',attackFromHexEle);
+						if(attackFromHexEle){
+							attackFromHex=attackFromHexEle.getAttribute('data-hexNum');
+						}
+
+
+
+
+						if(attackFromHex){//to avoid catching over board hexs'
+							//removeListenerIfPresent(ele,'click',window.moveUnitHandler);     //remove mouseclick
+
+							$(ele).unbind( "click" );
+							$(ele).bind( "click",window.moveUnitHandler);
+
+						}
+
+
+
+
+					}
+
+					//addListenerIfNone(ele,'mousemove',moveAttackFromHex);
+					$(ele).bind('mousemove',moveAttackFromHex);
+
+
+
+					addListenerIfNone(ele,'mouseout', function(){
+						console.log('mouse out');
+						ele.style.cursor='pointer';
+						//reset all hexagons around to deafult
+						if(hexEleDown){
+							hexEleDown.style.fill=null;
+						}
+						if(hexEleUp){
+							hexEleUp.style.fill=null;
+						}
+						if(hexEleRUp){
+							hexEleRUp.style.fill=null;
+						}
+						if(hexEleRDown){
+							hexEleRDown.style.fill=null;
+						}
+						if(hexEleLUp){
+							hexEleLUp.style.fill=null;
+						}
+						if(hexEleLDown){
+							hexEleLDown.style.fill=null;
+						}
+
+
+						//removeListenerIfPresent(this.unitEle,'mousemove',moveAttackFromHex);
+
+
+
+					});
+
 					
 				}	
 			}
 	}
 	
 	//Move the a neighbour cell before attack,can only attack from top cell
-	this.moveToAttackUnit=function moveToAttackUnit(unit){
+	this.moveToAttackUnit=function moveToAttackUnit(unit,attackFromHex){
+		var amStandingNextToVictim;
+		//removeListenerIfPresent(this.unitEle,'mousemove',moveAttackFromHex);
+
+		$(this.unitEle).unbind('mousemove',moveAttackFromHex);
+		$(this.unitEle).unbind( "click" );
 		if(turn===PlayerId){	
 			// attackedUnit is  this,attacking unit is 'unit';
-			var neighNum=this.hexagon.num-1;  //this.hexagon.num-1 is neighbour, again being lazy here as using only top cell as neighbour
-			
+
+
 			//var neighbour=hexArray[neighNum];
 			console.log('moveToAttack');
-			console.log(unitArray[2].hexagon,unit.hexagon);
-				//if(hexArray[neighNum].num!=unit.hexagon.num){
-			var amStandingNextToVictim=(hexArray[neighNum].num==unit.hexagon.num);
-					if(!hexArray[neighNum].isOccupied||(amStandingNextToVictim)){//no one is blocking the enemmy
-						//moveSelected(moveTo,mover,fromUser,isAttaking,attackedUnit)
-						if(hexMeshObj.moveSelected(hexArray[neighNum],unit,true,true,this)){//if movement succesful  than attack
-							this.attackUnit(unit);
-						}
+			console.warn('hexNum',attackFromHex,' hex ',hexArray[attackFromHex]);
+			if(hexArray[attackFromHex])
+			{
+				amStandingNextToVictim=(hexArray[attackFromHex].num==unit.hexagon.num);
+				if(!hexArray[attackFromHex].isOccupied||amStandingNextToVictim){//no one is blocking the enemmy and I the blocker is not myself
+					//moveSelected(moveTo,mover,fromUser,isAttaking,attackedUnit)
+					console.log('moving');
+					if(hexMeshObj.moveSelected(hexArray[attackFromHex],unit,true,true,this)){//if movement succesful  than attack
+						this.attackUnit(unit);
+					}
 
-					}
-					else{
-						console.warn('Cannot attack unit surrounded');
-					}
-					  
-				//}
-				//else{
-				//	console.log('unit before call',unit);
-				//	this.attackUnit(unit); //attack if standing next to the victim
-				//}
+				}
+				else{
+					gameObj.changeHelpInfo('unit blocked from that direction');
+				}
 			}
-		else{
+		}
+		else {
 				gameObj.changeHelpInfo('Not your turn');
-			}
+		}
 	}
      //attack funciton ,
 	this.attackUnit=function attackUnit(unit){
@@ -153,7 +427,7 @@ function Unit(unitType,hex,playerId,typeCount){
 		this.unitEle.setAttributeNS(null,'id',this.unitType+'|'+this.typeCount+'|'+this.playerId);
 		
 		//Enemy units not selectable
-		
+
 		this.unitEle.addEventListener('click',function(){unitObj.selectUnit()})
 		//this.unitEle.onclick=function(){unitObj.selectUnit()};
 			
@@ -161,15 +435,12 @@ function Unit(unitType,hex,playerId,typeCount){
 			
 		
 		//make sure something is selected
-		
+
 		this.unitEle.addEventListener('mouseover', function(){console.log('mouse over');
 										   unitObj.unitHovered(unit);	
 								  });
 			
-		this.unitEle.addEventListener('mouseout', function(){console.log('mouse out');
-										   unit.style.cursor='pointer';	
-										   
-										   });	
+
 		//var svg=document.getElementsByTagName('svg')[0];
 		this.num=unitArray.length;
 		//add to memory

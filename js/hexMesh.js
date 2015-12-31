@@ -5,9 +5,9 @@ function hexMesh(){
 	 var drawnCentroids=[];  //array of centroids of hex which are drawn on the scree
 	 var drawnAroundCentroids=[];	//array of centroid of hex which have hex drawn ALL around them 
 	 var ii=0;	
-
+    //take care while changing them as the gameplay might change for hover attack
 	var rightEdge=900;//dimensions of the board
-	var leftEdge=30;
+	var leftEdge=side;
 	var topEdge=30;
 	var botEdge=400;
 	var svg=document.getElementsByTagName('svg')[0];   //draw around svg
@@ -58,7 +58,7 @@ function hexMesh(){
 	
    //moves a unit form one hex to other and calls changeboard after movement
 	this.moveSelected=function moveSelected(moveToHex,unit,fromUserClick,attacking,attackedUnit){
-		console.log('moveToHex:',moveToHex.num,'unit:',unit,'fromUserClick:',fromUserClick,'attacking:',attacking);
+		console.log('moveToHex:',moveToHex,'unit:',unit,'fromUserClick:',fromUserClick,'attacking:',attacking);
 		var dist=moveToHex.getDistanceFromSelected(); //distance between the target location and unit in pixels
 
        console.log('dist:',dist,' speed:',unit.speed,'condition:',unit.speed>dist);
@@ -142,18 +142,22 @@ function hexMesh(){
 		var verticalBlock=1;       			//first vertical block of hexagons
 		var offSet=side*(1.73/2);  			//offset to the next block to align the hexagons
 		var hexCounter=1;
-		
-		hexArray[0]=new Hexagon(leftEdge,topEdge,side,hexCounter);// starting hex @param1:cx @param2:cy @param3:side @param4:id
+		var row= 1,col=1;
+		hexArray[0]=new Hexagon(leftEdge,topEdge,side,row.toString()+','+col.toString(),hexCounter);// starting hex @param1:cx @param2:cy @param3:side @param4:id
 		
 		for(i=hexArray[0].cx;i<rightEdge;i=i+side*1.5){
 		verticalBlock++;
 			for(j=(verticalBlock%2==0)?(hexArray[0].cy):(hexArray[0].cy+offSet);j<botEdge;j=j+side*1.732){
-				hexCounter++;
-				hexArray[hexCounter]=new Hexagon(i,j,side,hexCounter,hexCounter);  //(cx,cy,side,id,num) id and num are same
+
+
+				hexArray[hexCounter]=new Hexagon(i,j,side,row.toString()+','+col.toString(),hexCounter);  //(cx,cy,side,id,num) id and num are same
 				//console.log(i,j);
 				hexArray[hexCounter].makeHex(svg);
+				hexCounter++;
+				row++;
 			}
-				
+			row=1;
+			col++;
 		}
 	}
 	     //keeps on drawing  heaxagon around seed for variable i number of iterations

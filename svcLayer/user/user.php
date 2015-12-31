@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 //require_once("./vendor/wixel/gump/gump.class.php");
 require_once("./bizDataLayer/commonDbFunctions.php");
 require_once("./bizDataLayer/userDbBiz.php");
-require "./bizDataLayer/dbInfoPS.php";//to use we need to put in: global $mysqli;
+require_once( "./bizDataLayer/dbInfoPS.php");//to use we need to put in: global $mysqli;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
