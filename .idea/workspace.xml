@@ -7,14 +7,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/wixel/gump" afterPath="$PROJECT_DIR$/vendor/wixel/gump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webGame/vendor/wixel/gump" afterPath="$PROJECT_DIR$/webGame/vendor/wixel/gump" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.php" afterPath="$PROJECT_DIR$/game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ajaxFunctions.js" afterPath="$PROJECT_DIR$/js/ajaxFunctions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/globals.js" afterPath="$PROJECT_DIR$/js/globals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hexMesh.js" afterPath="$PROJECT_DIR$/js/hexMesh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hexagon.js" afterPath="$PROJECT_DIR$/js/hexagon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/unit.js" afterPath="$PROJECT_DIR$/js/unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svcLayer/user/user.php" afterPath="$PROJECT_DIR$/svcLayer/user/user.php" />
     </list>
     <ignored path="game project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +32,8 @@
       <file leaf-file-name="unit.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/unit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8026316">
-              <caret line="353" column="32" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.93939394">
+              <caret line="88" column="66" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -69,7 +62,7 @@
       <file leaf-file-name="game.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="12.384615">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
@@ -230,8 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,6 +385,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -780,14 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -844,10 +829,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.384615">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/unit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8026316">
-          <caret line="353" column="32" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.93939394">
+          <caret line="88" column="66" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
           <folding />
         </state>
       </provider>

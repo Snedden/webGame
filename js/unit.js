@@ -77,14 +77,21 @@ function Unit(unitType,hex,playerId,typeCount){
 					var hexRowCol=hexId.toString().split(",");
 					var hexRow=Number(hexRowCol[0]);
 					var hexCol=Number(hexRowCol[1]);
-					var hexIdRUp,hexIdRDown,hexIdLUp,hexIdLDown;
-					var hexEleRUp,hexEleRDown,hexEleLUp,hexEleLDown;
-
+					//these values depend on the current column
+					var hexIdRUp=null;
+					var hexIdRDown=null;
+					var hexIdLUp=null;
+					var hexIdLDown=null;
+					var hexEleRUp=null;
+					var  hexEleRDown=null;
+				    var  hexEleLUp=null;
+				    var  hexEleLDown=null;
+					//this values are same regarless of the column
 					var hexIdUp=(hexRow-1)+','+hexCol;
 					var hexEleUp= document.getElementById(hexIdUp);
-
 					var hexIdDown=(hexRow+1)+','+hexCol;
 					var hexEleDown= document.getElementById(hexIdDown);
+
 					var attackFromHex;//the hex the attack would take place from
 
 					//to account for irregular alignation of hex columns
