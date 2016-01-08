@@ -36,7 +36,7 @@
             dataType: "json",
             success: callback,
             error: function (xhr, ajaxOptions, thrownError) {
-                console.log(xhr.status);
+               // console.log(xhr.status);
                 //
                 //console.error('ajax call error',d,thrownError);
                 //console.log( xhr.responseText);
@@ -77,7 +77,7 @@
 
 
              var userId="<?php echo $_SESSION["user_id"]  ?>";
-             console.log('userID ',userId);
+             //console.log('userID ',userId);
 
 
              ajaxCall('GET',{method:'getUserById',a:'user',data:userId},callBackGetUser);
@@ -86,7 +86,7 @@
          var firstName; //need to have wider scope as I use it at entering game
 
          function callBackGetUser(jsonObj){
-             console.log(jsonObj,jsonObj[0].first_name,jsonObj[0].last_name,$('#greetingText'));
+            // console.log(jsonObj,jsonObj[0].first_name,jsonObj[0].last_name,$('#greetingText'));
              firstName=jsonObj[0].first_name;
              var greeting="Welcome "+firstName+" "+jsonObj[0].last_name;
              $('#greetingText')[0].innerHTML=greeting;
@@ -100,11 +100,11 @@
              //console.log('userID ',userId);
 
              ajaxCall('GET',{method:'getOpenChallenges',a:'lobby',data:userId},callBackGetOpenChallenges);
-             setTimeout(getOpenChallenges,2000);
+            // setTimeout(getOpenChallenges,2000);
          }
             //Change icon to open cahllenges
          function callBackGetOpenChallenges(jsonObj){
-             console.log('Open challenges',jsonObj);
+            // console.log('Open challenges',jsonObj);
              if(jsonObj) {
                  for (var i= 0,l=jsonObj.length;i<l;i++){
                      var chlgIcon=document.getElementById(jsonObj[i].email);
@@ -117,7 +117,7 @@
                          var Aid='accept~'+jsonObj[i].challenge_id;
                          c[0].setAttribute('id',Aid);
                          var Abutton=$(document.getElementById(Aid));
-                         console.log('abutton ',Abutton);
+                        // console.log('abutton ',Abutton);
                          Abutton.attr('onclick','acceptChallenge(this)');
                          /*if (-1 !== $.inArray(acceptChallenge, Abutton.data('events').click)) {
                              Abutton.bind('click',function(){
@@ -154,14 +154,14 @@
 
          //Get back all the chlallenges sent by this user and change the icon accordingly
          function callBackGetSentChallenges(jsonObj){
-             console.log('Sent challenges',jsonObj);
+            // console.log('Sent challenges',jsonObj);
              if(jsonObj) {
                  for (var i = 0, l = jsonObj.length; i < l; i++) {
-                     console.log(jsonObj[i].email);
+                   //  console.log(jsonObj[i].email);
                      var chlgIcon=document.getElementById(jsonObj[i].email);
                      if(chlgIcon) {
                          if(jsonObj[i].status==='open') {
-                             console.log('waiting for acceptane from '+jsonObj[i].email);
+                            // console.log('waiting for acceptane from '+jsonObj[i].email);
                              chlgIcon.setAttribute('src', 'assets/icons/balls.gif'); ///make icon as waiting for opponent to accept challenge
                              chlgIcon.setAttribute('title', 'Waiting for acceptance');
                              chlgIcon.removeAttribute("onclick");
@@ -183,7 +183,7 @@
                                      a: 'lobby',
                                      data:challengeID
                                  },function(gameId){
-                                     console.log('proceed to game..');
+                                    // console.log('proceed to game..');
                                      window.location = 'game.php?player=' + firstName + '&gameId=' +gameId;
                                  } );
 
@@ -193,7 +193,7 @@
                          }
                          else if((jsonObj[i].status==='met')){
 
-                                console.log('met chalemge');
+                                //console.log('met chalemge');
 
                               //   window.location = 'game.php?player=' + firstName + '&gameId=' +jsonObj[i].game_id; //using only firstName to enter in game table
 
@@ -204,7 +204,7 @@
                      }
                      else
                      {
-                         console.log("challenge div/icon was not set before changing");
+                         console.warn("challenge div/icon was not set before changing");
                      }
                  }
              }
@@ -213,28 +213,28 @@
          function logOutAjax(){
 
              var userId="<?php echo $_SESSION["user_id"]  ?>";
-             console.log('userID ',userId);
+            // console.log('userID ',userId);
              ajaxCall('GET',{method:'logOut',a:'user',data:userId},callBackLogout);
          }
 
          function callBackLogout(jsonObj){
-             console.log('call back logout', typeof jsonObj);
+            // console.log('call back logout', typeof jsonObj);
              if(jsonObj===1){
-                 console.log('proceed to logout.php..');
+                // console.log('proceed to logout.php..');
                  window.location='logout.php';
 
              }
          }
          //checking for inactivity
          function checkSessionTimeOut(){
-             var activity="<?php echo $_SESSION["last_activity"]  ?>";
+             //var activity=
 
-             ajaxCall('GET',{method:'checkSession',a:'user',data:activity},callBackSessionTimeOut);
-             setTimeout(checkSessionTimeOut,60000);
+             //ajaxCall('GET',{method:'checkSession',a:'user',data:activity},callBackSessionTimeOut);
+            // setTimeout(checkSessionTimeOut,60000);
          }
 
          function callBackSessionTimeOut(timedOut){
-             console.log('Session',timedOut)
+            // console.log('Session',timedOut)
              if(timedOut){
                  logOutAjax();
              }
@@ -243,23 +243,25 @@
 
         //////////////////////ENTER CHAT
         function enterChat(chatMsg){
-
+           // console.log('chat inserted is ',$("#chatText"));
             var chatData={};
             chatData['chatMsg']=$("#chatText").val();
             chatData['userId']="<?php echo $_SESSION["user_id"]  ?>";
-
             console.log('chat inserted is ',$("#chatText"));
+
             ajaxCall('POST',{method:'enterChat',a:'lobby',data:chatData},callBackEnterChat);
 
 
         }
 
          function callBackEnterChat(jsonObject){
-             console.log('called back enter chhat');
-             console.log( $('#chatText'));
+            // console.log('called back enter chhat');
+            // console.log( $('#chatText'));
              $("#chatText").val('');
              //keep the message scoller down always to see new message without scrolling down
+
              $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
+             console.log("scrollTop aftter:", $('#chatMessages')[0].scrollHeight)
          }
 
 
@@ -271,19 +273,20 @@
             chatData['lastTimeStamp']=lastTimeStamp;
             ajaxCall("GET",{method:'readChats',a:"lobby",data:chatData},callbackReadChat);
 
-           setTimeout(readChatsAjax,2000);
+           setTimeout(readChatsAjax,1000);
         }
 
 
 
          function callbackReadChat(jsonObj){
-             //console.log(jsonObj);
+            // console.log('chat object:',jsonObj);
              //console.log( typeof jsonObj);
              var months=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
 
-             if((typeof jsonObj)==='object'){
+             if(jsonObj!=null){
+                 lastTimeStamp=jsonObj[0].latestChatTime;
                  //console.log( 'is object' );
-                 $('#chatMessages').text(''); //clear previous chat messages
+                // $('#chatMessages').text(''); //clear previous chat messages
                  if(jsonObj!=null){
                      for (var i=0,l=jsonObj.length;i<l;i++){
 
@@ -302,7 +305,7 @@
                              '</a> ' +
                              '<div  class="media-body" >' +jsonObj[i].text+
                              '<br />'+
-                             '<small class="text-muted">'+jsonObj[i].first_name+' '+jsonObj[i].last_name+' | '+d.getDate()+' '+months[d.getMonth()-1]+' at '+d.getHours()+':'+d.getMinutes()+'</small>' +
+                             '<small class="text-muted">'+jsonObj[i].first_name+' '+jsonObj[i].last_name+' | '+d.getDate()+' '+months[d.getMonth()]+' at '+d.getHours()+':'+d.getMinutes()+'</small>' +
                              '<hr />'+
                              '</div>'+
                              '</div>'+
@@ -317,17 +320,18 @@
                  }
 
              }
-             checkSessionTimeOut();//check for session TImeout
+            // checkSessionTimeOut();//check for session TImeout
+             $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
          }
          ////ONLINE USERS HEARTBEAT
         function populateOnlineUsers(){
             var userId="<?php echo $_SESSION["user_id"]  ?>";
             ajaxCall("GET",{method:'getOnlineUsers',a:"lobby",data:userId},populateOnlineUsersCallBack);
-           // setTimeout(populateOnlineUsers,1000);
+           setTimeout(populateOnlineUsers,2000);
         }
 
         function populateOnlineUsersCallBack(jsonObj){
-             console.log('online users ',jsonObj);
+             //console.log('online users ',jsonObj);
             $('#onlineUsers').text('');
             if(jsonObj) {
                 for (var i = 0, l = jsonObj.length; i < l; i++) {
@@ -366,7 +370,7 @@
 
         /////CHALLENGE METHODS
          function challengeUser(self){
-            console.log(self.id);
+            ///console.log(self.id);
              self.setAttribute('src','assets/icons/balls.gif');
              self.setAttribute('title','Waiting for acceptance');
              self.removeAttribute("onclick");
@@ -379,7 +383,7 @@
         /////This function is called recursively until challenge status is accepted
         function challengeUserCallBack(jsonObj){
 /*
-            console.log('challenge callback ',jsonObj);
+            //console.log('challenge callback ',jsonObj);
             var challengeData={};
             var heartbeat;
 
@@ -394,7 +398,7 @@
 
                         heartbeat=setTimeout(challengeUserCallBack,1000,jsonObj); //set hearBeat and pass the JUST returned jsonObj
                     });
-                    console.log('waiting for accpectance');
+                   // console.log('waiting for accpectance');
                 }
                 else if(jsonObj.status==='accepted'){
 
@@ -402,12 +406,12 @@
                         clearTimeout(heartbeat);//clear heart beat
                     }
                     //go to the game
-                    console.log('proceed to game..');
+                    //console.log('proceed to game..');
                     var gameID=jsonObj.game_id;
                     window.location='game.php?player='+firstName+'&gameId='+gameID; //using only firstName to enter in game table
 
 
-                    console.log('accepted,proceed to game');
+                   // console.log('accepted,proceed to game');
                 }
                 else{
                     console.log('callback did not return valid data in challengeUser()');
@@ -443,7 +447,7 @@
          }
 
          function rejectChallengeCallBack(parentID){
-             console.log(parentID);
+            // console.log(parentID);
              var arrayId=parentID.split("~");//id format challengeSentBy~emailID
              document.getElementById(parentID).style.display='none';
              document.getElementById(arrayId[1]).style.display='block';

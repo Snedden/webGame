@@ -93,4 +93,20 @@ function checkWinner($gameId){
 	//$logger->info("Data at winner()".print_r($gameId,true));
 	return checkWinnerDB($gameId);
 }
+
+function enterInGameChat($d,$ip,$token){
+
+   // global $logger;
+	$gump = new GUMP();
+	// $logger->info("gump:".$gump);
+	$cleanChat = $gump->sanitize($d); //
+    //$logger->info('enterInGameChat() called');
+	return enterInGameChatDb($cleanChat);
+}
+
+function readInGameChats($d,$ip,$token){
+	//global $logger;
+	//$logger->info('in readChats, data '. readChatsDb());
+	return readInGameChatsDb($d);
+}
 ?>

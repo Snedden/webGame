@@ -10,6 +10,8 @@ function GameInit() {
 			hexMeshObj.drawOver();
 			hexMeshObj.drawUnits();
 
+			inGameObj=new InGameFunctions();
+
 			//Start heartbeats
 			checkTurnAjax('checkTurn',gameId);
 			whoIsWining();

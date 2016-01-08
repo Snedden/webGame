@@ -80,7 +80,7 @@ function startData($gameId){
 			//$logger->info("Return data from start $data");
 			return $data;
 		}else{
-			$logger->info('There was a error in prepare statement startData select '.$mysqli->error);
+			//$logger->info('There was a error in prepare statement startData select '.$mysqli->error);
         }
 	}catch (Exception $e) {
         log_error($e, $sql, null);
@@ -239,42 +239,115 @@ function winGameDB($data){
 		return false;
 	}
 }
-/*********************************Utilities*********************************/
-/*************************
-	returnJson
-	takes: prepared statement
-		-parameters already bound
-	returns: json encoded multi-dimensional associative array
 
-function returnJson ($stmt){
-	$stmt->execute();
-	$stmt->store_result();
- 	$meta = $stmt->result_metadata();
-    $bindVarsArray = array();
-	//using the stmt, get it's metadata (so we can get the name of the name=val pair for the associate array)!
-	while ($column = $meta->fetch_field()) {
-    	$bindVarsArray[] = &$results[$column->name];
-    }
-	//bind it!
-	call_user_func_array(array($stmt, 'bind_result'), $bindVarsArray);
-	//now, go through each row returned,
-	while($stmt->fetch()) {
-    	$clone = array();
-        foreach ($results as $k => $v) {
-        	$clone[$k] = $v;
-        }
-        $data[] = $clone;
-    }
-    header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
-	header("Cache-Control: no-store, no-cache, must-revalidate");
-	header("Cache-Control: post-check=0, pre-check=0", false);
-	header("Pragma: no-cache");
-	//MUST change the content-type
-	header("Content-Type:text/plain");
-	// This will become the response value for the XMLHttpRequest object
-    return json_encode($data);
-}*/
+function enterInGameChatDb($d){
+	global $mysqli;
+
+	//$logger->info('inside enterInGameChatDb data '. implode("",$d));
+
+	if ($mysqli == null) {
+		//$logger->error("Database is not setup property");
+	} else {
+		//$logger->debug("The database is not null - OK");
+	}
+
+	//enter chatMessage
+
+	$sql = "INSERT INTO chatmessages
+               (iduser,
+                text,
+                game_id
+                )
+            VALUES
+                (?,
+                 ?,
+                 ?)";
+
+	try {
+
+		//$logger->info("inside try of chatInGameEnter");
+
+		if (!($stmt = $mysqli->prepare($sql))) {
+			 //$logger->error("Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error);
+
+		}
+
+		if (!$stmt->bind_param('isi',  $d['userId'], $d['chatMsg'],$d['gameId'])) {
+			// $logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+
+		}
+
+
+		// $logger->info("v1".$d['userId']."v2".$d['chatMsg']);
+		//$logger->info('stmt:'.$sql.'result:'.$stmt->execute().'error:'.$mysqli->error);
+		if ($stmt->execute()) {
+
+			//$logger->info("chat inserted");
+			return true;
+
+
+		}
+		else {
+			//$logger->error("Could not insert a chat into db.".$mysqli->error);
+			return false;
+		}
+	} catch (Exception $ex) {
+		//$logger->error("An error occurred when trying to run a query.");
+		return false;
+	}
+	finally{
+		//$stmt->close();
+
+	}
+}
+
+function readInGameChatsDb($d){
+	global $mysqli,$logger;
+	//$logger->info('inside readChatsDb()');
+
+	if ($mysqli == null) {
+		$logger->error("Database is not setup property");
+	}
+
+	$sql="select u.first_name,u.last_name,c.text,c.timestamp,
+			(select max(timestamp) from test.chatmessages) as latestChatTime
+		  FROM test.chatmessages c
+		  	LEFT OUTER JOIN
+		  		test.users u
+		  		ON
+		  		u.iduser=c.iduser
+		  where c.timestamp>? and c.game_id=?
+		  order by c.timestamp ";
+
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+
+			$logger->info("prepared statement is good in read chat");
+
+			if (!$stmt->bind_param( 'si',$d['lastTimeStamp'],$d['gameId'])) {
+				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+			}
+
+			$data=bindSql($stmt);
+			$logger->info("result for bindSql" . implode(" ",$data[0]));
+
+
+			return json_encode($data);
+		}else{
+			$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
+			//throw new Exception("An error occurred in getUser");
+			return false;
+		}
+	}
+	catch (Exception $e) {
+		 $logger->error("An error occured in readChatDB".$mysqli->error);
+		return false;
+	}
+
+	finally{
+
+	}
+}
 
 
 

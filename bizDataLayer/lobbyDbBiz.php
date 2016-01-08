@@ -45,16 +45,17 @@
 		if ($stmt->execute()) {
 			
 			//$logger->info("chat inserted");
+			return true;
 
 
 		} 
 		else {
 			//$logger->error("Could not insert a chat into db.".$mysqli->error);
-
+			return false;
 		}
 	} catch (Exception $ex) {
 		//$logger->error("An error occurred when trying to run a query.");
-
+		return false;
 	}
 	finally{
 		//$stmt->close();
@@ -65,6 +66,8 @@
 
  }
 
+
+
  function readChatsDb($d){
 	global $mysqli;
 	//$logger->info('inside readChatsDb()');
@@ -73,21 +76,25 @@
 		 //$logger->error("Database is not setup property");
 	 }
 
-	$sql="SELECT u.first_name,u.last_name,c.text,c.timestamp
-			FROM test.chatmessages c
-			LEFT OUTER JOIN test.users u
-			ON u.iduser=c.iduser
-			order by c.timestamp";
+	$sql="select u.first_name,u.last_name,c.text,c.timestamp,
+			(select max(timestamp) from test.chatmessages) as latestChatTime
+		  FROM test.chatmessages c
+		  	LEFT OUTER JOIN
+		  		test.users u
+		  		ON
+		  		u.iduser=c.iduser
+		  where c.timestamp>? and c.game_id IS NULL
+		  order by c.timestamp";
 
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 			
 			//$logger->info("prepared statement is good in read chat");
-			/*
-			if (!$stmt->bind_param( $d['lastTimeStamp'])) {
+
+			if (!$stmt->bind_param( 's',$d['lastTimeStamp'])) {
 				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
-			*/
+
 			$data=bindSql($stmt);
 			//$logger->info("result for bindSql" . implode(" ",$data[0]));
 			
@@ -95,7 +102,8 @@
 			return json_encode($data);
 		}else{
 			//$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
-			throw new Exception("An error occurred in getUser");
+			//throw new Exception("An error occurred in getUser");
+			return false;
 		}
 	}
 	catch (Exception $e) {
@@ -116,7 +124,7 @@ function getOnlineUsersDb($userId){
 		//$logger->error("Database is not setup property");
 	}
 
-	$sql="select first_name,last_name,email from users where status=1 and iduser<>?";
+	$sql="select first_name,last_name,email from users where last_activity>=now()- INTERVAL 10 MINUTE"; //get all active user from last 10 min
 
 	try{
 		if($stmt=$mysqli->prepare($sql)){

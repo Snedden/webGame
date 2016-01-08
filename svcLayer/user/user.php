@@ -161,7 +161,7 @@ function signIn($d, $ip, $token) {
                // $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
                 session_start();
                 $_SESSION['user_id'] = $user[0]['iduser'];
-                $_SESSION['last_activity'] =time();
+                updateUsersLastActivityDB($_SESSION['user_id']);
                // $logger->info("Session set  ". $_SESSION['user_id'] ."last_activty".$_SESSION['last_activity']);
                 $Response = array(
                     'Message' => "Logged-in"

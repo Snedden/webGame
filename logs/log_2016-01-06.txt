@@ -1,0 +1,6 @@
+[2016-01-06 10:17:43.785706] [info] enterInGameChat() called
+[2016-01-06 10:17:43.845963] [info] inside try of chatInGameEnter
+[2016-01-06 10:17:43.848443] [error] Prepare failed: (1136) Column count doesn't match value count at row 1
+[2016-01-06 10:18:34.612632] [info] enterInGameChat() called
+[2016-01-06 10:18:34.613238] [info] inside try of chatInGameEnter
+[2016-01-06 10:18:34.759747] [info] chat inserted

@@ -3,7 +3,7 @@
 	
 	  require_once 'vendor/autoload.php';
       
-	 // $logger = new Katzgrau\KLogger\Logger(__DIR__.'/logs');
+	  $logger = new Katzgrau\KLogger\Logger(__DIR__.'/logs');
 	 //$logger->info('mid.php called by'.$_REQUEST['method']);
 
 	if(isset($_REQUEST['method'])){

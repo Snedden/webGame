@@ -1,0 +1,9 @@
+[2016-01-08 2:08:15.525381] [info] prepared statement is good in updateLastLogin
+[2016-01-08 2:08:15.526973] [info] last activity updated
+[2016-01-08 2:18:33.793062] [info] prepared statement is good in updateLastLogin
+[2016-01-08 2:18:33.891300] [info] last activity updated
+[2016-01-08 2:19:26.068320] [info] prepared statement is good in updateLastLogin
+[2016-01-08 2:19:26.167934] [info] last activity updated
+[2016-01-08 2:40:28.668056] [error] An error occured in prepare statement readChatsDb
+[2016-01-08 2:47:56.636723] [info] prepared statement is good in updateLastLogin
+[2016-01-08 2:47:56.718128] [info] last activity updated

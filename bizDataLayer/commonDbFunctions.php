@@ -52,3 +52,44 @@ function getUserByEmailDB($emailId){
 		return false;
 	}
 }
+
+function updateUsersLastActivityDB($userId){
+	global $mysqli,$logger;
+
+	if ($mysqli == null) {
+		//$logger->error("Database is not setup property");
+	} else {
+		//$logger->debug("The database is not null - OK");
+	}
+
+	$sql="update users set last_activity=now() where iduser=? ";
+
+	try{
+		if($stmt=$mysqli->prepare($sql)){
+
+			$logger->info("prepared statement is good in updateLastLogin");
+
+			if (!$stmt->bind_param( 'i',$userId)) {
+				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+			}
+
+			if ($stmt->execute()) {
+
+				$logger->info("last activity updated");
+				return true;
+			}
+			else{
+				$logger->info("Execute failed in last acotivity update");
+				return false;
+			}
+		}else{
+			$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
+			//throw new Exception("An error occurred in getUser");
+			return false;
+		}
+	}
+	catch(Expection $e){
+		return false;
+	}
+
+}

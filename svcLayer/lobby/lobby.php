@@ -4,9 +4,13 @@
 require_once("./bizDataLayer/commonDbFunctions.php");
 require_once("./bizDataLayer/lobbyDbBiz.php");
 require "./bizDataLayer/dbInfoPS.php";//to use we need to put in: global $mysqli;
+session_start();
+$userId=$_SESSION['user_id'];
 
 function enterChat($d,$ip,$token){
+	global $userId;
 	$_SESSION['last_activity'] = time();
+	updateUsersLastActivityDB($userId);
 
 	//global $logger;
  	//$logger->info("inside enterChat  data". implode(" ", $d));
@@ -33,8 +37,9 @@ function getOnlineUsers($d){
 }
 
 function enterChallenge($d) {
+	global $userId;
 	$_SESSION['last_activity'] = time();
-
+	updateUsersLastActivityDB($userId);
 	//global $logger;
 	//$logger->info("inside enterChallenge toEmail ". ($d['toEmail']));
 	$challengedUser=getUserByEmailDB($d['toEmail']);
@@ -69,7 +74,9 @@ function getSentChallenges($user){
 }
 
 function acceptChallenge($d){
+	global $userId;
 	$_SESSION['last_activity'] = time();
+	updateUsersLastActivityDB($userId);
 
 	//global $logger;
 	//$logger->info('inside acceptChallenge from challenge ID '. $d);
@@ -77,7 +84,9 @@ function acceptChallenge($d){
 }
 
 function rejectChallenge($d){
+	global $userId;
 	$_SESSION['last_activity'] = time();
+	updateUsersLastActivityDB($userId);
 
 	//global $logger;
 	//$logger->info('inside rejectChallenge from challenge ID '. $d);

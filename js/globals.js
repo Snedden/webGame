@@ -11,6 +11,8 @@ var turn;
 var player1;
 var player2;
 
+var inGameObj;
+
 var gameObj; //gameInit object
 
 var addedListeners = {
