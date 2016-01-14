@@ -8,8 +8,22 @@ function InGameFunctions(){
 
     (function init(){
         readInGameChatsAjax();
+        addChatListeners(); //chat intervaity
     })();
 
+
+
+    function addChatListeners(){
+        (document.getElementsByTagName('body')[0]).addEventListener('keydown',function(e){ //bind when user starts typing
+            $('#chatText').focus();                //bring input box in focus
+            if(e.keyCode == 13){   //enter clicked
+
+                $('#chatTextbtn').click();
+            }
+
+
+        });
+    }
    this.enterInGameChat=function enterInGameChat(userId){
         console.log('userId ',userId);
         var chatData={};
@@ -22,7 +36,8 @@ function InGameFunctions(){
     }
 
     function callBackEnterInGameChat(jsonObj){
-        console.log('chat entered in DB');
+        console.warn('chat entered in DB');
+        $('#chatText').val('')
     }
 
 
@@ -31,6 +46,7 @@ function InGameFunctions(){
 
         chatData['lastTimeStamp']=self.lastTimeStamp;
         chatData['gameId']=gameId;
+        console.log('calling inGameReadChats')
         ajaxCall("GET",{method:'readInGameChats',a:"game",data:chatData},callbackReadInGameChat);
 
         setTimeout(readInGameChatsAjax,1000);
@@ -77,11 +93,12 @@ function InGameFunctions(){
                     //return false;
 
                 }
+                $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
             }
 
         }
        // checkSessionTimeOut();//check for session TImeout
-        $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
+
     }
 
 }

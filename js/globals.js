@@ -13,6 +13,8 @@ var player2;
 
 var inGameObj;
 
+var onlineUsers;//online userList to store the callback fron getOnlineUsers
+
 var gameObj; //gameInit object
 
 var addedListeners = {

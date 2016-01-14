@@ -146,7 +146,7 @@
                                     <div class="form-group">
                                         <input name="password" type="password" placeholder="Password" class="form-control">
                                     </div>
-                                    <input type="button" class="btn btn-success" onclick="return signIn();" value="Sign In" />
+                                    <input type="button" autofocus class="btn btn-success" onclick="return signIn();" value="Sign In" />
                                     <span id='onSignin'></span>
                                 </form>
                             </div>

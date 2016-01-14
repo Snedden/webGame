@@ -54,7 +54,7 @@ function getUserByEmailDB($emailId){
 }
 
 function updateUsersLastActivityDB($userId){
-	global $mysqli,$logger;
+	global $mysqli;
 
 	if ($mysqli == null) {
 		//$logger->error("Database is not setup property");
@@ -67,23 +67,23 @@ function updateUsersLastActivityDB($userId){
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 
-			$logger->info("prepared statement is good in updateLastLogin");
+			//$logger->info("prepared statement is good in updateLastLogin");
 
 			if (!$stmt->bind_param( 'i',$userId)) {
-				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			if ($stmt->execute()) {
 
-				$logger->info("last activity updated");
+				//$logger->info("last activity updated");
 				return true;
 			}
 			else{
-				$logger->info("Execute failed in last acotivity update");
+				//$logger->info("Execute failed in last acotivity update");
 				return false;
 			}
 		}else{
-			$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
+			//$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
 			//throw new Exception("An error occurred in getUser");
 			return false;
 		}

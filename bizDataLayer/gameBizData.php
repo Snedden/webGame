@@ -152,20 +152,29 @@ function changeBoardData($gameId,$pieceId,$boardI,$playerId,$isAttack,$attackedU
 
 	//update the board
 	global $mysqli;
-	global $logger;
+	//global $logger;
 
 	//$logger->info('inside game SVC changeBoardData attackunit '.$attackedUnit);
 	$sql="UPDATE heroes_games SET player".$playerId."_pieceId=?, player".$playerId."_boardI=?, player".$playerId."_attacking=?,attackedUnit=? WHERE game_id=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
-			$stmt->bind_param("siiii",$pieceId,$boardI,$isAttack,$attackedUnit,$gameId);
-			$stmt->execute();
-			$stmt->close();
+
+			if(!$stmt->bind_param("siisi",$pieceId,$boardI,$isAttack,$attackedUnit,$gameId)){
+				//$logger->log('change board bind failed');
+			}
+			if(!$stmt->execute()){
+				//$logger->log('change board execute failed');
+			}
+			//$stmt->close();
+
+			//$logger->log('change board executed');
+			return true;
 		}else{
-			//$logger->error('prepared stament failed in changeboard data'.$mysqli->error);
+			//$logger->log('prepared stament failed in changeboard data'.$mysqli->error);
         }
 	}catch (Exception $e) {
         log_error($e, $sql, null);
+		//$logger->error('Error  in try bloack  changeboard data'.$mysqli->error);
 		return false;
     }
 	$mysqli->close();
@@ -302,11 +311,11 @@ function enterInGameChatDb($d){
 }
 
 function readInGameChatsDb($d){
-	global $mysqli,$logger;
+	global $mysqli;
 	//$logger->info('inside readChatsDb()');
 
 	if ($mysqli == null) {
-		$logger->error("Database is not setup property");
+		//$logger->error("Database is not setup property");
 	}
 
 	$sql="select u.first_name,u.last_name,c.text,c.timestamp,
@@ -322,25 +331,25 @@ function readInGameChatsDb($d){
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 
-			$logger->info("prepared statement is good in read chat");
+			//$logger->info("prepared statement is good in read chat");
 
 			if (!$stmt->bind_param( 'si',$d['lastTimeStamp'],$d['gameId'])) {
-				$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
+				//$logger->error( "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
 			$data=bindSql($stmt);
-			$logger->info("result for bindSql" . implode(" ",$data[0]));
+			//$logger->info("result for bindSql" . implode(" ",$data[0]));
 
 
 			return json_encode($data);
 		}else{
-			$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
+			//$logger->error("An error occured in prepare statement readChatsDb".$mysqli->error);
 			//throw new Exception("An error occurred in getUser");
 			return false;
 		}
 	}
 	catch (Exception $e) {
-		 $logger->error("An error occured in readChatDB".$mysqli->error);
+		// $logger->error("An error occured in readChatDB".$mysqli->error);
 		return false;
 	}
 

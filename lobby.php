@@ -49,11 +49,22 @@
 
          /////////////////Init
          var lastTimeStamp='1899-11-30 00:00:00';
+         var onlineUsersEle;
+         var userEmail;
+
+
          function init(){
+             //console.log('init called!')
              getUserAjax(); //current user
+             onlineUsersEle=document.getElementById('onlineUsers'); //container for populating onlineuser
              populateOnlineUsers();  //online users list
              addChatListeners();//chat interactivelty
              readChatsAjax(); //read chat heart beat
+             getOpenChallenges();//get open challenges
+             getSentChallenges();//get all the challenges sent by this user
+
+
+
 
 
 
@@ -90,6 +101,7 @@
              firstName=jsonObj[0].first_name;
              var greeting="Welcome "+firstName+" "+jsonObj[0].last_name;
              $('#greetingText')[0].innerHTML=greeting;
+             userEmail=jsonObj[0].email;
          }
 
 
@@ -100,11 +112,11 @@
              //console.log('userID ',userId);
 
              ajaxCall('GET',{method:'getOpenChallenges',a:'lobby',data:userId},callBackGetOpenChallenges);
-            // setTimeout(getOpenChallenges,2000);
+             setTimeout(getOpenChallenges,2000);
          }
             //Change icon to open cahllenges
          function callBackGetOpenChallenges(jsonObj){
-            // console.log('Open challenges',jsonObj);
+            console.log('Open challenges',jsonObj);
              if(jsonObj) {
                  for (var i= 0,l=jsonObj.length;i<l;i++){
                      var chlgIcon=document.getElementById(jsonObj[i].email);
@@ -137,7 +149,7 @@
                      }
                      else
                      {
-                         console.error("challenge div/icon was not set before changing");
+                         console.warn("challenge div/icon was not set before changing");
                      }
 
                  }
@@ -149,7 +161,7 @@
              //console.log('userID ',userId);
 
              ajaxCall('GET',{method:'getSentChallenges',a:'lobby',data:userId},callBackGetSentChallenges);
-             setTimeout(getSentChallenges,2000);
+             setTimeout(getSentChallenges,1000);
          }
 
          //Get back all the chlallenges sent by this user and change the icon accordingly
@@ -225,21 +237,7 @@
 
              }
          }
-         //checking for inactivity
-         function checkSessionTimeOut(){
-             //var activity=
 
-             //ajaxCall('GET',{method:'checkSession',a:'user',data:activity},callBackSessionTimeOut);
-            // setTimeout(checkSessionTimeOut,60000);
-         }
-
-         function callBackSessionTimeOut(timedOut){
-            // console.log('Session',timedOut)
-             if(timedOut){
-                 logOutAjax();
-             }
-
-         }
 
         //////////////////////ENTER CHAT
         function enterChat(chatMsg){
@@ -279,7 +277,7 @@
 
 
          function callbackReadChat(jsonObj){
-            // console.log('chat object:',jsonObj);
+             //console.log('chat object:',jsonObj);
              //console.log( typeof jsonObj);
              var months=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
 
@@ -318,54 +316,128 @@
 
                      }
                  }
-
+                 $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
              }
             // checkSessionTimeOut();//check for session TImeout
-             $('#chatMessages').animate({ scrollTop: $('#chatMessages')[0].scrollHeight }, "slow");
+
          }
          ////ONLINE USERS HEARTBEAT
         function populateOnlineUsers(){
+            console.log('online users ',onlineUsers);
             var userId="<?php echo $_SESSION["user_id"]  ?>";
             ajaxCall("GET",{method:'getOnlineUsers',a:"lobby",data:userId},populateOnlineUsersCallBack);
-           setTimeout(populateOnlineUsers,2000);
+           setTimeout(populateOnlineUsers,1500);
         }
 
         function populateOnlineUsersCallBack(jsonObj){
-             //console.log('online users ',jsonObj);
-            $('#onlineUsers').text('');
-            if(jsonObj) {
-                for (var i = 0, l = jsonObj.length; i < l; i++) {
-                    var onlineUserElement = $(' <li class="media">' +
-                        '<div class="media-body">' +
-                        '<div class="media">' +
-                        '<div class="pull-left" >' +
-                            '<img class=" btn media-object img-circle" style="max-height:40px;"   id="'+jsonObj[i].email+'" onclick="challengeUser(this)" title="Challenge" alt="Chl" src="assets/icons/history-swords-crossed.png" />' +
-                            '<div id="challengeSentBy~'+jsonObj[i].email+'" style="display:none">'+
-                                '<button type="button" class="btn btn-default btn-sm">'+
-                                    '<span class="glyphicon glyphicon-ok"></span> '+
-                                '</button>'+
-                                '<button type="button" class="btn btn-default btn-sm">'+
-                                    '<span class="glyphicon glyphicon-remove"></span> '+
-                                '</button>'+
-                            '</div>'+
 
-                        '</div>' +
-                        '<div class="media-body" >' +
-                        '<h5>' + jsonObj[i].first_name + ' ' + jsonObj[i].last_name + ' | ' + jsonObj[i].email + ' </h5>' +
-                        '<small class="text-muted">Active From 3 hours</small>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</li>');
-                    $('#onlineUsers').append(onlineUserElement);
 
+
+
+
+            var currentUserOnline=false;
+            if(jsonObj!=null){
+               if(JSON.stringify(jsonObj) !== JSON.stringify(onlineUsers)){//only if there are users and new userList is not same as old userList
+                   console.log('online users CB',onlineUsers);
+                   while (onlineUsersEle.firstChild) {
+                       onlineUsersEle.removeChild(onlineUsersEle.firstChild); //clear prevous list
+                   }
+                   onlineUsers=jsonObj;
+                   for (var i = 0, l = jsonObj.length; i < l; i++) {
+                       if(userEmail===jsonObj[i].email){//currentUser
+                           currentUserOnline=true;
+                       }
+                       else{//populate online users list for all users but the current user
+                           var mediaLi=document.createElement('li');
+                           mediaLi.setAttribute('class','media');
+                           onlineUsersEle.appendChild(mediaLi);
+
+                           var mediaBodyDiv=document.createElement('div');
+                           mediaBodyDiv.setAttribute('class','media-body')
+                           mediaLi.appendChild(mediaBodyDiv);
+
+                           var mediaDiv=document.createElement('div');
+                           mediaDiv.setAttribute('class','media');
+                           mediaLi.appendChild(mediaDiv);
+
+                           var pullLeftDiv=document.createElement('div');
+                           pullLeftDiv.setAttribute('class','pull-left');
+                           mediaLi.appendChild(pullLeftDiv);
+
+                           var mediaImg=document.createElement('img');
+                           mediaImg.setAttribute('class','btn media-object img-circle');
+                           mediaImg.setAttribute('style','max-height:40px');
+                           var  mediaImgId=jsonObj[i].email;
+                           mediaImg.setAttribute('id',mediaImgId);
+                           mediaImg.setAttribute('onclick','challengeUser(this)');
+                           mediaImg.setAttribute('title','Challenge')
+                           mediaImg.setAttribute('alt','Chl')
+                           mediaImg.setAttribute('src','assets/icons/history-swords-crossed.png');
+
+                           pullLeftDiv.appendChild(mediaImg);
+
+                           var chlgSendByDiv=document.createElement('div');
+                           var chlgSendByDivId='challengeSentBy~'+jsonObj[i].email;
+                           chlgSendByDiv.setAttribute('id',chlgSendByDivId);
+                           chlgSendByDiv.setAttribute('style','display:none');
+                           pullLeftDiv.appendChild(chlgSendByDiv);
+
+                           var acceptChlgBtn=document.createElement('button');
+                           acceptChlgBtn.setAttribute('type','button');
+                           acceptChlgBtn.setAttribute('class','btn btn-default btn-sm');
+                           chlgSendByDiv.appendChild(acceptChlgBtn);
+
+                           var rejectChlgBtn=document.createElement('button');
+                           rejectChlgBtn.setAttribute('type','button');
+                           rejectChlgBtn.setAttribute('class','btn btn-default btn-sm');
+                           chlgSendByDiv.appendChild(rejectChlgBtn);
+
+                           var acceptSpan=document.createElement('span');
+                           acceptSpan.setAttribute('class','glyphicon glyphicon-ok');
+                           acceptChlgBtn.appendChild(acceptSpan);
+
+                           var rejectSpan=document.createElement('span');
+                           rejectSpan.setAttribute('class','glyphicon glyphicon-remove');
+                           rejectChlgBtn.appendChild(rejectSpan);
+
+
+
+                           var mediaBodyDiv2=document.createElement('div');
+                           mediaBodyDiv2.setAttribute('class','media-body');
+                           mediaLi.appendChild(mediaBodyDiv2);
+
+                           var heading5=document.createElement('h5');
+                           var headingText=jsonObj[i].first_name + ' ' + jsonObj[i].last_name + ' | ' + jsonObj[i].email;
+                           var headingTextNode=document.createTextNode(headingText);
+                           heading5.appendChild(headingTextNode);
+                           mediaLi.appendChild(heading5);
+
+                           var smallNode=document.createElement('small');
+                           smallNode.setAttribute('class','text-muted');
+                           var smallNodeText='Active From '+jsonObj[i].last_activity;
+                           var smallNodeTextNode=document.createTextNode(smallNodeText);
+                           smallNode.appendChild(smallNodeTextNode);
+                           mediaLi.appendChild(smallNode);
+                       }
+
+
+                   }
+
+                   if(!currentUserOnline){//current user timeout
+                       console.warn('loggin user out')
+                       logOutAjax();
+                   }
+               }
+
+            }
+            else{//jsonObj null i.e. no user online including current user
+                if(!currentUserOnline) {//current user timeout
+                    console.warn('loggin user out')
+                    logOutAjax();
                 }
             }
-            else{
-                $('#onlineUsers').append('<p>No users online</p>');
-            }
-            getOpenChallenges();//get open challenges
-            getSentChallenges();//get all the challenges sent by this user
+
+
          }
 
         /////CHALLENGE METHODS

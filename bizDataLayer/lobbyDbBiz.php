@@ -4,6 +4,8 @@
 
  //global $logger;
  //$logger->info('inside lobbyDbBiz'.__FILE__);
+
+
  function enterChatDb($d){
  	global $mysqli;
 
@@ -124,7 +126,7 @@ function getOnlineUsersDb($userId){
 		//$logger->error("Database is not setup property");
 	}
 
-	$sql="select first_name,last_name,email from users where last_activity>=now()- INTERVAL 10 MINUTE"; //get all active user from last 10 min
+	$sql="select first_name,last_name,email,last_activity from users where status=1 and last_activity>=now()- INTERVAL 10 MINUTE"; //get all active user from last 10 min
 
 	try{
 		if($stmt=$mysqli->prepare($sql)){
@@ -134,11 +136,16 @@ function getOnlineUsersDb($userId){
 			}
 
 			$data=bindSql($stmt);
+
+				return json_encode($data); //something new is returned since the last time
+
+
 			//$logger->info("result for bindSql" . implode(" ",$data[0]));
 
 
-			return json_encode($data);
+
 		}else{
+
 			//$logger->error("An error occured in prepare statementget OnlineUsersDb".$mysqli->error);
 
 		}
@@ -148,9 +155,7 @@ function getOnlineUsersDb($userId){
 		return false;
 	}
 
-	finally{
 
-	}
 
 
 

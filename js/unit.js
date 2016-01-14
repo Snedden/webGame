@@ -7,7 +7,7 @@ function Unit(unitType,hex,playerId,typeCount){
 	var selected;
 	var isMoving;
 	var speed;
-	var design;
+	var unitImage;
 	var playerId;
 	var typeCount;
 	var fullHp;   //max hit points
@@ -27,10 +27,40 @@ function Unit(unitType,hex,playerId,typeCount){
 	this.hexagon=hex;
 	this.playerId=playerId;
 	this.id=this.unitType+'|'+this.typeCount+'|'+this.playerId;
-	this.hp=100;
-	this.currentHp=this.hp;
-	this.attack=25;
-	this.speed=800; //speed is in pixels the unit can move
+
+	if(this.unitType==='Barbarian'){
+		this.hp=100;
+		this.attack=35;
+		this.speed=200; //speed is in pixels the unit can move
+		this.currentHp=this.hp;
+		this.unitImage="assets/Barbarian/Tonyk_Gnu_Knight_clip_art_small.png";
+	}
+	if(this.unitType==='Swordsman'){
+		this.hp=150;
+		this.attack=40;
+		this.speed=150; //speed is in pixels the unit can move
+		this.currentHp=this.hp;
+		this.unitImage="assets/swordsman/swordsman.png";
+	}
+	if(this.unitType==='Knight'){
+		this.hp=200;
+		this.attack=45;
+		this.speed=300; //speed is in pixels the unit can move
+		this.currentHp=this.hp;
+		this.unitImage="assets/Knight/Knight.png";
+	}
+	if(this.unitType==='Scout'){
+		this.hp=100;
+		this.attack=20;
+		this.speed=450; //speed is in pixels the unit can move
+		this.currentHp=this.hp;
+		this.unitImage="assets/Scout/Light_Cavalry.png";
+	}
+
+
+
+    this.title=this.unitType+", Attack:"+this.attack+" Speed:"+this.speed+" HP:"+this.currentHp+"/"+this.hp;
+
 	
 	this.isMoving=false;
 	this.selected=false;
@@ -67,8 +97,9 @@ function Unit(unitType,hex,playerId,typeCount){
 
 
 			var hoveredUnitPlayerId=idArr[2];
+			console.warn('hoverUnitID',hoveredUnitPlayerId,'playerID',PlayerId);
 				if(hoveredUnitPlayerId!=PlayerId){//sword cursor only on enemy units 
-					console.log(hexMeshObj.selectedUnit.playerId+'!='+this.playerId);
+					//console.warn(hexMeshObj.selectedUnit.playerId+'!='+this.playerId);
 					ele.style.cursor='url(cursors/use75.cur),pointer';
 
 					var mX= unitObj.hexagon.cx;
@@ -88,9 +119,11 @@ function Unit(unitType,hex,playerId,typeCount){
 				    var  hexEleLDown=null;
 					//this values are same regarless of the column
 					var hexIdUp=(hexRow-1)+','+hexCol;
-					var hexEleUp= document.getElementById(hexIdUp);
+					var hexEleUp=null;
+					hexEleUp= document.getElementById(hexIdUp);
 					var hexIdDown=(hexRow+1)+','+hexCol;
-					var hexEleDown= document.getElementById(hexIdDown);
+					var hexEleDown=null;
+					hexEleDown= document.getElementById(hexIdDown);
 
 					var attackFromHex;//the hex the attack would take place from
 
@@ -316,7 +349,7 @@ function Unit(unitType,hex,playerId,typeCount){
 
 
 
-					addListenerIfNone(ele,'mouseout', function(){
+					$(ele).bind('mouseout', function(){
 						console.log('mouse out');
 						ele.style.cursor='pointer';
 						//reset all hexagons around to deafult
@@ -352,11 +385,14 @@ function Unit(unitType,hex,playerId,typeCount){
 	}
 	
 	//Move the a neighbour cell before attack,can only attack from top cell
-	this.moveToAttackUnit=function moveToAttackUnit(unit,attackFromHex){
+	this.moveToAttackUnit=function moveToAttackUnit(unit,attackFromHex){//unit is attacker, this is attacked unit
 		var amStandingNextToVictim;
+		var unitObj=this;
 		//removeListenerIfPresent(this.unitEle,'mousemove',moveAttackFromHex);
 
-		$(this.unitEle).unbind('mousemove',moveAttackFromHex);
+
+
+
 		$(this.unitEle).unbind( "click" );
 		if(turn===PlayerId){	
 			// attackedUnit is  this,attacking unit is 'unit';
@@ -411,19 +447,44 @@ function Unit(unitType,hex,playerId,typeCount){
 		}
 		console.log('unitArray',unitArray);
 	}
-	
+
+
+	////Draw unit on screen and make in memoery
 	this.makeUnit=function makeUnit(board){
 	    var unitObj=this;
 		console.log('make unit',this);
        
 
-		var unit=document.createElementNS(svgns,'circle');
-		this.unitEle=unit;
-		this.unitEle.setAttributeNS(null,'cx',this.hexagon.originX); //everything is placec at origin then translated
-		this.unitEle.setAttributeNS(null,'cy',this.hexagon.originY);
+		var circle=document.createElementNS(svgns,'circle');
+		var unitGroup=document.createElementNS(svgns,'g');
+
+		//adding icon
+		var unit=document.createElementNS(svgns,'image');
+		unit.setAttributeNS("http://www.w3.org/1999/xlink",'href',this.unitImage);
+		unit.style.width="80px";
+		unit.style.height="60px";
+		unit.style.top="-60";
+		unit.setAttribute('x','-35');
+		unit.setAttribute('y','-42');
+
+		unit.style.transformOrigin='50% 50%';
+		//background circle
+		circle.setAttributeNS(null,'cx',this.hexagon.originX); //everything is placec at origin then translated
+		circle.setAttributeNS(null,'cy',this.hexagon.originY);
+		circle.setAttributeNS(null,'r',this.hexagon.side*0.6);
+		circle.setAttributeNS(null,'fill-opacity',0.2);
+
+
+
+
+
+
+		this.unitEle=unitGroup;
+
         var transformAttr = ' translate(' +this.hexagon.cx + ',' + this.hexagon.cy+ ')';
-		this.unitEle.setAttributeNS(null,'transform',transformAttr);
-		this.unitEle.setAttributeNS(null,'r',this.hexagon.side*0.6);
+		this.unitEle.setAttributeNS(null,'transform',transformAttr);  //for translate
+
+
 		//console.log('Player id ',unit.playerId);
 		if(this.playerId===0){
 			this.unitEle.setAttributeNS(null,'fill','green');
@@ -443,9 +504,12 @@ function Unit(unitType,hex,playerId,typeCount){
 		
 		//make sure something is selected
 
-		this.unitEle.addEventListener('mouseover', function(){console.log('mouse over');
-										   unitObj.unitHovered(unit);	
-								  });
+		//this.unitEle.addEventListener('mouseover', function(){console.log('mouse over');
+		//								   unitObj.unitHovered(unitGroup);
+		//						  });
+		$(this.unitEle).bind( "mouseover",function(){;
+								unitObj.unitHovered(unitGroup);
+								});
 			
 
 		//var svg=document.getElementsByTagName('svg')[0];
@@ -453,7 +517,11 @@ function Unit(unitType,hex,playerId,typeCount){
 		//add to memory
 		unitArray.push(this); //[ush into global unit array
 		//add to screen
-		board.appendChild(unit);
+		//board.appendChild(unit);
+
+
+
+
 
 		//adding hp text
         var txt= document.createElementNS(svgns ,"text");
@@ -461,10 +529,14 @@ function Unit(unitType,hex,playerId,typeCount){
 		txt.setAttribute('id','hpOf'+this.id);
 		var data = document.createTextNode(this.currentHp);
 		txt.appendChild(data);
-		board.appendChild(txt);	
+		board.appendChild(txt);
+		unitGroup.appendChild(circle);
+		unitGroup.appendChild(unit);
         
         this.hpTextEle=txt;
         this.moveHpText();
+		board.appendChild(unitGroup);
+
 	}
 	
     //add Hp text
@@ -496,6 +568,7 @@ function Unit(unitType,hex,playerId,typeCount){
 					hexMeshObj.selectedEle=unitEle;
 							if(unitEle){
 								unitEle.setAttribute('class','selected'); //change css
+								gameObj.changeHelpInfo(this.title);
 							}
 							else{
 								console.error('tying to selected element that dont exist in the dom');
@@ -507,7 +580,7 @@ function Unit(unitType,hex,playerId,typeCount){
 			}
 			else{
 				console.warn('Not your turn yet.')
-				gameObj.changeHelpInfo('Not your turn yet.')
+				gameObj.changeHelpInfo('Not your turn yet.');
 			}	
 		}	
 		else{

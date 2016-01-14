@@ -66,7 +66,7 @@
 				RECENT CHAT HISTORY
 			</div>
 			<div class="panel-body">
-				<ul class="media-list" id="chatMessages" style="max-height: 200px;overflow: scroll">
+				<ul class="media-list" id="chatMessages" style="max-height: 300px;height:200px;overflow:scroll">
 
 				</ul>
 			</div>

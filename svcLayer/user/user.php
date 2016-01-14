@@ -157,23 +157,32 @@ function signIn($d, $ip, $token) {
         if (password_verify($userPassword,$hashedPassword)){
 
 
-            if(makeOnlineDB($user[0]['iduser'])) {
-               // $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
-                session_start();
-                $_SESSION['user_id'] = $user[0]['iduser'];
-                updateUsersLastActivityDB($_SESSION['user_id']);
-               // $logger->info("Session set  ". $_SESSION['user_id'] ."last_activty".$_SESSION['last_activity']);
-                $Response = array(
-                    'Message' => "Logged-in"
-                );
-                echo json_encode($Response);
+
+           // $logger->info(" User login succeeded for username: $user[0]['iduser'] ");
+            session_start();
+            $_SESSION['user_id'] = $user[0]['iduser'];
+            if(makeOnlineDB( $_SESSION['user_id'])){
+                if(updateUsersLastActivityDB($_SESSION['user_id'])){
+
+                    // $logger->info("Session set  ". $_SESSION['user_id'] ."last_activty".$_SESSION['last_activity']);
+                    $Response = array(
+                        'Message' => "Logged-in"
+                    );
+                    echo json_encode($Response);
+                }
+                else{
+                    // $logger->error(" updateLastActivity failed ");
+                    return false;
+                }
             }
             else{
-               // $logger->error(" database failed to update status in login ");
-                $errorResponse = array(
-                    'errorMessage' => "make  online failed. "
-                );
+                // $logger->error(" makeOnline failed ");
+                return false;
             }
+
+
+
+
         } 
         else {
            // $logger->error(" User  failed to authenticate ");
@@ -187,9 +196,7 @@ function signIn($d, $ip, $token) {
     }
 }
 
-function makeOnline($userId){
-    return makeOnlineDB($userId);
-}
+
 
 function getUserById($userId){
    // global $logger;

@@ -12,26 +12,38 @@ function hexMesh(){
 	var botEdge=400;
 	var svg=document.getElementsByTagName('svg')[0];   //draw around svg
 
+
 	this.selectedUnit={	name:'placeholder',
 						isMoving:false};    //need to initialize it to act as a property  need to ask professor why
  	var selectedEle; 	     //dom that is selected //initialize in unit.js selectUnit()
 	this.selectedEle='';
-	
+
+
 	this.drawOver = drawOver;
 	this.drawUnits = drawUnits;
+
+
 	
 	//draw the units on the board
 	function drawUnits(){
 		//console.log('drawUnits',hexArray);
-		var unit1=new Unit('dragon',hexArray[121],0,1);   //(type,hexagon,playerId,typeCount)
+		var unit1=new Unit('Barbarian',hexArray[120],0,1);   //(type,hexagon,playerId,typeCount)
 		unit1.makeUnit(svg);
-		var unit12=new Unit('dragon',hexArray[124],0,2);
+		var unit12=new Unit('Swordsman',hexArray[122],0,2);
 		unit12.makeUnit(svg);
+		var unit13=new Unit('Scout',hexArray[124],0,1);   //(type,hexagon,playerId,typeCount)
+		unit13.makeUnit(svg);
+		var unit14=new Unit('Knight',hexArray[126],0,2);
+		unit14.makeUnit(svg);
 		
-		var unit2=new Unit('knight',hexArray[23],1,1);
+		var unit2=new Unit('Barbarian',hexArray[8],1,1);
 		unit2.makeUnit(svg);
-		var unit22=new Unit('knight',hexArray[25],1,2);
+		var unit22=new Unit('Swordsman',hexArray[10],1,2);
 		unit22.makeUnit(svg);
+		var unit23=new Unit('Scout',hexArray[12],1,1);
+		unit23.makeUnit(svg);
+		var unit24=new Unit('Knight',hexArray[14],1,2);
+		unit24.makeUnit(svg);
 	}
 
 	this.changeTurn= function changeTurn(){
@@ -60,6 +72,8 @@ function hexMesh(){
 	this.moveSelected=function moveSelected(moveToHex,unit,fromUserClick,attacking,attackedUnit){
 		console.log('moveToHex:',moveToHex,'unit:',unit,'fromUserClick:',fromUserClick,'attacking:',attacking);
 		var dist=moveToHex.getDistanceFromSelected(); //distance between the target location and unit in pixels
+
+		this.movesLeft--;
 
        console.log('dist:',dist,' speed:',unit.speed,'condition:',unit.speed>dist);
 
@@ -95,8 +109,12 @@ function hexMesh(){
 			if(fromUserClick){
 				console.log('changeBoard called');
 				changeBoardAjax(unit.num,moveToHex.num,attackingBool,attactkedUnit.num,'changeBoard',gameId);
+
 				this.changeTurn();// local turn is change in the call back of the heartbeat for the opponent
 				gameObj.changeHelpInfo("Opponents turn");
+
+
+
 			}
 
 
@@ -105,7 +123,7 @@ function hexMesh(){
 			console.log(unitArray);
 			console.log('cleared');
 
-
+			$(unit.unitEle).unbind('mousemove');  //remove previouly attached mouse move event to reset the event at new position
 			return true; //piece was succesfully moved
 
 		}

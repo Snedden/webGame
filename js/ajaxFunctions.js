@@ -86,6 +86,11 @@ function changeBoardAjax(pieceId,boardI,isAttacking,attackedPiece,whatMethod,val
 	console.log('changeBoardAjax',isAttacking);
 	ajaxCall("POST",{method:whatMethod,a:"game",data:val+"~"+pieceId+"~"+boardI+"~"+PlayerId+"~"+isAttacking+"~"+attackedPiece},null);
 }
+
+function changeBoardCallback(jsonObj){
+	//get the data from the last guys move
+
+}
 ////checkTurnAjax/////
 //check to see whose turn it is
 //callback is callbackcheckTurn
@@ -105,11 +110,11 @@ function callbackcheckTurn(jsonObj){
 //console.log('DBTurn:'+jsonObj[0].whoseTurn,'PlayerId:'+PlayerId);
 	if(jsonObj[0].whoseTurn == PlayerId){
 		 turn = jsonObj[0].whoseTurn;   //changing local turn var
-		//switch turns
-		//Fturn=jsonObj[0].whoseTurn;
-		//get the data from the last guys move
-		console.log('getMove called');
+		hexMeshObj.movesLeft=2; //resetting moves left
+		console.warn('changeBoard callback');
 		getMoveAjax('getMove',gameId);
+
+
 		gameObj.changeHelpInfo("Your turn");
 	}
 

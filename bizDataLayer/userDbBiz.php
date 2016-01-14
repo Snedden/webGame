@@ -103,9 +103,10 @@ function insertUser($newUserData) {
 }
 
 function logOutDB($userId){
+
+
 	global $mysqli;
 	//$logger->info("Insidd logOutDB with idUser:".$userId);
-	global $mysqli;
 	$sql="update  users set status=0 WHERE idUser=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
@@ -132,9 +133,10 @@ function logOutDB($userId){
 }
 
 function makeOnlineDB($userId){
+
+
 	global $mysqli;
 	//$logger->info("Insidd makeOnline with idUser:".$userId);
-	global $mysqli;
 	$sql="update  users set status=1 WHERE idUser=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
@@ -147,7 +149,7 @@ function makeOnlineDB($userId){
 				//$logger->error( "Execute failed makeonlineDB: (" . $stmt->errno . ") " . $stmt->error);
 			}
 
-			$mysqli->close();
+			//$mysqli->close();
 			return true;
 		}else{
 			//$logger->error("An error occured in prepare statement makeOnline".$mysqli->error);
@@ -162,10 +164,11 @@ function makeOnlineDB($userId){
 
 
 function getUserByIdDB($userId){
-	global $logger,$mysqli;
-	//$logger->info("Insidd getUserByIdDB with idUser:".$userId);
+
+
 	global $mysqli;
-	$sql="SELECT first_name,last_name FROM users WHERE idUser=?";
+	//$logger->info("Insidd getUserByIdDB with idUser:".$userId);
+	$sql="SELECT first_name,last_name,email FROM users WHERE idUser=?";
 	try{
 		if($stmt=$mysqli->prepare($sql)){
 
